@@ -39,7 +39,7 @@ body {
 /* content area */
 .content {
     margin-left: 400px; /* Adjust this value to match the width of the sidebar */
-    padding: 20px;
+    padding: 2px;
 }
 
 /* lightbox */
