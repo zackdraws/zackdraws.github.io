@@ -101,12 +101,25 @@ body {
 
 }
 
+.gallery 2 {
+    display: grid;
+    grid-template-columns: 
+    justify-items: left; /* Centers items horizontally in each cell */
+    margin-left: 200px;
+}
+.gallery-item img 2{
+    max-width: 10px; /* Adjust the width as needed */
+    max-height: 10px; /* Adjust the height as needed */
+    cursor: pointer;
+
+}
+
 /* video container */
 .video-container {
     width: 70%;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 200px;
+    margin-top: -50px;
+    margin-left: 227.2px;
     
 }
 /*  video */
@@ -123,12 +136,6 @@ h3 {
     text-align:center; 
     font-size: 11px; 
 
-
-
-
-
-
-
 }
    .speakerdeck-iframe{
     width: 600px;
@@ -137,3 +144,14 @@ h3 {
     margin-left: 218px;
    }
 
+/* Style for small images */
+img.small {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Style for large images */
+img.large {
+    max-width: 700px;
+    max-height: 700px;
+}

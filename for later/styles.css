@@ -102,6 +102,13 @@ body {
 
 }
 
+.gallery-item img 2 {
+max-width: 500px;
+max-height: 700px;
+cursor: pointer;
+transition: transform: 0.25em;
+}
+
 
 /* Style for the video container */
 .video-container {
