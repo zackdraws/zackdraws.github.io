@@ -19,8 +19,7 @@ body {
     position: fixed;
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
-    height: 100%; /* Make the sidebar the full height of the viewport */    
-    
+    height: 100%; /* Make the sidebar the full height of the viewport */       
 }
 .sidebar h2 {
     font-size: 20px;
@@ -36,7 +35,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
 /* Styling for the content area */
 .content {
     margin-left: 400px; /* Adjust this value to match the width of the sidebar */
