@@ -18,7 +18,6 @@ body {
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
     height: 100%; /* Make the sidebar the full height of the viewport */    
-    
 }
 .sidebar h2 {
     font-size: 20px;
@@ -89,10 +88,9 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
     gap: 3px;
-    justify-items: left; /* Centers items horizontally in each cell */
+
     margin-left: 200px;
 }
-
 .gallery-item img {
     max-width: 300px; /* Adjust the width as needed */
     max-height: 300px; /* Adjust the height as needed */
@@ -100,11 +98,9 @@ body {
     transition: transform 0.2s;
 
 }
-
 .gallery 2 {
     display: grid;
     grid-template-columns: 
-    justify-items: left; /* Centers items horizontally in each cell */
     margin-left: 200px;
 }
 .gallery-item img 2{
@@ -113,7 +109,6 @@ body {
     cursor: pointer;
 
 }
-
 /* video container */
 .video-container {
     width: 70%;
