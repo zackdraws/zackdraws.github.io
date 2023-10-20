@@ -1,22 +1,20 @@
-/* Your existing CSS styles remain the same */
-
-/* Styling for the container */
+/* container */
 
 body {
     font-family: 'Your Selected Font', sans-serif;
 }
 .container {
-    display: flex;
-    align-items: flex-start;/* Align items to the top */
+    align-items: fixed;/* Align items to the top */
+    position: center;
     height: 100vh;
 }
-/* Styling for the sidebar */
+/* Sidebar */
 .sidebar {
-    width: 100px;
+    width: 143px;
     background-color: #00; /* Background color for the sidebar */
     color: #333;
-    padding: 20px;
-    position: fixed;
+    padding: 22px;
+    position: absolute;
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
     height: 100%; /* Make the sidebar the full height of the viewport */    
@@ -33,17 +31,18 @@ body {
     margin-bottom: 10px;
 }
 .sidebar a {
+    font-size: 25px ;
     text-decoration: none;
     color: #000;
 }
 
-/* Styling for the content area */
+/* content area */
 .content {
     margin-left: 400px; /* Adjust this value to match the width of the sidebar */
     padding: 20px;
 }
 
-/* Styling for the lightbox */
+/* lightbox */
 #lightbox {
     display: none;
     position: fixed;
@@ -84,11 +83,11 @@ body {
     color: #fff;
 }
 
-/* Styling for the gallery images */
+/* gallery images */
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
     gap: 3px;
     justify-items: left; /* Centers items horizontally in each cell */
     margin-left: 200px;
@@ -102,23 +101,34 @@ body {
 
 }
 
-
-/* Style for the video container */
+/* video container */
 .video-container {
     width: 70%;
     text-align: center;
     margin-top: 20px;
+    margin-left: 200px;
+    
 }
-/* Style for the video */
+/*  video */
 video {
     max-width: 800px;
 }
-
-/* Style for the heading */
+/*  heading */
 h1 {
     text-align: center; /* Center the heading */
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 20px; /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
+}
+h3 {
+    text-align:center; 
+    font-size: 11px; 
+
+
+
+
+
+
+
 }
    .speakerdeck-iframe{
     width: 600px;
@@ -126,3 +136,4 @@ h1 {
     text-align: center;
     margin-left: 218px;
    }
+
