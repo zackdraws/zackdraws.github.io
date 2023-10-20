@@ -1,4 +1,24 @@
 // JavaScript for the lightbox
+const images = document.querySelectorAll('.image img');
+
+images.forEach((image) => {
+    image.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
+
+        const enlargedImage = document.createElement('img');
+        enlargedImage.src = image.src;
+        enlargedImage.classList.add('enlarged-image');
+
+        overlay.appendChild(enlargedImage);
+        document.body.appendChild(overlay);
+
+        overlay.addEventListener('click', () => {
+            overlay.remove();
+        });
+    });
+});
+
 
 // Select elements
 const lightbox = document.getElementById('lightbox');
