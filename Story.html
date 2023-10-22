@@ -10,18 +10,15 @@
             justify-content: flex-start; /* Align content to the top */
             align-items: flex-start; /* Align content to the left */
         }
-
-        .sidebar {
+          .sidebar {
             width: 12 0%;
             padding: 10;
         }
-
         .content {
             width: 100%;
             padding: 0;
             margin-left: 20px; /* Add margin to move the content closer to the sidebar */
         }
-
         .iframe-grid {
             display: grid;
             grid-template-columns: repeat(2, 400px); /* Set a fixed width for both iframes */
@@ -46,11 +43,8 @@
             margin: 0; /* Remove any default margin on the heading */
         }
     </style>
-</head>
 <body>
     <div class="container">
-        
-        <div class="video-container">
         <div class="sidebar">
             <h2>Zack Johnson</h2>
             <ul>
@@ -62,21 +56,22 @@
                 <li><a href="mailto:zackjohnsonart@gmail.com">Email</a></li>
                 <!-- Social Links -->
                 <div class="social-links">
-                    <a class="social-link" href="https://www.instagram.com/zackdraws">
-                        <img src="insta.png" alt="Instagram">
-                    </a>
-                    <a class="social-link" href="twitter.com/zack_draws">
-                        <img src="twitter.png" alt="Instagram">
-                    <a class="social-link" href=";inkedin.com/in/zackisdrawing">
-                        <img src="linkedin.png" alt="Instagram">
-                    </a>
-                </a>
-                
-            </div>
-        </ul>
-        </div>
-        <!-- First section -->
-        <div class="content">
+                    <div>
+                        <a class="social-link" href="https://www.instagram.com/zackdraws">
+                            <img src="insta.png" alt="Instagram">
+                            <a class="social-link" href="twitter.com/zack_draws">
+                            <img src="twitter.png" alt="Instagram">
+                           <a class="social-link" href=";inkedin.com/in/zackisdrawing">
+                            <img src="linkedin.png" alt="Instagram">
+                                </a>
+
+                            </div>
+                    
+                            <div class="video-container">
+                            </ul>
+                        </div>
+                        <!-- First section -->
+                        <div class="content">
             <h1>Zack Johnson - Story Portfolio</h1>
             <h1>Steve and Steven</h1>
             <div class="iframe-grid">
@@ -84,7 +79,7 @@
                 <iframe class="speakerdeck-iframe" src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1"></iframe>
             </div>
         </div>
-         <!-- Second section -->
+        <!-- Second section -->
         <div class="content">
             <h1>Robot and Monster</h1>
             <div class="iframe-grid">
@@ -92,7 +87,7 @@
                 <iframe class="speakerdeck-iframe" src="https://speakerdeck.com/player/c86241e435e14d06a63a7f601ee95fbd"></iframe>
             </div>
         </div>
-
+        
         <!-- Third section -->
         <div class="content">
             <h1>Chicken in Space</h1>
@@ -104,3 +99,4 @@
     </div>
 </body>
 </html>
+
