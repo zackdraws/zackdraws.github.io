@@ -5,8 +5,8 @@
     gap: 10px;
 }
 .image {
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -111,13 +111,11 @@ close
     font-size: 16px;
     
     position: absolute;
-    bottom: 0;
+    top: 0;
     display: block; /* Change to block to align below the image */
     width: 33%; /* Width to take the full width of the image container */
     text-align: center; /* Center-align the buttons horizontally */
 }
-    }
-    
     .next-button {
         right: 0px; /* Position the "next" button to the right */
     }
@@ -127,20 +125,17 @@ close
     }
     
     .next-button:hover, .prev-button:hover {
-        background-color: #555; /* Background color on hover */
+        background-color: #22bc41; /* Background color on hover */
     }
     
+
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
 }
 
 .next-button:hover, .prev-button:hover {
-    background-color: #555; /* Background color on hover */
+    background-color: #22bc41; /* Background color on hover */
 }
-
-.next-button:hover, .prev-button:hover {
-    background-color: #555; /* Background color on hover */
-}
-
-
 
 .gallery-frame {
     width: 100%; /* Adjust the width as needed */
@@ -154,7 +149,7 @@ float: left
 display: grid;
 flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(184px, 1fr)); /* Responsive grid */
+grid-template-columns: repeat(auto-fit, minmax( 450px, 1fr )); /* Responsive grid */
 gap: 10px;
 justify-content: center;
 }
