@@ -78,7 +78,7 @@ content.closer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     z-index: 999;
 }
@@ -90,29 +90,57 @@ content.closer {
     margin-top: 10vh;
 }
 close
-
-.next-button, .prev-button {
-    background-color: #333; /* Background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    cursor: pointer; /* Cursor on hover */
-    font-size: 16px;
-    margin: 10px; /* Margin to separate the buttons */
-}
-
-.next-button:hover, .prev-button:hover {
-    background-color: #555; /* Background color on hover */
-}
-
 .close-button {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
+    color: #f10707;
 }
+
+
+
+.next-button,
+.prev-button {
+    background-color: #93b934;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: absolute;
+    bottom: 0;
+    display: block; /* Change to block to align below the image */
+    width: 33%; /* Width to take the full width of the image container */
+    text-align: center; /* Center-align the buttons horizontally */
+}
+    }
+    
+    .next-button {
+        right: 0px; /* Position the "next" button to the right */
+    }
+    
+    .prev-button {
+        left: 0px; /* Position the "previous" button to the left */
+    }
+    
+    .next-button:hover, .prev-button:hover {
+        background-color: #555; /* Background color on hover */
+    }
+    
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+
 
 .gallery-frame {
     width: 100%; /* Adjust the width as needed */
@@ -126,13 +154,13 @@ float: left
 display: grid;
 flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
+grid-template-columns: repeat(auto-fit, minmax(184px, 1fr)); /* Responsive grid */
 gap: 10px;
 justify-content: center;
 }
 .gallery-item{
 flex; 1 0 calc(33.33% - 20px); /
-max-width: calc(33.33% - 30px); /* Adjust the width as needed */
+max-width: calc(33.33% - 50px); /* Adjust the width as needed */
 max-height: 450px; /* Adjust the height as needed */
 overflow: hidden;
 position:relative;

@@ -26,7 +26,6 @@ const closeLightboxButton = document.querySelector('.close-button');
 const galleryItems = document.querySelectorAll('.gallery-item img');
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
-
 // Add an event listener to each gallery item
 galleryItems.forEach((item, index) => {
     item.addEventListener('click', () => {
@@ -39,6 +38,7 @@ function openLightbox(index) {
     lightbox.style.display = 'block';
     lightboxImage.src = galleryItems[index].getAttribute('data-src');
     // Add navigation logic
+    
     nextButton.addEventListener('click', () => {
         index = (index + 1) % galleryItems.length;
         lightboxImage.src = galleryItems[index].getAttribute('data-src');
