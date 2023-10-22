@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add a viewport meta tag for responsiveness -->
+    <title>Animation Reel</title>
+</head>
+<body>
+    <header>
+        <div class="toggle-sidebar" id="toggleSidebar">&#9776;</div> <!-- Add a menu toggle button -->
+        <h1>Animation Reel</h1>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CharacterDesign.html">Character Design</a></li>
+            <li><a href="Story.html">Story</a></li>
+            <li><a href="Animation.html">Animation</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="mailto:zackjohnsonart@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="ANP.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1>Character Design</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="cd3.jpg" alt="Image 3" data-src="cd3.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="cd4.jpg" alt="Image 4" data-src="cd4.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="cd1.jpg" alt="Image 1" data-src="cd1.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="cd6.jpg" alt="Image 6" data-src="cd6.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="cd7.jpg" alt="Image 7" data-src="cd7.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="cd5.jpg" alt="Image 5" data-src="cd5.jpg">
+            </div>
+                <div class="gallery-item">
+                    <img src="cd2.jpg" alt="Image 2" data-src="cd2.jpg">
+                </div> 
+                <div id="lightbox" class="hidden">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+    <script src="lightbox.js"></script>
+    <script>
+        const toggleSidebar = document.getElementById("toggleSidebar");
+        const sidebar = document.querySelector(".sidebar");
+        const content = document.querySelector(".content");
+
+        toggleSidebar.addEventListener("click", () => {
+            sidebar.classList.toggle("closer");
+            content.classList.toggle("closer");
+        });
+    </script>
+</body>
+</html>
