@@ -140,7 +140,7 @@ close
 
 .gallery-frame {
     width: 100%; /* Adjust the width as needed */
-    max-width: 2500px; /* Limit the maximum width of the frame */
+    max-width: 3000px; /* Limit the maximum width of the frame */
     margin: 0 auto; /* Center the frame horizontally */
     padding: 4px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
@@ -150,15 +150,15 @@ float: left
 display: grid;
 flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax( 450px, 1fr )); /* Responsive grid */
+grid-template-columns: repeat(auto-fit, minmax( 370px, 1fr )); /* Responsive grid */
 gap: 10px;
 justify-content: center;
 }
 .gallery-item{
 flex; 1 0 calc(33.33% - 20px); /
 max-width: calc(33.33% - 50px); /* Adjust the width as needed */
-max-height: 450px; /* Adjust the height as needed */
-overflow: hidden;
+max-height: 350px; /* Adjust the height as needed */
+overflow: ::shadow;
 position:relative;
 cursor: pointer;
 transition: transform 0.2s;
