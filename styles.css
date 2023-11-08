@@ -104,8 +104,8 @@ close
 
 .next-button,
 .prev-button {
-    background-color: #93b934;
-    color: #fff;
+    background-color: #fff;
+    color: ##252930;
     padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -126,16 +126,16 @@ close
     }
     
     .next-button:hover, .prev-button:hover {
-        background-color: #22bc41; /* Background color on hover */
+        background-color: #FFFF; /* Background color on hover */
     }
     
 
 .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #FFFF; /* Background color on hover */
 }
 
 .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #FFFF; /* Background color on hover */
 }
 
 .gallery-frame {
