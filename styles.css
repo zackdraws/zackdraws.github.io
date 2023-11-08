@@ -150,8 +150,8 @@ float: left
 display: grid;
 flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(335px, 1fr )); /* Responsive grid */
-gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(275px, 1fr )); /* this makes for a responsive grid*/
+gap: 1px;
 justify-content: center;
 }
 .gallery-item{
