@@ -101,12 +101,11 @@ close
 }
 
 
-
 .next-button,
 .prev-button {
     background-color: #fff;
     color: ##252930;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -128,40 +127,36 @@ close
     .next-button:hover, .prev-button:hover {
         background-color: #FFFF; /* Background color on hover */
     }
-    
-
 .next-button:hover, .prev-button:hover {
     background-color: #FFFF; /* Background color on hover */
 }
-
 .next-button:hover, .prev-button:hover {
     background-color: #FFFF; /* Background color on hover */
 }
-
 .gallery-frame {
     width: 100%; /* Adjust the width as needed */
     max-width: 3000px; /* Limit the maximum width of the frame */
     margin: 0 auto; /* Center the frame horizontally */
     padding: 4px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
-float: left
+    float: left
 }
 .gallery {
-display: grid;
-flex-wrap: wrap;
-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(275px, 1fr )); /* this makes for a responsive grid*/
-gap: 1px;
-justify-content: center;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr )); /* responsive grid*/
+    gap: 1px;
+    justify-content: center;
 }
 .gallery-item{
-flex; 1 0 calc(33.33% - 20px); /
-max-width: calc(33.33% - 50px); /* Adjust the width as needed */
-max-height: 350px; /* Adjust the height as needed */
-overflow: ::shadow;
-position:relative;
-cursor: pointer;
-transition: transform 0.2s;
+    flex: 1 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 50px); /* Adjust the width as needed */
+    max-height: 350px; /* Adjust the height as needed */
+    overflow: ::shadow;
+    position:relative;
+    cursor: pointer;
+    transition: transform 0.2s;
 
 } 
 .gallery-item img {
@@ -170,7 +165,6 @@ transition: transform 0.2s;
     object-fit: cover;
     transition: transform 0.3s;
 }
-
 .gallery-item img:hover {
     transform: scale(1.1);
 }
@@ -195,7 +189,6 @@ h1 {
 h3 {
     text-align:center; 
     font-size: 11px; 
-
 }
    .speakerdeck-iframe{
     width: 600px;
