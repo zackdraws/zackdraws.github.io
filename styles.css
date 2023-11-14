@@ -45,6 +45,7 @@ body {
 }
 .sidebar h2 {
     font-size: 20px;
+    text-align: left;
 }
 .sidebar ul {
     list-style-type: none;
@@ -71,14 +72,15 @@ width:200px;
 
 /* Profile styles */
 .profile {
-    text-align: left;
+    text-align: center;
 }
 
 .profile img {
-    width: 100px; /* Adjust the width of the profile image as needed */
-    height: 100px; /* Adjust the height of the profile image as needed */
-    border-radius: 50%; /* Creates a circular profile image */
+    width: 120px; /* Adjust the width of the profile image as needed */
+    height: 10AAA0px; /* Adjust the height of the profile image as needed */
+    border-radius: 17%; /* Creates a circular profile image */
     margin-bottom: 10px; /* Adjust the margin as needed */
+    text-align: center;
 }
 
 .profile h1, .profile h3 {
@@ -196,7 +198,7 @@ transition: transform 0.2s;
 /* video container */
 .video-container { 
     text-align: center;
-    margin-top: -250px;
+    margin-top: -170px;
     margin-left: auto;
     border: 190px solid #fff;
     box-sizing: content-box;
