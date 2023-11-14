@@ -178,14 +178,15 @@ transition: transform 0.2s;
 /* video container */
 .video-container { 
     text-align: center;
-    margin-top: -120px;
+    margin-top: -250px;
     margin-left: auto;
     border: 190px solid #fff;
     box-sizing: content-box;
+
 }
 /*  video */
 video {
-max-width: 80%;
+max-width: 45%;
 }
 /*  heading */
 h1 {
