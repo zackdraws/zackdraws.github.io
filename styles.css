@@ -68,6 +68,24 @@ body {
 .sidebar.closer { 
 width:200px;
 }
+
+/* Profile styles */
+.profile {
+    text-align: left;
+}
+
+.profile img {
+    width: 100px; /* Adjust the width of the profile image as needed */
+    height: 100px; /* Adjust the height of the profile image as needed */
+    border-radius: 50%; /* Creates a circular profile image */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.profile h1, .profile h3 {
+    margin: 0;
+    color: #333; /* Adjust the color as needed */
+
+}
 content.closer {
     margin-left:20px;
 }
