@@ -1,6 +1,4 @@
-
 /* container */
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -36,13 +34,13 @@ body {
     width: 143px; /* Width for larger screens */
     background-color: #fff; /* White background color for the sidebar */
     color: #333;
-    padding: 22px;
+    padding: 21px;
     position: fixed; /* Fixed sidebar position */
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
     bottom: 0; /* Stretch the sidebar to the bottom of the page */
     z-index: 1; /* Ensure the sidebar is above other content */ 
-    margin-right: px;
+    margin-right: 1px;
     margin-left: 6px; /* Added margin to move away from the left side */
 }
 }
@@ -169,7 +167,7 @@ close
     margin: 0 auto; /* Center the frame horizontally */
     padding: 4px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
-    float: left
+    float: right;
 }
 .gallery {
 display: grid;
@@ -177,7 +175,7 @@ flex-wrap: wrap;
 gap: 10px;
 grid-template-columns: repeat(auto-fit, minmax(210px, 2fr )); /* Responsive grid */
 gap: 10px;
-justify-content: center;
+justify-content: right;
 }
 .gallery-item{
 flex; 1 0 calc(33.33% - 20px); /
@@ -203,7 +201,7 @@ transition: transform 0.2s;
 .video-container { 
     text-align: center;
     margin-top: -170px;
-    margin-left: auto;
+    margin-left: -170px;
     border: 190px solid #fff;
     box-sizing: content-box;
 
@@ -405,7 +403,7 @@ a {
 
 /* Content styles */
 .content {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 h1 {
