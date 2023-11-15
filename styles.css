@@ -201,7 +201,7 @@ transition: transform 0.2s;
 .video-container { 
     text-align: center;
     margin-top: -170px;
-    margin-left: -170px;
+    margin-left: 60px;
     border: 190px solid #fff;
     box-sizing: content-box;
 
