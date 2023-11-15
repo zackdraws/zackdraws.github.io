@@ -4,20 +4,23 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font">
     <style>
-        .container {
+
+      .container {
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Align content to the top */
-            align-items: flex-start; /* Align content to the left */
+            Align-items: flex-start; /* Align content to the left */
         }
           .sidebar {
-            width: 12 0%;
+            width:  0%;
             padding: 10;
         }
         .content {
-            width: 100%;
+	    justify-content: flex-start; /* Align content to the top */
+	    width: 100%;
             padding: 0;
             margin-left: 20px; /* Add margin to move the content closer to the sidebar */
+	    
         }
         .iframe-grid {
             display: grid;
@@ -34,7 +37,8 @@
         }
 
         .vimeo-iframe {
-            width: 600px; /* Adjust the width to make the Vimeo iframe slightly bigger */
+
+	    width: 400px; /* Adjust the width to make the Vimeo iframe slightly bigger */
             height: 400px; /* Set a fixed height for the Vimeo iframe */
             display: block;
         }
@@ -43,32 +47,44 @@
             margin: 0; /* Remove any default margin on the heading */
         }
     </style>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <h2>Zack Johnson</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="CharacterDesign.html">Character Design</a></li>
-                <li><a href="Story.html">Story</a></li>
-                <li><a href="Animation.html">Animation</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="mailto:zackjohnsonart@gmail.com">Email</a></li>
-                <!-- Social Links -->
-                <div class="social-links">
-                  <div>
-		    <a> 
-                        <a class="social-link" href="https://www.instagram.com/zackdraws">
-                            <img src="insta.png" alt="Instagram">
-                            <a class="social-link" href="twitter.com/zack_draws">
-                            <img src="twitter.png" alt="Instagram">
-                           <a class="social-link" href="linkedin.com/in/zackisdrawing">
-                            <img src="linkedin.png" alt="Instagram">
-
-			   </a>
-
-                            </div>
-                    
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    </head>
+    <body>
+        <nav class="sidebar">
+            <div class="profile">
+            <img src="p.jpg" alt="p.jpg">
+            <h><a href="index.html"><h1>Zack Johnson </h1> </a></h1>
+            <h3>Story - Animation - Design</h3>
+            <h3>ZackJohnsonArt@gmail.com - (949) 228-9271 </h3>
+        </div>
+        <ul>
+            <li><a href="index.html">Portfolio</a>
+                <ul class="submenu">
+                    <li><a href="CharacterDesign.html">Character Design</a></li>
+                    <li><a href="Story.html">Story</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </li>
+            <li><a href="Resume.html">About Me</a></li>
+            <li><a href="mailto:zackjohnsonart@gmail.com">Contact</a></li>
+            <div class="social-links">
+                <a class="social-link" href="https://www.instagram.com/zackdraws">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://twitter.com/zack_draws">
+                    <img src="twitter.png" alt="twitter">
+                </a>
+                <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                    <img src="linkedin.png" alt="linkedin">
+                </a>
+            </div>
+        </ul>
+    </nav> 
+    <div> 
                             <div class="video-container">
                             </ul>
                         </div>
@@ -101,4 +117,3 @@
     </div>
 </body>
 </html>
-
