@@ -42,7 +42,7 @@ body {
     left: 0; /* Position from the left */
     bottom: 0; /* Stretch the sidebar to the bottom of the page */
     z-index: 1; /* Ensure the sidebar is above other content */ 
-    margin-right: 20px;
+    margin-right: px;
     margin-left: 20px; /* Added margin to move away from the left side */
 }
 }
