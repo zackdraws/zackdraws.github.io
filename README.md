@@ -1,19 +1,21 @@
     ## Hello, read this file for a description on how this website works ## 
+		
+		## 1. Download the Folder of the code - replace all of my files with your own files 
+		Place the folder into a place that's easy to find 
+		use VsCode or Emacs or some other Code editor to view a live preview of the website
 
+# Directory of Files	
 - Index.html is the main homepage and holds the info for the website
 - styles.css is for the styling of the website
 - Lightbox.js is the javascript that controls the lightbox effect
+- cd01.jpg (Files for character design) , bg01.jpg (Files for Background), fg01.jpg (Files for Sketchbook) 
+    
+* Hosting: You'll need to use a server for hosting you can use
+Github Pages or whatever you prefer that can host folders of html and CSS + JS
 
-	Download the Folder of the code - replace all of my files with your own files 
-	Place the folder into a place that's easy to find 
-	use VsCode or Emacs or some other Code editor to view a live preview of the website
-	
-	##  When you're ready use Github Pages or some other Hosting Server to host the Link 
+	- This Website comes with a SideHeader and a Body For Portfolio Work
 
-	Website is made up of a Side Header with a Profile Picture
-		Body of Website
-
-# Separate pages 
+# Body Section of Website 
 
 ## - First Header  "Animation Reel"
 ANP.mp4 is the name of the Animation Reel and is put at the top of the website
@@ -28,22 +30,22 @@ Place all of your Storyboard Samples in your folder and name them
 ## - Fifth Header Sketchbook Work
 Place all of your in your folder and name them 
 		
-		-- Side Header --
+# Side Header --
 
-#  Website Pages
-## - Portfolio
+##  Website Pages
+### - Portfolio
    - CharacterDesign
    CharacterDesign.html
    - Story
    Story.html
    - Animation
    Animation.html
-## About Me
+### About Me
 	- About
 * For your aboutme file the file should be About.jpg
-## Contact 
+### Contact 
  - 
-## Social Links 
+### Social Links 
  - Instagram
  - Twitter
  - Linkedin
