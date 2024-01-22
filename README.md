@@ -50,3 +50,58 @@ Place all of your in your folder and name them
  - Twitter
  - Linkedin
  
+
+### Index.html 
+#### Header
+this part controls your header and links
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+</head>
+    <body>
+       <header class="website-header">
+         <nav class="header-navigation">
+	    <div class="profile">
+            <h><a href="index.html"><h1>Zack Johnson </h1> </a></h1> 
+            <h3>Story - Animation - Design</h3>
+            <h3>ZackJohnsonArt@gmail.com - (949) 228-9271 </h3>
+        </div>
+        <ul>
+            <li><a href="index.html"><h3>Portfolio</h3>
+	      <ul class="submenu">
+                    <li><a href="CharacterDesign.html">Character Design</a></li>
+                    <li><a href="Story.html">Story</a></li>
+                    <li><a href="Animation.html">Animation</a></li>
+                </ul>
+            </li>
+            <li><a href="Resume.html"> <h3>About Me</h3></a></li>
+            <li><a href="mailto:zackjohnsonart@gmail.com"> <h3> Contact</h3></a></li>
+            <div class="social-links">
+                <a class="social-link" href="https://www.instagram.com/zackdraws">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://twitter.com/zack_draws">
+                    <img src="twitter.png" alt="twitter">
+                </a>
+                <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                    <img src="linkedin.png" alt="linkedin">
+                </a>	
+            </div>
+			
+			
+			### Contect Sections
+#### Animation Reel -
+This Part is where your animation reel goes just make sure that your animation reel title fits the src for mine I just name my file ANP.mp4
+#### Character Design -
+All character design pages are labeled as cd01.jpg cd02.jp cd03.jpg and so on
+
+format is  </div>
+                <div class="gallery-item">
+                    <img src="cd02.jpg" alt="Character Design 2" data-src="cd02.jpg">
+                </div>
+
+#### Story Samples -
+Story Samples put your samples in there 
+#### Sketchbook -

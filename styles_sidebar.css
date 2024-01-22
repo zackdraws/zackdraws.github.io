@@ -1,0 +1,474 @@
+}
+
+Body {
+    font-family: sans-serif;
+}
+.container {
+    align-items: absolute;/* Align items to the top */
+    position: center;
+    height: 100vh;
+}
+/* Sidebar */
+.sidebar {
+    width: 143px; /* Width for larger screens */
+    background-color: #fff; /* White background color for the sidebar */
+    color: #333;
+    padding: 21px;
+    position: fixed; /* Fixed sidebar position */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    bottom: 0; /* Stretch the sidebar to the bottom of the page */
+    z-index: 1; /* Ensure the sidebar is above other content */ 
+    margin-right: 1px;
+    margin-left: 6px; /* Added margin to move away from the left side */
+    color: #36374f;    
+}
+.sidebar h2 {
+    font-size: 20px;
+    text-align: left;
+     color: #36374f;
+}
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar a {
+    font-size: 25px ;
+    text-decoration: none;
+    color: #36374f;
+}
+
+/* content area */
+.content {
+    margin-left: 10px; 
+    padding: 2px;
+    transition:margin-left: 0.3s; 
+}
+.sidebar.closer { 
+width:200px;
+}
+
+/* Profile styles */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 100px; /* Adjust the width of the profile image as needed */
+    height: 100px; /* Adjust the height of the profile image as needed */
+    border-radius: 0%; /* Creates a circular profile image */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    text-align: center;
+}
+
+.profile h1, .profile h3 {
+    margin: 0;
+    color: #333; /* Adjust the color as needed */
+
+}
+content.closer {
+    margin-left:20px;
+}
+
+/* lightbox */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+close
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f10707;
+}
+
+
+
+.next-button,
+.prev-button {
+    background-color: #f3f3f3;
+    color: #000000;
+    padding: 4px 4px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: absolute;
+    top: 24;
+    right: 11;
+    display: block; /* Change to block to align below the image */
+    width: 10%; /* Width to take the full width of the image container */
+    text-align: center; /* Center-align the buttons horizontally */
+}
+    .next-button {
+        right: 400px; /* Position the "next" button to the right */
+    }
+    
+    .prev-button {
+        left: 400px; /* Position the "previous" button to the left */
+    }
+    
+    .next-button:hover, .prev-button:hover {
+        background-color: #22bc41; /* Background color on hover */
+    }
+    
+
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+}
+
+.gallery-frame {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 3000px; /* Limit the maximum width of the frame */
+    margin: 0 auto; /* Center the frame horizontally */
+    padding: 4px; /* Add padding for a frame-like appearance */
+    box-sizing: border-box; /* Include padding in width calculations */
+    float: right;
+}
+.gallery {
+display: grid;
+flex-wrap: wrap;
+gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(210px, 2fr )); /* Responsive grid */
+gap: 10px;
+justify-content: right;
+}
+.gallery-item{
+flex; 1 0 calc(33.33% - 20px); /
+max-width: calc(33.33% - 50px); /* Adjust the width as needed */
+max-height: 350px; /* Adjust the height as needed */
+overflow: ::shadow;
+position:relative;
+cursor: pointer;
+transition: transform 0.2s;
+
+} 
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+/* video container */
+.video-container { 
+    text-align: center;
+    margin-top: -170px;
+    margin-left: 60px;
+    border: 190px solid #fff;
+    box-sizing: content-box;
+
+}-
+/*  video */
+video {
+max-width: 45%;
+}
+/*  heading */
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
+    color: #36374f;
+    }
+h {
+    text-align:left;  
+    padding: 10px;
+    background-color: #f1f1f1; /* Background color for the box */
+    border: 1px solid #ddd; /* Border color for the box */
+    font-size: 11px;
+    display: inline-block;
+    order: -1;
+    margin-right: -20px;
+    color: #36374f;
+}       
+
+.container {
+        display: grid;
+        grid-template-columns: auto 1fr; /* First column for the text box, second column for other content */
+
+    }
+
+}
+h4 {
+    text-align: left;
+    padding: 10px;
+    background-color: #f1f1f1; /* Background color for the box */
+    border: 1px solid #ddd; /* Border color for the box */
+    font-size: 11px;
+    display: inline-block;
+}
+
+
+
+}
+   .speakerdeck-iframe{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-left: 218px;
+   }
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Center text within gallery items */
+.item-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a background overlay for better readability */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Style the caption text */
+.item-caption h1 {
+    color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for the social links */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.social-link img {
+    width: 30px; /* Set the width of the social media icon image */
+    height: 30px; /* Set the height of the social media icon image */
+}
+
+}
+
+.resume-container {
+    max-width: 60px;
+}
+/* PDF download link styles */
+a.pdf-download {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(193, 193, 223, 0.726);
+    padding: 5px 10px;
+    border-radius: px;
+}
+
+
+}.content {
+    margin-left: -auto;
+}
+
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h1,
+.profile h3 {
+    margin: 0;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar li:hover .submenu {
+    display: block;
+}
+
+/* Content styles */
+.content {
+    margin-left: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.resume-container {
+    max-width: 600px;
+}
+
+
+
+/* Social links styles */
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+}
+
+/* PDF download link styles */
+a.pdf-download {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(193, 193, 223, 0.726);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.sideimg {
+    float: left;
+    display: flex;
+    margin-right: -200px; /* Optional: Add some spacing to the right of the image */
+    max-width: 110%;
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+.leftimg {
+    float: right;
+    display: flex;
+    margin-right: 450px; 
+    width: 630px; 
+    height: 1080px;
+    margin-left: 430px; 
+}
+
+.aboutme {
+    float:
+    dispaly: flex;
+
+}
+
+h7 {
+    display: flex;
+    text-align:left;  
+    font-size: 13px;
+    order: -1;
+    margin-left: 140px;
+    margin-right: -100px;
+    margin-top: 230px;
+    width: 390px;
+    height: auto;
+padding-block: auto;
+
+}
+
+#floatingGif {
+    position: fixed;  
+    top: 50px;        
+    left: 50px;      
+    width: 100px;
+    height: auto;
+        z-index: 9999;
+}

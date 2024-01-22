@@ -35,13 +35,3 @@
             </div>
         </ul>
 </nav>
-            <div class="video-container">
-        
-        
-        <h1> Animation Reel </h1>
-            <video controls width="50%" height="50%"
-             src="ANP.mp4" type="video/mp4">
-            </video>
-            <div>
-                ‎ 
-
