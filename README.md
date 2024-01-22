@@ -50,22 +50,23 @@ Place all of your in your folder and name them
  - Twitter
  - Linkedin
  
-Website Index is organized as
-### Index.html 
-#### Header		
+# Website Index is organized as
+## Index.html 
+### Header		
 			### Contect Sections
-#### Animation Reel -
+### Animation Reel -
 This Part is where your animation reel goes just make sure that your animation reel title fits the src for mine I just name my file ANP.mp4
 
-#### Character Design -
+### Character Design -
 All character design pages are labeled as cd01.jpg cd02.jp cd03.jpg and so on
 
  
-#### Story Samples -
+### Story Samples -
 Story Samples put your samples in there 
 
-#### Sketchbook -
+### Sketchbook -
 
+## Organization
 - each one is made of a gallery and filled with gallery items
 - styling can be changed in the styles.css
 - there is javascript
