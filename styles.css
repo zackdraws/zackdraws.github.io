@@ -170,6 +170,7 @@ h4 {
     height: 500px;
     text-align: center;
     margin-left: 218px;
+    
 }
 .overlay {
     position: fixed;
@@ -481,3 +482,7 @@ header.website-header a {
     font-weight: bold;
     font-size: 16px;
 }
+    .vimeo-iframe {
+        width: 100%; /* Adjust the width as needed */
+        height: 400px; /* Adjust the height as needed */
+    }
