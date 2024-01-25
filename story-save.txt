@@ -1,0 +1,12 @@
+	       <a href="Story.html">
+	      <img src="sb2.png" >
+		       <a href="Story.html">
+                         <a>
+</div>
+		       <div class="gallery-item">
+                    	       <a href="Story.html">
+				 <img src="sb.png" >
+				<a href="Story.html">
+                    <a>
+                </div>
+	</div>

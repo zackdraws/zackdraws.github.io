@@ -141,6 +141,7 @@ h3 {
     text-align: center;
     font-size: 14px;
     color: #36374f;
+    text-decoration: underline;
 }
 h {
     text-align:left;  
@@ -165,13 +166,52 @@ h4 {
     font-size: 16px;
     display: inline-block;
 }
-   .speakerdeck-iframe{
-    width: 600px;
-    height: 500px;
-    text-align: center;
-    margin-left: 218px;
-    
+h5 {
+    margin-right: -20px;
+    order: -1;
+    font-size: 14px;
+   text-align: center;
+   margin-bottom: 20px;
 }
+.iframe-grid {
+   align-items: center;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 0 calc(33.33% - 10px);
+}
+.speakerdeck-iframe{
+    width: calc(25.50% - 15px);
+    height: 300px;
+    margin-bottom: 10px;
+   
+}
+   .speakerdeck-iframe2 {
+    width: 450px;
+    height: 285px;
+    text-align: right;
+    margin-left: -200px;
+    margin-top: 0px;
+ }
+   .speakerdeck-iframe3 {
+    width: 460px;
+    height: 285px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 150px;
+    margin-top: 0px;
+    
+   }
+   .speakerdeck-iframe4 {
+    width: 315px;
+    height: 245px;
+    text-align: right;
+    margin-left: -800px;
+    margin-top: -20px;
+   }   
 .overlay {
     position: fixed;
     top: 0;
@@ -199,7 +239,7 @@ h4 {
 }
 .item-caption h1 {
     color: rgb(255, 255, 255); 
-    font-size: 20px; 
+    font-size: 18px; 
     text-align: center;
     padding: 10px;
 }
@@ -234,6 +274,7 @@ a.pdf-download {
 }
 .content {
     margin-left: 0px;
+    width: 45%;
 }
 body {
     font-family: sans-serif;
@@ -262,7 +303,7 @@ body {
     text-align: center;
     margin: 0;
     color: #333;
-}
+    }
 ul {
     list-style-type: none;
     padding: 0;
