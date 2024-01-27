@@ -1,15 +1,15 @@
 .container { 
-    align-items: absolute;/
+    align-items: absolute;
     position: center;
     height: 100vh;
 }
 .content {
     margin-left: 0px; 
     padding: 2px;
-    transition:margin-left: 0.3s; 
+    transition: margin-left: 0.3s; 
 }
 .sidebar.closer { 
-width:0px;
+    width:0px;
 }
 .profile {
     text-align: center;
@@ -170,11 +170,11 @@ h5 {
     margin-right: -20px;
     order: -1;
     font-size: 14px;
-   text-align: center;
-   margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .iframe-grid {
-   align-items: center;
+    align-items: center;
 }
 .content {
     display: flex;
@@ -263,7 +263,7 @@ h5 {
     height: 10px; 
 }
 .resume-container {
-    max-width: 60px;
+    max-width: 1160px;
 }
 a.pdf-download {
     text-decoration: none;
@@ -333,7 +333,7 @@ h1 {
     margin-top: 0;
 }
 .resume-container {
-    max-width: 600px;
+    max-width: 800px;
 }
 .social-links {
     display: flex;
@@ -374,13 +374,27 @@ a.pdf-download {
 }
 h7 {
     display: flex;
-    text-align:left;  
+    text-orientation: center;
+    text-align: left;  
     font-size: 13px;
     order: -1;
     margin-left: 140px;
     margin-right: -100px;
     margin-top: 230px;
-    width: 390px;
+    width: 800px;
+    height: auto;
+    padding-block: auto;
+}
+h8 {
+    display: flex;
+    text-orientation: center;
+    text-align: left;  
+    font-size: 13px;
+    order: -1;
+    margin-left: 140px;
+    margin-right: -100px;
+    margin-top: 230px;
+    width: 800px;
     height: auto;
     padding-block: auto;
 }
@@ -423,8 +437,7 @@ h7 {
 }
    .header-navigation li:hover .submenu {
     display: flex;
-
-   }
+}
 header.sidebar {
     display: flex;
     flex-direction: column;
@@ -441,7 +454,8 @@ header.sidebar {
     width: 400px;
     z-index: 4;
     box-sizing: border-box;
-header.sidebar a {
+}
+    header.sidebar a {
     color: #fff;
     text-decoration: none;
     padding: 60px 50px;
@@ -526,4 +540,4 @@ header.website-header a {
     .vimeo-iframe {
         width: 100%; /* Adjust the width as needed */
         height: 400px; /* Adjust the height as needed */
-    }
+}
