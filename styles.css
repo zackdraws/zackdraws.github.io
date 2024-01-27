@@ -335,6 +335,9 @@ h1 {
 .resume-container {
     max-width: 800px;
 }
+ .resume-container p{
+     text-align: left
+ }
 .social-links {
     display: flex;
     justify-content: space-between;
@@ -478,13 +481,13 @@ header.website-header h1,
 header.website-header h2,
 header.website-header h3 {
     margin: 0;
-    color: #555;
+    color: #000;
 }
 header.website-header nav {
-    color: #555;
+    color: #000;
 }
 header.website-header a {
-    color: #555;
+    color: #000;
     text-decoration: none;
     font-size: 16px;
 }
