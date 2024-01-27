@@ -5,32 +5,31 @@
 		use VsCode or Emacs or some other Code editor to view a live preview of the website
 
 # Directory of Files	
-- Index.html is the main homepage and holds the info for the website
-- styles.css is for the styling of the website
-- Lightbox.js is the javascript that controls the lightbox effect
-- cd01.jpg (Files for character design) , bg01.jpg (Files for Background), fg01.jpg (Files for Sketchbook) 
-    
-* Hosting: You'll need to use a server for hosting you can use
-Github Pages or whatever you prefer that can host folders of html and CSS + JS
+	- Index.html is the main homepage and holds the info for the website
+	- styles.css is for the styling of the website
+	- Lightbox.js is the javascript that controls the lightbox effect
+## Naming Files for content in Portfolio
+-	files are named
+	- cd01.jpg (Files for character design) , bg01.jpg (Files for Background), fg01.jpg (Files for Sketchbook) 
+    and go into their respective places based on html 
+	size and gallery frame is controlled by styles.css
 
-	- This Website comes with a SideHeader and a Body For Portfolio Work
+### Body Section of Website 
 
-# Body Section of Website 
-
-## - First Header  "Animation Reel"
+#### - First Header  "Animation Reel"
 ANP.mp4 is the name of the Animation Reel and is put at the top of the website
-## - Second Header "Character Design"
+#### - Second Header "Character Design"
 Place all of your character designs in your folder and name them 
 cd01.jpg, cd02.jpg, cd03.jpg and so on- that's what my files are named and that they go in as
-## - Third Header "Backgrounds"
+#### - Third Header "Backgrounds"
 Place all of your Background in your folder and name them 
 bg01.jpg bg02.jpg bg03.jpg and so on
-## - Fourth HeaderStory Samples
+#### - Fourth HeaderStory Samples
 Place all of your Storyboard Samples in your folder and name them 
-## - Fifth Header Sketchbook Work
+#### - Fifth Header Sketchbook Work
 Place all of your in your folder and name them 
 		
-# Side Header --
+# Header --
 
 ##  Website Pages
 ### - Portfolio
@@ -42,7 +41,7 @@ Place all of your in your folder and name them
    Animation.html
 ### About Me
 	- About
-* For your aboutme file the file should be About.jpg
+		* For your aboutme file the file should be About.jpg
 ### Contact 
  - 
 ### Social Links 
@@ -70,3 +69,7 @@ Story Samples put your samples in there
 - each one is made of a gallery and filled with gallery items
 - styling can be changed in the styles.css
 - there is javascript
+
+
+# 
+For hosting the site I just used Github Pages and then domain forwarding in Squarespace
