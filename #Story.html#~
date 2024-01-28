@@ -64,7 +64,7 @@
         
         <!-- Third section -->
         <div class="content">
-            ry<h1>Chicken in Space</h1>
+            <h1>Chicken in Space</h1>
             <div class="iframe-grid">
                 <iframe class="vimeo-iframe" title="vimeo-player" src="https://player.vimeo.com/video/699849941" frameborder="0" allowfullscreen></iframe>
                 <iframe class="speakerdeck-iframe" src="https://speakerdeck.com/player/1b2d3bc65ee14eb0b7bc8cafc9dac2ee"></iframe>
