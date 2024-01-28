@@ -135,13 +135,16 @@ h1 {
     text-align: center;
     font-size: 19px; 
     margin-bottom: 20px; 
-    color: #36374f;
+    color: #000;
 }
 h3 {
     text-align: center;
     font-size: 14px;
-    color: #36374f;
-    text-decoration: underline;
+    color: #000;
+    text-decoration:;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:0 8px 16px rgba(0, 0, 0, 0,)
 }
 h {
     text-align:left;  
@@ -321,9 +324,13 @@ a {
     position: absolute;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    border: 1px solid ###ccc;
+    border-radius: 10px;
 }
 .sidebar li:hover .submenu {
     display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 .content {
     margin-left: 0px;
@@ -434,9 +441,12 @@ h8 {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #fff;
+    background-color: #ccc;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    border: 10px solid #ccc;
+    border-radius: 10px;
+    
 }
    .header-navigation li:hover .submenu {
     display: flex;
@@ -446,7 +456,7 @@ header.sidebar {
     flex-direction: column;
     align-items: center;
     background-color: #333;
-    color: #fff;
+    color: #333;
     padding: 30px;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -466,10 +476,10 @@ header.sidebar {
     transition: background-color 0.3s ease;
 }
 header.sidebar a:hover {
-    background-color: #fff; 
+    background-color: #333; 
 }
 header.website-header {
-    background-color: #fff; 
+    background-color: #33; 
     padding: 80px
     box-sizing: border-box; 
 }
@@ -540,7 +550,7 @@ header.website-header a {
     font-weight: bold;
     font-size: 16px;
 }
-    .vimeo-iframe {
+.vimeo-iframe {
         width: 100%; /* Adjust the width as needed */
         height: 400px; /* Adjust the height as needed */
 }
