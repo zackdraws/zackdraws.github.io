@@ -23,7 +23,7 @@
 }
 .profile h1, .profile h3 {
     margin: 0;
-    color: #333; /* Adjust the color as needed */
+    color: #000; /* Adjust the color as needed */
 }
 content.closer {
     margin-left:20px;
@@ -146,6 +146,19 @@ h3 {
     border-radius: 10px;
     background-color:0 8px 16px rgba(0, 0, 0, 0,)
 }
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+h4 {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    text-decoration:;
+
+
+}
 h {
     text-align:left;  
     padding: 10px;
@@ -186,18 +199,19 @@ h5 {
     flex-wrap: wrap;
     flex: 0 0 calc(33.33% - 10px);
 }
-.speakerdeck-iframe{
+    .speakerdeck-iframe{
     width: calc(25.50% - 15px);
     height: 300px;
     margin-bottom: 10px;
    
 }
-   .speakerdeck-iframe2 {
-    width: 450px;
-    height: 285px;
-    text-align: right;
-    margin-left: -200px;
-    margin-top: 0px;
+    .speakerdeck-iframe2 {
+	display: inline-block;
+	width: 960px;
+	height: 520px;
+	text-align: right;
+	margin-left: 0px;
+	margin-top: 0px;
  }
    .speakerdeck-iframe3 {
     width: 460px;
@@ -270,9 +284,6 @@ h5 {
 }
 a.pdf-download {
     text-decoration: none;
-    color: black;
-    background-color: rgba(193, 193, 223, 0.726);
-    padding: 5px 10px;
     border-radius: px;
 }
 .content {
@@ -280,6 +291,7 @@ a.pdf-download {
     width: 45%;
 }
 body {
+    background-color: rgba( 0, 0, );
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
@@ -337,8 +349,16 @@ a {
 }
 h1 {
     text-align: center;
-    margin-top: 0;
+    margin-top: 5;
+    margin-bottom: 5;
 }
+h6 {
+    color: #000;
+    font-size: 33px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
 .resume-container {
     max-width: 800px;
 }
@@ -411,7 +431,7 @@ h8 {
 #floatingGif {
     position: fixed;  
     top: 50px;        
-    left: 50px;      
+    left: 50px;     
     width: 100px;
     height: auto;
         z-index: 9999;

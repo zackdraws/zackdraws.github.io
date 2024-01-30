@@ -73,3 +73,10 @@ Story Samples put your samples in there
 
 # 
 For hosting the site I just used Github Pages and then domain forwarding in Squarespace
+
+# Styles
+
+## body 
+### format for Page Links
+ <h6><a href="Animation.html"> Animation</a></h6>
+    
