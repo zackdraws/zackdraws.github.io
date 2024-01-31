@@ -142,8 +142,11 @@ h3 {
     font-size: 18px;
     color: #000;
     text-decoration:;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    display: inline-block;
     background-color:0 8px 16px rgba(0, 0, 0, 0,)
 }
 
@@ -207,8 +210,8 @@ h5 {
 }
     .speakerdeck-iframe2 {
 	display: inline-block;
-	width: 960px;
-	height: 520px;
+	width: 1080px;
+	height: 620px;
 	text-align: right;
 	margin-left: 0px;
 	margin-top: 0px;
