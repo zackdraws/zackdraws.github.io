@@ -1,67 +1,33 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-    <style>
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            margin-right: -200px;
-        }
-
-        .sidebar {
-            margin-right: 80px;
-            padding-block: 30px;
-        }
-
-        .content {
-            display:flex;
-            margin-left: -10px;
-            max-width: 700px;
-        }
-
-        img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .pdf-download {
-            display: block;
-            text-decoration: none;
-            color: black;
-            background-color: rgba(193, 193, 223, 0.726);
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Your+Selected+Font"/>
 </head>
-<body>
-    <div class="sidebar">
+    <body>
        <header class="website-header">
          <nav class="header-navigation">
 	    <div class="profile">
-            <h1><a href="index.html"><h1>Zack Johnson </a></h1> 
-            <h3>Story - Animation - Design</h3>
-            <h3>ZackJohnsonArt@gmail.com - (949) 228-9271 </h3>
+            <h1><a href="index.html"><h1> Zack Johnson </h1>
+            <h1>Story - Animation - Design</h1>
+            <h1>ZackJohnsonArt@gmail.com - (949) 228-9271</h1>
         </div>
         <ul>
             <li><a href="index.html"><h3>Portfolio</h3>
-	      <ul class="submenu">
-                    <li><a href="CharacterDesign.html">Character Design</a></li>
-                    <li><a href="Story.html">Story</a></li>
+		<ul class="submenu">
+		   <li><a href= "ALL.html" >All Work</a></li>/
+		   <li><a href= "Story.html" >Story</a></li>
+                    <li><a href="CharacterDesign.html">Character
+                    Design</a></li>
                     <li><a href="Animation.html">Animation</a></li>
                 </ul>
             </li>
-            <li><a href="Resume.html"> <h3>About Me/Resume</h3></a></li>
-            <li><a href="mailto:zackjohnsonart@gmail.com"> <h3> Contact</h3></a></li>
+            <li><a href="Resume.html"> <h3>About Me/
+            Resume</h3></a></li>
+            <li><a href="mailto:zackjohnsonart@gmail.com"> <h3>
+            Contact</h3></a></li>
             <div class="social-links">
                 <a class="social-link" href="https://www.instagram.com/zackdraws">
                     <img src="insta.png" alt="Instagram">
@@ -70,20 +36,24 @@
                     <img src="twitter.png" alt="twitter">
                 </a>
                 <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
-                    <img src="linkedin.png" alt="linkedin">
-                </a>	
+                 <img src="linkedin.png" alt="linkedin">
+                </a>
             </div>
         </ul>
-</nav>
-    <div class="resume-container">
+    </nav>
+    
+    <div class="video-container">
+    
+    <div>
+    
+     
+<div>
     
     
         <h1>About Me</h1>
-        <div class="h7">
-            <a href="Zack_Johnson_Resume.pdf" target="_blank" download class="pdf-download"> PDF Copy of my Resume</a>
-	    <div class="h8">
-	      <div class="resume-container">
-                <p>
+
+	      <div id= "text-box">
+		 <p>
                 Hello, and welcome to my portfolio site - my name is Zack Johnson, I am a Animator and Storyboard Artist based in Irvine, California. I've worked on independent and commercial projects and am currently teaching at the Artist Lab in Irvine, California. 
                 <p>
                 In 2020 I recieved my BFA in Animation from the Laguna College of Art and Design. In my freetime I enjoy watching movies, cooking and reading new books.    
@@ -96,12 +66,12 @@
                 <p>
 
                 </div>
-
-<div class="sideimg">
-                    <img src="p.jpg">
-                </div>
-                    <img src="Zack_Johnson_Resume.jpg" alt="Large Image">
-
-	</div>
-</body>
+		  
+	    </div>
+<div id="pdf-container">
+  <iframe id="pdf-viewer" src="Zack_Johnson_Resume.pdf"></iframe>
+  </div>
+   <a href="Zack_Johnson_Resume.pdf" target="_blank" download class="pdf-download"> PDF Copy of my Resume</a>
+      </div>
+    </body>
 </html>
