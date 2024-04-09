@@ -16,11 +16,10 @@
         <ul>
             <li><a href="index.html"><h3>Portfolio</h3>
 		<ul class="submenu">
-		   <li><a href= "ALL.html" > Everything</a></li>/
-		   <li><a href= "Story.html" >Story</a></li>
-                    <li><a href="CharacterDesign.html">Character
-                    Design</a></li>
-                    <li><a href="Animation.html">Animation</a></li>
+		   <li><a href= "index.html"> Portfolio (All)</a></li>
+		   <li><a href= "Story.html" >Story </a></li>
+                   <li><a href= "CharacterDesign.html">Character Design</a></li>
+                   <li><a href= "Animation.html">Animation</a></li>
                 </ul>
             </li>
             <li><a href="Resume.html"> <h3>About Me/
@@ -52,20 +51,19 @@
              src="ANP.mp4" type="video/mp4">
             </video>
 </div>
-    <h3><a href=Story.html>Story Portfolio (click here for more</a></h3>
-  <div class="gallery-frame">
-    <div class="gallery">
-
+<h3><a href=Story.html>Story Portfolio</a></h3>
+<div>
       <iframe class="speakerdeck-iframe"
  	      src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1"></iframe>
       <iframe class="speakerdeck-iframe"
 	      src="https://speakerdeck.com/player/c86241e435e14d06a63a7f601ee95fbd"></iframe>
       <iframe class="speakerdeck-iframe"
       src="https://speakerdeck.com/player/1b2d3bc65ee14eb0b7bc8cafc9dac2ee"></iframe>
-</div>
-	<h3><a href=CharacterDesign.html> Character Design</a></h3>
-	<div class="gallery-frame">
 
+</div>
+	<h3><a href="CharacterDesign.html"> Character Design</a></h3>
+</div>
+	<div class="gallery-frame">
 	  <div class="gallery">
 
 	    <div class="gallery-item">
