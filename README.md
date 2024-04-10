@@ -7,62 +7,15 @@
 # Directory of Files	
 	- Index.html is the main homepage and holds the info for the website
 	 - my index page opens to images of the page
-	- whatever code is put into index.html will be the first page that the site visits
-	- styles.css is for the styling of the website
-	- Lightbox.js is the javascript that controls the lightbox effect
-
- - About.jpg 
- photo for about me
- - Animation.html
- Page for Animation Portfolio
- - Backgrounds.html
- Page for Backgrounds Portfolio
- - CharacterDesign.html
- Page for Character Design Portfolio
- - Resume.html
- Page for Resume Portfolio
- - story-backup.html
-
- - Story not index.html
-
- - Story.html
-
- - README.md
-
- - Characterdesign.txt
-
- - closer.js 
-
- - resume_image.html
-
- - twitter.png
-
- - insta.png
-
- - linkedin.png 
-
- - big_image.jpg
-
- - p.jpg
-
- - .git
-
- - code_texts
-
- - for later
-
- - for later
-
- - Past Resume Examples
-
- - Visual Development Portfolio
-
- - DANSEMACABRE_ZJ_SC_01_V5.pdf
-
- - ANP.mp4
-
- - SAS_SC_061.pdf
-
+	
+	bg- holds background files
+	cd- holds character designs
+	fg- holds sketchbook pages
+	sb- holds storyboarding samples
+	
+	- index.html = home
+	- styles.css = website style 
+	- Lightbox.js = javascript for 'lightbox' effect
 
 ## Naming Files for content in Portfolio
 
