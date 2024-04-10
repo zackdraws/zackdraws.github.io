@@ -6,6 +6,8 @@
 
 # Directory of Files	
 	- Index.html is the main homepage and holds the info for the website
+	 - my index page opens to images of the page
+	- whatever code is put into index.html will be the first page that the site visits
 	- styles.css is for the styling of the website
 	- Lightbox.js is the javascript that controls the lightbox effect
 
@@ -65,6 +67,7 @@
 ## Naming Files for content in Portfolio
 
 -	files are named
+
 	- cd01.jpg (Files for character design) 
 	
 	- bg01.jpg (Files for Background), 
@@ -131,6 +134,10 @@ All character design pages are labeled as cd01.jpg cd02.jp cd03.jpg and so on
  
 ### Story Samples -
 Story Samples put your samples in there 
+
+- have as pdf sb1.pdf
+              sb2.pdf
+              sb3.pdf
 
 ### Sketchbook -
 
