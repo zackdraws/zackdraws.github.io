@@ -150,8 +150,8 @@ h3 {
     font-size: 18px;
     color: #000;
     text-decoration: ;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 0px solid #ccc;
+    border-radius: 0px;
     padding: 10px;
     max-width: 200px;
     display: inline-block;
