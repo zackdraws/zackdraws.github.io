@@ -41,7 +41,7 @@ content.closer {
     z-index: 999;
 }
 #lightbox img {
-    max-width: 80%;
+    max-width: 100%;
     max-height: 80vh;
     margin: 0 auto;
     margin-top: 10vh;
@@ -87,32 +87,30 @@ close
     justify-content: center;
 }
 .gallery-frame { 
-    max-width: 200%; 
+    max-width: 100%; 
     margin: auto; 
-    padding: 1px; 
+    padding: ; 
     box-sizing: border-box;
     float: left;
 }
 .gallery {
     display: flex;
     flex-direction: column;
-        gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(360px, 5fr ));
-    gap: 10px;
     max-width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center; 
 }
 .gallery-item{
-    
     text-align: center;
     flex: 2 1 calc(33.33% - 20px); 
     max-width: 50%; 
-    width: 100%;
-    max-height: auto;
-max-height: auto;
-    overflow: hidden;
+    width: 50%
+	   max-height: 100%;
+    text-align: center; 
+    overflow: hidden; 
     position: relative;
     cursor: pointer;
     transition: transform 0.2s;
@@ -293,7 +291,7 @@ text-box {
 }
 .social-links {
     display:flex;
-    gap:10px;
+    gap: 20px;
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
