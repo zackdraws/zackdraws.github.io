@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Your Selected Font', sans-serif;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .header-title {
+            position: fixed;
+            top: 40%; /* Adjusted position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            color: black;
+            z-index: 2;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .image-grid a {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            position: relative; /* Added position relative */
+        }
+        .image-grid a:hover {
+            background-color: #f0f0f0;
+        }
+        .preview {
+            display: none;
+            position: absolute; /* Changed to absolute */
+            top: calc(100% + 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border: 2px solid #ccc;
+            padding: 20px;
+            z-index: 1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 1700px;
+            height: 1700px;
+            overflow: auto;
+        }
+        .image-grid a:hover .preview { /* Changed selector to target .preview inside hovered link */
+            display: block;
+        }
+        .preview p {
+            margin: 0;
+            line-height: 1.6;
+        }
+        .preview h1, .preview h2, .preview h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header-title">Zack Johnson</h1>
+        
+    <div class="image-grid">
+        <a href="Animation.html">Animation<div class="preview" id="preview1"></div></a>
+        <a href="Story.html">Story<div class="preview" id="preview2"></div></a>
+        <a href="CharacterDesign.html">Character Design<div class="preview" id="preview3"></div></a>
+        <a href="everything.html">All Work<div class="preview" id="preview4"></div></a>
+    </div>
+    
+    <script>
+        const previews = document.querySelectorAll('.preview');
+
+        previews.forEach((preview, index) => {
+            const link = document.querySelectorAll('.image-grid a')[index].getAttribute('href');
+            fetch(link)
+                .then(response => response.text())
+                .then(html => {
+                    preview.innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching preview:', error));
+        });
+    </script>
+   
+</body>
+</html>
