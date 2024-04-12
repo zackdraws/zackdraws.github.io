@@ -371,7 +371,7 @@ a {
     position: absolute;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
-    border: 1px solid ###ccc;
+    border: 1px solid ###fff;
     border-radius: 10px;
 }
 .sidebar li:hover .submenu {
@@ -488,7 +488,7 @@ h8 {
 }
 .header-navigation a {
     text-decoration:none;
-    color: #333;
+    color: #000;
     font-weight: bold;
     font-size: 16px;
 }
@@ -496,10 +496,10 @@ h8 {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: #ccc;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border: 10px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 1px 0px rgba(, 0, 0, 0.00);
+    z-index: 5;
+    border: 10px solid #fff;
     border-radius: 10px;
     
 }
@@ -510,8 +510,8 @@ header.sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #333;
-    color: #333;
+    background-color: #fff
+    color: #fff;
     padding: 30px;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -573,15 +573,15 @@ header.website-header a {
 }
 .header-navigation a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
     font-size: 16px;
 }
 header.website-header nav {
-    color: #555; 
+    color: #fff; 
 }
 header.website-header a {
-    color: #555;
+    color: #;
     text-decoration: none;
 }
 .header-navigation {
