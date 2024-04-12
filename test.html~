@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font"/>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+            grid-gap: 10px; /* Adjust the gap between images */
+            position: relative; /* Positioning context for previews */
+        }
+        .image-grid img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .preview {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+            width: 300px; /* Adjust preview width as needed */
+        }
+        /* Adjusted CSS selector to target hover on the <a> tag */
+        .image-grid a:hover .preview {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="website-header">
+        <!-- Your header content here -->
+    </header>
+    
+    <div class="image-grid">
+        <a href="Animation.html">
+            <img src="fp/fp_ani.jpeg" alt="Image 1">
+            <div class="preview" id="preview1"></div>
+        </a>
+        <a href="Story.html">
+            <img src="fp/fp_sp.jpeg" alt="Image 2">
+            <div class="preview" id="preview2"></div>
+        </a>
+        <a href="CharacterDesign.html">
+            <img src="fp/fp_cd.jpeg" alt="Image 3">
+            <div class="preview" id="preview3"></div>
+        </a>
+        <a href="everything.html">
+            <img src="fp/fp_all_work.jpeg" alt="Image 4">
+            <div class="preview" id="preview4"></div>
+        </a>
+    </div>
+    
+    <script>
+        // JavaScript to fetch and display HTML content within previews
+        const previews = document.querySelectorAll('.preview');
+
+        previews.forEach((preview, index) => {
+            const link = document.querySelectorAll('.image-grid a')[index].getAttribute('href');
+            fetch(link)
+                .then(response => response.text())
+                .then(html => {
+                    preview.innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching preview:', error));
+        });
+    </script>
+   
+</body>
+</html>
