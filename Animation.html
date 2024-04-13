@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    <style>
+        header.website-header {
+            background-color: #33;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 999; 
+        }
+
+        .header-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-navigation li {
+            margin-right: 20px;
+        }
+
+        .header-navigation a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile h1,
+        .profile h3 {
+            margin: 0;
+            color: #fff;
+        }
+    </style>
 </head>
-    <body>
-       <header class="website-header">
-         <nav class="header-navigation">
-	    <div class="profile">
-            <h><a href="index.html"><h1>Zack Johnson </h1> </a></h1> 
-            <h1>Story - Animation - Design</h1>
-            <h1>ZackJohnsonArt@gmail.com - (949) 228-9271 </h1>
+<body>
+<header class="website-header">
+    <nav class="header-navigation">
+        <div class="profile">
+            <a href="index.html"><h1>Zack Johnson </h1></a>
+            <h3>Story - Animation - Design</h3>
+            <h3>ZackJohnsonArt@gmail.com - (949) 228-9271</h3>
         </div>
         <ul>
+	  
             <li><a href="index.html"><h3>Portfolio</h3>
 		<ul class="submenu">
 		    <li><a href="Animation.html">Animation</a></li>
@@ -56,3 +110,5 @@
 	    <h1> Duet - <h1>
 	    <iframe title="vimeo-player" src="https://player.vimeo.com/video/699854136?h=c93b7359ef" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 	    
+</body>
+</html>

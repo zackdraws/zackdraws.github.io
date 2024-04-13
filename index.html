@@ -3,13 +3,6 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font"/>
-    <!DOCTYPE html>
-<html lang="en">
-    <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-</head>
-    <body>
        <header class="website-header">
          <nav class="header-navigation">
 	    <div class="profile">
@@ -48,7 +41,7 @@
             top: 350px;
 	    display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 50px; 
+            grid-gap: 10px; 
             position: relative;
         }
         .image-grid img {
@@ -114,7 +107,6 @@
     <script>
       
         const previews = document.querySelectorAll('.preview');
-
         previews.forEach((preview, index) => {
             const link = document.querySelectorAll('.image-grid a')[index].getAttribute('href');
             fetch(link)
@@ -125,6 +117,5 @@
                 .catch(error => console.error('Error fetching preview:', error));
         });
     </script>
-   
-</body>
+   </body>
 </html>
