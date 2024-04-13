@@ -45,20 +45,24 @@
 
 <style>
         .image-grid {
-            display: grid;
+            top: 250px;
+	    display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px; 
+            grid-gap: 11px; 
             position: relative;
         }
         .image-grid img {
-            max-width: 100%;
+            max-width: 22%;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%)
             height: auto;
             display: block;
         }
         .preview {
             display: none;
             position: fixed;
-            top: 80%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: white;
@@ -66,8 +70,8 @@
             padding: 20px;
             z-index: 1;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 1100px; 
-            height: 1100px; 
+            width: 1600px; 
+            height: 1000px; 
             overflow: auto; 
         }
  
@@ -92,19 +96,19 @@
     
     <div class="image-grid">
         <a href="Animation.html">
-            <img src="fp/fp_ani.jpeg" alt="Image 1">
+            <img src="fp/fp_ani.png" alt="Image 1">
             <div class="preview" id="preview1"></div>
         </a>
         <a href="Story.html">
-            <img src="fp/fp_sp.jpeg" alt="Image 2">
+            <img src="fp/fp_sp.png" alt="Image 2">
             <div class="preview" id="preview2"></div>
         </a>
         <a href="CharacterDesign.html">
-            <img src="fp/fp_cd.jpeg" alt="Image 3">
+            <img src="fp/fp_cd.png" alt="Image 3">
             <div class="preview" id="preview3"></div>
         </a>
         <a href="backgrounddesign.html">
-            <img src="fp/fp_bg.jpg" alt="Image 4">
+            <img src="fp/fp_bg.png" alt="Image 4">
             <div class="preview" id="preview4"></div>
         </a>
     </div>

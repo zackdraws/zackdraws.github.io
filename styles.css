@@ -607,5 +607,13 @@ header.website-header a {
 }
 .vimeo-iframe {
         width: 100%; 
-        height: 400px; /* Adjust the height as needed */
+        height: 400px;
 }
+#floatingGif {
+    position: fixed; 
+    top: 10px; 
+    left: 140px; 
+    width: 600px;
+    height: 112px;
+    z-index: 9999;
+ }
