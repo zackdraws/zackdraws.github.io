@@ -1,0 +1,38 @@
+    <div class="image-grid">
+        <a href="Animation.html">
+            <img src="fp/fp_ani.png" alt="Image 1">
+            <div class="preview" id="preview1"></div>
+        </a>
+        <a href="Story.html">
+            <img src="fp/fp_sp.png" alt="Image 2">
+            <div class="preview" id="preview2"></div>
+        </a>
+        <a href="CharacterDesign.html">
+            <img src="fp/fp_cd.png" alt="Image 3">
+            <div class="preview" id="preview3"></div>
+        </a>
+        <a href="backgrounddesign.html">
+            <img src="fp/fp_bg.png" alt="Image 4">
+            <div class="preview" id="preview4"></div>
+        </a>
+    </div>
+    
+    <script>
+      
+   </body>
+</html>
+
+<script>
+
+
+        const previews = document.querySelectorAll('.preview');
+        previews.forEach((preview, index) => {
+            const link = document.querySelectorAll('.image-grid a')[index].getAttribute('href');
+            fetch(link)
+                .then(response => response.text())
+                .then(html => {
+                    preview.innerHTML = html;
+                })
+                .catch(error => console.error('Error fetching preview:', error));
+        });
+    </script>

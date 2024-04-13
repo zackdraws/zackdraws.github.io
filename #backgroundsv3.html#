@@ -12,7 +12,6 @@
             <h1>Story - Animation - Design</h1>
             <h1>ZackJohnsonArt@gmail.com - (949) 228-9271 </h1>
         </div>
-        <ul>
             <li><a href="index.html"><h3>Portfolio</h3>
 	      <ul class="submenu">
                     <li><a href="Animation.html">Animation</a></li>
@@ -36,12 +35,11 @@
             </div>
         </ul>
 </nav>
-
-<html>
-  <body>
+            <div class="video-container">
+<div>        
         
                 <h1> Background Designs</h1> 
-	<div>	
+		</div>
                 <div class="gallery-frame">
                     <div class="gallery">
                 <div class="gallery-item">
@@ -64,9 +62,9 @@
                 </div>
                 <div class="gallery-item">
                     <img src="bg/bg7.jpg" alt="5" data-src="bg/bg7.jpg">
-</html>
-</body>
-		</div>
+                </div>
+
+                </div>
                 <div id="lightbox" class="hidden">
                     <span class="close-button" onclick="closeLightbox()">&times;</span>
                     <img id="lightbox-image" src="" alt="Lightbox Image">
@@ -83,6 +81,6 @@
                         sidebar.classList.toggle("closer");
                         content.classList.toggle("closer");
                     });
-                  </video>
-</body>
-</html>
+                          </video>
+            </body>
+            </html>

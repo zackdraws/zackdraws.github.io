@@ -41,16 +41,17 @@
             top:0px;
 	    display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px; 
+            grid-gap: -40px; 
             position: relative;
         }
         .image-grid img {
-            max-width: 24%;
+            max-width: 25%;
 	    position: absolute;
 	    top: 50%;
 	    transform: translateY(-50%)
             height: auto;
             display: block;
+	    grid-gap: -20px;
         }
         .preview {
             display: none;
@@ -88,34 +89,24 @@
     <div class="image-grid">
         <a href="Animation.html">
             <img src="fp/fp_ani.png" alt="Image 1">
-            <div class="preview" id="preview1"></div>
+            <div class="" id="1"></div>
         </a>
         <a href="Story.html">
             <img src="fp/fp_sp.png" alt="Image 2">
-            <div class="preview" id="preview2"></div>
+            <div class="" id="2"></div>
         </a>
         <a href="CharacterDesign.html">
             <img src="fp/fp_cd.png" alt="Image 3">
-            <div class="preview" id="preview3"></div>
+            <div class="" id="3"></div>
         </a>
         <a href="backgrounddesign.html">
             <img src="fp/fp_bg.png" alt="Image 4">
-            <div class="preview" id="preview4"></div>
+            <div class="" id="4"></div>
         </a>
     </div>
     
     <script>
       
-        const previews = document.querySelectorAll('.preview');
-        previews.forEach((preview, index) => {
-            const link = document.querySelectorAll('.image-grid a')[index].getAttribute('href');
-            fetch(link)
-                .then(response => response.text())
-                .then(html => {
-                    preview.innerHTML = html;
-                })
-                .catch(error => console.error('Error fetching preview:', error));
-        });
     </script>
    </body>
 </html>
