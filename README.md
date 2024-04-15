@@ -76,6 +76,10 @@ Index is needed for the homepage of the website
 #### Styles.css
 Styles controls the css of website
 
+for previews put             <div class="preview" id="preview1"></div> under each image grid image
+    ex --->  <img src="fp/fp_ani.png" alt="Image 1">
+            <div class="preview" id="preview1"></div>
+        </a>
 # JS
 #### Lightbox.js
 Lightbox control clicking for previews of website

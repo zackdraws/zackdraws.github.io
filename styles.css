@@ -629,3 +629,48 @@ header.website-header a {
     height: 112px;
     z-index: 9999;
  }
+
+        .image-grid {
+            top:0px;
+	    display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: -40px; 
+            position: relative;
+        }
+        .image-grid img {
+            max-width: 25%;
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%)
+            height: auto;
+            display: block;
+	    grid-gap: -20px;
+        }
+        .preview {
+	    display: none;
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid #ccc; 
+            padding: 20px;
+            z-index: 1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	    width: auto;
+            height: auto; 
+	    max-height: 900px;
+	    overflow-y: auto;
+            overflow: hidden;
+
+        }
+         .image-grid a:hover .preview {
+            display: block;
+        }
+         .preview p {
+            margin: 0; 
+            line-height: 1.6; 
+        }
+        .preview h1, .preview h2, .preview h3 {
+            margin-top: 0; 
+        }
