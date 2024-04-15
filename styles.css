@@ -1,3 +1,8 @@
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
 .container { 
     align-items: absolute;
     position: center;
@@ -27,7 +32,6 @@
 }
 content.closer {
     margin-left:20px;
-    
 }
 #lightbox {
     display: none;
@@ -87,31 +91,31 @@ close
     justify-content: center;
 }
 .gallery-frame { 
-    max-width: 100%; 
-    margin: auto; 
+    max-width: 150%; 
     padding: ; 
     box-sizing: border-box;
     float: left;
+
 }
 .gallery {
     display: flex;
     flex-direction: column;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(360px, 5fr ));
-    max-width: 100%;
+    max-width: 160%;
     justify-content: center;
     text-align: center;
     align-items: center; 
 }
 .gallery-item{
     text-align: center;
-    flex: 2 1 calc(33.33% - 20px); 
-    max-width: 50%; 
-    width: 50%
-	   max-height: 100%;
+    flex: 2 1 calc(66% - 40px); 
+    max-width: 60%; 
+    width: 30%
+    max-height: 100%;
     text-align: center; 
     overflow: hidden; 
-    position: relative;
+    position: auto; ;
     cursor: pointer;
     transition: transform 0.2s;
 } 
@@ -147,10 +151,17 @@ max-width: 100%;
 }
 h1 {
     text-align: center;
-    font-size: 19px; 
-    margin-bottom: 20px; 
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom:px; 
     color: #000;
 }
+h9 {
+    text-align: center;
+    font-size: 10px;
+    margin-botom: 20px;
+    color: #000
+ }
 h3 {
     text-align: center;
     font-size: 18px;
@@ -163,7 +174,6 @@ h3 {
     display: inline-block;
     background-color:0 8px 16px rgba(0, 0, 0, 0,)
 }
-
 figcaption {
     text-align: center;
     margin-top: 10px;
@@ -173,8 +183,6 @@ h4 {
     font-size: 14px;
     color: #000;
     text-decoration:;
-
-
 }
 h {
     text-align:left;  
@@ -382,11 +390,6 @@ a {
 .content {
     margin-left: 0px;
 }
-h1 {
-    text-align: center;
-    margin-top: 5;
-    margin-bottom: 5;
-}
 h6 {
     color: #000;
     font-size: 33px;
@@ -463,6 +466,8 @@ h8 {
     height: auto;
     padding-block: auto;
 }
+
+
 #floatingGif {
     position: fixed;  
     top: 50px;        
@@ -536,7 +541,14 @@ header.sidebar a:hover {
 header.website-header {
     background-color: #33; 
     padding: 80px
-    box-sizing: border-box; 
+	     box-sizing: border-box;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000; 
+    top: -20px; 
+    
 }
 .header-titles {
     display: flex;

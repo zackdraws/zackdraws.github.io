@@ -62,6 +62,9 @@ Place all of your Storyboard Samples in your folder and name them  there full na
 
 
 ##  Website Pages
+#### Index.html
+	first code block part is the name index and title
+
 ### - Portfolio
    - CharacterDesign
    CharacterDesign.html
