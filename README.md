@@ -1,11 +1,14 @@
-    ## Hello, read this file for a description on how this website works ## 
+## 1. About 
+Hello, read this file for a description on how this website works 
 		
-		## 1. Download the Folder of the code - replace all of my files with your own files 
-		Place the folder into a place that's easy to find 
-		
-		Use VsCode or Emacs or some other Code editor to view a live preview of the website.
+##  2. Folder is made of 
+portfolio samples and html and styles.css that make a website
 
-# Directory of Files	
+if you want you can make a fork of this to make your own website replacing my images with your own.
+
+as long as the file names are the same files should go into website easily as long as you use a code editor like VSCode or Emacs and git to upload version changes
+		
+### 2.a Files	
 	- Index.html is the homepage 
 	 - my index page opens to four previews of the rest of the website to pick from
 	
@@ -22,7 +25,7 @@
 	- styles.css = website style 
 	- Lightbox.js = javascript for 'lightbox' effect
 
-## Naming Files for content in Portfolio
+#### 2.ab Naming Files for content in Portfolio
 
 -	files are named
 
@@ -36,48 +39,29 @@
 	as written in each html page
 
 
-
-### Body Section of Website 
-
-#### - First Header  "Animation Reel"
-ANP.mp4 is the name of the Animation Reel and is put at the top of the website
-
-
-#### - Second Header "Character Design"
-Place all of your Character Design in your folder and name them 
-cd01.jpg cd02.jpg cd03.jpg and so on
-
-
-#### - Third Header "Backgrounds"
-Place all of your Background in your folder and name them 
-bg01.jpg bg02.jpg bg03.jpg and so on
-
-#### - Fourth HeaderStory Samples
-Place all of your Storyboard Samples in your folder and name them  there full name and then rename that inside of the code
-
-
-
-		
-
-
-
-##  Website Pages
+## 2. Website Pages
+### Main
 #### Index.html
-	first code block part is the name index and title
+Index is needed for the homepage of the website
+#### Styles.css
+Styles controls the css of website
+#### Lightbox.js
+Lightbox control clicking for previews of website
 
-### - Portfolio
-   - CharacterDesign
-   CharacterDesign.html
-   - Story
-   Story.html
-   - Animation
-   Animation.html
+### - Portfolio -
+ 
+ CharacterDesign.html
+ - Scroll Down Gallery 
+ Story
+ - Speakerdeck samples 
+ Animation
+ - animation reel and other work
 
 ### About Me
 	- About
 		* For your aboutme file the file should be About.jpg
 ### Contact 
- - 
+ 
 ### Social Links 
  - Instagram
  - Twitter
