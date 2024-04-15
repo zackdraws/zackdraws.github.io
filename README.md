@@ -1,7 +1,7 @@
 ##  2. This Project is made of
  Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
 
-### 2.a Files	
+### 2. a Files	
 
  - Index.html is the homepage 
 
@@ -16,7 +16,7 @@
 	
  - Lightbox.js = javascript for 'lightbox' effect
 
-#### 2.ab Naming Files for content in Portfolio
+#### 2. ab Naming Files for content in Portfolio
 
 -	files are named
 
