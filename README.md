@@ -1,29 +1,20 @@
-## 1. About 
-Hello, read this file for a description on how this website works 
-		
-##  2. Folder is made of 
-portfolio samples and html and styles.css that make a website
+##  2. This Project is made of
+ Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
 
-if you want you can make a fork of this to make your own website replacing my images with your own.
-
-as long as the file names are the same files should go into website easily as long as you use a code editor like VSCode or Emacs and git to upload version changes
-		
 ### 2.a Files	
-	- Index.html is the homepage 
-	 - my index page opens to four previews of the rest of the website to pick from
+
+ - Index.html is the homepage 
+
+	- Index page opens to four previews of the rest of the website to pick from
 	
-	Animation - Reel is labeled as ANP.mp4 
-	Story Portfolio 
-	files for this page can be found in the sb folder
-	Character Design
-	files for this page can be found inside of the cd folder
-	Background and Viz Dev
-	 files for this page can be found inside of the bg folder
-
-
-
-	- styles.css = website style 
-	- Lightbox.js = javascript for 'lightbox' effect
+	Animation Reel (ANP.mp4 in file directory)
+	Story Portfolio (PDFs in file directory
+	Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
+	Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
+	
+ - styles.css = website style 
+	
+ - Lightbox.js = javascript for 'lightbox' effect
 
 #### 2.ab Naming Files for content in Portfolio
 
@@ -43,6 +34,9 @@ as long as the file names are the same files should go into website easily as lo
 ### Main
 #### Index.html
 Index is needed for the homepage of the website
+#### backgrounddesigns.html
+#### characterdesigns.html
+#### story.html
 #### Styles.css
 Styles controls the css of website
 #### Lightbox.js
