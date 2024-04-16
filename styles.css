@@ -164,13 +164,12 @@ h9 {
  }
 h3 {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     color: #000;
-    text-decoration: ;
+    text-decoration: cente;
     border: 0px solid #ccc;
-    border-radius: 0px;
     padding: 10px;
-    max-width: 200px;
+    max-width: 145px;
     display: inline-block;
     background-color:0 8px 16px rgba(0, 0, 0, 0,)
 }
@@ -222,14 +221,19 @@ text-box {
  padding: 20px;
  background-color: #f0f0f0:
 }
- #pdf-container {
-            flex: 1;
+#pdf-viewer {
+        z-index: 9999;
+
+     position: center;
+     width: 800px;
+     height: 800px; 
+     justify-content: center; 
 }
-        #pdf-viewer {
-            width: 100%;
-            height: 100vh;
+
+
   }	
 .content {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
