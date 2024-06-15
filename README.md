@@ -1,19 +1,17 @@
-title: Portfolio Site                                                          
-# Portfolio Work, 
-HTML, Styles.css and JS which together make a portfolio website.
+# Portfolio Site Project 
+Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work
+
 # Introduction: 
-This was a personal project to make a site of my work and learn a little on how to code. The index.html is the homepage. The Styles.css has all of the settings for how the html is displayed. 
+ This was a personal project to make a portfolio site of to present my work. 
+ The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
 
 ## - Index.html 
-This is the first page that you visit when you visit the site 
-
-
-	- Index page opens to four previews of the rest of the website to pick from
-	
-### Animation Reel (ANP.mp4 in file directory)
-### Story Portfolio (PDFs in file directory
-### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
-### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
+- This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
+### Pages 
+#### Animation Reel (ANP.mp4 in file directory)
+#### Story Portfolio (PDFs in file directory
+#### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
+#### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
 
 # Website Styling
 ### Styles.css
@@ -26,7 +24,7 @@ For the lightbox feature to work I just used the lightbox js and it connects thr
         - Lightbox.js = javascript for 'lightbox' effect
   
 # HTML-  Naming Files in Portfolio
-The files in html are labeled as
+My Portfolio images are in the folders /cd /bg and /fg and labeled with 01, 02, 03 after whatever are files are in those folders go into the website once they're uploaded to github
 
 	- cd01.jpg (Files for character design) 
 	
@@ -45,7 +43,7 @@ S for Shared
 0 for Art 
 A for Animation
 
-#  ANP.mp4 is my reel
+-  ANP.mp4 is my reel
 
 
 ### TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box 01/]]
@@ -66,6 +64,8 @@ A for Animation
 ##### TODO 8- Lifting started <2023-01-05>
 ### TODO 9- Skateboarding   [[C:\S\0\A\2023\Skateboarding_06_06\]]
 ##### TODO 9- Skateboarding started <2023-06-06>
+
+
 
 ## Backgrounddesigns.html
  - Scroll Down Gallery 
@@ -97,6 +97,7 @@ A for Animation
 ### Deadline Character Concept
 ### Deadline Expression Sheet
 ### 
+
 ## Story
 
 - Speakerdeck samples 
