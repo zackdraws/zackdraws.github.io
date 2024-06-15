@@ -1,8 +1,11 @@
 title: Portfolio Site                                                          
-# Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
-# Introduction: This was a personal project to make a site of my work and learn a little on how to code. The index.html is the homepage. The Styles.css has all of the settings for how the html is displayed. 
+# Portfolio Work, 
+HTML, Styles.css and JS which together make a portfolio website.
+# Introduction: 
+This was a personal project to make a site of my work and learn a little on how to code. The index.html is the homepage. The Styles.css has all of the settings for how the html is displayed. 
 
-## - Index.html is the first page that you visit when you visit the site 
+## - Index.html 
+This is the first page that you visit when you visit the site 
 
 
 	- Index page opens to four previews of the rest of the website to pick from
@@ -46,33 +49,26 @@ A for Animation
 
 
 ### TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box 01/]]
-#### TODO 1- Chicken
+##### TODO 1- Chicken
 ### TODO 2- Dialogue Scene [[file:c://S/0/A/]]
-#### TODO 2- Dialogue Scene started 
+##### TODO 2- Dialogue Scene started 
 ### TODO 3- DMO [[file:c://S/0/A/2022/DMO]] 
-#### TODO 3- DMO started
+##### TODO 3- DMO started
 ### TODO 4- Hand Wave [[file:c://S/0/A/]]
 
 ### TODO 5- Chicken going into Box [[C:\S\0\A\2020\Chicken Box 02]]
 
 ### TODO 6- Singing   [[file:c://S/0/A/2020/Lazy Moon]]
-#### TODO 6- Singing started <2020-11-11>
+##### TODO 6- Singing started <2020-11-11>
 ### TODO 7- Blinking   [[file:c://S/0/A/2022/Animation_Warm_Up_06_07_22_Blink_06_07]]
-#### TODO 7- Blinking started <2022-06-07>
+##### TODO 7- Blinking started <2022-06-07>
 ### TODO 8- Lifting   [[c:/S/0/A/2024/AN_01_05_Chracter_Lifting]]
-#### TODO 8- Lifting started <2023-01-05>
+##### TODO 8- Lifting started <2023-01-05>
 ### TODO 9- Skateboarding   [[C:\S\0\A\2023\Skateboarding_06_06\]]
-#### TODO 9- Skateboarding started <2023-06-06>
-### TODO 10
-### TODO 11
-
-### Index.html
-
-Index is needed for the homepage of the website
-
+##### TODO 9- Skateboarding started <2023-06-06>
 
 ## Backgrounddesigns.html
-# - Scroll Down Gallery 
+ - Scroll Down Gallery 
 ### Three Little Pigs Background
 ### Hand Studio 
 ### Hand Study
@@ -82,7 +78,7 @@ Index is needed for the homepage of the website
 ### Walkway to Artist's House
 
 ## - CharacterDesign.html
-# - Scroll Down Gallery 
+ - Scroll Down Gallery 
 ### HI Dance Scene
 ### Steve
 ### Sally
@@ -107,7 +103,7 @@ Index is needed for the homepage of the website
 
 ### About Me
 - About
-# For your aboutme file the file should be About.jpg
+#### For your aboutme file the file should be About.jpg
 
 ### Contact 
 #### Social Links 
