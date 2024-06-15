@@ -1,5 +1,5 @@
-#+title: Portfolio Site                                                          
-# Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
+title: Portfolio Site                                                          
+* Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
 * Introduction: This was a personal project to make a site of my work and learn a little on how to code. The index.html is the homepage. The Styles.css has all of the settings for how the html is displayed. 
 
 ** - Index.html is the first page that you visit when you visit the site 
@@ -77,7 +77,7 @@ Index is needed for the homepage of the website
 
 
 ** Backgrounddesigns.html
-# - Scroll Down Gallery 
+* - Scroll Down Gallery 
 *** Three Little Pigs Background
 *** Hand Studio 
 *** Hand Study
@@ -87,7 +87,7 @@ Index is needed for the homepage of the website
 *** Walkway to Artist's House
 
 ** - CharacterDesign.html
-# - Scroll Down Gallery 
+* - Scroll Down Gallery 
 *** HI Dance Scene
 *** Steve
 *** Sally
@@ -112,7 +112,7 @@ Index is needed for the homepage of the website
 
 *** About Me
 - About
-# For your aboutme file the file should be About.jpg
+* For your aboutme file the file should be About.jpg
 
 *** Contact 
 **** Social Links 
