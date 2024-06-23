@@ -164,7 +164,7 @@ h9 {
  }
 h3 {
     text-align: center;
-    margin-left: 100px; 
+    margin-left: 0px; 
     font-size: 22px;
     margin-top: 2px;
     margin-bottom:px; 
@@ -174,7 +174,29 @@ h3 {
     padding: 10px;
     max-width: 145px;
     background-color:0 8px 16px rgba(0, 0, 0, 0,)
-}
+ }
+
+h2 {
+    text-align: center;
+    margin-left: 0px; 
+    font-size: 22px;
+    margin-top: 2px;
+    margin-bottom:px; 
+    color: #000;
+    text-decoration: center;
+    border: 0px solid #ccc;
+    padding: 10px;
+    max-width: 505px;
+    background-color:0 8px 16px rgba(0, 0, 0, 0,)
+} 
+h6 {
+    color: #000;
+    font-size: 33px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+   }
 figcaption {
     text-align: center;
     margin-top: 10px;
@@ -399,15 +421,6 @@ a {
 .content {
     margin-left: 0px;
 }
-h6 {
-    color: #000;
-    font-size: 33px;
-    text-align: center;
-    justify-content: center;
-
-    margin-bottom: 5px;
-    margin-top: 5px;
-   }
 .resume-container {
     max-width: 800px;
 }

@@ -1,19 +1,19 @@
 # Portfolio Site Project 
 Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work
 
-# Introduction: 
+## Introduction: 
  This was a personal project to make a portfolio site of to present my work. 
  The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
 
-## - Index.html 
+### - Index.html 
 - This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
-### Pages 
-#### Animation Reel (ANP.mp4 in file directory)
-#### Story Portfolio (PDFs in file directory
-#### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
-#### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
+#### Pages 
+##### Animation Reel (ANP.mp4 in file directory)
+##### Story Portfolio (PDFs in file directory
+##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
+##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
 
-# Website Styling
+## Website Styling
 ### Styles.css
 Styles.css isn't an html website page it controls the settings of the html
 Styles controls the css of website
@@ -115,3 +115,6 @@ A for Animation
 
 
 
+# Software used
+## Emacs
+to edit my website I run emacs and just use 'httpd-start-serve directory which allows me to see a preview of my website @ 'localhost:8080. To see live updates I use 'impatient-mode' in Emacs (m-x impa mode) @ localhost:8080/imp/live and then I use git and magit to update.
