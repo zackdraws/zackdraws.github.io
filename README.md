@@ -4,13 +4,12 @@
  The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
 
 ### what - 
-Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work
+Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work.
 ### why - 
-to make a simple website where I don't have to update to Squarespace and it keeps everything together in a photo 
+to make a simple website where I don't have to update to Squarespace and it keeps everything together in one place.
 ### how - 
-emacs for coding 
+Emacs for coding and (m-x) httpd-serve directory to see previews of my website on localhost:8080 
 github for hosting
-
 
 ### - Index.html 
 - This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
