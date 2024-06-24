@@ -1,23 +1,35 @@
 # Portfolio Site Project 
-Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work
-
 ## Introduction: 
  This was a personal project to make a portfolio site of to present my work. 
  The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
 
+### what - 
+Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work
+### why - 
+to make a simple website where I don't have to update to Squarespace and it keeps everything together in a photo 
+### how - 
+emacs for coding 
+github for hosting
+
+
 ### - Index.html 
 - This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
+
 #### Pages 
 ##### Animation Reel (ANP.mp4 in file directory)
 ##### Story Portfolio (PDFs in file directory
 ##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
 ##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
 
+#### Basic Template
+- beginning has my website header- includes links to pages
+- video container for framing and edited in css
+- content 
+- footer
 ## Website Styling
 ### Styles.css
 Styles.css isn't an html website page it controls the settings of the html
 Styles controls the css of website
-
 ### JS
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
 
@@ -68,7 +80,9 @@ A for Animation
 
 
 ## Backgrounddesigns.html
+
  - Scroll Down Gallery 
+
 ### Three Little Pigs Background
 ### Hand Studio 
 ### Hand Study
@@ -111,9 +125,6 @@ A for Animation
  - Instagram
  - Twitter
  - Linkedin
- 
-
-
 
 # Software used
 ## Emacs
