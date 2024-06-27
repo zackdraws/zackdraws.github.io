@@ -1,16 +1,10 @@
 # Portfolio Site Project 
+
 ## Introduction: 
+
  This was a personal project to make a portfolio site of to present my work. 
  The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
-
-### what - 
-Simple Portfolio site using HTML, Styles.css and JS which together make a portfolio website. To display my work.
-### why - 
-to make a simple website where I don't have to update to Squarespace and it keeps everything together in one place.
-### how - 
-Emacs for coding and (m-x) httpd-serve directory to see previews of my website on localhost:8080 
-github for hosting
-
+ 
 ### - Index.html 
 - This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
 
@@ -25,16 +19,9 @@ github for hosting
 - video container for framing and edited in css
 - content 
 - footer
-## Website Styling
-### Styles.css
-Styles.css isn't an html website page it controls the settings of the html
-Styles controls the css of website
-### JS
-For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
 
-        - Lightbox.js = javascript for 'lightbox' effect
-  
-# HTML-  Naming Files in Portfolio
+## Website Styling
+### HTML-  Naming Files in Portfolio
 My Portfolio images are in the folders /cd /bg and /fg and labeled with 01, 02, 03 after whatever are files are in those folders go into the website once they're uploaded to github
 
 	- cd01.jpg (Files for character design) 
@@ -45,6 +32,14 @@ My Portfolio images are in the folders /cd /bg and /fg and labeled with 01, 02, 
 
 	  as long as you name the files like this and put them into folders they'll go right into the site that way I don't have to keep changing the file name and also the file.
 
+### Styles.css
+Styles.css isn't an html website page it controls the settings of the html
+Styles controls the css of website
+### JS
+For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
+
+        - Lightbox.js = javascript for 'lightbox' effect
+  
 # Portfolio Pages
 
 ## Animation.html
@@ -54,27 +49,71 @@ S for Shared
 0 for Art 
 A for Animation
 
+premiere file is: [[c:\\s\0\PO\2023 Animation Reel ]]
+
+alternative would be [[~/S/0/A]]
+
 -  ANP.mp4 is my reel
+- 9 layers
+
+01 - Graphic 06 Titles
+02 - Graphic 05 Sub-titles
+03 - Graphic 04 
+04 - Graphic 03 Lower titles
+05 - Graphic 02 Lower titles
+06 - Graphic 01 Lower titles
+07 - Animation or Character Layer
+08 - BG - 03
+09 - BG - 02
+### Animation: Duration
+43 Seconds
+### Animation: Audio
+Current track that goes underneath:
+
+#### TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box March 2021.mov/]]
+Notes:
 
 
-#### TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box 01/]]
-##### TODO 1- Chicken
-#### TODO 2- Dialogue Scene [[file:c://S/0/A/]]
-##### TODO 2- Dialogue Scene started 
+#### TODO 2- Dialogue Scene [[file:c://S/0/A/2023/SAS/]]
+Notes:
+
+
 #### TODO 3- DMO [[file:c://S/0/A/2022/DMO]] 
-##### TODO 3- DMO started
+Notes:
+
+
 #### TODO 4- Hand Wave [[file:c://S/0/A/]]
+Notes:
+
+
 
 #### TODO 5- Chicken going into Box [[C:\S\0\A\2020\Chicken Box 02]]
+Notes:
+
 
 #### TODO 6- Singing   [[file:c://S/0/A/2020/Lazy Moon]]
 ##### TODO 6- Singing started <2020-11-11>
+Notes:
+
 #### TODO 7- Blinking   [[file:c://S/0/A/2022/Animation_Warm_Up_06_07_22_Blink_06_07]]
 ##### TODO 7- Blinking started <2022-06-07>
+Notes:
+
+
+
+
 #### TODO 8- Lifting   [[c:/S/0/A/2024/AN_01_05_Chracter_Lifting]]
 ##### TODO 8- Lifting started <2023-01-05>
+Notes:
+
+
+
+
+
 #### TODO 9- Skateboarding   [[C:\S\0\A\2023\Skateboarding_06_06\]]
 ##### TODO 9- Skateboarding started <2023-06-06>
+Notes:
+
 
 
 
@@ -83,43 +122,67 @@ A for Animation
  - Scroll Down Gallery 
 
 ### Three Little Pigs Background
+Notes:
 ### Hand Studio 
+Notes:
 ### Hand Study
+Notes:
 ### Alien Room
+Notes:
 ### Artist Room
+Notes:
 ### City Town
+Notes:
 ### Walkway to Artist's House
+Notes:
 
 ## - CharacterDesign.html
  - Scroll Down Gallery 
 ### HI Dance Scene
+Notes:
 ### Steve
+Notes:
 ### Sally
+
 ### Steven
+
 ### Boss
+
 ### Mummy
+
 ### Pig
+
 ### Cooking Dinosaur
+
 ### Simpsons
+
 ### Chicken
+
 ### Soda
+
 ### Insect
+
 ### Ghost
+
 ### Caveman
+
 ### No Name
+
 ### Deadline Character Concept
+
 ### Deadline Expression Sheet
+
 ### 
 
 ## Story
 
 - Speakerdeck samples 
 
-### About Me
+# About Me
 - About
 #### For your aboutme file the file should be About.jpg
 
-### Contact 
+# Contact 
 #### Social Links 
  - Instagram
  - Twitter
@@ -128,3 +191,9 @@ A for Animation
 # Software used
 ## Emacs
 to edit my website I run emacs and just use 'httpd-start-serve directory which allows me to see a preview of my website @ 'localhost:8080. To see live updates I use 'impatient-mode' in Emacs (m-x impa mode) @ localhost:8080/imp/live and then I use git and magit to update.
+## Premiere
+for putting reels together
+## TVPaint Animation 11
+for animation
+## Adobe Photoshop
+for work
