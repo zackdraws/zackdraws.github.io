@@ -1,16 +1,23 @@
 # Portfolio Site Project 
 
-## Introduction: 
+## install notes in case I forget 
 
- This was a personal project to make a portfolio site of to present my work. 
- The index.html is the homepage. The Styles.css contains the styling of the site controlling how the website is displayed. 
+mkdir - ~/website
+git clone https://github.com/zackdraws/zackdraws.github.io.git
+
+## 
+
+- Personal project for my portfolio. 
+- The [Index.html] is the homepage. 
+- The [Styles.css] contains the styling of the site controlling how the website is displayed. 
  
 ### - Index.html 
-- This is the first page that you visit when you visit the site. Whatever page is titled index.html will be the homepage. The index page opens to a launch page containing the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
+- Index.html homepage
+- The index page opens to a launch page which contains the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
 
 #### Pages 
 ##### Animation Reel (ANP.mp4 in file directory)
-##### Story Portfolio (PDFs in file directory
+##### Story Portfolio (PDFs in file directory)
 ##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
 ##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
 
@@ -42,20 +49,12 @@ For the lightbox feature to work I just used the lightbox js and it connects thr
   
 # Portfolio Pages
 
-## Animation.html
---- Animation is held [[C://S/0/A/]]
-C for Local Drive
-S for Shared
-0 for Art 
-A for Animation
-
-premiere file is: [[c:\\s\0\PO\2023 Animation Reel ]]
-
+## Animation.html (~/Animation/)
 alternative would be [[~/S/0/A]]
 
--  ANP.mp4 is my reel
+- ANP.mp4 (Animation Reel)
 - 9 layers
-
+- Layer Order -
 01 - Graphic 06 Titles
 02 - Graphic 05 Sub-titles
 03 - Graphic 04 
@@ -65,14 +64,16 @@ alternative would be [[~/S/0/A]]
 07 - Animation or Character Layer
 08 - BG - 03
 09 - BG - 02
+
 ### Animation: Duration
+
 43 Seconds
+
 ### Animation: Audio
 Current track that goes underneath:
 
 #### TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box March 2021.mov/]]
 Notes:
-
 
 #### TODO 2- Dialogue Scene [[file:c://S/0/A/2023/SAS/]]
 Notes:
@@ -81,15 +82,11 @@ Notes:
 #### TODO 3- DMO [[file:c://S/0/A/2022/DMO]] 
 Notes:
 
-
 #### TODO 4- Hand Wave [[file:c://S/0/A/]]
 Notes:
 
-
-
 #### TODO 5- Chicken going into Box [[C:\S\0\A\2020\Chicken Box 02]]
 Notes:
-
 
 #### TODO 6- Singing   [[file:c://S/0/A/2020/Lazy Moon]]
 ##### TODO 6- Singing started <2020-11-11>
@@ -99,15 +96,9 @@ Notes:
 ##### TODO 7- Blinking started <2022-06-07>
 Notes:
 
-
-
-
 #### TODO 8- Lifting   [[c:/S/0/A/2024/AN_01_05_Chracter_Lifting]]
 ##### TODO 8- Lifting started <2023-01-05>
 Notes:
-
-
-
 
 
 #### TODO 9- Skateboarding   [[C:\S\0\A\2023\Skateboarding_06_06\]]
@@ -116,32 +107,32 @@ Notes:
 
 
 
-
 ## Backgrounddesigns.html
 
  - Scroll Down Gallery 
 
 ### Three Little Pigs Background
-Notes:
+
 ### Hand Studio 
-Notes:
+
 ### Hand Study
-Notes:
+
 ### Alien Room
-Notes:
+
 ### Artist Room
-Notes:
+
 ### City Town
-Notes:
+
 ### Walkway to Artist's House
-Notes:
+
+
 
 ## - CharacterDesign.html
- - Scroll Down Gallery 
+
 ### HI Dance Scene
-Notes:
+
 ### Steve
-Notes:
+
 ### Sally
 
 ### Steven
@@ -172,11 +163,11 @@ Notes:
 
 ### Deadline Expression Sheet
 
-### 
 
 ## Story
 
 - Speakerdeck samples 
+
 
 # About Me
 - About
@@ -189,11 +180,20 @@ Notes:
  - Linkedin
 
 # Software used
+
 ## Emacs
-to edit my website I run emacs and just use 'httpd-start-serve directory which allows me to see a preview of my website @ 'localhost:8080. To see live updates I use 'impatient-mode' in Emacs (m-x impa mode) @ localhost:8080/imp/live and then I use git and magit to update.
+for
+- httpd-start-serve directory to preview of site @ 'localhost:8080. 
+- magit to update.
+
 ## Premiere
-for putting reels together
+for 
+Reel compositing
+
 ## TVPaint Animation 11
-for animation
+for
+Animation
+
 ## Adobe Photoshop
-for work
+for
+ Work
