@@ -7,6 +7,53 @@
         <meta name-"viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="styles.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font"/>
+   <style>
+body {
+    font-family: 'Your Selected Font', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid-section {
+    padding: 0px;
+}
+
+.grid-section {
+    margin-bottom: 40px;
+}
+
+.grid-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    position: relative;
+    width: 100%;
+    height: auto
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Maintains aspect ratio */
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
    <header class="website-header">
         <nav class="header-navigation">
 	    <div class="profile">
@@ -43,27 +90,71 @@
 <style>
 </style>
 </head>
-<body>
-    <header class="website-header">
-    </header>
-    <div class="image-grid">
-        <a href="Animation.html">
-            <img src="fp/fp_ani.png" alt="Image 1">
+<body>   
+<main class="image-grid-section">
+    <section clas="grid-section"
+    <h2> </h2>
+ <div class="image-grid"
+    <a href="Animation.html">
+        <img src="fp/fp_ani.png" alt="Image 1">
 
-        </a>
-        <a href="Story.html">
-            <img src="fp/fp_sp.png" alt="Image 2">
-  
-        </a>
-        <a href="CharacterDesign.html">
-            <img src="fp/fp_cd.png" alt="Image 3">
-  
-        </a>
-        <a href="backgrounddesign.html">
-            <img src="fp/fp_bg.png" alt="Image 4">
-  
-        </a>
-        
-    </script>
+    </a>
+    <a href="Story.html">
+        <img src="fp/fp_sp.png" alt="Image 2">
+
+    </a>
+    <a href="CharacterDesign.html">
+        <img src="fp/fp_cd.png" alt="Image 3">
+
+    </a>
+    <a href="backgrounddesign.html">
+        <img src="fp/fp_bg.png" alt="Image 4">
+
+    </div>
+ 
+    <section class="grid-section">
+        <h2>Animation</h2>
+        <div class="image-grid">
+    
+            <div class="grid-item"><img src="image1.jpg" alt="Image 1"></div>
+            <div class="grid-item"><img src="image2.jpg" alt="Image 2"></div>
+            <div class="grid-item"><img src="image3.jpg" alt="Image 3"></div>
+            <div class="grid-item"><img src="image4.jpg" alt="Image 4"></div>
+            <div class="grid-item"><img src="image5.jpg" alt="Image 5"></div>
+
+        </div>
+    </section>
+        <section class="grid-section">
+            <h2>Character Design</h2>
+            <div class="image-grid">
+                
+                <div class="grid-item"><img src="cd/cd01.jpg" alt="Image 6"></div>
+                <div class="grid-item"><img src="cd/cd02.jpg" alt="Image 7"></div>
+                <div class="grid-item"><img src="cd/cd03.jpg" alt="Image 8"></div>
+                <div class="grid-item"><img src="cd/cd04.jpg" alt="Image 9"></div>
+                <div class="grid-item"><img src="cd/cd05.jpg" alt="Image 10"></div>
+                <div class="grid-item"><img src="cd/cd06.jpg" alt="Image 10"></div>
+                <div class="grid-item"><img src="cd/cd06.jpg" alt="Image 10"></div>
+                <div class="grid-item"><img src="cd/cd06.jpg" alt="Image 10"></div>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <h2>Backgrounds </h2>
+            <div class="image-grid">
+                
+                <div class="grid-item"><img src="image11.jpg" alt="Image 11"></div>
+                <div class="grid-item"><img src="image12.jpg" alt="Image 12"></div>
+                <div class="grid-item"><img src="image13.jpg" alt="Image 13"></div>
+                <div class="grid-item"><img src="image14.jpg" alt="Image 14"></div>
+                <div class="grid-item"><img src="image15.jpg" alt="Image 15"></div>
+            </div>
+        </section>
+    </main>
 </body>
-</html>
+
+  <header class="website-header">
+    </header>
+
+
+    
