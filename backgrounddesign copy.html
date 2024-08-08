@@ -1,37 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-</head>
- <style>
-/* container */
-/* PDF Container Styles */
-#pdf-container {
-    margin: 20px auto;
-    text-align: center;
-}
-
-/* PDF Viewer Styles */
-#pdf-viewer {
-    width: 100%;
-    height: 600px; /* Adjust the height as needed */
-    border: none;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #pdf-viewer {
-        height: 400px; /* Reduce height for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    #pdf-viewer {
-        height: 300px; /* Further reduce height for very small screens */
-    }
-}
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Zack Johnson Art</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       /* container */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -171,42 +146,6 @@ close
     background-color: #22bc41; /* Background color on hover */
 }
 
-.gallery-frame {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 2500px; /* Limit the maximum width of the frame */
-    margin: 0 auto; /* Center the frame horizontally */
-    padding: 4px; /* Add padding for a frame-like appearance */
-    box-sizing: border-box; /* Include padding in width calculations */
-    float: left
-}
-.gallery {
-display: grid;
-flex-wrap: wrap;
-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive grid */
-gap: 10px;
-justify-content: center;
-}
-.gallery-item{
-flex; 1 0 calc(85.33% - 80px); /
-max-width: 1200px;
-max-height: 3200px; /* Adjust the height as needed */
-overflow: hidden;
-position: relative;
-cursor: pointer;
-transition: transform 0.2s;
-
-} 
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.1);
-}
 /* video container */
 .video-container { 
     text-align: center;
@@ -222,12 +161,12 @@ max-width: 100%;
 /*  heading */
 h1 {
     text-align: center; /* Center the heading */
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 20px; /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
 }
 h3 {
     text-align:center; 
-    font-size: 10px; 
+    font-size: 11px; 
 
 }
    .speakerdeck-iframe{
@@ -281,6 +220,7 @@ img.large {
     opacity: 0;
     transition: opacity 0.2s;
 }
+
 /* Style the caption text */
 .item-caption h1 {
     color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
@@ -327,7 +267,8 @@ img.large {
     left: 140px;
     width: 100px;
     height: auto;
-    z-index: 9999;
+        z-index: 9999;
+
 }
 #floatingGif2 {
     position: fixed;  
@@ -336,107 +277,82 @@ img.large {
     width: 100px;
     height: auto;
     z-index: 9999;
-}
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
-    border: 1px solid ###fff;
-    border-radius: 10px;
-}
-.sidebar li:hover .submenu {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-.header-navigation .submenu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 1px 0px rgba(, 0, 0, 0.00);
-    z-index: 5;
-    border: 10px solid #fff;
-    border-radius: 10px;
-    
-}
-   .header-navigation li:hover .submenu {
-    display: flex;
+
 }
     </style>
 </head>
 <body>
-    <nav class="sidebar">
-                <h3><a href="index.html">Zack Johnson</a></li></h3>
-                <h3>Animation - Design</h3>
-                <h3>ZackJohnsonArt@gmail.com</h3>
-                <h2><a href="index.html">Portfolio</a></h2>
-                <h2><a href="Story.html">Story</a><h2>
-                <h2><a href="Animation.html">Animation</a></h2>
-                <h2><a href="CharacterDesign.html">Character Design</a></h2>
-                <h2><a href="backgrounddesign.html">Background Design</a></h2>
-                <h2><a href="Resume.html"> Resume</a></h2> 
-                <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
-           
- <div class="social-links">
-     <a class="social-link" href="https://www.instagram.com/zackdraws">
-                <img src="insta.png" alt="Instagram">
-    </a>
-     <a class="social-link" href="https://twitter.com/zack_draws">
-                    <img src="twitter.png" alt="twitter">
-     </a>
-     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
-                    <img src="linkedin.png" alt="linkedin">
-		</a>	
-        </div>
+        <nav class="sidebar">
+            <h2>Zack Johnson</h2>
+            <h3>Animation - Design</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Animation.html">Animation</a></li>
+                <li><a href="Story.html">Story</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="mailto:mackenziekruegerwork@gmail.com">Contact</a></li>
             </ul>
-</nav>
-<style>
-</style>
-</head>
-<body>
-  <video-container>      
-        <div class="video-container">
- 
-        <h1>Background Art</h1>
-        <div class="gallery-frame">
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="bg/bg1.jpg" alt="Background 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="bg/bg2.jpg" alt="Background 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="bg/bg3.jpg" alt="Background 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="bg/bg4.jpg" alt="Background 2">
-                </div>        <div class="gallery-item">
-                    <img src="bg/bg5.jpg" alt="Background 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="bg/bg6.jpg" alt="Background 2">
-                </div>        <div class="gallery-item">
-                    <img src="bg/bg7.jpg" alt="Background 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="bg/bg8.jpg" alt="Background 2">
-                </div>
+            <div class="social-links">
+                <a class="social-link" href="https://www.instagram.com/princessteacup/?hl=en">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://twitter.com/MacknNoodle">
+                    <img src="twitter.png" alt="Twitter">
+                </a>
+                <a class="social-link" href="https://linkedin.com/in/g">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
             </div>
-        <div id="lightbox" class="hidden">
-            <span class="close-button" onclick="closeLightbox()">&times;</span>
-            <img id="lightbox-image" src="" alt="Lightbox Image">
-            <button class="prev-button">Previous</button>
-            <button class="next-button">Next</button>
-        </div>
-    
-        <script src="lightbox.js"></script>
-    </div>
+        </nav>
+        <div>
+            <h6> Background Designs</h6> 
+	            <div>	
+                <div class="gallery-frame">
+                    <div class="gallery">
+                <div class="gallery-item">
+                    <img src="bg/bg1.jpg" alt="bg01" data-src="bg/bg1.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg2.jpg" alt="2" data-src="bg/bg2.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg3.jpg" alt="3" data-src="bg/bg3.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg4.jpg" alt="4" data-src="bg/bg4.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg5.jpg" alt="5" data-src="bg/bg5.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg6.jpg" alt="6" data-src="bg/bg6.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg7.jpg" alt="5" data-src="bg/bg7.jpg">
 
+		</div>
+    <div id="lightbox" class="hidden">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+        <button class="next-button">Next</button>
+        <button class="prev-button">Previous</button>
+    </div>
     <script src="lightbox.js"></script>
-</ul>
+    <script>
+        const toggleSidebar = document.getElementById("toggleSidebar");
+        const sidebar = document.querySelector(".sidebar");
+        const content = document.querySelector(".content");
+
+        toggleSidebar.addEventListener("click", () => {
+            sidebar.classList.toggle("closer");
+            content.classList.toggle("closer");
+        });
     </script>
 </body>
 </html>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/yourusername">github</a></p>
+</footer>

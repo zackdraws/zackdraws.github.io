@@ -183,7 +183,7 @@ float: left
 display: grid;
 flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
 gap: 10px;
 justify-content: center;
 }
