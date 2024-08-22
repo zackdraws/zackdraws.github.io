@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+</head>
+ <style>
+/* container */
+/* PDF Container Styles */
+#pdf-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* PDF Viewer Styles */
+#pdf-viewer {
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #pdf-viewer {
+        height: 400px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #pdf-viewer {
+        height: 300px; /* Further reduce height for very small screens */
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
+
+body {
+    font-family: sans-serif;
+}
+.container {
+    align-items: absolute;/* Align items to the top */
+    position: center;
+    height: 100vh;
+}
+/* Sidebar */
+.sidebar {
+    width: 143px; /* Width for larger screens */
+    background-color: #fff; /* White background color for the sidebar */
+    color: #333;
+    padding: 22px;
+    position: fixed; /* Fix the sidebar position */
+    top: 0; /* Position from the top */
+    left: 0; /* Position from the left */
+    bottom: 0; /* Stretch the sidebar to the bottom of the page */
+    z-index: 1; /* Ensure the sidebar is above other content */ 
+}
+.sidebar h2 {
+    font-size: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar a {
+    font-size: 25px ;
+    text-decoration: none;
+    color: #000;
+}
+
+/* content area */
+.content {
+    margin-left: 30px; /* Adjust this value to match the width of the sidebar */
+    padding: 2px;
+    transition:margin-left: 0.3s; 
+}
+.sidebar.closer { 
+width:200px;
+}
+content.closer {
+    margin-left:20px;
+}
+
+/* lightbox */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 999;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+close
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f10707;
+}
+
+
+
+.next-button,
+.prev-button {
+    background-color: #f3f3f3;
+    color: #000000;
+    padding: 4px 4px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: absolute;
+    top: 24;
+    right: 11;
+    display: block; /* Change to block to align below the image */
+    width: 10%; /* Width to take the full width of the image container */
+    text-align: center; /* Center-align the buttons horizontally */
+}
+    .next-button {
+        right: 400px; /* Position the "next" button to the right */
+    }
+    
+    .prev-button {
+        left: 400px; /* Position the "previous" button to the left */
+    }
+    
+    .next-button:hover, .prev-button:hover {
+        background-color: #22bc41; /* Background color on hover */
+    }
+    
+
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+}
+
+.gallery-frame {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 2500px; /* Limit the maximum width of the frame */
+    margin: 0 auto; /* Center the frame horizontally */
+    padding: 4px; /* Add padding for a frame-like appearance */
+    box-sizing: border-box; /* Include padding in width calculations */
+float: left
+}
+.gallery {
+display: grid;
+flex-wrap: wrap;
+gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
+gap: 10px;
+justify-content: center;
+}
+.gallery-item{
+flex; 1 0 calc(33.33% - 20px); /
+max-width: calc(33.33% - 30px); /* Adjust the width as needed */
+max-height: 450px; /* Adjust the height as needed */
+overflow: hidden;
+position: relative;
+cursor: pointer;
+transition: transform 0.2s;
+
+} 
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+/* video container */
+.video-container { 
+    text-align: center;
+    margin-top: -120px;
+    margin-left: auto;
+    border: 180px solid #fff;
+    box-sizing: content-box;
+}
+/*  video */
+video {
+max-width: 100%;
+}
+/*  heading */
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
+}
+h3 {
+    text-align:center; 
+    font-size: 10px; 
+
+}
+   .speakerdeck-iframe{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-left: 218px;
+   }
+
+/* Style for small images */
+img.small {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Style for large images */
+img.large {
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Center text within gallery items */
+.item-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a background overlay for better readability */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Style the caption text */
+.item-caption h1 {
+    color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for the social links */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333; /* Link color */
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+.social-link img {
+    width: 30px; /* Set the width of the social media icon image */
+    height: 30px; /* Set the height of the social media icon image */
+}
+.video-container {
+   text-align: center;
+   margin-top:-170px;
+   margin-left:60px;
+   border: 190px sold #fff;
+   box-sizing:content-box;    
+}
+
+#floatingGif {
+    position: fixed;  
+    top: 1px;       
+    left: 140px;
+    width: 100px;
+    height: auto;
+        z-index: 9999;
+
+}
+#floatingGif2 {
+    position: fixed;  
+    top: 460px;       
+    left: 40px;
+    width: 100px;
+    height: auto;
+    z-index: 9999;
+
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    border: 1px solid ###fff;
+    border-radius: 10px;
+}
+.sidebar li:hover .submenu {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.header-navigation .submenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 1px 0px rgba(, 0, 0, 0.00);
+    z-index: 5;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    
+}
+   .header-navigation li:hover .submenu {
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+                <h3><a href="index.html">Zack Johnson</a></li></h3>
+                <h3>Animation - Design</h3>
+                <h3>ZackJohnsonArt@gmail.com</h3>
+                <h2><a href="index.html">Portfolio</a></h2>
+                <h2><a href="Story.html">Story</a><h2>
+                <h2><a href="Animation.html">Animation</a></h2>
+                <h2><a href="CharacterDesign.html">Character Design</a></h2>
+                <h2><a href="backgrounddesign.html">Background Design</a></h2>
+                <h2><a href="Resume.html"> Resume</a></h2> 
+                <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
+           
+ <div class="social-links">
+     <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+    </a>
+     <a class="social-link" href="https://twitter.com/zack_draws">
+                    <img src="twitter.png" alt="twitter">
+     </a>
+     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                    <img src="linkedin.png" alt="linkedin">
+		</a>	
+        </div>
+            </ul>
+</nav>
+<style>
+</style>
+</head>
+<body>
+  <video-container>      
+        <h1>Animation Reel</h1>
+        <div class="video-container">
+            <video controls width="450" height="50%">
+                <source src="anp.mp4" type="video/mp4">
+                </video>
+                <header></header>
+        <h1>Character Design</h1>
+        <div class="gallery-frame">
+            <div class="gallery">
+                <!-- Repeat gallery-item for each image -->
+                <div class="gallery-item">
+                    <img src="cd/cd01.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd02.jpg" alt="Character Design 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd03.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd04.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd05.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd06.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd07.jpg" alt="Character Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="cd/cd08.jpg" alt="Character Design 1">
+                </div> <div class="gallery-item">
+                    <img src="cd/cd09.jpg" alt="Character Design 1">
+                 </div>
+                     <header></header>
+                </div>
+        <h1>Background Art</h1>
+        <div class="gallery-frame">
+            <div class="gallery">
+                <!-- Repeat gallery-item for each image -->
+                <div class="gallery-item">
+                    <img src="bg/bg1.jpg" alt="Background 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg2.jpg" alt="Background 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg3.jpg" alt="Background 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg4.jpg" alt="Background 2">
+                </div>        <div class="gallery-item">
+                    <img src="bg/bg5.jpg" alt="Background 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg6.jpg" alt="Background 2">
+                </div>        <div class="gallery-item">
+                    <img src="bg/bg7.jpg" alt="Background 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="bg/bg8.jpg" alt="Background 2">
+                </div>
+            </div>
+        <div id="lightbox" class="hidden">
+            <span class="close-button" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+            <button class="prev-button">Previous</button>
+            <button class="next-button">Next</button>
+        </div>
+    
+        <script src="lightbox.js"></script>
+    
+    
+      <video-container>
+        <h2>Storyboard Portfolio</h2>
+    </div>
+      <h3> Farm Life Storyboard</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" download class="pdf-download"> PDF Copy</a>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" download class="pdf-download"> Animatic</a>
+    <div>
+    
+        <iframe id="pdf-viewer" src="https://speakerdeck.com/player/031ec078333b45ef948e9508d19ec234">
+        </iframe>
+      </div>
+      <h3>Steve and Steven</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" download class="pdf-download"> PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779439061" target="_blank" download class="pdf-download"> Animatic</a>
+    </div>
+      <div id="pdf-container">
+      <iframe id="pdf-viewer" src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4"></iframe>
+      </div>
+      <div>
+    <div>
+        
+    <h3>Robot and Monster</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" download class="pdf-download"> PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779498962?h=5dd48ddc8f" target="_blank" download class="pdf-download"> Animatic</a>
+    
+    </div>
+    </div>
+    
+    
+      <div id="pdf-container">
+      <iframe id="pdf-viewer" src="https://speakerdeck.com/player/c86241e435e14d06a63a7f601ee95fbd"></iframe>
+      </div>
+      <div>
+        <h3>Chicken in Space</h3>
+        <a href="https://player.vimeo.com/video/699849941" target ="_blank" download class="pdf-download"> Animatic </a>
+        <div id="pdf-container">
+          <iframe id="pdf-viewer"  src="https://speakerdeck.com/player/1b2d3bc65ee14eb0b7bc8cafc9dac2ee"></iframe>
+    <div>
+      </div>
+        </div>
+    
+    </body>
+    </html>
+    
+        
+    </video-container>
+    <footer>
+      <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/yourusername">GitHub</a></p>
+    </footer>
+        </script>
+    </body>
+    </html>
+    
+    <div id="lightbox" class="hidden">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+
+    <script src="lightbox.js"></script>
+</ul>
+    </script>
+</body>
+</html>

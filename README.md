@@ -1,31 +1,23 @@
 # Portfolio Site Project 
 
 ## install notes in case I forget 
-
 mkdir - ~/website
 git clone https://github.com/zackdraws/zackdraws.github.io.git
 
 ## 
-
 - Personal project for my portfolio. 
 - The [Index.html] is the homepage. 
 - The [Styles.css] contains the styling of the site controlling how the website is displayed. 
- 
+
 ### - Index.html 
 - Index.html homepage
-- The index page opens to a launch page which contains the Animation Reel, Story Portfolio, Character Design, Background and Viz Dev.
+- My Index.html is just my homepage that contans my Animation Reel, my Character Designs, Background Art, Storyboard Portfolio, and Sketches. 
 
 #### Pages 
 ##### Animation Reel (ANP.mp4 in file directory)
 ##### Story Portfolio (PDFs in file directory)
 ##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
 ##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
-
-#### Basic Template
-- beginning has my website header- includes links to pages
-- video container for framing and edited in css
-- content 
-- footer
 
 ## Website Styling
 ### HTML-  Naming Files in Portfolio
