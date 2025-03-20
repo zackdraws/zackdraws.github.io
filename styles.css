@@ -180,6 +180,11 @@ transition: transform 0.2s;
     box-sizing: content-box;
 }
 /*  video */
+video02 {
+                <video controls width="950" height="100%">
+                <source src="anp\ani_01.mp4" type="video/mp4">
+            </video>
+
 video {
 max-width: 120%;
 }

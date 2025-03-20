@@ -8,6 +8,7 @@
 	- Index page opens to four previews of the rest of the website to pick from
 	
 *** Animation Reel (ANP.mp4 in file directory)
+Using Blender right now but might switch to Premiere
 *** Story Portfolio (PDFs in file directory
 *** Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
 *** Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
