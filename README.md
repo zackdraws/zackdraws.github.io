@@ -38,7 +38,15 @@ Styles controls the css of website
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
 
         - Lightbox.js = javascript for 'lightbox' effect
-  
+
+
+* programs I use to organize
+Yazi
+Indesign
+
+* scripts I use that help
+'psd->convert.sh'
+
 # Portfolio Pages
 
 ## Animation.html (~/Animation/)
