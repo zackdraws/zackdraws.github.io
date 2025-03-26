@@ -175,22 +175,22 @@ close
     width: 100%; /* Adjust the width as needed */
     max-width: 2500px; /* Limit the maximum width of the frame */
     margin: 0 auto; /* Center the frame horizontally */
-    padding: 4px; /* Add padding for a frame-like appearance */
+    padding: 1px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
     float: left
 }
 .gallery {
 display: grid;
 flex-wrap: wrap;
-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(300px, 8fr)); /* Responsive grid */
-gap: 10px;
+gap: 1px;
+grid-template-columns: repeat(auto-fit, minmax(200px, 8fr)); /* Responsive grid */
+gap: 1px;
 justify-content: center;
 }
 .gallery-item{
-flex: 4 4 calc(12.33% - 20px); /
-max-width: 80px;
-max-height: 200px; /* Adjust the height as needed */
+flex; 1 0 calc(33.33% - 20px); /
+max-width: 220px;
+max-height: 165px; /* Adjust the height as needed */
 *\overflow: hidden;
 position: relative;
 cursor: pointer;
