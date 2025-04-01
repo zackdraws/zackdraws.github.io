@@ -1,35 +1,27 @@
-#+title: Portfolio Site                                                          
-# Portfolio Work, HTML, Styles.css and JS which together make a portfolio website.
-* Introduction: This was a personal project to make a site of my work and learn a little on how to code. The index.html is the homepage. The Styles.css has all of the settings for how the html is displayed. 
+# Portfolio Site Project 
 
-** - Index.html is the first page that you visit when you visit the site 
+## install notes in case I forget 
+mkdir - ~/website
+git clone https://github.com/zackdraws/zackdraws.github.io.git
 
+## 
+- Personal project for my portfolio. 
+- The [Index.html] is the homepage. 
+- The [Styles.css] contains the styling of the site controlling how the website is displayed. 
 
-	- Index page opens to four previews of the rest of the website to pick from
-	
-*** Animation Reel (ANP.mp4 in file directory)
-Using Blender right now but might switch to Premiere
-*** Story Portfolio (PDFs in file directory
-*** Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
-*** Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
+### - Index.html 
+- Index.html homepage
+- My Index.html is just my homepage that contans my Animation Reel, my Character Designs, Background Art, Storyboard Portfolio, and Sketches. 
 
-* Website Styling
-*** Styles.css
-Styles.css isn't an html website page it controls the settings of the html
-Styles controls the css of website
+#### Pages 
+##### Animation Reel (ANP.mp4 in file directory)
+##### Story Portfolio (PDFs in file directory)
+##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
+##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
 
-for previews put             <div class="preview" id="preview1"></div> under each image grid image
-    ex --->  <img src="fp/fp_ani.png" alt="Image 1">
-            <div class="preview" id="preview1"></div>
-        </a>
-
-*** JS
-For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
-
-        - Lightbox.js = javascript for 'lightbox' effect
-  
-* HTML-  Naming Files in Portfolio
-The files in html are labeled as
+## Website Styling
+### HTML-  Naming Files in Portfolio
+My Portfolio images are in the folders /cd /bg and /fg and labeled with 01, 02, 03 after whatever are files are in those folders go into the website once they're uploaded to github
 
 	- cd01.jpg (Files for character design) 
 	
@@ -39,88 +31,127 @@ The files in html are labeled as
 
 	  as long as you name the files like this and put them into folders they'll go right into the site that way I don't have to keep changing the file name and also the file.
 
-* Portfolio Pages
+### Styles.css
+Styles.css isn't an html website page it controls the settings of the html
+Styles controls the css of website
+### JS
+For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
 
-** Animation.html
---- Animation is held [[C://S/0/A/]]
-C for Local Drive
-S for Shared
-0 for Art 
-A for Animation
-
-***- ANP.mp4 is my reel
+        - Lightbox.js = javascript for 'lightbox' effect
 
 
-*** TODO 1- Chicken [[file:c://S/0/A/2020/Chicken Box 01/]]
-**** TODO 1- Chicken
-*** TODO 2- Dialogue Scene [[file:c://S/0/A/]]
-**** TODO 2- Dialogue Scene started 
-*** TODO 3- DMO [[file:c://S/0/A/2022/DMO]] 
-**** TODO 3- DMO started
-*** TODO 4- Hand Wave [[file:c://S/0/A/]]
+* programs I use to organize
+Yazi
+Indesign
 
-*** TODO 5- Chicken going into Box [[C:\S\0\A\2020\Chicken Box 02]]
+* scripts I use that help
+'psd->convert.sh'
 
-*** TODO 6- Singing   [[file:c://S/0/A/2020/Lazy Moon]]
-**** TODO 6- Singing started <2020-11-11>
-*** TODO 7- Blinking   [[file:c://S/0/A/2022/Animation_Warm_Up_06_07_22_Blink_06_07]]
-**** TODO 7- Blinking started <2022-06-07>
-*** TODO 8- Lifting   [[c:/S/0/A/2024/AN_01_05_Chracter_Lifting]]
-**** TODO 8- Lifting started <2023-01-05>
-*** TODO 9- Skateboarding   [[C:\S\0\A\2023\Skateboarding_06_06\]]
-**** TODO 9- Skateboarding started <2023-06-06>
-*** TODO 10
-*** TODO 11
+# Portfolio Pages
 
-*** Index.html
+## Animation.html (~/Animation/)
+alternative would be [[~/S/0/A]]
 
-Index is needed for the homepage of the website
+- ANP.mp4 (Animation Reel)
+- 9 layers
+- Layer Order -
+01 - Graphic 06 Titles
+02 - Graphic 05 Sub-titles
+03 - Graphic 04 
+04 - Graphic 03 Lower titles
+05 - Graphic 02 Lower titles
+06 - Graphic 01 Lower titles
+07 - Animation or Character Layer
+08 - BG - 03
+09 - BG - 02
+
+### Animation: Duration
+
+## Backgrounddesigns.html
+
+ - Scroll Down Gallery 
+
+### Three Little Pigs Background
+
+### Hand Studio 
+
+### Hand Study
+
+### Alien Room
+
+### Artist Room
+
+### City Town
+
+### Walkway to Artist's House
+
+## - CharacterDesign.html
+
+### HI Dance Scene
+
+### Steve
+
+### Sally
+
+### Steven
+
+### Boss
+
+### Mummy
+
+### Pig
+
+### Cooking Dinosaur
+
+### Simpsons
+
+### Chicken
+
+### Soda
+
+### Insect
+
+### Ghost
+
+### Caveman
+
+### No Name
+
+### Deadline Character Concept
+
+### Deadline Expression Sheet
 
 
-** Backgrounddesigns.html
-# - Scroll Down Gallery 
-*** Three Little Pigs Background
-*** Hand Studio 
-*** Hand Study
-*** Alien Room
-*** Artist Room
-*** City Town
-*** Walkway to Artist's House
-
-** - CharacterDesign.html
-# - Scroll Down Gallery 
-*** HI Dance Scene
-*** Steve
-*** Sally
-*** Steven
-*** Boss
-*** Mummy
-*** Pig
-*** Cooking Dinosaur
-*** Simpsons
-*** Chicken
-*** Soda
-*** Insect
-*** Ghost
-*** Caveman
-*** No Name
-*** Deadline Character Concept
-*** Deadline Expression Sheet
-*** 
-** Story
+## Story
 
 - Speakerdeck samples 
 
-*** About Me
-- About
-# For your aboutme file the file should be About.jpg
 
-*** Contact 
-**** Social Links 
+# About Me
+- About
+#### For your aboutme file the file should be About.jpg
+
+# Contact 
+#### Social Links 
  - Instagram
  - Twitter
  - Linkedin
- 
 
+# Software used
 
+## Emacs
+for
+- httpd-start-serve directory to preview of site @ 'localhost:8080. 
+- magit to update.
 
+## Premiere
+for 
+Reel compositing
+
+## TVPaint Animation 11
+for
+Animation
+
+## Adobe Photoshop
+for
+ Work
