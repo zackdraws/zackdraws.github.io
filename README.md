@@ -1,15 +1,13 @@
 # Portfolio Site Project 
-## install notes in case I forget 
-mkdir - ~/website
-git clone https://github.com/zackdraws/zackdraws.github.io.git
+- git clone http://github.com/zackdraws/zackdraws.github.io.git
 ## 
 - Personal project for my portfolio. 
-- The [Index.html] is the homepage. 
-- The [Styles.css] contains the styling of the site controlling how the website is displayed. 
-### - Index.html 
+- the [Index.html] = the  homepage. 
+- the [Styles.css] = styling for the site 
+### - Pages
+#### Index
 - Index.html homepage
-- My Index.html is just my homepage that contans my Animation Reel, my Character Designs, Background Art, Storyboard Portfolio, and Sketches. 
-#### Pages 
+- Index.html is now a splash page to go to each portfolio page 
 
 ##### Animation Reel (ANP.mp4 in file directory)
 
@@ -23,60 +21,23 @@ git clone https://github.com/zackdraws/zackdraws.github.io.git
 
 ### HTML-  Naming Files in Portfolio
 
-My Portfolio images are in the folders /cd /bg and /fg and labeled with 01, 02, 03 after whatever are files are in those folders go into the website once they're uploaded to github
-
-
-
+My Portfolio images are in the folders /cd /bg and /fg 
+files are labeled cd01.jpg bg01.jpg fg01.jpg 
 	- cd01.jpg (Files for character design) 
-
-	
-
 	- bg01.jpg (Files for Background), 
-
-	
-
 	- fg01.jpg (Files for Sketchbook) 
-
-
-
-	  as long as you name the files like this and put them into folders they'll go right into the site that way I don't have to keep changing the file name and also the file.
-
-
-
 ### Styles.css
-
 Styles.css isn't an html website page it controls the settings of the html
-
 Styles controls the css of website
-
 ### JS
-
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
-
-
-
         - Lightbox.js = javascript for 'lightbox' effect
-
-
-* programs I use to organize
-
-Yazi
-
-Indesign
-
-Emacs
-for
-- httpd-start-serve directory to preview of site @ 'localhost:8080. 
-- magit to update.
-
-## Premiere
-
-for 
-
-Reel compositing
-
-## TVPaint Animation 11
-for
-Animation
-## Adobe Photoshop
-for Work
+# Programs 
+- Yazi -
+- Emacs -
+- Visual Studio Code -
+# Apps
+- Indesign -
+- Premiere - for reel compositing
+- TVPaint Animation 11 - for Animation
+- Adobe Photoshop - for Work
