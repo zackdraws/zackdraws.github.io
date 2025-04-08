@@ -136,27 +136,27 @@ close
         left: 400px; 
     }
     .next-button:hover, .prev-button:hover {
-        background-color: #22bc41; /* Background color on hover */
+        background-color: #22bc41;
     }
     .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #22bc41;
     }
     .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #22bc41;
     }
     .gallery-frame {
     width: 100%; 
-    max-width: 2500px; /* Limit the maximum width of the frame */
-    margin: 0 auto; /* Center the frame horizontally */
-    padding: 4px; /* Add padding for a frame-like appearance */
-    box-sizing: border-box; /* Include padding in width calculations */
+    max-width: 2500px; 
+    margin: 0 auto;
+    padding: 4px; 
+    box-sizing: border-box;
     float: left
     }
     .gallery {
 	display: grid;
 	flex-wrap: wrap;
 gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
+grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
 gap: 10px;
 justify-content: center;
 }
@@ -316,8 +316,15 @@ img.large {
 }
    .header-navigation li:hover .submenu {
     display: flex;
-}
-    </style>
+   }
+   .bottom-text {
+       width: 100%;
+       left: 0;
+       text-align: center;
+       padding: 10px 0;
+       font-size: 16px;
+
+</style>
 </head>
 <body>
     <nav class="sidebar">
@@ -353,13 +360,9 @@ img.large {
 <body>
 
   <video-container>      
-
         <div class="video-container">
-
         <div class="gallery-frame">
-
         <div class="gallery-frame">
-
       <video-container>
 
         <h2>Storyboard Portfolio</h2>
@@ -369,7 +372,7 @@ img.large {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storyboard Viewer</title>
+    <title>Zack Johnson - Story -</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -1067,33 +1070,8 @@ img.large {
     }
 </script>
 
-</body>
-</html>    <div>
-      </div>
-        </div>
-    
-    </body>
-    </html>
-    
-        
-    </video-container>
-    <footer>
-
-      <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/yourusername">GitHub</a></p>
-    </footer>
-        </script>
-    </body>
-    </html>
-    </footer>
-    <div id="lightbox" class="hidden">
-        <span class="close-button" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-image" src="" alt="Lightbox Image">
-        <button class="prev-button">Previous</button>
-        <button class="next-button">Next</button>
-    </div>
-
-    <script src="lightbox.js"></script>
-</ul>
-    </script>
-</body>
-</html>
+<div>
+<div class="bottom-text">
+    <p> ©2025 Zack Johnson. All Rights Reserved </p>
+</footer>
+</div>
