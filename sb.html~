@@ -11,10 +11,12 @@
             margin: 0;
             padding: 0;
         }
+
+        /* Carousel Container */
         .carousel-container {
             position: relative;
-            width: 800px;
-            height: 650px;
+            width: 80%;
+            max-width: 800px;
             margin: 20px auto;
             border-radius: 8px;
             overflow: hidden;
@@ -78,9 +80,12 @@
             background-color: rgba(0, 0, 0, 0.8);
             transform: scale(1.1);
         }
+
+
         .prev {
             margin-right: 0;
         }
+
         .next {
             margin-left: 0; 
         }
@@ -95,6 +100,7 @@
             margin-left: 10px;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         .action-btn:hover {
             background-color: rgba(0, 0, 0, 0.8);
             transform: scale(1.1);
@@ -106,16 +112,15 @@
 
 <div class="carousel-container">
 
-    <div class="image-title">Steve and Steven</div>
+    <div class="image-title">Storyboard Project Title</div>
+
+
     <div class="storyboard-images" id="storyboardImages">
 
-        <img src="sb/sb01/sb_01.jpg" alt="Image 1">
-        <img src="sb/sb01/sb_02.jpg" alt="Image 2">
-        <img src="sb/sb01/sb_03.jpg" alt="Image 3">
-        <img src="sb/sb01/sb_04.jpg" alt="Image 4">
-        <img src="sb/sb01/sb_05.jpg" alt="Image 5">
-        <img src="sb/sb01/sb_06.jpg" alt="Image 6">
-
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
     </div>
     <div class="bottom-bar">
         <button class="prev" onclick="moveSlide(-1)">&#8592;</button>
@@ -128,14 +133,22 @@
         </a>
     </div>
 </div>
+
 <script>
     let index = 0;
+
     function moveSlide(step) {
         const images = document.getElementById("storyboardImages");
         const totalImages = images.children.length;
+
         index = (index + step + totalImages) % totalImages;  
+
+
         images.style.transform = `translateX(-${index * 100}%)`;
+
         images.style.transition = "none";
+        
+
         setTimeout(() => {
             images.style.transition = "transform 0.5s ease"; 
         }, 50); 

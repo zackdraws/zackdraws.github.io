@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+</head>
+<style>
+#pdf-container {
+    margin: 20px auto;
+    text-align: center;
+}
+#pdf-viewer {
+    width: 640px;
+    height: 580px; 
+    border: none;
+}
+@media (max-width: 768px) {
+    #pdf-viewer {
+        height: 400px;
+    }
+}
+@media (max-width: 480px) {
+    #pdf-viewer {
+        height: 300px;
+    }
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.image img:hover {
+    transform: scale(1.1);
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    align-items: absolute;
+    position: center;
+    height: 100vh;
+}
+.sidebar {
+    width: 143px; 
+    background-color: #fff;
+    color: #333;
+    padding: 22px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 1; 
+}
+.sidebar h2 {
+    font-size: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar a {
+    font-size: 25px ;
+    text-decoration: none;
+    color: #000;
+}
+.content {
+    margin-left: 30px;
+    padding: 2px;
+    transition:margin-left: 0.3s; 
+}
+.sidebar.closer { 
+    width:200px;
+}
+content.closer {
+    margin-left:20px;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 999;
+}
+#lightbox img {
+    max-width: 80%;
+    max-height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+close
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #f10707;
+}
+.next-button,
+.prev-button {
+    background-color: #fff;
+    color: #000000;
+    padding: 4px 4px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 24;
+    right: 11;
+    display: block; 
+    width: 10%; 
+    text-align: center; 
+}
+    .next-button {
+        right: 400px; 
+    }
+    .prev-button {
+        left: 400px; 
+    }
+    .next-button:hover, .prev-button:hover {
+        background-color: #22bc41; /* Background color on hover */
+    }
+    .next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+    }
+    .next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+    }
+    .gallery-frame {
+    width: 100%; 
+    max-width: 2500px; /* Limit the maximum width of the frame */
+    margin: 0 auto; /* Center the frame horizontally */
+    padding: 4px; /* Add padding for a frame-like appearance */
+    box-sizing: border-box; /* Include padding in width calculations */
+    float: left
+    }
+    .gallery {
+	display: grid;
+	flex-wrap: wrap;
+gap: 10px;
+grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
+gap: 10px;
+justify-content: center;
+}
+    .gallery-item{
+	flex; 1 0 calc(33.33% - 20px); /
+	max-width: calc(33.33% - 30px); 
+	max-height: 450px; 
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	transition: transform 0.2s;
+} 
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+.video-container { 
+    text-align: center;
+    margin-top: -120px;
+    margin-left: auto;
+    border: 180px solid #fff;
+    box-sizing: content-box;
+}
+video {
+max-width: 100%;
+}
+h1 {
+    
+    text-align: center; 
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}
+h3 {
+    text-align:center; 
+    font-size: 10px; 
+
+}
+   .speakerdeck-iframe{
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-left: 218px;
+   }
+img.small {
+    max-width: 100px;
+    max-height: 100px;
+}
+img.large {
+    max-width: 700px;
+    max-height: 700px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+.item-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.item-caption h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+.emoji {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.social-link img {
+    width: 30px; 
+    height: 30px; 
+}
+.video-container {
+   text-align: center;
+   margin-top:-170px;
+   margin-left:60px;
+   border: 190px sold #fff;
+   box-sizing:content-box;    
+}
+#floatingGif {
+    position: fixed;  
+    top: 1px;       
+    left: 140px;
+    width: 100px;
+    height: auto;
+    z-index: 9999;
+}
+#floatingGif2 {
+    position: fixed;  
+    top: 460px;       
+    left: 40px;
+    width: 100px;
+    height: auto;
+    z-index: 9999;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+    border: 1px solid ###fff;
+    border-radius: 10px;
+}
+.sidebar li:hover .submenu {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.header-navigation .submenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 1px 0px rgba(, 0, 0, 0.00);
+    z-index: 5;
+    border: 10px solid #fff;
+    border-radius: 10px;
+}
+   .header-navigation li:hover .submenu {
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+                <h3><a href="index.html">Zack Johnson</a></li></h3>
+                <h3>Animation - Design</h3>
+                <h3>ZackJohnsonArt@gmail.com</h3>
+                <h2><a href="index.html">Portfolio</a></h2>
+                <h2><a href="Story.html">Story</a><h2>
+                <h2><a href="Animation.html">Animation</a></h2>
+                <h2><a href="CharacterDesign.html">Character Design</a></h2>
+                <h2><a href="backgrounddesign.html">Background Design</a></h2>
+                <h2><a href="Resume.html"> Resume</a></h2> 
+                <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
+ <div class="social-links">
+     <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+    </a>
+     <a class="social-link" href="https://twitter.com/zack_draws">
+                    <img src="twitter.png" alt="twitter">
+     </a>
+     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                    <img src="linkedin.png" alt="linkedin">
+		</a>	
+        </div>
+            </ul>
+</nav>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+  <video-container>      
+
+        <div class="video-container">
+
+        <div class="gallery-frame">
+
+        <div class="gallery-frame">
+
+      <video-container>
+
+        <h2>Storyboard Portfolio</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel-container {
+            position: relative;
+            width: 1980px;
+	    height: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 1200px;
+            background-color: #fff; 
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: rgba(0, 0, 0.6);
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            z-index: 10; 
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%; 
+        }
+        .storyboard-images img {
+	    height: 900px;
+	    width: 100%; 
+            height: 100%; 
+            object-fit: contain;
+            object-position: center; 
+            display: block; 
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+        .prev {
+            margin-right: 0;
+        }
+        .next {
+            margin-left: 0; 
+        }
+        .action-btn {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .action-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 650px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            z-index: 10; 
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+        .storyboard-images img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain;
+            object-position: center; 
+            display: block; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+        .prev {
+            margin-right: 0;
+        }
+        .next {
+            margin-left: 0; 
+        }
+        .action-btn {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .action-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- First Carousel -->
+<div class="carousel-container" id="carousel1">
+    <div class="image-title"> Farm Life Storyboard Sample</div>
+    <div class="storyboard-images" id="storyboardImages1">
+        <img src="sb/sb02/sb_01.jpg" alt="Image 1">
+        <img src="sb/sb02/sb_02.jpg" alt="Image 2">
+        <img src="sb/sb02/sb_03.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_04.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_05.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_06.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_07.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_08.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_09.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_10.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_11.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_12.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_13.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_14.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_15.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_16.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_17.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_18.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_19.jpg" alt="Image 1">
+        <img src="sb/sb02/sb_20.jpg" alt="Image 2">
+        <img src="sb/sb02/sb_21.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_22.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_23.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_24.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_25.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_26.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_27.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_28.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_29.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_30.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_31.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_32.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_33.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_34.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_35.jpg" alt="Image 5">
+        <img src="sb/sb02/sb_36.jpg" alt="Image 6">
+        <img src="sb/sb02/sb_37.jpg" alt="Image 3">
+        <img src="sb/sb02/sb_38.jpg" alt="Image 4">
+        <img src="sb/sb02/sb_39.jpg" alt="Image 5">
+
+    </div>
+    <div class="bottom-bar">
+        <button class="prev" onclick="moveSlide(-1, 'storyboardImages1')">&#8592;</button>
+        <button class="next" onclick="moveSlide(1, 'storyboardImages1')">&#8594;</button>
+        <a href="https://zackdraws.github.io/sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank">
+            <button class="action-btn">PDF Copy</button>
+        </a>
+        <a href= target="_blank">
+            <button class="action-btn">Animatic</button>
+        </a>
+    </div>
+</div>
+<h1> Steve and Steven </
+<!-- Second Carousel -->
+<div class="carousel-container" id="carousel2">
+    <div class="image-title">Steve and Steven </div>
+    <div class="storyboard-images" id="storyboardImages2">
+      <img src="sb/sb01/sb_01.jpg" alt="Image 7">
+      <img src="sb/sb01/sb_02.jpg" alt="Image 8">
+      <img src="sb/sb01/sb_03.jpg" alt="Image 9">
+      <img src="sb/sb01/sb_04.jpg" alt="Image 10">
+      <img src="sb/sb01/sb_05.jpg" alt="Image 11">
+      <img src="sb/sb01/sb_06.jpg" alt="Image 12">
+      <img src="sb/sb01/sb_07.jpg" alt="Image 13">
+      <img src="sb/sb01/sb_08.jpg" alt="Image 14">
+      <img src="sb/sb01/sb_09.jpg" alt="Image 15">
+      <img src="sb/sb01/sb_10.jpg" alt="Image 16">
+      <img src="sb/sb01/sb_11.jpg" alt="Image 17">
+      <img src="sb/sb01/sb_12.jpg" alt="Image 18">
+      <img src="sb/sb01/sb_13.jpg" alt="Image 19">
+      <img src="sb/sb01/sb_14.jpg" alt="Image 20">
+      <img src="sb/sb01/sb_15.jpg" alt="Image 21">
+      <img src="sb/sb01/sb_16.jpg" alt="Image 22">
+      <img src="sb/sb01/sb_17.jpg" alt="Image 23">
+      <img src="sb/sb01/sb_18.jpg" alt="Image 24">
+      <img src="sb/sb01/sb_19.jpg" alt="Image 25">
+      <img src="sb/sb01/sb_20.jpg" alt="Image 26">
+      <img src="sb/sb01/sb_21.jpg" alt="Image 27">
+      <img src="sb/sb01/sb_22.jpg" alt="Image 28">
+      <img src="sb/sb01/sb_23.jpg" alt="Image 29">
+      <img src="sb/sb01/sb_24.jpg" alt="Image 30">
+      <img src="sb/sb01/sb_25.jpg" alt="Image 31">
+      <img src="sb/sb01/sb_26.jpg" alt="Image 32">
+      <img src="sb/sb01/sb_27.jpg" alt="Image 33">
+      <img src="sb/sb01/sb_28.jpg" alt="Image 34">
+      <img src="sb/sb01/sb_29.jpg" alt="Image 35">
+      <img src="sb/sb01/sb_30.jpg" alt="Image 36">
+      <img src="sb/sb01/sb_31.jpg" alt="Image 37">
+      <img src="sb/sb01/sb_32.jpg" alt="Image 38">
+      <img src="sb/sb01/sb_33.jpg" alt="Image 39">
+      <img src="sb/sb01/sb_34.jpg" alt="Image 40">
+      <img src="sb/sb01/sb_35.jpg" alt="Image 41">
+      <img src="sb/sb01/sb_36.jpg" alt="Image 42">
+      <img src="sb/sb01/sb_37.jpg" alt="Image 43">
+      <img src="sb/sb01/sb_38.jpg" alt="Image 44">
+      <img src="sb/sb01/sb_39.jpg" alt="Image 45">
+      <img src="sb/sb01/sb_40.jpg" alt="Image 46">
+      <img src="sb/sb01/sb_41.jpg" alt="Image 47">
+      <img src="sb/sb01/sb_42.jpg" alt="Image 48">
+      <img src="sb/sb01/sb_43.jpg" alt="Image 49">
+      <img src="sb/sb01/sb_44.jpg" alt="Image 50">
+      <img src="sb/sb01/sb_45.jpg" alt="Image 51">
+      <img src="sb/sb01/sb_46.jpg" alt="Image 52">
+      <img src="sb/sb01/sb_47.jpg" alt="Image 53">
+      <img src="sb/sb01/sb_48.jpg" alt="Image 54">
+      <img src="sb/sb01/sb_49.jpg" alt="Image 55">
+      <img src="sb/sb01/sb_50.jpg" alt="Image 56">
+      <img src="sb/sb01/sb_51.jpg" alt="Image 57">
+      <img src="sb/sb01/sb_52.jpg" alt="Image 58">
+      <img src="sb/sb01/sb_53.jpg" alt="Image 59">
+      <img src="sb/sb01/sb_54.jpg" alt="Image 60">
+      <img src="sb/sb01/sb_55.jpg" alt="Image 61">
+      <img src="sb/sb01/sb_56.jpg" alt="Image 62">
+      <img src="sb/sb01/sb_57.jpg" alt="Image 63">
+      <img src="sb/sb01/sb_58.jpg" alt="Image 64">
+      <img src="sb/sb01/sb_59.jpg" alt="Image 65">
+      <img src="sb/sb01/sb_60.jpg" alt="Image 66">
+      <img src="sb/sb01/sb_61.jpg" alt="Image 67">
+      <img src="sb/sb01/sb_62.jpg" alt="Image 68">
+      <img src="sb/sb01/sb_63.jpg" alt="Image 69">
+      <img src="sb/sb01/sb_64.jpg" alt="Image 70">
+      <img src="sb/sb01/sb_65.jpg" alt="Image 71">
+      <img src="sb/sb01/sb_66.jpg" alt="Image 72">
+      <img src="sb/sb01/sb_67.jpg" alt="Image 73">
+      <img src="sb/sb01/sb_68.jpg" alt="Image 74">
+      <img src="sb/sb01/sb_69.jpg" alt="Image 75">
+      <img src="sb/sb01/sb_70.jpg" alt="Image 76">
+      <img src="sb/sb01/sb_71.jpg" alt="Image 77">
+      <img src="sb/sb01/sb_72.jpg" alt="Image 78">
+      <img src="sb/sb01/sb_73.jpg" alt="Image 79">
+      <img src="sb/sb01/sb_74.jpg" alt="Image 80">
+      <img src="sb/sb01/sb_75.jpg" alt="Image 81">
+      <img src="sb/sb01/sb_76.jpg" alt="Image 82">
+      <img src="sb/sb01/sb_77.jpg" alt="Image 83">
+      <img src="sb/sb01/sb_78.jpg" alt="Image 84">
+      <img src="sb/sb01/sb_79.jpg" alt="Image 85">
+      <img src="sb/sb01/sb_80.jpg" alt="Image 86">
+      <img src="sb/sb01/sb_81.jpg" alt="Image 87">
+      <img src="sb/sb01/sb_82.jpg" alt="Image 88">
+      <img src="sb/sb01/sb_83.jpg" alt="Image 89">
+      <img src="sb/sb01/sb_84.jpg" alt="Image 90">
+      <img src="sb/sb01/sb_85.jpg" alt="Image 91">
+      <img src="sb/sb01/sb_86.jpg" alt="Image 92">
+      <img src="sb/sb01/sb_87.jpg" alt="Image 93">
+      <img src="sb/sb01/sb_88.jpg" alt="Image 94">
+      <img src="sb/sb01/sb_89.jpg" alt="Image 95">
+      <img src="sb/sb01/sb_90.jpg" alt="Image 96">
+      <img src="sb/sb01/sb_91.jpg" alt="Image 97">
+      <img src="sb/sb01/sb_92.jpg" alt="Image 98">
+      <img src="sb/sb01/sb_93.jpg" alt="Image 99">
+      <img src="sb/sb01/sb_94.jpg" alt="Image 100">
+      <img src="sb/sb01/sb_95.jpg" alt="Image 101">
+      <img src="sb/sb01/sb_96.jpg" alt="Image 102">
+      <img src="sb/sb01/sb_97.jpg" alt="Image 103">
+      <img src="sb/sb01/sb_98.jpg" alt="Image 104">
+      <img src="sb/sb01/sb_99.jpg" alt="Image 105">
+      <img src="sb/sb01/sb_100.jpg" alt="Image 106">
+      <img src="sb/sb01/sb_101.jpg" alt="Image 107">
+      <img src="sb/sb01/sb_102.jpg" alt="Image 108">
+      <img src="sb/sb01/sb_103.jpg" alt="Image 109">
+      <img src="sb/sb01/sb_104.jpg" alt="Image 110">
+      <img src="sb/sb01/sb_105.jpg" alt="Image 111">
+      <img src="sb/sb01/sb_106.jpg" alt="Image 112">
+      <img src="sb/sb01/sb_107.jpg" alt="Image 113">
+      <img src="sb/sb01/sb_108.jpg" alt="Image 114">
+      <img src="sb/sb01/sb_109.jpg" alt="Image 115">
+      <img src="sb/sb01/sb_110.jpg" alt="Image 116">
+      <img src="sb/sb01/sb_111.jpg" alt="Image 117">
+      <img src="sb/sb01/sb_112.jpg" alt="Image 118">
+      <img src="sb/sb01/sb_113.jpg" alt="Image 119">
+      <img src="sb/sb01/sb_114.jpg" alt="Image 120">
+      <img src="sb/sb01/sb_115.jpg" alt="Image 121">
+      <img src="sb/sb01/sb_116.jpg" alt="Image 122">
+      <img src="sb/sb01/sb_117.jpg" alt="Image 123">
+      <img src="sb/sb01/sb_118.jpg" alt="Image 124">
+      <img src="sb/sb01/sb_119.jpg" alt="Image 125">
+      <img src="sb/sb01/sb_120.jpg" alt="Image 126">
+      <img src="sb/sb01/sb_132.jpg" alt="Image 138">
+      <img src="sb/sb01/sb_133.jpg" alt="Image 139">
+      <img src="sb/sb01/sb_134.jpg" alt="Image 140">
+      <img src="sb/sb01/sb_135.jpg" alt="Image 141">
+      <img src="sb/sb01/sb_136.jpg" alt="Image 142">
+      <img src="sb/sb01/sb_137.jpg" alt="Image 143">
+      <img src="sb/sb01/sb_138.jpg" alt="Image 144">
+      <img src="sb/sb01/sb_139.jpg" alt="Image 145">
+      <img src="sb/sb01/sb_140.jpg" alt="Image 146">
+      <img src="sb/sb01/sb_141.jpg" alt="Image 147">
+      <img src="sb/sb01/sb_142.jpg" alt="Image 148">
+      <img src="sb/sb01/sb_143.jpg" alt="Image 149">
+      <img src="sb/sb01/sb_144.jpg" alt="Image 150">
+      <img src="sb/sb01/sb_145.jpg" alt="Image 151">
+      <img src="sb/sb01/sb_146.jpg" alt="Image 152">
+      <img src="sb/sb01/sb_147.jpg" alt="Image 153">
+      <img src="sb/sb01/sb_148.jpg" alt="Image 154">
+      <img src="sb/sb01/sb_149.jpg" alt="Image 155">
+      <img src="sb/sb01/sb_150.jpg" alt="Image 156">
+      <img src="sb/sb01/sb_151.jpg" alt="Image 157">
+      <img src="sb/sb01/sb_152.jpg" alt="Image 158">
+      <img src="sb/sb01/sb_153.jpg" alt="Image 159">
+      <img src="sb/sb01/sb_154.jpg" alt="Image 160">
+      <img src="sb/sb01/sb_155.jpg" alt="Image 161">
+      <img src="sb/sb01/sb_156.jpg" alt="Image 162">
+      <img src="sb/sb01/sb_157.jpg" alt="Image 163">
+      <img src="sb/sb01/sb_158.jpg" alt="Image 164">
+      <img src="sb/sb01/sb_159.jpg" alt="Image 165">
+      <img src="sb/sb01/sb_160.jpg" alt="Image 166">
+      <img src="sb/sb01/sb_161.jpg" alt="Image 167">
+      <img src="sb/sb01/sb_162.jpg" alt="Image 168">
+      <img src="sb/sb01/sb_163.jpg" alt="Image 169">
+      <img src="sb/sb01/sb_164.jpg" alt="Image 170">
+      <img src="sb/sb01/sb_165.jpg" alt="Image 171">
+      <img src="sb/sb01/sb_166.jpg" alt="Image 172">
+      <img src="sb/sb01/sb_167.jpg" alt="Image 173">
+      <img src="sb/sb01/sb_168.jpg" alt="Image 174">
+      <img src="sb/sb01/sb_169.jpg" alt="Image 175">
+      <img src="sb/sb01/sb_170.jpg" alt="Image 176">
+      <img src="sb/sb01/sb_171.jpg" alt="Image 177">
+      <img src="sb/sb01/sb_172.jpg" alt="Image 178">
+      <img src="sb/sb01/sb_173.jpg" alt="Image 179">
+      <img src="sb/sb01/sb_174.jpg" alt="Image 180">
+      <img src="sb/sb01/sb_175.jpg" alt="Image 181">
+      <img src="sb/sb01/sb_176.jpg" alt="Image 182">
+      <img src="sb/sb01/sb_177.jpg" alt="Image 183">
+      <img src="sb/sb01/sb_178.jpg" alt="Image 184">
+      <img src="sb/sb01/sb_179.jpg" alt="Image 185">
+      <img src="sb/sb01/sb_180.jpg" alt="Image 186">
+      <img src="sb/sb01/sb_181.jpg" alt="Image 187">
+      <img src="sb/sb01/sb_182.jpg" alt="Image 188">
+      <img src="sb/sb01/sb_183.jpg" alt="Image 189">
+      <img src="sb/sb01/sb_184.jpg" alt="Image 190">
+      <img src="sb/sb01/sb_185.jpg" alt="Image 191">
+      <img src="sb/sb01/sb_186.jpg" alt="Image 192">
+      <img src="sb/sb01/sb_187.jpg" alt="Image 193">
+      <img src="sb/sb01/sb_188.jpg" alt="Image 194">
+      <img src="sb/sb01/sb_189.jpg" alt="Image 195">
+      <img src="sb/sb01/sb_190.jpg" alt="Image 196">
+      <img src="sb/sb01/sb_191.jpg" alt="Image 197">
+      <img src="sb/sb01/sb_192.jpg" alt="Image 198">
+      <img src="sb/sb01/sb_193.jpg" alt="Image 199">
+      <img src="sb/sb01/sb_194.jpg" alt="Image 200">
+    </div>
+    <div class="bottom-bar">
+        <button class="prev" onclick="moveSlide(-1, 'storyboardImages2')">&#8592;</button>
+        <button class="next" onclick="moveSlide(1, 'storyboardImages2')">&#8594;</button>
+        <a href="https://zackdraws.github.io/sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank">
+            <button class="action-btn">PDF Copy</button>
+        </a>
+        <a href="https://player.vimeo.com/video/779439061" target="_blank">
+            <button class="action-btn">Animatic</button>
+        </a>
+    </div>
+</div>
+
+<h1> Robot and Monster </h1>
+<!-- Second Carousel -->
+<div class="carousel-container" id="carousel3">
+    <div class="image-title">Robot and Monster </div>
+    <div class="storyboard-images" id="storyboardImages3">
+      <img src="sb/sb03/sb_01.jpg" alt="Image 7">
+      <img src="sb/sb03/sb_02.jpg" alt="Image 8">
+      <img src="sb/sb03/sb_03.jpg" alt="Image 9">
+      <img src="sb/sb03/sb_04.jpg" alt="Image 10">
+      <img src="sb/sb03/sb_05.jpg" alt="Image 11">
+      <img src="sb/sb03/sb_06.jpg" alt="Image 12">
+      <img src="sb/sb03/sb_07.jpg" alt="Image 13">
+      <img src="sb/sb03/sb_08.jpg" alt="Image 14">
+      <img src="sb/sb03/sb_09.jpg" alt="Image 15">
+      <img src="sb/sb03/sb_10.jpg" alt="Image 16">
+      <img src="sb/sb03/sb_11.jpg" alt="Image 17">
+      <img src="sb/sb03/sb_12.jpg" alt="Image 18">
+      <img src="sb/sb03/sb_13.jpg" alt="Image 19">
+      <img src="sb/sb03/sb_14.jpg" alt="Image 20">
+      <img src="sb/sb03/sb_15.jpg" alt="Image 21">
+      <img src="sb/sb03/sb_16.jpg" alt="Image 22">
+      <img src="sb/sb03/sb_17.jpg" alt="Image 23">
+      <img src="sb/sb03/sb_18.jpg" alt="Image 24">
+      <img src="sb/sb03/sb_19.jpg" alt="Image 25">
+      <img src="sb/sb03/sb_20.jpg" alt="Image 26">
+      <img src="sb/sb03/sb_21.jpg" alt="Image 27">
+      <img src="sb/sb03/sb_22.jpg" alt="Image 28">
+      <img src="sb/sb03/sb_23.jpg" alt="Image 29">
+      <img src="sb/sb03/sb_24.jpg" alt="Image 30">
+      <img src="sb/sb03/sb_25.jpg" alt="Image 31">
+      <img src="sb/sb03/sb_26.jpg" alt="Image 32">
+      <img src="sb/sb03/sb_27.jpg" alt="Image 33">
+      <img src="sb/sb03/sb_28.jpg" alt="Image 34">
+      <img src="sb/sb03/sb_29.jpg" alt="Image 35">
+      <img src="sb/sb03/sb_30.jpg" alt="Image 36">
+      <img src="sb/sb03/sb_31.jpg" alt="Image 37">
+      <img src="sb/sb03/sb_32.jpg" alt="Image 38">
+      <img src="sb/sb03/sb_33.jpg" alt="Image 39">
+      <img src="sb/sb03/sb_34.jpg" alt="Image 40">
+      <img src="sb/sb03/sb_35.jpg" alt="Image 41">
+      <img src="sb/sb03/sb_36.jpg" alt="Image 42">
+      <img src="sb/sb03/sb_37.jpg" alt="Image 43">
+      <img src="sb/sb03/sb_38.jpg" alt="Image 44">
+      <img src="sb/sb03/sb_39.jpg" alt="Image 45">
+      <img src="sb/sb03/sb_40.jpg" alt="Image 46">
+      <img src="sb/sb03/sb_41.jpg" alt="Image 47">
+      <img src="sb/sb03/sb_42.jpg" alt="Image 48">
+      <img src="sb/sb03/sb_43.jpg" alt="Image 49">
+      <img src="sb/sb03/sb_44.jpg" alt="Image 50">
+      <img src="sb/sb03/sb_45.jpg" alt="Image 51">
+      <img src="sb/sb03/sb_46.jpg" alt="Image 52">
+      <img src="sb/sb03/sb_47.jpg" alt="Image 53">
+      <img src="sb/sb03/sb_48.jpg" alt="Image 54">
+      <img src="sb/sb03/sb_49.jpg" alt="Image 55">
+      <img src="sb/sb03/sb_50.jpg" alt="Image 56">
+      <img src="sb/sb03/sb_51.jpg" alt="Image 57">
+      <img src="sb/sb03/sb_52.jpg" alt="Image 58">
+      <img src="sb/sb03/sb_53.jpg" alt="Image 59">
+      <img src="sb/sb03/sb_54.jpg" alt="Image 60">
+      <img src="sb/sb03/sb_55.jpg" alt="Image 61">
+      <img src="sb/sb03/sb_56.jpg" alt="Image 62">
+      <img src="sb/sb03/sb_57.jpg" alt="Image 63">
+      <img src="sb/sb03/sb_58.jpg" alt="Image 64">
+      <img src="sb/sb03/sb_59.jpg" alt="Image 65">
+      <img src="sb/sb03/sb_60.jpg" alt="Image 66">
+      <img src="sb/sb03/sb_61.jpg" alt="Image 67">
+      <img src="sb/sb03/sb_62.jpg" alt="Image 68">
+      <img src="sb/sb03/sb_63.jpg" alt="Image 69">
+      <img src="sb/sb03/sb_64.jpg" alt="Image 70">
+      <img src="sb/sb03/sb_65.jpg" alt="Image 71">
+      <img src="sb/sb03/sb_66.jpg" alt="Image 72">
+      <img src="sb/sb03/sb_67.jpg" alt="Image 73">
+      <img src="sb/sb03/sb_68.jpg" alt="Image 74">
+      <img src="sb/sb03/sb_69.jpg" alt="Image 75">
+      <img src="sb/sb03/sb_70.jpg" alt="Image 76">
+      <img src="sb/sb03/sb_71.jpg" alt="Image 77">
+      <img src="sb/sb03/sb_72.jpg" alt="Image 78">
+      <img src="sb/sb03/sb_73.jpg" alt="Image 79">
+      <img src="sb/sb03/sb_74.jpg" alt="Image 80">
+      <img src="sb/sb03/sb_75.jpg" alt="Image 81">
+      <img src="sb/sb03/sb_76.jpg" alt="Image 82">
+      <img src="sb/sb03/sb_77.jpg" alt="Image 83">
+      <img src="sb/sb03/sb_78.jpg" alt="Image 84">
+      <img src="sb/sb03/sb_79.jpg" alt="Image 85">
+      <img src="sb/sb03/sb_80.jpg" alt="Image 86">
+      <img src="sb/sb03/sb_81.jpg" alt="Image 87">
+      <img src="sb/sb03/sb_82.jpg" alt="Image 88">
+      <img src="sb/sb03/sb_83.jpg" alt="Image 89">
+      <img src="sb/sb03/sb_84.jpg" alt="Image 90">
+      <img src="sb/sb03/sb_85.jpg" alt="Image 91">
+      <img src="sb/sb03/sb_86.jpg" alt="Image 92">
+      <img src="sb/sb03/sb_87.jpg" alt="Image 93">
+      <img src="sb/sb03/sb_88.jpg" alt="Image 94">
+      <img src="sb/sb03/sb_89.jpg" alt="Image 95">
+      <img src="sb/sb03/sb_90.jpg" alt="Image 96">
+      <img src="sb/sb03/sb_91.jpg" alt="Image 97">
+      <img src="sb/sb03/sb_92.jpg" alt="Image 98">
+      <img src="sb/sb03/sb_93.jpg" alt="Image 99">
+      <img src="sb/sb03/sb_94.jpg" alt="Image 100">
+      <img src="sb/sb03/sb_95.jpg" alt="Image 101">
+      <img src="sb/sb03/sb_96.jpg" alt="Image 102">
+      <img src="sb/sb03/sb_97.jpg" alt="Image 103">
+      <img src="sb/sb03/sb_98.jpg" alt="Image 104">
+      <img src="sb/sb03/sb_99.jpg" alt="Image 105">
+      <img src="sb/sb03/sb_100.jpg" alt="Image 106">
+      <img src="sb/sb03/sb_101.jpg" alt="Image 107">
+      <img src="sb/sb03/sb_102.jpg" alt="Image 108">
+      <img src="sb/sb03/sb_103.jpg" alt="Image 109">
+      <img src="sb/sb03/sb_104.jpg" alt="Image 110">
+      <img src="sb/sb03/sb_105.jpg" alt="Image 111">
+      <img src="sb/sb03/sb_106.jpg" alt="Image 112">
+      <img src="sb/sb03/sb_107.jpg" alt="Image 113">
+      <img src="sb/sb03/sb_108.jpg" alt="Image 114">
+      <img src="sb/sb03/sb_109.jpg" alt="Image 115">
+      <img src="sb/sb03/sb_110.jpg" alt="Image 116">
+      <img src="sb/sb03/sb_111.jpg" alt="Image 117">
+      <img src="sb/sb03/sb_112.jpg" alt="Image 118">
+      <img src="sb/sb03/sb_113.jpg" alt="Image 119">
+      <img src="sb/sb03/sb_114.jpg" alt="Image 120">
+      <img src="sb/sb03/sb_115.jpg" alt="Image 121">
+      <img src="sb/sb03/sb_116.jpg" alt="Image 122">
+      <img src="sb/sb03/sb_117.jpg" alt="Image 123">
+      <img src="sb/sb03/sb_118.jpg" alt="Image 124">
+      <img src="sb/sb03/sb_119.jpg" alt="Image 125">
+      <img src="sb/sb03/sb_120.jpg" alt="Image 126">
+      <img src="sb/sb03/sb_132.jpg" alt="Image 138">
+      <img src="sb/sb03/sb_133.jpg" alt="Image 139">
+      <img src="sb/sb03/sb_134.jpg" alt="Image 140">
+      <img src="sb/sb03/sb_135.jpg" alt="Image 141">
+      <img src="sb/sb03/sb_136.jpg" alt="Image 142">
+      <img src="sb/sb03/sb_137.jpg" alt="Image 143">
+      <img src="sb/sb03/sb_138.jpg" alt="Image 144">
+      <img src="sb/sb03/sb_139.jpg" alt="Image 145">
+      <img src="sb/sb03/sb_140.jpg" alt="Image 146">
+      <img src="sb/sb03/sb_141.jpg" alt="Image 147">
+      <img src="sb/sb03/sb_142.jpg" alt="Image 148">
+      <img src="sb/sb03/sb_143.jpg" alt="Image 149">
+      <img src="sb/sb03/sb_144.jpg" alt="Image 150">
+      <img src="sb/sb03/sb_145.jpg" alt="Image 151">
+      <img src="sb/sb03/sb_146.jpg" alt="Image 152">
+      <img src="sb/sb03/sb_147.jpg" alt="Image 153">
+      <img src="sb/sb03/sb_148.jpg" alt="Image 154">
+      <img src="sb/sb03/sb_149.jpg" alt="Image 155">
+      <img src="sb/sb03/sb_150.jpg" alt="Image 156">
+      <img src="sb/sb03/sb_151.jpg" alt="Image 157">
+      <img src="sb/sb03/sb_152.jpg" alt="Image 158">
+      <img src="sb/sb03/sb_153.jpg" alt="Image 159">
+      <img src="sb/sb03/sb_154.jpg" alt="Image 160">
+      <img src="sb/sb03/sb_155.jpg" alt="Image 161">
+      <img src="sb/sb03/sb_156.jpg" alt="Image 162">
+      <img src="sb/sb03/sb_157.jpg" alt="Image 163">
+      <img src="sb/sb03/sb_158.jpg" alt="Image 164">
+      <img src="sb/sb03/sb_159.jpg" alt="Image 165">
+      <img src="sb/sb03/sb_160.jpg" alt="Image 166">
+      <img src="sb/sb03/sb_161.jpg" alt="Image 167">
+      <img src="sb/sb03/sb_162.jpg" alt="Image 168">
+      <img src="sb/sb03/sb_163.jpg" alt="Image 169">
+      <img src="sb/sb03/sb_164.jpg" alt="Image 170">
+      <img src="sb/sb03/sb_165.jpg" alt="Image 171">
+      <img src="sb/sb03/sb_166.jpg" alt="Image 172">
+      <img src="sb/sb03/sb_167.jpg" alt="Image 173">
+      <img src="sb/sb03/sb_168.jpg" alt="Image 174">
+      <img src="sb/sb03/sb_169.jpg" alt="Image 175">
+      <img src="sb/sb03/sb_170.jpg" alt="Image 176">
+      <img src="sb/sb03/sb_171.jpg" alt="Image 177">
+      <img src="sb/sb03/sb_172.jpg" alt="Image 178">
+      <img src="sb/sb03/sb_173.jpg" alt="Image 179">
+      <img src="sb/sb03/sb_174.jpg" alt="Image 180">
+      <img src="sb/sb03/sb_175.jpg" alt="Image 181">
+      <img src="sb/sb03/sb_176.jpg" alt="Image 182">
+      <img src="sb/sb03/sb_177.jpg" alt="Image 183">
+      <img src="sb/sb03/sb_178.jpg" alt="Image 184">
+      <img src="sb/sb03/sb_179.jpg" alt="Image 185">
+      <img src="sb/sb03/sb_180.jpg" alt="Image 186">
+      <img src="sb/sb03/sb_181.jpg" alt="Image 187">
+      <img src="sb/sb03/sb_182.jpg" alt="Image 188">
+      <img src="sb/sb03/sb_183.jpg" alt="Image 189">
+      <img src="sb/sb03/sb_184.jpg" alt="Image 190">
+      <img src="sb/sb03/sb_185.jpg" alt="Image 191">
+      <img src="sb/sb03/sb_186.jpg" alt="Image 192">
+      <img src="sb/sb03/sb_187.jpg" alt="Image 193">
+      <img src="sb/sb03/sb_188.jpg" alt="Image 194">
+      <img src="sb/sb03/sb_189.jpg" alt="Image 195">
+      <img src="sb/sb03/sb_190.jpg" alt="Image 196">
+      <img src="sb/sb03/sb_191.jpg" alt="Image 197">
+      <img src="sb/sb03/sb_192.jpg" alt="Image 198">
+      <img src="sb/sb03/sb_193.jpg" alt="Image 199">
+      <img src="sb/sb03/sb_194.jpg" alt="Image 200">
+    </div>
+    <div class="bottom-bar">
+        <button class="prev" onclick="moveSlide(-1, 'storyboardImages3')">&#8592;</button>
+        <button class="next" onclick="moveSlide(1, 'storyboardImages3')">&#8594;</button>
+        <a href="https://zackdraws.github.io/sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank">
+            <button class="action-btn">PDF Copy</button>
+        </a>
+        <a href="https://player.vimeo.com/video/779439061" target="_blank">
+            <button class="action-btn">Animatic</button>
+        </a>
+    </div>
+</div>
+
+
+        </a>
+    </div>
+</div>
+
+<script>
+    // Move slide function
+    function moveSlide(step, carouselId) {
+        const images = document.getElementById(carouselId);
+        const totalImages = images.children.length;
+        let index = parseInt(images.getAttribute('data-index')) || 0;
+        index = (index + step + totalImages) % totalImages;
+        images.style.transform = `translateX(-${index * 100}%)`;
+        images.style.transition = "none";
+        setTimeout(() => {
+            images.style.transition = "transform 0.5s ease"; 
+        }, 50); 
+        images.setAttribute('data-index', index);  // Store the index in the element
+	
+    }
+  const carouselcontainer = document.getelementbyid("carouselcontainer");
+  carouselcontainer.addeventlistener("Click", () => {
+      // adding event listener for keyboard arrows
+      document.addeventlistener("keydown", handleArrowKeys);
+  });
+     window.addEventListener("click", (event) => {
+        if (!carouselContainer.contains(event.target)) {
+            document.removeEventListener("keydown", handleArrowKeys);
+        }
+    });
+
+    function handleArrowKeys(event) {
+        if (event.key === "ArrowLeft") {
+            moveSlide(-1); // Left arrow pressed
+        } else if (event.key === "ArrowRight") {
+            moveSlide(1); // Right arrow pressed
+        }
+    }
+</script>
+
+</body>
+</html>    <div>
+      </div>
+        </div>
+    
+    </body>
+    </html>
+    
+        
+    </video-container>
+    <footer>
+
+      <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/yourusername">GitHub</a></p>
+    </footer>
+        </script>
+    </body>
+    </html>
+    </footer>
+    <div id="lightbox" class="hidden">
+        <span class="close-button" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+        <button class="prev-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+
+    <script src="lightbox.js"></script>
+</ul>
+    </script>
+</body>
+</html>
