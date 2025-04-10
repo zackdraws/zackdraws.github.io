@@ -1,37 +1,29 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <html>
  <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" >
 </head>
  <style>
-/* container */
-/* PDF Container Styles */
 #pdf-container {
     margin: 20px auto;
     text-align: center;
 }
-
-/* PDF Viewer Styles */
 #pdf-viewer {
     width: 100%;
     height: 600px; /* Adjust the height as needed */
     border: none;
 }
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     #pdf-viewer {
         height: 400px; /* Reduce height for smaller screens */
     }
 }
-
 @media (max-width: 480px) {
     #pdf-viewer {
         height: 300px; /* Further reduce height for very small screens */
     }
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -42,18 +34,15 @@
     height: 200px;
     overflow: hidden;
 }
-
 .image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: transform 0.3s;
 }
-
 .image img:hover {
     transform: scale(1.1);
 }
-
 body {
     font-family: sans-serif;
 }
@@ -62,7 +51,6 @@ body {
     position: center;
     height: 100vh;
 }
-/* Sidebar */
 .sidebar {
     width: 143px; /* Width for larger screens */
     background-color: #fff; /* White background color for the sidebar */
@@ -89,8 +77,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
-/* content area */
 .content {
     margin-left: 30px; /* Adjust this value to match the width of the sidebar */
     padding: 2px;
@@ -102,8 +88,6 @@ width:200px;
 content.closer {
     margin-left:20px;
 }
-
-/* lightbox */
 #lightbox {
     display: none;
     position: fixed;
@@ -115,7 +99,6 @@ content.closer {
     text-align: center;
     z-index: 999;
 }
-
 #lightbox img {
     max-width: 80%;
     max-height: 80vh;
@@ -148,19 +131,19 @@ close
 }
 .next-button {
         right: 400px; /* Position the "next" button to the right */
-    }   
+}   
 .prev-button {
         left: 400px; /* Position the "previous" button to the left */
-    }    
+}    
 .next-button:hover, .prev-button:hover {
         background-color: #22bc41; /* Background color on hover */
-    }  
+}  
 .next-button:hover, .prev-button:hover {
     background-color: #22bc41; /* Background color on hover */
-    }
+}
 .next-button:hover, .prev-button:hover {
     background-color: #22bc41; /* Background color on hover */
-    }
+}
 .gallery-frame {
     width: 100%; /* Adjust the width as needed */
     max-width: 2500px; /* Limit the maximum width of the frame */
@@ -168,7 +151,7 @@ close
     padding: 1px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
     float: left
-    }
+}
 .gallery {
     display: grid;
     flex-wrap: wrap;
@@ -176,7 +159,7 @@ close
     grid-template-columns: repeat(auto-fit, minmax(200px, 8fr)); /* Responsive grid */
     gap: 1px;
     justify-content: center;
-    }
+}
 .gallery-item{
     flex; 1 0 calc(33.33% - 20px); /
    max-width: 220px;
@@ -185,7 +168,6 @@ close
     position: relative;
     cursor: pointer;
     transition: transform 0.2s;
-
 } 
 .gallery-item img {
     width: 100%;
@@ -196,7 +178,6 @@ close
 .gallery-item img:hover {
     transform: scale(1.1);
 }
-/* video container */
 .video-container { 
     text-align: center;
     margin-top: -120px;
@@ -204,11 +185,9 @@ close
     border: 180px solid #fff;
     box-sizing: content-box;
 }
-/*  video */
 video {
 max-width: 100%;
 }
-/*  heading */
 h1 {
     text-align: center; /* Center the heading */
     font-size: 18px; /* Adjust the font size as needed */
@@ -223,13 +202,11 @@ h3 {
     height: 500px;
     text-align: center;
     margin-left: 218px;
-   }
-/* Style for small images */
+}
 img.small {
     max-width: 100px;
     max-height: 100px;
 }
-/* Style for large images */
 img.large {
     max-width: 700px;
     max-height: 700px;
@@ -249,7 +226,6 @@ img.large {
     max-width: 90%;
     max-height: 90%;
 }
-/* Center text within gallery items */
 .item-caption {
     display: flex;
     flex-direction: column;
@@ -264,20 +240,16 @@ img.large {
     opacity: 0;
     transition: opacity 0.2s;
 }
-/* Style the caption text */
 .item-caption h1 {
     color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
     font-size: 20px; /* Adjust the font size as needed */
     text-align: center;
     padding: 10px;
 }
-
-/* Style for the social links */
 .social-links {
     text-align: center;
     margin-top: 20px;
 }
-
 .social-link {
     text-decoration: none;
     color: #333; /* Link color */
@@ -296,266 +268,527 @@ img.large {
 .video-container {
    text-align: center;
    margin-top:-170px;
+
    margin-left:60px;
+
    border: 190px sold #fff;
+
    box-sizing:content-box;    
+
 }
+
 #floatingGif {
+
     position: fixed;  
+
     top: 1px;       
+
     left: 140px;
+
     width: 100px;
+
     height: auto;
+
     z-index: 9999;
+
 }
+
 #floatingGif2 {
+
     position: fixed;  
+
     top: 460px;       
+
     left: 40px;
+
     width: 100px;
+
     height: auto;
+
     z-index: 9999;
+
 }
+
 .submenu {
+
     display: none;
+
     position: absolute;
+
     background-color: #fff;
+
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
+
     border: 1px solid ###fff;
+
     border-radius: 10px;
+
 }
+
 .sidebar li:hover .submenu {
+
     display: block;
+
     border: 1px solid #ccc;
+
     border-radius: 10px;
+
 }
+
 .header-navigation .submenu {
+
     display: none;
+
     flex-direction: column;
+
     position: absolute;
+
     background-color: #fff;
+
     box-shadow: 0 1px 0px rgba(, 0, 0, 0.00);
+
     z-index: 5;
+
     border: 10px solid #fff;
+
     border-radius: 10px;  
+
 }
+
    .header-navigation li:hover .submenu {
+
     display: flex;
+
 }
+
     </style>
+
 </head>
+
 <body>
+
     <nav class="sidebar">
+
                 <h3><a href="index.html">Zack Johnson</a></li></h3>
+
                 <h3>Animation - Design</h3>
+
                 <h3>ZackJohnsonArt@gmail.com</h3>
+
                 <h2><a href="index.html">Portfolio</a></h2>
+
                 <h2><a href="Story.html">Story</a><h2>
+
                 <h2><a href="Animation.html">Animation</a></h2>
+
                 <h2><a href="CharacterDesign.html">Character Design</a></h2>
+
                 <h2><a href="backgrounddesign.html">Background Design</a></h2>
+
                 <h2><a href="Resume.html"> Resume</a></h2> 
+
                 <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
+
            
+
  <div class="social-links">
+
      <a class="social-link" href="https://www.instagram.com/zackdraws">
+
                 <img src="insta.png" alt="Instagram">
+
     </a>
+
      <a class="social-link" href="https://twitter.com/zack_draws">
+
                     <img src="twitter.png" alt="twitter">
+
      </a>
+
      <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+
                     <img src="linkedin.png" alt="linkedin">
+
 		</a>	
+
         </div>
+
             </ul>
+
 </nav>
+
 <style>
+
 </style>
+
 </head>
+
 <body>
+
   <video-container>      
+
         <div class="video-container">
+
             <h2>Digital Painting</h2>
+
             <div class="gallery-frame">
+
 		<div class="gallery">
+
                     <div class="gallery-item">
+
 			<img src="fund/01/fund_01.jpg" alt="" data-src="fund/01/fund_01.jpg">
+
 		    </div>
+
                     <div class="gallery-item">
+
 			<img src="fund/01/fund_02.jpg" alt="" data-src="fund/01/fund_02.jpg">
+
                     </div>
+
                     <div class="gallery-item">
+
 			<img src="fund/01/fund_03.jpg" alt="" data-src="fund/01/fund_03.jpg">
+
                     </div>
+
                     <div class="gallery-item">
+
 			<img src="fund/01/fund_04.jpg" alt="" data-src="fund/01/fund_04.jpg">
+
                     </div>
+
 		    <div class="gallery-item">
+
 			<img src="fund/01/fund_05.jpg" alt="" data-src="fund/01/fund_05.jpg">
+
                     </div>
+
                     <div class="gallery-item">
+
 			<img src="fund/01/fund_06.jpg" alt="" data-src="fund/01/fund_06.jpg">
+
 		    </div>
+
 		    <header></header>
+
 	    </div>
+
 		<h2>Digital Plen-Air</h2>
+
 		<div class ="gallery-frame">
+
 		  <div class="gallery">
+
 		<div class="gallery-item">
+
                     <img src="fund/11/fund_03.jpg" alt="" data-src="fund/11/fund_03.jpg">
+
                 </div>
+
        		    <div class="gallery-item">
+
                     <img src="fund/11/fund_01.jpg" alt="" data-src="fund/11/fund_01.jpg">
+
                 </div>
+
               		<div class="gallery-item">
+
                     <img src="fund/11/fund_03.png" alt="" data-src="fund/11/fund_03.png">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/11/fund_04.png" alt="" data-src="fund/11/fund_04.png">
-                </div>
-		</div>
-		<h2>Fundamentals of Drawing</h2>
-		<div class ="gallery-frame">
-		  <div class="gallery">
-		<div class="gallery-item">
-                    <img src="fund/02/fund_01.jpg" alt="" data-src="fund/02/fund_01.jpg">
-                </div>
-                <div class="gallery-item">
-                    <img src="fund/02/fund_02.jpg" alt="" data-src="fund/02/fund_02.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/02/fund_03.jpg" alt="" data-src="fund/02/fund_03.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/02/fund_04.jpg" alt="" data-src="fund/02/fund_04.jpg">
-                </div>
-		  		<div class="gallery-item">
-                    <img src="fund/02/fund_05.jpg" alt="" data-src="fund/02/fund_05.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/02/fund_06.jpg" alt="" data-src="fund/02/fund_06.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/02/fund_07.jpg" alt="" data-src="fund/02/fund_07.jpg">
-		</div>
-		<header></header>
-		  </div>
-		<h2>Prop Sketches</h2>
-		<div class ="gallery-frame">
-		  <div class="gallery">
-		   <div class="gallery-item">
-                    <img src="fund/03/fund_01.jpg" alt="" data-src="fund/03/fund_01.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/03/fund_02.jpg" alt="" data-src="fund/03/fund_02.jpg">
-                        </div>
-		<div class="gallery-item">
-                    <img src="fund/03/fund_03.jpg" alt="" data-src="fund/03/fund_03.jpg">
-                </div>
-		<div class="gallery-item">
-                  <img src="fund/03/fund_04.jpg" alt="" data-src="fund/03/fund_04.jpg">
-		</div>
-		<div class="gallery-item">
-                  <img src="fund/03/fund_05.jpg" alt="" data-src="fund/03/fund_05.jpg">
-		</div>
-		<div class="gallery-item">
-                  <img src="fund/03/fund_06.jpg" alt="" data-src="fund/03/fund_06.jpg">
-		</div>
-		<div class="gallery-item">
-                  <img src="fund/03/fund_07.jpg" alt="" data-src="fund/03/fund_07.jpg">
-		</div>
-		  <header></header>
-		</div>
-		<h2>Film Studies </h2>
-		<div class ="gallery-frame">
-		  <div class="gallery">
-		<div class="gallery-item">
-                    <img src="fund/04/fund_01.jpg" alt="" data-src="fund/04/fund_01.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/04/fund_02.jpg" alt="" data-src="fund/04/fund_02.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/04/fund_03.jpg" alt="" data-src="fund/04/fund_03.jpg">
-                </div>
-		<div class="gallery-item">
-                    <img src="fund/04/fund_04.jpg" alt="" data-src="fund/04/fund_04.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/04/fund_05.jpg" alt="" data-src="fund/04/fund_05.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/04/fund_06.jpg" alt="" data-src="fund/04/fund_06.jpg">
-                		 </div>
-		<div class="gallery-item">
-                  <img src="fund/04/fund_07.jpg" alt="" data-src="fund/04/fund_07.jpg">
-	  </div>
-		  <header></header>
-	</div>
-		<h2>Animal Sketches</h2>
-		<div class ="gallery-frame">
-		  <div class="gallery">
-		<div class="gallery-item">
-                    <img src="fund/05/fund_01.jpg" alt="" data-src="fund/05/fund_01.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/05/fund_02.jpg" alt="" data-src="fund/05/fund_02.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/05/fund_03.jpg" alt="" data-src="fund/05/fund_03.jpg">
-                		 </div>
-		<div class="gallery-item">
-                    <img src="fund/05/fund_04.jpg" alt="" data-src="fund/05/fund_04.jpg">
+
                 </div>
 
 		<div class="gallery-item">
+
+                    <img src="fund/11/fund_04.png" alt="" data-src="fund/11/fund_04.png">
+
+                </div>
+
+		</div>
+
+		<h2>Fundamentals of Drawing</h2>
+
+		<div class ="gallery-frame">
+
+		  <div class="gallery">
+
+		<div class="gallery-item">
+
+                    <img src="fund/02/fund_01.jpg" alt="" data-src="fund/02/fund_01.jpg">
+
+                </div>
+
+                <div class="gallery-item">
+
+                    <img src="fund/02/fund_02.jpg" alt="" data-src="fund/02/fund_02.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/02/fund_03.jpg" alt="" data-src="fund/02/fund_03.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/02/fund_04.jpg" alt="" data-src="fund/02/fund_04.jpg">
+
+                </div>
+
+		  		<div class="gallery-item">
+
+                    <img src="fund/02/fund_05.jpg" alt="" data-src="fund/02/fund_05.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/02/fund_06.jpg" alt="" data-src="fund/02/fund_06.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/02/fund_07.jpg" alt="" data-src="fund/02/fund_07.jpg">
+
+		</div>
+
+		<header></header>
+
+		  </div>
+
+		<h2>Prop Sketches</h2>
+
+		<div class ="gallery-frame">
+
+		  <div class="gallery">
+
+		   <div class="gallery-item">
+
+                    <img src="fund/03/fund_01.jpg" alt="" data-src="fund/03/fund_01.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/03/fund_02.jpg" alt="" data-src="fund/03/fund_02.jpg">
+
+                        </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/03/fund_03.jpg" alt="" data-src="fund/03/fund_03.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                  <img src="fund/03/fund_04.jpg" alt="" data-src="fund/03/fund_04.jpg">
+
+		</div>
+
+		<div class="gallery-item">
+
+                  <img src="fund/03/fund_05.jpg" alt="" data-src="fund/03/fund_05.jpg">
+
+		</div>
+
+		<div class="gallery-item">
+
+                  <img src="fund/03/fund_06.jpg" alt="" data-src="fund/03/fund_06.jpg">
+
+		</div>
+
+		<div class="gallery-item">
+
+                  <img src="fund/03/fund_07.jpg" alt="" data-src="fund/03/fund_07.jpg">
+
+		</div>
+
+		  <header></header>
+
+		</div>
+
+		<h2>Film Studies </h2>
+
+		<div class ="gallery-frame">
+
+		  <div class="gallery">
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_01.jpg" alt="" data-src="fund/04/fund_01.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_02.jpg" alt="" data-src="fund/04/fund_02.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_03.jpg" alt="" data-src="fund/04/fund_03.jpg">
+
+                </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_04.jpg" alt="" data-src="fund/04/fund_04.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_05.jpg" alt="" data-src="fund/04/fund_05.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/04/fund_06.jpg" alt="" data-src="fund/04/fund_06.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                  <img src="fund/04/fund_07.jpg" alt="" data-src="fund/04/fund_07.jpg">
+
+	  </div>
+
+		  <header></header>
+
+	</div>
+
+		<h2>Animal Sketches</h2>
+
+		<div class ="gallery-frame">
+
+		  <div class="gallery">
+
+		<div class="gallery-item">
+
+                    <img src="fund/05/fund_01.jpg" alt="" data-src="fund/05/fund_01.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/05/fund_02.jpg" alt="" data-src="fund/05/fund_02.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/05/fund_03.jpg" alt="" data-src="fund/05/fund_03.jpg">
+
+                		 </div>
+
+		<div class="gallery-item">
+
+                    <img src="fund/05/fund_04.jpg" alt="" data-src="fund/05/fund_04.jpg">
+
+                </div>
+
+
+
+		<div class="gallery-item">
+
                     <img src="fund/05/fund_05.jpg" alt="" data-src="fund/05/fund_05.jpg">
 
+
+
 		 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/05/fund_06.jpg" alt="" data-src="fund/05/fund_06.jpg">
 
+
+
 		 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/05/fund_07.jpg" alt="" data-src="fund/05/fund_07.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                   <img src="fund/05/fund_08.jpg" alt="" data-src="fund/05/fund_08.jpg">
+
                 </div>
+
 	<header></header>
+
 		</div>
 
+
+
 	<h2>Caricatures</h2>
+
 		<div class ="gallery-frame">
+
 		  <div class="gallery">
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_01.jpg" alt="" data-src="fund/06/fund_01.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_02.jpg" alt="" data-src="fund/06/fund_02.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_03.jpg" alt="" data-src="fund/06/fund_03.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_04.jpg" alt="" data-src="fund/06/fund_04.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_05.jpg" alt="" data-src="fund/06/fund_05.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_06.jpg" alt="" data-src="fund/06/fund_06.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_07.jpg" alt="" data-src="fund/06/fund_07.jpg">
+
                 </div>
+
 		<div class="gallery-item">
+
                     <img src="fund/06/fund_08.jpg" alt="" data-src="fund/06/fund_08.jpg">
+
                 </div>
+
 	<header></header>
+
 		  </div>
+
 		          <h1>Background Sketches</h1>
+
         <div class="gallery-frame">
             <div class="gallery">
                 <div class="gallery-item">
@@ -577,7 +810,6 @@ img.large {
                     <img src="fund/09/fund_06.jpg" alt="" data-src="fund/09/fund_06.jpg">
 		</div>
 		    <header></header>
-
             </div>
         <div id="lightbox" class="hidden">
             <span class="close-button" onclick="closeLightbox()">&times;</span>
@@ -585,10 +817,8 @@ img.large {
             <button class="prev-button">Previous</button>
             <button class="next-button">Next</button>
         </div>
-    
         <script src="lightbox.js"></script>
     </div>
-
     <script src="lightbox.js"></script>
 </ul>
     </script>

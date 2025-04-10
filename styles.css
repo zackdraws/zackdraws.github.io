@@ -90,15 +90,16 @@ body {
     height: 100vh;
 }
 .sidebar {
-    width: 143px; /* Width for larger screens */
-    background-color: #fff; /* White background color for the sidebar */
+.sidebar {
+    width: 143px; 
+    background-color: #fff; 
     color: #333;
     padding: 22px;
-    position: fixed; /* Fix the sidebar position */
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
-    bottom: 0; /* Stretch the sidebar to the bottom of the page */
-    z-index: 1; /* Ensure the sidebar is above other content */ 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 1; 
 }
 .sidebar h2 {
     font-size: 20px;
@@ -116,7 +117,7 @@ body {
     color: #000;
 }
 .content {
-    margin-left: 30px; /* Adjust this value to match the width of the sidebar */
+    margin-left: 30px; 
     padding: 2px;
     transition:margin-left: 0.3s; 
 }
@@ -163,9 +164,9 @@ close
     position: absolute;
     top: 24;
     right: 11;
-    display: block; /* Change to block to align below the image */
-    width: 10%; /* Width to take the full width of the image container */
-    text-align: center; /* Center-align the buttons horizontally */
+    display: block; 
+    width: 10%; 
+    text-align: center; 
 }
 .next-button {
     right: 400px; /* Position the "next" button to the right */
@@ -198,6 +199,11 @@ close
     gap: 10px;
     justify-content: center;
 }
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .gallery-item{
     flex; 1 0 calc(33.33% - 20px); /
     max-width: calc(33.33% - 30px); 
@@ -206,7 +212,16 @@ close
     position:relative;
     cursor: pointer;
     transition: transform 0.2s;
-} 
+}
+.gallery-item2 {
+    flex; 1 0 calc(33.33% - 20px); /
+   max-width: 220px;
+    max-height: 165px; /* Adjust the height as needed */
+*\overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
 .gallery-item img {
     width: 100%;
     height: 100%;
@@ -221,6 +236,13 @@ close
     margin-top: -120px;
     margin-left: auto;
     border: 10px solid #fff;
+    box-sizing: content-box;
+}
+.video-container2 {
+    text-align: center;
+    margin-top: 120px;
+    margin-left: auto;
+    border:px solid #fff;
     box-sizing: content-box;
 }
 video02 {
