@@ -33,9 +33,12 @@
      transition: background-color 0.3s;
      display: inline-block;
      position: relative;
- }
+    text-align: center;
+    }
  .image-grid {
-     display: grid;
+    text-align: center;
+     
+    display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-gap: 10px;
      position: relative;
@@ -46,7 +49,19 @@
  .image-grid a:hover {
     background-color: #f0f0f0;
  }
+
+ header-title {
+    text-align: center;
+     position: fixed;
+     top: 40%; 
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: rem;
+     color: black;
+     z-index: 2;
+ }
  .header-title {
+    text-align: center;
      position: fixed;
      top: 40%; 
      left: 50%;
@@ -232,7 +247,7 @@
      transform: scale(1.1);
  }
  .video-container { 
-     
+    text-align: center;
     justify-content: center;
      margin-top: -120px;
      margin-left: auto;
@@ -246,10 +261,9 @@
      border:px solid #fff;
      box-sizing: content-box;
  }
- video02 {
+ .video-02 {
      <video controls width="950" height="100%">
      <source src="anp\ani_01.mp4" type="video/mp4">
-             </video>
  video {
      max-width: 120%;
  }
@@ -266,6 +280,10 @@
  h4 {
     text-align: center;
     font-size: 11px;
+ }
+ h5 {
+    font-size: 15px;
+    margin-bottom: 20px;
  }
  .speakerdeck-iframe{
      width: 600px;
