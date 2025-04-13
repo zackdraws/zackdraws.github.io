@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 .preview {
     display: none;
     position: absolute;
@@ -49,9 +54,18 @@
  .image-grid a:hover {
     background-color: #f0f0f0;
  }
-
+ header-title-2 {
+     text-align: center;
+     position: fixed;
+     top: 10%; 
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: rem;
+     color: black;
+     z-index: 2;
+ }   
  header-title {
-    text-align: center;
+     text-align: center;
      position: fixed;
      top: 40%; 
      left: 50%;
@@ -90,6 +104,7 @@
      transform: scale(1.1);
  }
  body {
+     text-align: center;
      font-family: sans-serif;
      margin: 0;
      font-family: sans-serif;
@@ -98,10 +113,26 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     text-align: center;
      height: 100vh;
  }
+ .center-title {
+     position: fixed;
+     top: 0;
+     left: 50%
+	   transform: translateX(-50%);
+     background-color: white;
+     width: 100%;
+     margin-top: 300px;
+     font-size: 3em;
+     text-align: center;
+     padding: 20px 0;
+     z-index: 1000;
+     font-weight: bold;
+     color: black;
+ }
  .container {
-     align-items: absolute;/* Align items to the top */
+     align-items: absolute;
      position: center;
      height: 100vh;
  }
