@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}    
 .preview {
     display: none;
     position: absolute;
@@ -126,11 +126,42 @@
      margin-top: 300px;
      font-size: 3em;
      text-align: center;
-     padding: 20px 0;
+     padding: 0px 0;
      z-index: 1000;
      font-weight: bold;
      color: black;
  }
+ .subtitle-links {
+
+     margin-top: 300px;
+     color: #fb3f00;
+     text-decoration: none;
+     position: fixed;
+     top: 70px;
+     left: 50%;
+     transfor: translateX(-50%);
+     display: flex;
+     gap: 30px;
+     z-index: 999;
+     a {
+	 color: #1a1a1a;
+	 text-decoration:none;
+     }
+.subtitle-links a {
+    all: unset;
+    color:#fb4f00;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    curson: point;
+    display: inline-block;
+    margin: 0 15px;
+    transition: color 0.3s;
+     }
+.subtitle-links a:hover {
+    color: #22bc41;
+    text-decoration: none;
+     }
  .container {
      align-items: absolute;
      position: center;
@@ -215,19 +246,19 @@
      text-align: center; 
  }
  .next-button {
-     right: 400px; /* Position the "next" button to the right */
+     right: 400px; 
  }
  .prev-button {
-     left: 400px; /* Position the "previous" button to the left */
+     left: 400px; 
  }
  .next-button:hover, .prev-button:hover {
-     background-color: #22bc41; /* Background color on hover */
+     background-color: #22bc41; 
  }
  .next-button:hover, .prev-button:hover {
-     background-color: #22bc41; /* Background color on hover */
+     background-color: #22bc41;
  }
  .next-button:hover, .prev-button:hover {
-     background-color: #22bc41; /* Background color on hover */
+     background-color: #22bc41; 
  }
  .gallery-frame {
      width: 100%;
@@ -436,11 +467,15 @@
  #pdf-container{
      margin: 20px auto;
      text-align: center;
- body {
-     font-family: Arial, sans-serif;
+ }
+     body {
+     padding-top: 130px;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
      background-color: #fff;
      margin: 0;
      padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
  }
  .carousel-container {
      position: relative;

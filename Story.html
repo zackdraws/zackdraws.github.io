@@ -4,26 +4,31 @@
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
 </head>
-<style>
-#pdf-container {
+<style>  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  #pdf-container {
     margin: 20px auto;
     text-align: center;
 }
-#pdf-viewer {
+  #pdf-viewer {
     width: 640px;
     height: 580px; 
     border: none;
 }
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     #pdf-viewer {
         height: 400px;
     }
 }
-@media (max-width: 480px) {
-    #pdf-viewer {
-        height: 300px;
+  @media (max-width: 480px) {
+#pdf-viewer {
+    height: 300px;
     }
-}
+  }
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -56,13 +61,13 @@ body {
     background-color: #fff;
     color: #333;
     padding: 22px;
-    position: fixed; 
+    position: fixed;
+    text-align: center;
     top: 0; 
     left: 0; 
     bottom: 0; 
     z-index: 1; 
 }
-
 .sidebar h2 {
     font-size: 20px;
 }
@@ -79,12 +84,11 @@ body {
     color: #000;
     text-align: left;
     justify-content: left;
-
 }
 .content {
     margin-left: 30px;
     padding: 2px;
-    transition:margin-left: 0.3s; 
+    transition: margin-left: 0.3s; 
 }
 .sidebar.closer { 
     width:200px;
@@ -133,45 +137,45 @@ close
     width: 10%; 
     text-align: left; 
 }
-    .next-button {
-        right: 400px; 
+.next-button {
+    right: 400px; 
     }
-    .prev-button {
-        left: 400px; 
+.prev-button {
+    left: 400px; 
     }
-    .next-button:hover, .prev-button:hover {
-        background-color: #22bc41; /* Background color on hover */
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; 
     }
-    .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; 
     }
-    .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; 
     }
-    .gallery-frame {
+.gallery-frame {
     width: 100%; 
-    max-width: 2500px; /* Limit the maximum width of the frame */
-    margin: 0 auto; /* Center the frame horizontally */
-    padding: 4px; /* Add padding for a frame-like appearance */
-    box-sizing: border-box; /* Include padding in width calculations */
+    max-width: 2500px; 
+    margin: 0 auto; 
+    padding: 4px; 
+    box-sizing: border-box; 
     float: left
     }
-    .gallery {
-	display: grid;
-	flex-wrap: wrap;
+.gallery {
+    display: grid;
+    flex-wrap: wrap;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(166px, 1fr)); 
     gap: 10px;
     justify-content: left;
-}
-    .gallery-item{
-	flex; 1 0 calc(33.33% - 20px); /
-	max-width: calc(33.33% - 30px); 
-	max-height: 450px; 
-	overflow: hidden;
-	position: relative;
-	cursor: pointer;
-	transition: transform 0.2s;
+    }
+.gallery-item{
+    flex; 1 0 calc(33.33% - 20px); /
+   max-width: calc(33.33% - 30px); 
+    max-height: 450px; 
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
 } 
 .gallery-item img {
     width: 100%;
@@ -190,9 +194,8 @@ close
     box-sizing: content-box;
 }
 video {
-max-width: 100%;
+    max-width: 100%;
 }
-
 h1 {
     text-align: center; 
     font-size: 20px; 
@@ -201,14 +204,12 @@ h1 {
 h2 {
     text-align: left;
     font-size: 16px;
-    
 }
 h3 {
     text-align: center; 
     font-size: 10px; 
-
 }
-   .speakerdeck-iframe{
+.speakerdeck-iframe{
     width: 600px;
     height: 500px;
     text-align: center;
@@ -261,7 +262,6 @@ img.large {
     text-align: center;
     margin-top: 20px;
 }
-
 .social-link {
     text-decoration: none;
     color: #333;
@@ -326,11 +326,11 @@ img.large {
    .header-navigation li:hover .submenu {
     display: flex;
 }
-    </style>
+</style>
 </head>
 <body>
-    <nav class="sidebar">
-                <h3><a href="index.html">Zack Johnson</a></li></h3>
+  <nav class="sidebar">
+    <h3><a href="index.html">Zack Johnson</a></li></h3>
                 <h3>Animation - Design</h3>
                 <h3>ZackJohnsonArt@gmail.com</h3>
                 <h2><a href="index.html">Portfolio</a></h2>
@@ -341,20 +341,20 @@ img.large {
                 <h2><a href="Resume.html"> Resume</a></h2> 
                 <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
  <div class="social-links">
-     <a class="social-link" href="https://www.instagram.com/zackdraws">
-                <img src="insta.png" alt="Instagram">
-    </a>
-     <a class="social-link" href="https://twitter.com/zack_draws">
-                    <img src="twitter.png" alt="twitter">
-     </a>
-     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
-                    <img src="linkedin.png" alt="linkedin">
-		</a>	
-        </div>
-            </ul>
+   <a class="social-link" href="https://www.instagram.com/zackdraws">
+     <img src="insta.png" alt="Instagram">
+   </a>
+   <a class="social-link" href="https://twitter.com/zack_draws">
+     <img src="twitter.png" alt="twitter">
+   </a>
+   <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+     <img src="linkedin.png" alt="linkedin">
+   </a>	
+ </div>
+</ul>
 </nav>
 <style>
-
+  
 </style>
 
 </head>
