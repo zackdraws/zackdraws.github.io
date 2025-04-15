@@ -11,17 +11,17 @@
 }
 #pdf-viewer {
     width: 100%;
-    height: 600px; /* Adjust the height as needed */
+    height: 600px; 
     border: none;
 }
 @media (max-width: 768px) {
     #pdf-viewer {
-        height: 400px; /* Reduce height for smaller screens */
+        height: 400px; 
     }
 }
 @media (max-width: 480px) {
     #pdf-viewer {
-        height: 300px; /* Further reduce height for very small screens */
+        height: 300px; 
     }
 }
 .gallery {
@@ -47,20 +47,20 @@ body {
     font-family: sans-serif;
 }
 .container {
-    align-items: absolute;/* Align items to the top */
+    align-items: absolute;
     position: center;
     height: 100vh;
 }
 .sidebar {
-    width: 143px; /* Width for larger screens */
-    background-color: #fff; /* White background color for the sidebar */
+    width: 143px;
+    background-color: #fff;
     color: #333;
     padding: 22px;
-    position: fixed; /* Fix the sidebar position */
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
-    bottom: 0; /* Stretch the sidebar to the bottom of the page */
-    z-index: 1; /* Ensure the sidebar is above other content */ 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 1;
 }
 .sidebar h2 {
     font-size: 20px;
@@ -78,7 +78,7 @@ body {
     color: #000;
 }
 .content {
-    margin-left: 30px; /* Adjust this value to match the width of the sidebar */
+    margin-left: 30px; 
     padding: 2px;
     transition:margin-left: 0.3s; 
 }
@@ -125,45 +125,45 @@ close
     position: absolute;
     top: 24;
     right: 11;
-    display: block; /* Change to block to align below the image */
-    width: 10%; /* Width to take the full width of the image container */
-    text-align: center; /* Center-align the buttons horizontally */
+    display: block; 
+    width: 10%; 
+    text-align: center; 
 }
 .next-button {
-        right: 400px; /* Position the "next" button to the right */
+        right: 400px; 
 }   
 .prev-button {
-        left: 400px; /* Position the "previous" button to the left */
+        left: 400px; 
 }    
 .next-button:hover, .prev-button:hover {
-        background-color: #22bc41; /* Background color on hover */
+        background-color: #22bc41; 
 }  
 .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #22bc41; 
 }
 .next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    background-color: #22bc41; 
 }
 .gallery-frame {
-    width: 100%; /* Adjust the width as needed */
-    max-width: 2500px; /* Limit the maximum width of the frame */
-    margin: 0 auto; /* Center the frame horizontally */
-    padding: 1px; /* Add padding for a frame-like appearance */
-    box-sizing: border-box; /* Include padding in width calculations */
+    width: 100%; 
+    max-width: 2500px; 
+    margin: 0 auto; 
+    padding: 1px; 
+    box-sizing: border-box;
     float: left
 }
 .gallery {
     display: grid;
     flex-wrap: wrap;
     gap: 1px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 8fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 8fr));
     gap: 1px;
     justify-content: center;
 }
 .gallery-item{
     flex; 1 0 calc(33.33% - 20px); /
    max-width: 220px;
-    max-height: 165px; /* Adjust the height as needed */
+    max-height: 165px; 
 *\overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -189,9 +189,9 @@ video {
 max-width: 100%;
 }
 h1 {
-    text-align: center; /* Center the heading */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
+    text-align: center;
+    font-size: 18px; 
+    margin-bottom: 20px;
 }
 h3 {
     text-align:center; 
@@ -236,13 +236,13 @@ img.large {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Add a background overlay for better readability */
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.2s;
 }
 .item-caption h1 {
-    color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
-    font-size: 20px; /* Adjust the font size as needed */
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
     text-align: center;
     padding: 10px;
 }
@@ -252,7 +252,7 @@ img.large {
 }
 .social-link {
     text-decoration: none;
-    color: #333; /* Link color */
+    color: #333; 
     font-size: 20px;
     margin: 10px;
     display: inline-block;
@@ -262,8 +262,8 @@ img.large {
     margin-right: 10px;
 }
 .social-link img {
-    width: 30px; /* Set the width of the social media icon image */
-    height: 30px; /* Set the height of the social media icon image */
+    width: 30px; 
+    height: 30px; 
 }
 .video-container {
    text-align: center;
