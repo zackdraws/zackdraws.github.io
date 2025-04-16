@@ -1,0 +1,39 @@
+.main-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* Resize the grid items when screen gets smaller */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid a {
+    font-size: 1rem;
+    padding: 20px 15px;
+}
+
+@media (max-width: 600px) {
+    .main-box {
+        padding: 20px;
+    }
+
+    .image-grid a {
+        font-size: 0.9rem;
+        padding: 15px 10px;
+    }
+}
