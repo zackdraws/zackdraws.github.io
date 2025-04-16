@@ -119,8 +119,8 @@
  .center-title {
      position: fixed;
      top: 0;
-     left: 50%
-	   transform: translateX(-50%);
+     left: 0%
+*\	   transform: translateX(-50%);
      background-color: white;
      width: 100%;
      margin-top: 300px;
@@ -132,17 +132,18 @@
      color: black;
  }
  .subtitle-links {
-
      margin-top: 300px;
      color: #fb3f00;
+
      text-decoration: none;
      position: fixed;
      top: 70px;
-     left: 50%;
-     transfor: translateX(-50%);
+*\     left: 35%;
+*\     transfor: translateX(-50%);
      display: flex;
      gap: 30px;
      z-index: 999;
+
      a {
 	 color: #1a1a1a;
 	 text-decoration:none;
