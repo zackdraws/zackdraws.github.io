@@ -137,11 +137,11 @@
 
      text-decoration: none;
      position: fixed;
-     top: 70px;
+     top: 65px;
 *\     left: 35%;
 *\     transfor: translateX(-50%);
      display: flex;
-     gap: 30px;
+     gap: 10px;
      z-index: 999;
 
      a {
@@ -480,8 +480,8 @@
  }
  .carousel-container {
      position: relative;
-     height: 80%;
-     width: 60%
+     height: 60%;
+     width: 70%
             margin: 4px auto;
      border-radius: 4px;
      overflow: hidden;
@@ -509,8 +509,8 @@
      height: 100%;
  }
  .storyboard-images img {
-     width: 100%; 
-     height: 100%; 
+     width: 78%; 
+     height: 78%; 
      object-fit: contain;
      object-position: center; 
      display: block; 
