@@ -15,7 +15,7 @@
 <body>
 
   <div class="main-box">
-    <h1 class="center-title">Zack Johnson</h1>
+    <h1 class="center-title2">Zack Johnson</h1>
 
     <div class="subtitle-links">
       <a href="all.html">Art</a>
@@ -32,8 +32,12 @@
       <a href="fundamentals.html">Sketchbook<div class="preview" id="preview6"></div></a>
     </div>
   </div>
-
-</body>
-
+<script>
+    // Wait until the DOM is fully loaded before executing the script
+    document.addEventListener("DOMContentLoaded", function () {
+      const mainBox = document.querySelector(".main-box");
+      mainBox.classList.add("show"); // This will add the 'show' class to make the box visible
+    });
+  </script>
 </body>
 </html>

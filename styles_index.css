@@ -1,38 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #b7baa2
+}
 .main-box {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
-    width: 90%;
-    box-sizing: border-box;
-    z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #86a55c;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 90%;
+  box-sizing: border-box;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border: 6px solid #d7f1b4;
+  border-radius: 20px; 
 }
-
+.main-box.show {
+  opacity: 1;
+}
+.center-title2 {
+    text-align: center;
+    top: 20px;
+    background-color: #86a55c;
+    font-size: 3em;
+    color: #333;
+}
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
-
 .image-grid a {
-    font-size: 1rem;
-    padding: 20px 15px;
+  font-size: 1rem;
+  padding: 20px 15px;
+  color: #333;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.image-grid a:hover {
+  transform: scale(1.05);
+  background-color: #64593d;
+  color: #c4f186; /* Hopscotch orange on hover */
+}
+@media (max-width: 600px) {
+  .main-box {
+    padding: 20px;
+  }
+  .image-grid a {
+    font-size: 0.9rem;
+    padding: 15px 10px;
+  }
+  .center-title {
+    background-color: #86a55c
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
-@media (max-width: 600px) {
-    .main-box {
-        padding: 20px;
-    }
+@media (max-width: 400px) {
+  .image-grid {
+    grid-template-columns: 1fr; 
+  }
+}
 
-    .image-grid a {
-        font-size: 0.9rem;
-        padding: 15px 10px;
-    }
+body {
+  overflow: hidden; 
 }
