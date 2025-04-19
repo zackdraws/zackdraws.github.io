@@ -45,8 +45,9 @@
     }
 
     .subtitle-links {
+      position: relative
       text-align: center;
-      margin-top: 450px;  /* Space between the title and subtitle links */
+      margin-top: 420px;  /* Space between the title and subtitle links */
       margin-bottom: 25px;
     }
 
