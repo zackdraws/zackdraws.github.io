@@ -45,12 +45,10 @@
     }
 
     .subtitle-links {
-      position: relative
-      text-align: center;
-      margin-bottom: 25px;
     }
 
     .subtitle-links a {
+	position: relative;
       margin: 0 12px;
       color: #222;
       text-decoration: none;
