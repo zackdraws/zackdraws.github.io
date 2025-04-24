@@ -5,16 +5,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
 </head>
  <style>
-/* container */
-/* PDF Container Styles */
+
 #pdf-container {
     margin: 20px auto;
     text-align: center;
 }
-/* PDF Viewer Styles */
+
 #pdf-viewer {
     width: 50%;
-    height: 600px; /* Adjust the height as needed */
+    height: 600px;
     border: none;
 }
 /* Responsive Adjustments */
@@ -89,7 +88,7 @@ body {
     transition:margin-left: 0.3s; 
 }
 .sidebar.closer { 
-width:200px;
+    width:200px;
 }
 content.closer {
     margin-left:20px;
@@ -123,7 +122,6 @@ close
     cursor: pointer;
     color: #f10707;
 }
-
 .next-button,
 .prev-button {
     background-color: #f3f3f3;
@@ -132,7 +130,6 @@ close
     border-radius: 1px;
     cursor: pointer;
     font-size: 16px;
-    
     position: absolute;
     top: 24;
     right: 11;
@@ -140,17 +137,17 @@ close
     width: 10%; /* Width to take the full width of the image container */
     text-align: center; /* Center-align the buttons horizontally */
 }
-    .next-button {
-        right: 400px; /* Position the "next" button to the right */
-    }
+.next-button {
+    right: 400px; /* Position the "next" button to the right */
+}
     
-    .prev-button {
-        left: 400px; /* Position the "previous" button to the left */
-    }
+.prev-button {
+    left: 400px; /* Position the "previous" button to the left */
+}
     
-    .next-button:hover, .prev-button:hover {
-        background-color: #22bc41; /* Background color on hover */
-    }
+.next-button:hover, .prev-button:hover {
+    background-color: #22bc41; /* Background color on hover */
+}
     
 
 .next-button:hover, .prev-button:hover {
@@ -167,26 +164,25 @@ close
     margin: 0 auto; /* Center the frame horizontally */
     padding: 4px; /* Add padding for a frame-like appearance */
     box-sizing: border-box; /* Include padding in width calculations */
-float: left
+    float: left
 }
 .gallery {
-display: grid;
-flex-wrap: wrap;
-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
-gap: 10px;
-justify-content: center;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    justify-content: center;
 }
-
 .gallery-item{
-flex; 1 0 calc(33.33% - 20px); /
-max-width: calc(33.33% - 30px); /* Adjust the width as needed */
-max-height: 450px; /* Adjust the height as needed */
-overflow: hidden;
-object-fit: contain;
-position: relative;
-cursor: pointer;
-transition: transform 0.2s;
+    flex; 1 0 calc(33.33% - 20px); /
+				   max-width: calc(33.33% - 30px); /* Adjust the width as needed */
+    max-height: 450px; /* Adjust the height as needed */
+    overflow: hidden;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
 
 } 
 .gallery-item img {
@@ -195,7 +191,6 @@ transition: transform 0.2s;
     object-fit: contain;
     transition: transform 0.3s;
 }
-
 .gallery-item img:hover {
     transform: scale(1.1);
 }
@@ -228,20 +223,17 @@ h3 {
     height: 500px;
     text-align: center;
     margin-left: 218px;
-   }
-
+}
 /* Style for small images */
 img.small {
     max-width: 100px;
     max-height: 100px;
 }
-
 /* Style for large images */
 img.large {
     max-width: 700px;
     max-height: 700px;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -253,12 +245,10 @@ img.large {
     justify-content: center;
     align-items: center;
 }
-
 .enlarged-image {
     max-width: 90%;
     max-height: 90%;
 }
-
 /* Center text within gallery items */
 .item-caption {
     display: flex;
@@ -274,7 +264,6 @@ img.large {
     opacity: 0;
     transition: opacity 0.2s;
 }
-
 /* Style the caption text */
 .item-caption h1 {
     color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
@@ -282,13 +271,11 @@ img.large {
     text-align: center;
     padding: 10px;
 }
-
 /* Style for the social links */
 .social-links {
     text-align: center;
     margin-top: 20px;
 }
-
 .social-link {
     text-decoration: none;
     color: #333; /* Link color */
@@ -296,13 +283,10 @@ img.large {
     margin: 10px;
     display: inline-block;
 }
-
 .emoji {
     font-size: 24px;
     margin-right: 10px;
 }
-
-
 .social-link img {
     width: 30px; /* Set the width of the social media icon image */
     height: 30px; /* Set the height of the social media icon image */
@@ -314,7 +298,6 @@ img.large {
    border: 190px sold #fff;
    box-sizing:content-box;    
 }
-
 #floatingGif {
     position: fixed;  
     top: 1px;       
@@ -322,7 +305,6 @@ img.large {
     width: 100px;
     height: auto;
     z-index: 9999;
-
 }
 #floatingGif2 {
     position: fixed;  
@@ -331,7 +313,6 @@ img.large {
     width: 100px;
     height: auto;
     z-index: 9999;
-
 }
 .submenu {
     display: none;
@@ -355,7 +336,6 @@ img.large {
     z-index: 5;
     border: 10px solid #fff;
     border-radius: 10px;
-    
 }
    .header-navigation li:hover .submenu {
     display: flex;
@@ -448,7 +428,6 @@ img.large {
         <h2>Background Art</h2>
         <div class="gallery-frame">
             <div class="gallery">
-                <!-- Repeat gallery-item for each image -->
                 <div class="gallery-item">
                     <img src="bg/bg1.jpg" alt="Background 1" data-src="bg/bg1.jpg" >
                 </div>
@@ -507,7 +486,6 @@ img.large {
     <h1>Robot and Monster</h1>
       <a href="sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" download class="pdf-download"> PDF Copy</a>
       <a href="https://player.vimeo.com/video/779498962?h=5dd48ddc8f" target="_blank" download class="pdf-download"> Animatic</a>
-    
     </div>
     </div>
     
