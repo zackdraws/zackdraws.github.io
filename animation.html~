@@ -11,22 +11,19 @@
 }
 #pdf-viewer {
     width: 100%;
-    height: 600px; /* Adjust the height as needed */
+    height: 600px; 
     border: none;
 }
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     #pdf-viewer {
-        height: 400px; /* Reduce height for smaller screens */
+        height: 400px; 
     }
 }
-
 @media (max-width: 480px) {
     #pdf-viewer {
-        height: 300px; /* Further reduce height for very small screens */
+        height: 300px; 
     }
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -50,16 +47,16 @@ body {
     font-family: sans-serif;
 }
 .container {
-    align-items: absolute;/* Align items to the top */
+    align-items: absolute;
     position: center;
     height: 100vh;
 }
 .sidebar {
-    width: 143px; /* Width for sidebar */
-    background-color: #fff; /* White background color for the sidebar */
+    width: 143px; 
+    background-color: #fff;
     color: #333;
     padding: 22px;
-    position: fixed; /* Fix the sidebar position */
+    position: fixed; 
     top: 0; /* Position from the top */
     left: 0; /* Position from the left */
     bottom: 0; /* Stretch the sidebar to the bottom of the page */
@@ -80,7 +77,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-/* content area */
 .content {
     margin-left: 30px; /* Adjust this value to match the width of the sidebar */
     padding: 2px;
@@ -92,7 +88,6 @@ width:200px;
 content.closer {
     margin-left:20px;
 }
-/* lightbox */
 #lightbox {
     display: none;
     position: fixed;
@@ -136,25 +131,19 @@ close
 }
     .next-button {
         right: 400px; /* Position the "next" button to the right */
-    }
-    
+    }   
     .prev-button {
         left: 400px; /* Position the "previous" button to the left */
     }
-    
     .next-button:hover, .prev-button:hover {
         background-color: #FFF; /* Background color on hover */
     }
-    
-
 .next-button:hover, .prev-button:hover {
     background-color: #FFF; /* Background color on hover */
 }
-
 .next-button:hover, .prev-button:hover {
     background-color: #FFF; /* Background color on hover */
 }
-
 .gallery-frame {
     width: 100%;
     max-width: 2500px; /* Limit the maximum width of the frame */
@@ -197,7 +186,6 @@ close
     box-sizing: content-box;
 }
 video {
-    m
     max-width: 100%;
     text-align: center;
 }
@@ -368,6 +356,7 @@ img.large {
              </video>
                <header></header>
 	        <h1></h1>
+
 </video>
 <header></header>
 
@@ -397,31 +386,21 @@ img.large {
          <video controls width="385" height="250">
            <source src="anp/ANI_09.mp4" type="video/mp4">
 	     </video>
-         <video controls width="385" height="250">
-           <source src="anp/ANI_10.mp4" type="video/mp4">
-</video>
-               <header></header>
-	        <h1></h1>
-</video>
-
-  <video-container>      
-<header></header>
-       <div class="video-container">
-               <header></header>
-	        <h1></h1>
-</video>
-<header></header>
 		<h1> Animated Projects <h1>
 	     <h1> Deadline - An Opera </h1>
-	     <iframe title="vimeo-player" src="https://player.vimeo.com/video/452419199?h=da30bb65d2" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-
+	<iframe title="vimeo-player" src="https://player.vimeo.com/video/452419199?h=da30bb65d2" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+        </video>
 	<h1> Duet <h1>
 	    <iframe title="vimeo-player" src="https://player.vimeo.com/video/699854136?h=c93b7359ef" width="640" height="360" frameborder="0"    allowfullscreen></iframe>      
-
-            
+	    </video>	      
+<body>
+</video>
+<header></header>
+	    <header></header>
+	    <h1></h1>
+</video>            
 <footer>
     <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/zackdraws/zackdraws.github.io">GitHub</a></p>
 </footer>
-
 </body>
 </html>
