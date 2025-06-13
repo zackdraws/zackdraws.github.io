@@ -5,24 +5,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
 </head>
  <style>
-/* container */
-/* PDF Container Styles */
+
 #pdf-container {
     margin: 20px auto;
     text-align: center;
 }
 
-/* PDF Viewer Styles */
 #pdf-viewer {
     width: 100%;
     height: 600px; /* Adjust the height as needed */
     border: none;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     #pdf-viewer {
-        height: 400px; /* Reduce height for smaller screens */
+    height: 400px; /* Reduce height for smaller screens */
     }
 }
 
@@ -31,7 +28,6 @@
         height: 300px; /* Further reduce height for very small screens */
     }
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -49,11 +45,9 @@
     object-fit: cover;
     transition: transform 0.3s;
 }
-
 .image img:hover {
     transform: scale(1.1);
 }
-
 body {
     font-family: sans-serif;
 }
@@ -131,9 +125,6 @@ close
     cursor: pointer;
     color: #f10707;
 }
-
-
-
 .next-button,
 .prev-button {
     background-color: #f3f3f3;
@@ -142,7 +133,6 @@ close
     border-radius: 1px;
     cursor: pointer;
     font-size: 16px;
-    
     position: absolute;
     top: 24;
     right: 11;
@@ -150,15 +140,15 @@ close
     width: 10%; /* Width to take the full width of the image container */
     text-align: center; /* Center-align the buttons horizontally */
 }
-    .next-button {
+.next-button {
         right: 400px; /* Position the "next" button to the right */
     }
-    
-    .prev-button {
+   
+.prev-button {
         left: 400px; /* Position the "previous" button to the left */
     }
     
-    .next-button:hover, .prev-button:hover {
+.next-button:hover, .prev-button:hover {
         background-color: #22bc41; /* Background color on hover */
     }
     
@@ -180,22 +170,21 @@ close
     float: left
 }
 .gallery {
-display: grid;
-flex-wrap: wrap;
-gap: 10px;
-grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive grid */
-gap: 10px;
-justify-content: center;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive grid */
+    gap: 10px;
+    justify-content: center;
 }
 .gallery-item{
-flex; 1 0 calc(85.33% - 80px); /
-max-width: 1200px;
-max-height: 3200px; /* Adjust the height as needed */
-overflow: hidden;
-position: relative;
-cursor: pointer;
-transition: transform 0.2s;
-
+    flex; 1 0 calc(85.33% - 80px); /
+   max-width: 1200px;
+    max-height: 3200px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
 } 
 .gallery-item img {
     width: 100%;
@@ -203,7 +192,6 @@ transition: transform 0.2s;
     object-fit: cover;
     transition: transform 0.3s;
 }
-
 .gallery-item img:hover {
     transform: scale(1.1);
 }
@@ -228,7 +216,6 @@ h1 {
 h3 {
     text-align:center; 
     font-size: 10px; 
-
 }
    .speakerdeck-iframe{
     width: 600px;
@@ -236,19 +223,16 @@ h3 {
     text-align: center;
     margin-left: 218px;
    }
-
 /* Style for small images */
 img.small {
     max-width: 100px;
     max-height: 100px;
 }
-
 /* Style for large images */
 img.large {
     max-width: 700px;
     max-height: 700px;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -260,12 +244,10 @@ img.large {
     justify-content: center;
     align-items: center;
 }
-
 .enlarged-image {
     max-width: 90%;
     max-height: 90%;
 }
-
 /* Center text within gallery items */
 .item-caption {
     display: flex;
@@ -288,13 +270,11 @@ img.large {
     text-align: center;
     padding: 10px;
 }
-
 /* Style for the social links */
 .social-links {
     text-align: center;
     margin-top: 20px;
 }
-
 .social-link {
     text-decoration: none;
     color: #333; /* Link color */
@@ -302,13 +282,10 @@ img.large {
     margin: 10px;
     display: inline-block;
 }
-
 .emoji {
     font-size: 24px;
     margin-right: 10px;
 }
-
-
 .social-link img {
     width: 30px; /* Set the width of the social media icon image */
     height: 30px; /* Set the height of the social media icon image */
@@ -320,7 +297,6 @@ img.large {
    border: 190px sold #fff;
    box-sizing:content-box;    
 }
-
 #floatingGif {
     position: fixed;  
     top: 1px;       
