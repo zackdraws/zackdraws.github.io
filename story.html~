@@ -12,6 +12,10 @@
 
 <style>
 
+/* container */
+
+/* PDF Container Styles */
+
 #pdf-container {
 
     margin: 20px auto;
@@ -20,11 +24,15 @@
 
 }
 
+
+
+/* PDF Viewer Styles */
+
 #pdf-viewer {
 
     width: 640px;
 
-    height: 580px; 
+    height: 580px; /* Adjust the height as needed */
 
     border: none;
 
@@ -32,13 +40,13 @@
 
 
 
-
+/* Responsive Adjustments */
 
 @media (max-width: 768px) {
 
     #pdf-viewer {
 
-        height: 400px;
+        height: 400px; /* Reduce height for smaller screens */
 
     }
 
@@ -50,7 +58,7 @@
 
     #pdf-viewer {
 
-        height: 300px;
+        height: 300px; /* Further reduce height for very small screens */
 
     }
 
@@ -110,7 +118,7 @@ body {
 
 .container {
 
-    align-items: absolute;
+    align-items: absolute;/* Align items to the top */
 
     position: center;
 
@@ -118,25 +126,27 @@ body {
 
 }
 
+/* Sidebar */
+
 .sidebar {
 
-    width: 143px; 
+    width: 143px; /* Width for larger screens */
 
-    background-color: #fff; 
+    background-color: #fff; /* White background color for the sidebar */
 
     color: #333;
 
     padding: 22px;
 
-    position: fixed; 
+    position: fixed; /* Fix the sidebar position */
 
-    top: 0; 
+    top: 0; /* Position from the top */
 
-    left: 0; 
+    left: 0; /* Position from the left */
 
-    bottom: 0; 
+    bottom: 0; /* Stretch the sidebar to the bottom of the page */
 
-    z-index: 1; 
+    z-index: 1; /* Ensure the sidebar is above other content */ 
 
 }
 
