@@ -1,52 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <html>
-
 <head>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-
 </head>
-
 <style>
-
-/* container */
-
-/* PDF Container Styles */
-
 #pdf-container {
-
     margin: 20px auto;
-
     text-align: center;
-
 }
-
-
-
-/* PDF Viewer Styles */
-
 #pdf-viewer {
-
     width: 640px;
-
-    height: 580px; /* Adjust the height as needed */
-
+    height: 580px; 
     border: none;
-
 }
-
-
-
-/* Responsive Adjustments */
-
 @media (max-width: 768px) {
-
     #pdf-viewer {
-
-        height: 400px; /* Reduce height for smaller screens */
+        height: 400px;
 
     }
 
@@ -58,7 +28,7 @@
 
     #pdf-viewer {
 
-        height: 300px; /* Further reduce height for very small screens */
+        height: 300px;
 
     }
 
@@ -118,7 +88,7 @@ body {
 
 .container {
 
-    align-items: absolute;/* Align items to the top */
+    align-items: absolute;
 
     position: center;
 
@@ -126,27 +96,25 @@ body {
 
 }
 
-/* Sidebar */
-
 .sidebar {
 
-    width: 143px; /* Width for larger screens */
+    width: 143px; 
 
-    background-color: #fff; /* White background color for the sidebar */
+    background-color: #fff; 
 
     color: #333;
 
     padding: 22px;
 
-    position: fixed; /* Fix the sidebar position */
+    position: fixed; 
 
-    top: 0; /* Position from the top */
+    top: 0; 
 
-    left: 0; /* Position from the left */
+    left: 0; 
 
-    bottom: 0; /* Stretch the sidebar to the bottom of the page */
+    bottom: 0; 
 
-    z-index: 1; /* Ensure the sidebar is above other content */ 
+    z-index: 1; 
 
 }
 
