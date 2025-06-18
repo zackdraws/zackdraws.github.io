@@ -174,8 +174,6 @@ close
 .gallery-item img:hover {
     transform: scale(1.1);
 }
-.story-container {
-}
 .video-container { 
     text-align: center;
     margin-top: -120px;
