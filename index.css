@@ -175,11 +175,12 @@ close
     transform: scale(1.1);
 }
 .story-container {
-    text-align: center;
-    margin-top:-170px;
-    margin-left:60px;
-    border: 190px sold #fff;
-    box-sizing:content-box;  
+    text-align: auto;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: fit-content;
+    max-height: 600px;
+    box-sizing: content-box;  
 }
 .video-container { 
     text-align: center;
