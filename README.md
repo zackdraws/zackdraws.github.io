@@ -1,6 +1,6 @@
 # Portfolio Site Project 
 - git clone http://github.com/zackdraws/zackdraws.github.io.git
-## 
+##  
 - Personal project for my portfolio. 
 - the [Index.html] = the  homepage. 
 - the [Styles.css] = styling for the site 
