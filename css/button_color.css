@@ -1,0 +1,31 @@
+.next-button,
+.prev-button {
+    background-color: #f3f3f3;
+    color: #000000;
+    padding: 7px 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 24;
+    right: 11;
+    display: block; /* Change to block to align below the image */
+    width: 10%; /* Width to take the full width of the image container */
+    text-align: center; /* Center-align the buttons horizontally */
+}
+.next-button {
+    right: 400px; /* Position the "next" button to the right */
+}
+.prev-button {
+    left: 400px; /* Position the "previous" button to the left */
+}
+.next-button:hover, .prev-button:hover {
+    background-color: #add8e6; /* Background color on hover */
+}
+.next-button:hover, .prev-button:hover {
+    background-color: #add8e6; /* Background color on hover */
+}
+
+.next-button:hover, .prev-button:hover {
+    background-color: #add8e6; /* Background color on hover */
+}
