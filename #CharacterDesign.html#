@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <LINK rel="stylesheet" href="css\backgrounddesign.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+<head>
+</head>
+<body>
+    <nav class="sidebar">
+                <h3><a href="index.html">Zack Johnson</a></li></h3>
+                <h3>Animation - Design</h3>
+                <h3>ZackJohnsonArt@gmail.com</h3>
+                <h2><a href="index.html">Portfolio</a></h2>
+                <h2><a href="Story.html">Story</a><h2>
+                <h2><a href="Animation.html">Animation</a></h2>
+                <h2><a href="CharacterDesign.html">Character Design</a></h2>
+                <h2><a href="backgrounddesign.html">Background Design</a></h2>
+                <h2><a href="Resume.html"> Resume</a></h2> 
+                <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
+           
+ <div class="social-links">
+     <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+    </a>
+     <a class="social-link" href="https://twitter.com/zack_draws">
+                    <img src="twitter.png" alt="twitter">
+     </a>
+     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                    <img src="linkedin.png" alt="linkedin">
+		</a>	
+        </div>
+            </ul>
+</nav>
+<style>
+</style>
+</head>
+<body>
+  <video-container>      
+        <div class="video-container">
+        <h1>Character Design</h1>
+        <div class="gallery-frame">
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="cd/cd01.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd02.jpg" alt="Character Design 2">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd03.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd04.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd05.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd06.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd07.jpg" alt="Character Design 1">
+            </div>
+            <div class="gallery-item">
+              <img src="cd/cd08.jpg" alt="Character Design 1">
+            </div> <div class="gallery-item">
+              <img src="cd/cd09.jpg" alt="Character Design 1">
+            </div>
+            <header></header>
+          </div>
+        </div>
+        </div>
+        <div id="lightbox" class="hidden">
+          <span class="close-button" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-image" src="" alt="Lightbox Image">
+          <button class="prev-button">Previous</button>
+          <button class="next-button">Next</button>
+        </div>   
+        <script src="lightbox.js"></script>
+</div>
+<script src="lightbox.js"></script>
+</ul>
+</script>
+</body>
+</html>
