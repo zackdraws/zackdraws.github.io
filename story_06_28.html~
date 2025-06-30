@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Johnson's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 143px;
+            background-color: #fff;
+            color: #333;
+            padding: 22px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .sidebar h2, .sidebar h3 {
+            font-size: 20px;
+        }
+        .sidebar a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .social-link img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 143px;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+        }
+        .image {
+            overflow: hidden;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        /* PDF Viewer */
+        #pdf-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #pdf-viewer {
+            width: 640px;
+            height: 580px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            #pdf-viewer {
+                height: 400px;
+            }
+        }
+        @media (max-width: 480px) {
+            #pdf-viewer {
+                height: 300px;
+            }
+        }
+
+        /* Lightbox */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 999;
+        }
+        #lightbox img {
+            max-width: 80%;
+            max-height: 80vh;
+            margin-top: 10vh;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #f10707;
+        }
+
+        /* Floating GIFs */
+        #floatingGif, #floatingGif2 {
+            position: fixed;
+            width: 100px;
+            height: auto;
+            z-index: 9999;
+        }
+        #floatingGif {
+            top: 1px;
+            left: 140px;
+        }
+        #floatingGif2 {
+            top: 460px;
+            left: 40px;
+        }
+
+        /* Video Container */
+        .video-container {
+            text-align: center;
+            margin-top: -170px;
+            margin-left: 60px;
+            border: 190px solid #fff;
+            box-sizing: content-box;
+        }
+
+        /* Carousel and Storyboard */
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 650px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+        .storyboard-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h3><a href="index.html">Zack Johnson</a></h3>
+        <h3>Animation - Design</h3>
+        <h3>ZackJohnsonArt@gmail.com</h3>
+        <h2><a href="index.html">Portfolio</a></h2>
+        <h2><a href="Story.html">Story</a></h2>
+        <h2><a href="Animation.html">Animation</a></h2>
+        <h2><a href="CharacterDesign.html">Character Design</a></h2>
+        <h2><a href="backgrounddesign.html">Background Design</a></h2>
+        <h2><a href="Resume.html">Resume</a></h2>
+        <h2><a href="mailto:zackjohnsonart@gmail.com">Contact</a></h2>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a class="social-link" href="https://twitter.com/zack_draws">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Video Container -->
+        <div class="video-container">
+            <h2>Storyboard Portfolio</h2>
+            <!-- Storyboard Carousel -->
+            <div class="carousel-container" id="carousel1">
+                <div class="image-title">Farm Life Storyboard Sample</div>
+                <div class="storyboard-images" id="storyboardImages1">
+                    <img src="sb/sb02/sb_01.jpg" alt="Image 1">
+                    <!-- Add other storyboard images here -->
+                </div>
+                <div class="bottom-bar">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Johnson's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 143px;
+            background-color: #fff;
+            color: #333;
+            padding: 22px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .sidebar h2, .sidebar h3 {
+            font-size: 20px;
+        }
+        .sidebar a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .social-link img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 143px;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+        }
+        .image {
+            overflow: hidden;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        /* PDF Viewer */
+        #pdf-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #pdf-viewer {
+            width: 640px;
+            height: 580px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            #pdf-viewer {
+                height: 400px;
+            }
+        }
+        @media (max-width: 480px) {
+            #pdf-viewer {
+                height: 300px;
+            }
+        }
+
+        /* Lightbox */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 999;
+        }
+        #lightbox img {
+            max-width: 80%;
+            max-height: 80vh;
+            margin-top: 10vh;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #f10707;
+        }
+
+        /* Floating GIFs */
+        #floatingGif, #floatingGif2 {
+            position: fixed;
+            width: 100px;
+            height: auto;
+            z-index: 9999;
+        }
+        #floatingGif {
+            top: 1px;
+            left: 140px;
+        }
+        #floatingGif2 {
+            top: 460px;
+            left: 40px;
+        }
+
+        /* Video Container */
+        .video-container {
+            text-align: center;
+            margin-top: -170px;
+            margin-left: 60px;
+            border: 190px solid #fff;
+            box-sizing: content-box;
+        }
+
+        /* Carousel and Storyboard */
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 650px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+        .storyboard-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h3><a href="index.html">Zack Johnson</a></h3>
+        <h3>Animation - Design</h3>
+        <h3>ZackJohnsonArt@gmail.com</h3>
+        <h2><a href="index.html">Portfolio</a></h2>
+        <h2><a href="Story.html">Story</a></h2>
+        <h2><a href="Animation.html">Animation</a></h2>
+        <h2><a href="CharacterDesign.html">Character Design</a></h2>
+        <h2><a href="backgrounddesign.html">Background Design</a></h2>
+        <h2><a href="Resume.html">Resume</a></h2>
+        <h2><a href="mailto:zackjohnsonart@gmail.com">Contact</a></h2>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a class="social-link" href="https://twitter.com/zack_draws">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Video Container -->
+        <div class="video-container">
+            <h2>Storyboard Portfolio</h2>
+            <!-- Storyboard Carousel -->
+            <div class="carousel-container" id="carousel1">
+                <div class="image-title">Farm Life Storyboard Sample</div>
+                <div class="storyboard-images" id="storyboardImages1">
+                    <img src="sb/sb02/sb_01.jpg" alt="Image 1">
+                    <!-- Add other storyboard images here -->
+                </div>
+                <div class="bottom-bar">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zack Johnson's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 143px;
+            background-color: #fff;
+            color: #333;
+            padding: 22px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .sidebar h2, .sidebar h3 {
+            font-size: 20px;
+        }
+        .sidebar a {
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .social-link img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Content */
+        .content {
+            margin-left: 143px;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+        }
+        .image {
+            overflow: hidden;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        /* PDF Viewer */
+        #pdf-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+        #pdf-viewer {
+            width: 640px;
+            height: 580px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            #pdf-viewer {
+                height: 400px;
+            }
+        }
+        @media (max-width: 480px) {
+            #pdf-viewer {
+                height: 300px;
+            }
+        }
+
+        /* Lightbox */
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 999;
+        }
+        #lightbox img {
+            max-width: 80%;
+            max-height: 80vh;
+            margin-top: 10vh;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #f10707;
+        }
+
+        /* Floating GIFs */
+        #floatingGif, #floatingGif2 {
+            position: fixed;
+            width: 100px;
+            height: auto;
+            z-index: 9999;
+        }
+        #floatingGif {
+            top: 1px;
+            left: 140px;
+        }
+        #floatingGif2 {
+            top: 460px;
+            left: 40px;
+        }
+
+        /* Video Container */
+        .video-container {
+            text-align: center;
+            margin-top: -170px;
+            margin-left: 60px;
+            border: 190px solid #fff;
+            box-sizing: content-box;
+        }
+
+        /* Carousel and Storyboard */
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 650px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+        .storyboard-images img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <h3><a href="index.html">Zack Johnson</a></h3>
+        <h3>Animation - Design</h3>
+        <h3>ZackJohnsonArt@gmail.com</h3>
+        <h2><a href="index.html">Portfolio</a></h2>
+        <h2><a href="Story.html">Story</a></h2>
+        <h2><a href="Animation.html">Animation</a></h2>
+        <h2><a href="CharacterDesign.html">Character Design</a></h2>
+        <h2><a href="backgrounddesign.html">Background Design</a></h2>
+        <h2><a href="Resume.html">Resume</a></h2>
+        <h2><a href="mailto:zackjohnsonart@gmail.com">Contact</a></h2>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a class="social-link" href="https://www.instagram.com/zackdraws">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a class="social-link" href="https://twitter.com/zack_draws">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+            <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Video Container -->
+        <div class="video-container">
+            <h2>Storyboard Portfolio</h2>
+            <!-- Storyboard Carousel -->
+            <div class="carousel-container" id="carousel1">
+                <div class="image-title">Farm Life Storyboard Sample</div>
+                <div class="storyboard-images" id="storyboardImages1">
+                    <img src="sb/sb02/sb_01.jpg" alt="Image 1">
+                    <!-- Add other storyboard images here -->
+                </div>
+                <div class="bottom-bar">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
