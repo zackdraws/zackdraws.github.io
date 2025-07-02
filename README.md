@@ -63,3 +63,6 @@ For the lightbox feature to work I just used the lightbox js and it connects thr
 - Premiere - for reel compositing
 - TVPaint Animation 11 - for Animation
 - Adobe Photoshop - for Work
+
+# What is Emacs Backtrace-
+if this is in the directory that is just an emacs crash file
