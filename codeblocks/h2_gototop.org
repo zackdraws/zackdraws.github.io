@@ -1,0 +1,5 @@
+C-SPC M-< to go to the top. C-u C-SPC (or C-x C-x C-g) to get back again.
+
+
+
+(C-x C-x g does not change the mark-ring. C-x C-x swaps point and mark, and activates the region. C-g then deactivates the region.)
