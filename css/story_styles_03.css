@@ -3,18 +3,18 @@
     text-align: center;
 }
 #pdf-viewer {
-    width: 100%;
-    height: 600px; 
+    width: 640px;
+    height: 580px; 
     border: none;
 }
 @media (max-width: 768px) {
     #pdf-viewer {
-    height: 400px; 
+        height: 400px;
     }
 }
 @media (max-width: 480px) {
     #pdf-viewer {
-        height: 300px; /* Further reduce height for very small screens */
+        height: 300px;
     }
 }
 .gallery {
@@ -40,21 +40,20 @@ body {
     font-family: sans-serif;
 }
 .container {
-    align-items: absolute;/* Align items to the top */
+    align-items: absolute;
     position: center;
     height: 100vh;
 }
-/* Sidebar */
 .sidebar {
-    width: 143px; /* Width for larger screens */
-    background-color: #fff; /* White background color for the sidebar */
+    width: 143px; 
+    background-color: #fff; 
     color: #333;
     padding: 22px;
-    position: fixed; /* Fix the sidebar position */
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
-    bottom: 0; /* Stretch the sidebar to the bottom of the page */
-    z-index: 1; /* Ensure the sidebar is above other content */ 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    z-index: 1; 
 }
 .sidebar h2 {
     font-size: 20px;
@@ -71,7 +70,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-/* content area */
 .content {
     margin-left: 30px; /* Adjust this value to match the width of the sidebar */
     padding: 2px;
@@ -83,7 +81,6 @@ width:200px;
 content.closer {
     margin-left:20px;
 }
-/* lightbox */
 #lightbox {
     display: none;
     position: fixed;
@@ -111,6 +108,7 @@ close
     color: #f10707;
 }
 .next-button,
+
 .prev-button {
     background-color: #f3f3f3;
     color: #000000;
@@ -125,14 +123,14 @@ close
     width: 10%; /* Width to take the full width of the image container */
     text-align: center; /* Center-align the buttons horizontally */
 }
-.next-button {
-    right: 400px; /* Position the "next" button to the right */
+    .next-button {
+        right: 400px; /* Position the "next" button to the right */
     }
-.prev-button {
-    left: 400px; /* Position the "previous" button to the left */
+    .prev-button {
+        left: 400px; /* Position the "previous" button to the left */
     }
-.next-button:hover, .prev-button:hover {
-    background-color: #22bc41; /* Background color on hover */
+    .next-button:hover, .prev-button:hover {
+        background-color: #22bc41; /* Background color on hover */
     }
 .next-button:hover, .prev-button:hover {
     background-color: #22bc41; /* Background color on hover */
@@ -149,18 +147,19 @@ close
     float: left
 }
 .gallery {
-    display: grid;
-    flex-wrap: wrap;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Responsive grid */
-    gap: 10px;
-    justify-content: center;
+   display: grid;
+   flex-wrap: wrap;
+   gap: 10px;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid */
+   gap: 10px;
+   justify-content: center;
 }
 .gallery-item{
-    flex; 1 0 calc(85.33% - 80px); /
-   max-width: 1200px;
-    max-height: 3200px; /* Adjust the height as needed */
+    flex; 1 0 calc(33.33% - 20px); /
+    max-width: calc(33.33% - 30px); /* Adjust the width as needed */
+    max-height: 450px; /* Adjust the height as needed */
     overflow: hidden;
+    object-fit: contain;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s;
@@ -168,26 +167,23 @@ close
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s;
 }
 .gallery-item img:hover {
     transform: scale(1.1);
 }
-/* video container */
 .video-container { 
     text-align: center;
     margin-top: -120px;
     margin-left: auto;
     border: 180px solid #fff;
     box-sizing: content-box;
-    
 }
-/*  video */
 video {
-max-width: 100%;
+    max-width: 100%;
+
 }
-/*  heading */
 h1 {
     text-align: center; /* Center the heading */
     font-size: 18px; /* Adjust the font size as needed */
@@ -203,12 +199,10 @@ h3 {
     text-align: center;
     margin-left: 218px;
    }
-/* Style for small images */
 img.small {
     max-width: 100px;
     max-height: 100px;
 }
-/* Style for large images */
 img.large {
     max-width: 700px;
     max-height: 700px;
@@ -228,7 +222,6 @@ img.large {
     max-width: 90%;
     max-height: 90%;
 }
-/* Center text within gallery items */
 .item-caption {
     display: flex;
     flex-direction: column;
@@ -243,14 +236,12 @@ img.large {
     opacity: 0;
     transition: opacity 0.2s;
 }
-/* Style the caption text */
 .item-caption h1 {
     color: rgb(255, 255, 255); /* Set the text color (you can adjust it) */
     font-size: 20px; /* Adjust the font size as needed */
     text-align: center;
     padding: 10px;
 }
-/* Style for the social links */
 .social-links {
     text-align: center;
     margin-top: 20px;
