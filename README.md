@@ -31,6 +31,7 @@
 - zack_Johnson_Resume.pdf - my resume as a pdf
 - Index.html homepage
 - Animation
+
 ##### Animation Reel (ANP.mp4 in file directory)
 
 ##### Story Portfolio (PDFs in file directory)
