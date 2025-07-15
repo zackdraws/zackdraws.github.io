@@ -7,26 +7,20 @@
 </head>
 <body>
     <nav class="sidebar">
-                <h3><a href="index.html">Zack Johnson</a></li></h3>
-                <h3>Animation - Design</h3>
-                <h3>ZackJohnsonArt@gmail.com</h3>
-                <h2><a href="index.html">Portfolio</a></h2>
-                <h2><a href="Story.html">Story</a><h2>
-                <h2><a href="Animation.html">Animation</a></h2>
-                <h2><a href="CharacterDesign.html">Character Design</a></h2>
-                <h2><a href="backgrounddesign.html">Background Design</a></h2>
-                <h2><a href="Resume.html"> Resume</a></h2> 
-                <h2><a href="mailto:zackjohnsonart@gmail.com"> Contact</a></h2>
- <div class="social-links">
-     <a class="social-link" href="https://www.instagram.com/zackdraws">
-                <img src="insta.png" alt="Instagram">
-    </a>
-     <a class="social-link" href="https://twitter.com/zack_draws">
-                    <img src="twitter.png" alt="twitter">
+      <div id="sidebar"></div>
+      <script>
+    fetch('css/sidebar.html')
+
+        .then(response => response.text())
+
+        .then(data => {
+
+            document.getElementById('sidebar').innerHTML = data;
+
+        });
+
+</script>
      </a>
-     <a class="social-link" href="https://linkedin.com/in/zackisdrawing">
-                    <img src="linkedin.png" alt="linkedin">
-     </a>	
  </div>
 </ul>
 </nav>
