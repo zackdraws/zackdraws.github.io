@@ -1,11 +1,6 @@
 # Portfolio Site Project
 - git clone http://github.com/zackdraws/zackdraws.github.io.git
- - git commands
-  - git pull
-  - git add .
-  - git commit
-   - git commit -m " " 
-  - git push   
+
 ## File Descriptions 
 - the [Index.html] is the  homepage. 
 - the [Styles.css and all css is the styling for the site 
