@@ -1,0 +1,28 @@
+.lightbox {
+}
+
+.lightbox__inner {
+    posiiton:relative;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100px;
+    background: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0, 0.3)
+}
+.lightbox__close {		
+	background: none;
+	borer: none;
+	outline: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	pading: 0 10px;
+	font-size: 40px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.5);
+	
+}
+
+.lightbox__close:hover {
+    color: rgba(0, 0, 0, 0.8);
+}

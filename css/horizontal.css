@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+/* Remove borders and adjust image size */
+.grid img {
+  width: 100%;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Fancybox modal customization */
+.fancybox__container {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+}
+
+.fancybox__caption {
+  color: white; /* Caption text color */
+  font-size: 1.2rem;
+  text-align: center;
+}
 body {
   font-family: 'Figtree', sans-serif;
   margin: 0;
