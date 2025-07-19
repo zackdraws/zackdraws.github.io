@@ -75,7 +75,7 @@ section h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(590px, 1fr));
   gap: 6px;
   width: 100vw;
   margin: 0 auto;
@@ -243,4 +243,30 @@ section h2 {
   .about-text {
     flex: 1;
   }
+/* Container for Lightbox thumbnails (optional but helpful for layout) */
+.lightbox-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Thumbnail image styles */
+a[data-lightbox] img {
+  display: block;
+  max-width: 100%;
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+a[data-lightbox] img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
