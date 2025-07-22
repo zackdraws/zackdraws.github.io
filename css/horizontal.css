@@ -60,7 +60,7 @@ body {
   cursor: pointer;
 }
 section {
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -325,13 +325,12 @@ a[data-lightbox] img:hover {
 }
 #video-library .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
   gap: 15px;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 4fr));
   gap: 3px;
-  max-width: 1200px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 #video-library .grid-item {
