@@ -1,14 +1,50 @@
 # Portfolio Site Project
-- git clone http://github.com/zackdraws/zackdraws.github.io.git
- - git commands
-  - git pull
-  - git add .
-  - git commit
-   - git commit -m " " 
-  - git push   
+1. Install Git
+   - git is the tool for version control and cloning this repository to make any changes
+   - git can be used in the terminal by running git and can also be used by installing git with choco
+    this repo is installed on github and can be downloaded from there with the terminal 
+1.2- git clone http://github.com/zackdraws/zackdraws.github.io.git
+     this will install the repository whereever you are in the directory
+
+1.3     type -> 'cd zackdraws.github.io' to change the directory to the repository you just created.
+*      cd means change directory
+
+1.2.1. git commands
+       - git pull - pulls any updates that have been made 
+       - git add . - adds all file changes that have been made
+       - git commit - commits any changes made that have been added
+       - git commit -m "message " - commits and attaches a message
+       - git push - pushes changes to repository
 ## File Descriptions 
 - the [Index.html] is the  homepage. 
-- the [Styles.css and all css is the styling for the site 
+### HTML
+each doctype file starts with 
+
+<!DOCTYPE html>
+  link rel=="stylesheet" href="css.css" - to provide the html page with css.
+
+from there goes the </head>
+for header
+<body>
+for the body of the website
+<nav class="navbar"> this creates the navbar
+- ul -
+< li><a href="____">______</a></li> this is for the link to by clicking this it will go to where the link is - by going to the section id 
+
+
+- grid - it is for the grid and then has grid-item for each photo
+
+- h1
+- h2
+- h3
+
+- containers provide margins to the page and frames the content
+
+- about text - for text being in the center
+- about container - is so that the text stays in the center of the page
+
+- css pages that change the style are located in /css/
+
 ### Pages
 #### Index
 - all.html - a page that includes everything
