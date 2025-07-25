@@ -10,18 +10,25 @@
   <link rel='icon' type='image/x-icon' href='fp/ok.ico' />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-</head>
+  <link rel="stylesheet" href="css/email.css" />
+  </head>
 <body>  
   <nav class="navbar">
   <ul>
-    <li><a href="#about">Zack Johnson</a></li>
-    <li><a href="#animation">Animation</a></li>
+    <img src="fp/fp_name_99.jpg" class="fixed-image">
+    <li><a href="#animation"> <img src="" style="width:20px; height: 20px; vertical-align:middle;" />
+	
+	Animation
+      </a>
+    </li>
     <li><a href="#story">Story</a></li>
     <li><a href="#character-design">Character Design</a></li>
     <li><a href="#background-design">Background Design</a></li>
     <li><a href="#contact">Contact Me</a></li>
   </ul>
 </nav>
+
+
 <section id="about">
   <h2>Zack Johnson - Animator and Storyboard Artist</h2>
   <p></p>
@@ -189,7 +196,6 @@ For job inquiries or any questions he can be reached at ZackJohnsonArt@gmail.com
     <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
   </div>
   <!-- 3. Robot and Monster -->
-  
   <div class="video-container"
        <div class="storyboard-item">
     <h3>Robot and Monster</h3>
@@ -327,14 +333,28 @@ For job inquiries or any questions he can be reached at ZackJohnsonArt@gmail.com
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </div>
 </section>
-<section id="contact">
+  <section id="contact">
   <h2>Contact Me</h2>
-  <div class="about-container">
-<!--    <img src="fp.ico" alt="Zack Johnson" class="avatar">  ! -->
-    <div class="about-text">   
-  <p> Hello, for any inquiries you may have you can reach me at my email ZackJohnsonArt@gmail.com</p>
-</section>
+<section class="contact-section">
+<div class= "about-me">
+  <div class="left-container">
+    <div class="about-text">
+  <form class="email-form" action="https://formspree.io/f/yourFormID" method="POST">
+  <form action="https://formspree.io/f/yourFormID" method="POST" class="email-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="_replyto" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+    </div>
 <div>
+    <div class="right-container">
+      <p> hello </p>
+  </div>
+</section>
+
   <section>
   </section>
   <div class="about-container">

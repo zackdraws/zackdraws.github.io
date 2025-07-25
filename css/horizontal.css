@@ -2,6 +2,18 @@
 * {
   box-sizing: border-box;
 }
+.left-container {
+  margin-left: 350px;   /* space from the left edge */
+  max-width: 600px;    /* optional max width to keep content narrow */
+  padding-left: 10px;  /* optional inner padding */
+  text-align: left;    /* align text/content to the left */
+}
+.right-container {
+  margin-right: 350px;   /* space from the left edge */
+  max-width: 600px;    /* optional max width to keep content narrow */
+  padding-left: 10px;  /* optional inner padding */
+  text-align: right;    /* align text/content to the left */
+}
 .grid img {
   width: 100%;
   height: auto;
@@ -35,7 +47,7 @@ body {
   top: 0;
   z-index: 1000;
   background-color: white;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.7rem;
   border-bottom: 1px solid #ddd;
 }
 .navbar ul {
@@ -106,6 +118,7 @@ section h2 {
   max-width: 1000px;
   margin: 0 auto 3rem;
 }
+
 .video-container video {
   margin: 20px auto;
   width: 100%;
@@ -374,3 +387,260 @@ a[data-lightbox] img:hover {
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
+.fixed-image {
+  position: fixed; /* This makes the image sticky */
+  bottom: 0;        /* Positions it at the bottom */
+  right: 0;         /* Positions it at the right */
+  top: 10px;
+  width: 5%;
+  max-width: 60px;
+}
+.contact-section {
+      max-width: 900px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 60px;
+    background: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Figtree', sans-serif;
+}
+.contact-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  margin-bottom: 20px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 260px;
+  margin-top: 5px;
+  border-radius: 100px;
+  border: 10px solid #ccc;
+  font-size: 1em;
+}
+.contact-form button {
+  margin-top: 20px;
+  width: 100%;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 40px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 150px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 400px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  min-height: 290px;
+  resize: vertical;
+}
+.contact-form button {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.right-panel {
+  flex: 2;
+  min-width: 300px;
+  padding: 60px; /* increased from 30px to 60px */
+}
+
+form {
+  padding: 10px;
+  background-color: #f9f9f9; /* optional: light background */
+  border-radius: 8px;
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+    margin: 10px auto;
+    padding: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+.email-form label {
+    font-weight: bold;
+    color: #333;
+}
+.email-form input,
+.email-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.email-form textarea {
+    resize: vertical;
+}
+.email-form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.email-form button:hover {
+    background-color: #0056b3;
+}
+.email-frame {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.email-form {
+    width: 200px;
+    display: table-cell;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.email-form input,
+.email-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 24%;
+}
+
+.email-form textarea {
+    resize: vertical;
+}
+
+.email-form button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.email-form button:hover {
+    background-color: #0056b3;
+}
+

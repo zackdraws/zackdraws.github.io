@@ -90,6 +90,7 @@ files are labeled cd01.jpg bg01.jpg fg01.jpg
 	- cd_01.jpg (Files for character design) 
 	- bg_01.jpg (Files for Background), 
 	- fg_01.jpg (Files for Sketchbook) 
+	- 1/fund_01.jpg
 ### Styles.css
 Styles.css isn't an html website page it controls the settings of the html
 Styles controls the css of website
@@ -97,9 +98,9 @@ Styles controls the css of website
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
 # Programs 
-- Yazi -
-- Emacs -
-- Visual Studio Code -
+- Emacs - code editor for previewing website
+- Visual Studio Code - code editor for previewing website
+
 # Apps
 - Indesign -
 - Premiere - for reel compositing
