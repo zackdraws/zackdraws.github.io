@@ -1,6 +1,8 @@
 # Portfolio Site Project -
-
- - this is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+ - About: this is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+ - Why: To create an easy to access portfolio.
+ - When: This project was started in 2022
+ - How: With Git, Github, and eMacs mostly
 
 # Portfolio Site Project - How to Create your own site
 1. Install Git
@@ -32,12 +34,14 @@ git clone http://github.com/zackdraws/zackdraws.github.io.git
        - git push - pushes changes to repository
        but if you do not want to use git in the terminal you can also just use github desktop or vscode or emacs and magit. 
 ### 1.3.1 Fork 
-- a fork is like a fork in the road, it's it's own seperate directory that you can make changes to and make your own, so you can make a fork of this change all of the image files to your own and then make the site your own but just with this template. 
+- a fork is like a fork in the road. The fork is its own seperate directory that you can make changes to and make your own. 
+- Once you make a fork change all of the image files but do not change the file names. The file names need to be the same so that the website still references the site. 
 
 - > gh repo fork zackdraws/zackdraws.github.io
 
 from the terminal in your ~/ user directory or whereever you want to store it
 or you can click the fork button. 
+
 # 2. Design 
 - I've made different templates depending on what is important - as long as the references are not moved and match the file locations they will fit into the page
 ## 2. 1 Horizontal view 
@@ -46,10 +50,7 @@ Index.html is the website for a more horizontal interface
 
 ## 2. index_2025_Vertical_w_sidebar.html
 ![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
-
-- this is a template design that has the sidebar to the left side and follows with the art samples
-
-
+- this is a template design that has the sidebar to the left side and follows with the art samples.
 ## 3. HTML Structure
 
 ### HTML
