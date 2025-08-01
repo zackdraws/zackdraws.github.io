@@ -1,14 +1,15 @@
 # Portfolio Site Project -
- - About: this is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+ - About: This is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+<img src="example_images/index.png" alt="drawing" width="250"/>
 
- - Why: When I was working on my site in squarespace I noticed I was losing a lot of time having to update the folder and add each file one at a time, and also the cost was about 120$ each year. Furthermore using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template that fulfilled the same qualities on my own without having to rely on Squarespace. Part of this also came from wanting to be more organized it felt annoying to me to have to go into a web browser log in to squarespace and then use their tools. 
+- Why: When I was working on my site in squarespace I got sick of losing a lot of time updating the folder and add each file one at a time. Using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template with the same qualities on my own.
  
- That line of thinking started a very grueling process of trying to code a website. Since building the site I now notice that I've spent way too much time learning and trying to figure out html and css. Some small bugs or simple things can take hours or ten minutes to figure out. Changing one thing can cause the site to become I mess and then I would have to debug and try to figure out what went wrong. While there are some limitations to Squarespace and other site builders is an understandable trade off. With that being said to anyone wanting to not use Squarespace or try to build there own website please take a look at my site here. 
+# 1. Git (version control of site)
+The first program I started using was Visual Studio Code (https://code.visualstudio.com/). From there you can look and edit your code and install live preview as a plug in. Live Preview makes it possible to view your site as you edit. 
 
-# Portfolio Site Project - How to Create your own site
-When I started by using visual studio code opening the folder and then installing a live preview
 Now I have eMacs and use m-x http-d serve directory to have a preview of the site. 
-Before that I had to
+
+Before using visual studio code 
 1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
    
@@ -88,12 +89,7 @@ This is the version of the site that is horizontal and has a navigation bar at t
 - story_04_07.html - w/o custom storyboard viewer
 - story_styles.css - storyboard styles page
 
-
-
-
-
 ## 3. HTML Structure
-
 
 ### HTML
 each doctype file starts with 
@@ -157,22 +153,39 @@ Styles controls the css of website
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
 
+<img src="example_images/lightbox.png" alt="drawing" width="300"/>
+
 # Programs used-
 ## Code Editors - 
 ### Emacs 
+<img src="example_images/emacs.png" alt="drawing" width="25"/>
+
 text editor - for editing code and also displaying previews
 ### - Visual Studio Code -
+<img src="example_images/$.png" alt="drawing" width="25"/>
+
 text editor that's much simpler than emacs and works outside of the box
 ## Art Programs
 ### Photoshop
+<img src="example_images/photoshop.png" alt="drawing" width="25"/>
+
 ### Clip Studio Paint
+<img src="example_images/CSP.png" alt="drawing" width="25"/>
+
 ### Procreate
+<img src="example_images/Procreate.png" alt="drawing" width="25"/>
+
 ## Animation Programs
 ### TVPaint
+<img src="example_images/tvp.png" alt="drawing" width="25"/>
 ### ToonBoom Harmony
+<img src="example_images/TBH.png" alt="drawing" width="25"/>
 ## Storyboard Programs
 ### ToonBoom Storyboard Pro
+<img src="example_images/SBP.png" alt="drawing" width="25"/>
 ### Adobe Photoshop
+<img src="example_images/PS.png" alt="drawing" width="25"/>
+
 ## Compositing
 ### Indesign
 ### Premiere 
