@@ -62,6 +62,31 @@ This is the version of the site that is horizontal and has a navigation bar at t
 ## 2. index_2025_Vertical_w_sidebar.html
 - this is a template design that has the sidebar to the left side and follows with the art samples.
 ![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
+
+### -
+- all.html - a page that includes everything
+- animation.html - my animation
+- backgrounddesign.html - background designs
+- characterdesign.html - character design page
+- fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
+- index03.html - test where it's a grid view of all the videos
+- index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
+- index5.html - this is a splash page test 
+- indexwoimages.html - this is another splash page test - much cleaner
+- index_with_no_images_hover.html
+- resume.html- a page that has about me and my resume.sh - this is a script to create a resume - it doesn't work well
+- sb.html - this is where my storyboarding page is
+- sb02.html - this is where my second storyboaring page is
+- story.html - this is another storyboarding html page
+- story_02.html - custom storyboard viewer
+- story_04.html - custom storyboard viewer 02
+- story_04_07.html - w/o custom storyboard viewer
+- story_styles.css - storyboard styles page
+
+
+
+
+
 ## 3. HTML Structure
 
 
@@ -91,24 +116,7 @@ div elements are linked from the css so the html knows how to display the inform
 #### Pages - 
 > these are pages that I still need to describe more and where they fit into the design of the site.
 
-- all.html - a page that includes everything
-- animation.html - my animation
-- backgrounddesign.html - background designs
-- characterdesign.html - character design page
-- fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
-- index03.html - test where it's a grid view of all the videos
-- index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
-- index5.html - this is a splash page test 
-- indexwoimages.html - this is another splash page test - much cleaner
-- index_with_no_images_hover.html
-- resume.html- a page that has about me and my resume.sh - this is a script to create a resume - it doesn't work well
-- sb.html - this is where my storyboarding page is
-- sb02.html - this is where my second storyboaring page is
-- story.html - this is another storyboarding html page
-- story_02.html - custom storyboard viewer
-- story_04.html - custom storyboard viewer 02
-- story_04_07.html - w/o custom storyboard viewer
-- story_styles.css - storyboard styles page
+
 - styles.css - index styles.css
 - stylesstory.css - story.css
 - styles_index.css - index page css
