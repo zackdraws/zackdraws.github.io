@@ -1,62 +1,81 @@
-# Portfolio Site Project - How to
+# Portfolio Site Project -
+
+ - this is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+
+# Portfolio Site Project - How to Create your own site
 1. Install Git
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
+   
    - git is the tool for version control and cloning this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
    
-    While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository  
-1.2- git clone http://github.com/zackdraws/zackdraws.github.io.git
-     this will install the repository whereever you are in the directory
+   - While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
 
-1.3     type -> 'cd zackdraws.github.io' to change the directory to the repository you just created.
+   - Once git is installed you can use Microsoft VSCode to make changes to the site  
+1.1.2 Make a github account -
+    - for a site you will need to host your website github is one of the most common and also has Github Desktop which makes this easier to set up.
+    - once you make a website you can host the site on github through a public or private repository. 
+## What is Git? 
+Git is how your computer gets the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
+## Git Clone or Fork
+### 1.2.1- Clone - 
+git clone http://github.com/zackdraws/zackdraws.github.io.git
+     cloning the file directory will install the repository in the directory that you are inside your terminal.
+     when you open the terminal from your computer it usually will go to the user directory of your computer.
+1.2.2     type -> 'cd zackdraws.github.io' to change the directory to the repository you just created. Once you do this you will be in the local folder of the site on your computer.
 *      cd means change directory
-
-1.2.1. git commands
+1.2.3. git commands - in order to make changes in git through the terminal you can type git <command>
+        examples ---
        - git pull - pulls any updates that have been made 
        - git add . - adds all file changes that have been made
        - git commit - commits any changes made that have been added
        - git commit -m "message " - commits and attaches a message
        - git push - pushes changes to repository
-## File Descriptions 
-- the [Index.html] is the  homepage. This is the page that visitors will be greeted with. 
+       but if you do not want to use git in the terminal you can also just use github desktop or vscode or emacs and magit. 
+### 1.3.1 Fork 
+- a fork is like a fork in the road, it's it's own seperate directory that you can make changes to and make your own, so you can make a fork of this change all of the image files to your own and then make the site your own but just with this template. 
+
+- > gh repo fork zackdraws/zackdraws.github.io
+
+from the terminal in your ~/ user directory or whereever you want to store it
+or you can click the fork button. 
+# 2. Design 
+- I've made different templates depending on what is important - as long as the references are not moved and match the file locations they will fit into the page
+## 2. 1 Horizontal view 
+Index.html is the website for a more horizontal interface
+![Vertical_w_Sidebar_Preview](example_images/index.png)
+
+## 2. index_2025_Vertical_w_sidebar.html
+![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
+
+- this is a template design that has the sidebar to the left side and follows with the art samples
+
+
+## 3. HTML Structure
 
 ### HTML
 each doctype file starts with 
 
-<!DOCTYPE html>
-  link rel=="stylesheet" href="css.css" - to provide the html page with css.
+1. <!DOCTYPE html> */ this is to let the browser know this is html
+2.  link rel="stylesheet" href="css.css" */ this provides the html page with a link to the css, which is the recipe for the design of the html.
+3. </head> */for header
+4. <body> */for the body of the website
+5. <nav class="navbar"> this creates the navbar
+6. - ul -
+7. <li><a href="____">______</a></li> this is for the link to by clicking this it will go to where the link is - by going to the section id 
+< --- div elements -- >
+div elements are linked from the css so the html knows how to display the information. 
+8. - grid - it is for the grid and then has grid-item for each photo
+9. -  h1 - the h is to create different text sizes so h1 could be for a large text
+10. - h2 - medium text
+11. - h3 - for small text 
+12. - container - provides margins to the page and frames the content
+13. about text - for text being in the center
+14. - about container - is so that the text stays in the center of the page
+15. - css pages that change the style are located in /css/
 
-from there goes the </head>
-for header
-<body>
-for the body of the website
-<nav class="navbar"> this creates the navbar
-- ul -
-< li><a href="____">______</a></li> this is for the link to by clicking this it will go to where the link is - by going to the section id 
+#### Pages - 
+> these are pages that I still need to describe more and where they fit into the design of the site.
 
-
-- grid - it is for the grid and then has grid-item for each photo
-
-- h1
-- h2
-- h3
-
-- containers provide margins to the page and frames the content
-
-- about text - for text being in the center
-- about container - is so that the text stays in the center of the page
-
-- css pages that change the style are located in /css/
-
-# Horizontal view 
-Index.html is the website for a more horizontal interface
-![Vertical_w_Sidebar_Preview](index.png)
-
-# index_2025_Vertical_w_sidebar.html
-![Vertical_w_Sidebar_Preview](index_2025_Vertical_w_Sidebar.png)
-
-- this is a template design that has the sidebar to the left side and follows with the art samples
-### Pages
-#### Index
 - all.html - a page that includes everything
 - animation.html - my animation
 - backgrounddesign.html - background designs
@@ -101,21 +120,36 @@ files are labeled cd01.jpg bg01.jpg fg01.jpg
 	- bg_01.jpg (Files for Background), 
 	- fg_01.jpg (Files for Sketchbook) 
 	- 1/fund_01.jpg
+
 ### Styles.css
 Styles.css isn't an html website page it controls the settings of the html
 Styles controls the css of website
+
 ### JS
 For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
-# Programs 
-- Emacs - code editor for previewing website
-- Visual Studio Code - code editor for previewing website
 
-# Apps
-- Indesign -
-- Premiere - for reel compositing
-- TVPaint Animation 11 - for Animation
-- Adobe Photoshop - for Work
+# Programs used-
+## Code Editors - 
+### Emacs 
+text editor - for editing code and also displaying previews
+### - Visual Studio Code -
+text editor that's much simpler than emacs and works outside of the box
+## Art Programs
+### Photoshop
+### Clip Studio Paint
+### Procreate
+## Animation Programs
+### TVPaint
+### ToonBoom Harmony
+## Storyboard Programs
+### ToonBoom Storyboard Pro
+### Adobe Photoshop
+## Compositing
+### Indesign
+### Premiere 
 
-# What is Emacs Backtrace-
+# Questions
+
+What is Emacs Backtrace ?
 if this is in the directory that is just an emacs crash file
