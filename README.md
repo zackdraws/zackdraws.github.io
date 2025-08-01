@@ -9,7 +9,7 @@
 When I started by using visual studio code opening the folder and then installing a live preview
 Now I have eMacs and use m-x http-d serve directory to have a preview of the site. 
 Before that I had to
-1. Install Git
+1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
    
    - git is the tool for version control and cloning this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
@@ -58,7 +58,12 @@ While designing the site I tried to focus mostly on just showing the work and av
 
 ## 2. 1 Horizontal view (Index.html)
 This is the version of the site that is horizontal and has a navigation bar at the top of the page.
-![Vertical_w_Sidebar_Preview](example_images/index.png)
+
+<img src="example_images/index.png" alt="drawing" width="300"/>
+
+### 2. 2 Lightbox -
+<img src="example_images/lightbox.png" alt="drawing" width="300"/>
+
 ## 2. index_2025_Vertical_w_sidebar.html
 - this is a template design that has the sidebar to the left side and follows with the art samples.
 ![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
