@@ -1,10 +1,14 @@
 # Portfolio Site Project -
  - About: this is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
- - Why: To create an easy to access portfolio.
- - When: This project was started in 2022
- - How: With Git, Github, and eMacs mostly
+
+ - Why: When I was working on my site in squarespace I noticed I was losing a lot of time having to update the folder and add each file one at a time, and also the cost was about 120$ each year. Furthermore using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template that fulfilled the same qualities on my own without having to rely on Squarespace. Part of this also came from wanting to be more organized it felt annoying to me to have to go into a web browser log in to squarespace and then use their tools. 
+ 
+ That line of thinking started a very grueling process of trying to code a website. Since building the site I now notice that I've spent way too much time learning and trying to figure out html and css. Some small bugs or simple things can take hours or ten minutes to figure out. Changing one thing can cause the site to become I mess and then I would have to debug and try to figure out what went wrong. While there are some limitations to Squarespace and other site builders is an understandable trade off. With that being said to anyone wanting to not use Squarespace or try to build there own website please take a look at my site here. 
 
 # Portfolio Site Project - How to Create your own site
+When I started by using visual studio code opening the folder and then installing a live preview
+Now I have eMacs and use m-x http-d serve directory to have a preview of the site. 
+Before that I had to
 1. Install Git
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
    
@@ -42,20 +46,27 @@ git clone http://github.com/zackdraws/zackdraws.github.io.git
 from the terminal in your ~/ user directory or whereever you want to store it
 or you can click the fork button. 
 
-# 2. Design 
-- I've made different templates depending on what is important - as long as the references are not moved and match the file locations they will fit into the page
-## 2. 1 Horizontal view 
-Index.html is the website for a more horizontal interface
-![Vertical_w_Sidebar_Preview](example_images/index.png)
 
+### 1.4 Using Git -
+When I first started using git I did not understand why or how it worked I just knew that's what you use. But basically you use git to add changes then you commit those changes with a commit message explaining what you changed. Finally you push the changes to merge the changes to the official site. If you make a mistake you can git restore from an earlier version. I've used github desktop, vscode's github plug in and git with magit and lastly git terminal, I would recommend to use git terminal the most but vscode's git is the easiest to understand and is the most visual.
+
+### 1.4 Making changes to push to Git
+- to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
+
+# 2. Design 
+While designing the site I tried to focus mostly on just showing the work and avoiding white space. However I have made different templates depending on what is important - as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+
+## 2. 1 Horizontal view (Index.html)
+This is the version of the site that is horizontal and has a navigation bar at the top of the page.
+![Vertical_w_Sidebar_Preview](example_images/index.png)
 ## 2. index_2025_Vertical_w_sidebar.html
-![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
 - this is a template design that has the sidebar to the left side and follows with the art samples.
+![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
 ## 3. HTML Structure
+
 
 ### HTML
 each doctype file starts with 
-
 1. <!DOCTYPE html> */ this is to let the browser know this is html
 2.  link rel="stylesheet" href="css.css" */ this provides the html page with a link to the css, which is the recipe for the design of the html.
 3. </head> */for header
@@ -73,6 +84,9 @@ div elements are linked from the css so the html knows how to display the inform
 13. about text - for text being in the center
 14. - about container - is so that the text stays in the center of the page
 15. - css pages that change the style are located in /css/
+
+### References
+- The html references to files inside of the directory for example the site uses 'zack_johnson_resume.pdf' as a source. By doing this the html file is able to display the referenced file. If the name of the file is changed the html won't be able to reference it. For example in a fork you can drag your own resume change into the folder change the name to match in the html and then it will show that resume. The same goes for all images.
 
 #### Pages - 
 > these are pages that I still need to describe more and where they fit into the design of the site.
