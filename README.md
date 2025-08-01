@@ -1,8 +1,9 @@
-# Portfolio Site Project
+# Portfolio Site Project - How to
 1. Install Git
-   - git is the tool for version control and cloning this repository to make any changes
-   - git can be used in the terminal by running git and can also be used by installing git with choco
-    this repo is installed on github and can be downloaded from there with the terminal 
+   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
+   - git is the tool for version control and cloning this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
+   
+    While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository  
 1.2- git clone http://github.com/zackdraws/zackdraws.github.io.git
      this will install the repository whereever you are in the directory
 
@@ -16,7 +17,8 @@
        - git commit -m "message " - commits and attaches a message
        - git push - pushes changes to repository
 ## File Descriptions 
-- the [Index.html] is the  homepage. 
+- the [Index.html] is the  homepage. This is the page that visitors will be greeted with. 
+
 ### HTML
 each doctype file starts with 
 
@@ -45,6 +47,14 @@ for the body of the website
 
 - css pages that change the style are located in /css/
 
+# Horizontal view 
+Index.html is the website for a more horizontal interface
+![Vertical_w_Sidebar_Preview](index.png)
+
+# index_2025_Vertical_w_sidebar.html
+![Vertical_w_Sidebar_Preview](index_2025_Vertical_w_Sidebar.png)
+
+- this is a template design that has the sidebar to the left side and follows with the art samples
 ### Pages
 #### Index
 - all.html - a page that includes everything
