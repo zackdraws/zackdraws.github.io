@@ -1,12 +1,9 @@
 # Portfolio Site Project -
  - About: This is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
-
 <img src="example_images/index.png" alt="drawing" width="250"/>
 
 - Why: When I was working on my site in squarespace I got sick of losing a lot of time updating the folder and add each file one at a time. Using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template with the same qualities on my own.
  
- Since building the site I now notice that I've spent way too much time learning and trying to figure out html and css. Some small bugs or simple things can take hours or ten minutes to figure out. Changing one thing can cause the site to become a mess and then I would have to debug and try to figure out what went wrong. While there are some limitations to Squarespace and other site builders coding has definitely been more time consuming. The hope is that I can save time in the future once all of the glitches are figured out. 
-
 # 1. Git (version control of site)
 The first program I started using was Visual Studio Code (https://code.visualstudio.com/). From there you can look and edit your code and install live preview as a plug in. Live Preview makes it possible to view your site as you edit. 
 
@@ -92,12 +89,7 @@ This is the version of the site that is horizontal and has a navigation bar at t
 - story_04_07.html - w/o custom storyboard viewer
 - story_styles.css - storyboard styles page
 
-
-
-
-
 ## 3. HTML Structure
-
 
 ### HTML
 each doctype file starts with 
@@ -186,16 +178,11 @@ text editor that's much simpler than emacs and works outside of the box
 ## Animation Programs
 ### TVPaint
 <img src="example_images/tvp.png" alt="drawing" width="25"/>
-
 ### ToonBoom Harmony
 <img src="example_images/TBH.png" alt="drawing" width="25"/>
-
 ## Storyboard Programs
-
 ### ToonBoom Storyboard Pro
-
 <img src="example_images/SBP.png" alt="drawing" width="25"/>
-
 ### Adobe Photoshop
 <img src="example_images/PS.png" alt="drawing" width="25"/>
 

@@ -63,17 +63,17 @@ When I first started using git I did not understand why or how it worked I just 
  - easy to understand
  - little waisted space
 
-2.2 Templates - as longthe references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+2.1. Templates - as longthe references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
 
-## 2. 1 Horizontal view (Index.html)
+## 2.1.2 Horizontal view (Index.html)
 This is the version of the site that is horizontal and has a navigation bar at the top of the page.
 
 <img src="example_images/index.png" alt="drawing" width="300"/>
 
-### 2. 2 Lightbox -
+### 2.2.3 Lightbox -
 <img src="example_images/lightbox.png" alt="drawing" width="300"/>
 
-## 2. index_2025_Vertical_w_sidebar.html
+## 2.2.4 index_2025_Vertical_w_sidebar.html
 - Template design that has the sidebar to the left side and follows with the art samples.
 ![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
 
@@ -189,6 +189,3 @@ text editor that's much simpler than emacs and works outside of the box
 ## Compositing
 ### Indesign
 ### Premiere 
-
-# Questions
-
