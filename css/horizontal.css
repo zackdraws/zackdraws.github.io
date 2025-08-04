@@ -45,9 +45,9 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 1500;
   background-color: white;
-  padding: 1rem 1.7rem;
+  padding: 1rem 3rem;
   border-bottom: 1px solid #ddd;
 }
 .navbar ul {
@@ -55,6 +55,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+  height: 3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -63,7 +64,7 @@ body {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 1rem;
   transition: color 0.2s;
 }
 .navbar a:hover,
