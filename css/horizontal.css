@@ -388,12 +388,13 @@ a[data-lightbox] img:hover {
   border-radius: 8px; /* Optional: Add rounded corners */
 }
 .fixed-image {
-  position: fixed; /* This makes the image sticky */
+  position: fixed;  /* This makes the image sticky */
   bottom: 0;        /* Positions it at the bottom */
   right: 0;         /* Positions it at the right */
-  top: 10px;
-  width: 5%;
-  max-width: 60px;
+  top: 23px;
+  width: 20%;
+  max-width: 85px;
+  max-height: 95px;
 }
 .contact-section {
       max-width: 900px;
