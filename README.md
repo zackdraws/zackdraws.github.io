@@ -13,13 +13,15 @@
    
    - While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
 
-   - Once git is installed you can use Microsoft VSCode to make changes to the site  
-
+   - Once git is installed you can use Microsoft VSCode to make changes to the site 
+   vscode is a code editor. code editors make it possible to look at text files, gives auto suggestions as well as live previews and add ons.
+   
 Download Visual Studio Code (https://code.visualstudio.com/).
  - From there download [[live preview][https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server]] which gives the ability to host a local server which makes it possible to preview the site in vscode.
 
 - Or download and install eMacs [[download][https://www.gnu.org/software/emacs/download.html]]
-
+once downloaded you can install different configurations to set up the program how you would like to use it. if you choose to use eMacs i would recommend taking a look at tutorial videos as well as reading the manual. 
+emacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
 -- my configuration is [[here][https://github.com/zackdraws/.dotfiles/tree/main/.emacs.d]]
 
 1.1.2 Hosting your code - Make a github account -
