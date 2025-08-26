@@ -3,13 +3,9 @@
 <img src="example_images/index.png" alt="drawing" width="250"/>
 
 - Why: When I was working on my site in squarespace I got sick of losing a lot of time updating the folder and add each file one at a time. Using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template with the same qualities on my own.
- 
-# 1. Git (version control of site)
-The first program I started using was Visual Studio Code (https://code.visualstudio.com/). From there you can look and edit your code and install live preview as a plug in. Live Preview makes it possible to view your site as you edit. 
 
-Now I have eMacs and use m-x http-d serve directory to have a preview of the site. 
-
-Before using visual studio code 
+# How:
+## 1. Git (version control of site)
 1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
    
@@ -17,9 +13,19 @@ Before using visual studio code
    
    - While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
 
-   - Once git is installed you can use Microsoft VSCode to make changes to the site  
-1.1.2 Make a github account -
-    - for a site you will need to host your website github is one of the most common and also has Github Desktop which makes this easier to set up.
+   - Once git is installed you can use Microsoft VSCode to make changes to the site 
+   vscode is a code editor. code editors make it possible to look at text files, gives auto suggestions as well as live previews and add ons.
+   
+Download Visual Studio Code (https://code.visualstudio.com/).
+ - From there download [[live preview][https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server]] which gives the ability to host a local server which makes it possible to preview the site in vscode.
+
+- Or download and install eMacs [[download][https://www.gnu.org/software/emacs/download.html]]
+once downloaded you can install different configurations to set up the program how you would like to use it. if you choose to use eMacs i would recommend taking a look at tutorial videos as well as reading the manual. 
+emacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
+-- my configuration is [[here][https://github.com/zackdraws/.dotfiles/tree/main/.emacs.d]]
+
+1.1.2 Hosting your code - Make a github account -
+    - the code need to be hosted. Github is one of the most common and also has Github Desktop which makes this easier to set up. https://github.com/signup
     - once you make a website you can host the site on github through a public or private repository. 
 ## What is Git? 
 Git is how your computer gets the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
@@ -55,18 +61,22 @@ When I first started using git I did not understand why or how it worked I just 
 - to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
 
 # 2. Design 
-While designing the site I tried to focus mostly on just showing the work and avoiding white space. However I have made different templates depending on what is important - as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+ - Goals for design
+ - easy to understand
+ - little waisted space
 
-## 2. 1 Horizontal view (Index.html)
+2.1. Templates - as longthe references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+
+## 2.1.2 Horizontal view (Index.html)
 This is the version of the site that is horizontal and has a navigation bar at the top of the page.
 
 <img src="example_images/index.png" alt="drawing" width="300"/>
 
-### 2. 2 Lightbox -
+### 2.2.3 Lightbox -
 <img src="example_images/lightbox.png" alt="drawing" width="300"/>
 
-## 2. index_2025_Vertical_w_sidebar.html
-- this is a template design that has the sidebar to the left side and follows with the art samples.
+## 2.2.4 index_2025_Vertical_w_sidebar.html
+- Template design that has the sidebar to the left side and follows with the art samples.
 ![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
 
 ### -
@@ -92,9 +102,9 @@ This is the version of the site that is horizontal and has a navigation bar at t
 ## 3. HTML Structure
 
 ### HTML
-each doctype file starts with 
+
 1. <!DOCTYPE html> */ this is to let the browser know this is html
-2.  link rel="stylesheet" href="css.css" */ this provides the html page with a link to the css, which is the recipe for the design of the html.
+2.  link rel="stylesheet" href="css.css" */ - provides the html page with a link to the css, which is the recipe for the design of the html.
 3. </head> */for header
 4. <body> */for the body of the website
 5. <nav class="navbar"> this creates the navbar
@@ -107,24 +117,20 @@ div elements are linked from the css so the html knows how to display the inform
 10. - h2 - medium text
 11. - h3 - for small text 
 12. - container - provides margins to the page and frames the content
-13. about text - for text being in the center
+13. - about text - for text being in the center
 14. - about container - is so that the text stays in the center of the page
 15. - css pages that change the style are located in /css/
 
 ### References
-- The html references to files inside of the directory for example the site uses 'zack_johnson_resume.pdf' as a source. By doing this the html file is able to display the referenced file. If the name of the file is changed the html won't be able to reference it. For example in a fork you can drag your own resume change into the folder change the name to match in the html and then it will show that resume. The same goes for all images.
+- HTML references files inside of the directory. The site uses 'zack_johnson_resume.pdf' as a source. Which lets the html file to display the referenced file. If the name of the file is changed the html won't be able to reference it. In a fork you can drag your own resume change into the folder change the name to match in the html and then it will show that resume. The same goes for all images.
 
-#### Pages - 
-> these are pages that I still need to describe more and where they fit into the design of the site.
-
-
+#### CSS - 
 - styles.css - index styles.css
 - stylesstory.css - story.css
 - styles_index.css - index page css
+#### Resume
 - zack_johnson_resume.md - my resume as a markdown file
 - zack_Johnson_Resume.pdf - my resume as a pdf
-- Index.html homepage
-- Animation
 
 ##### Animation Reel (ANP.mp4 in file directory)
 
@@ -138,19 +144,15 @@ div elements are linked from the css so the html knows how to display the inform
 
 ### HTML-  Naming Files in Portfolio
 
-My Portfolio images are in the folders /cd /bg and /fg 
-files are labeled cd01.jpg bg01.jpg fg01.jpg 
+Portfolio images are in the folders /cd /bg and /fg 
+files are labeled cd_01.jpg bg_01.jpg fg_01.jpg 
 	- cd_01.jpg (Files for character design) 
 	- bg_01.jpg (Files for Background), 
 	- fg_01.jpg (Files for Sketchbook) 
 	- 1/fund_01.jpg
 
-### Styles.css
-Styles.css isn't an html website page it controls the settings of the html
-Styles controls the css of website
-
-### JS
-For the lightbox feature to work I just used the lightbox js and it connects through the html on the site
+### JS - javascript
+For the lightbox feature to work I used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
 
 <img src="example_images/lightbox.png" alt="drawing" width="300"/>
@@ -189,8 +191,3 @@ text editor that's much simpler than emacs and works outside of the box
 ## Compositing
 ### Indesign
 ### Premiere 
-
-# Questions
-
-What is Emacs Backtrace ?
-if this is in the directory that is just an emacs crash file
