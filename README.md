@@ -1,17 +1,19 @@
 # Portfolio Site Project -
- - About: This is my portfolio site project hosted on github and made up of html and css. The site itself can be found at http://zackdraws.com 
+ - About: This is my portfolio site project. Made up of HTML and CSS.
+ - to see the site you can view it at http://zackdraws.com 
 <img src="example_images/index.png" alt="drawing" width="250"/>
 
-- Why: When I was working on my site in squarespace I got sick of losing a lot of time updating the folder and add each file one at a time. Using Squarespace felt like I was building on something that I was going to have to rely on more and more and it felt like I could easily make a web template with the same qualities on my own.
+# Why: Using this folder of code you can clone this repo and make your own site. Using a folder with HTML and CSS allows for more creativity and control of your site..
 
 # How:
 ## 1. Git (version control of site)
 1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
-   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode.
+
+   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
    
-   - git is the tool for version control and cloning this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
+   - git is used for version control and can be used to clone this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork.  zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
    
-   - While this repo is installed on github git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
+   - While this repo is installed on GitHub Git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
 
    - Once git is installed you can use Microsoft VSCode to make changes to the site 
    vscode is a code editor. code editors make it possible to look at text files, gives auto suggestions as well as live previews and add ons.
@@ -21,7 +23,7 @@ Download Visual Studio Code (https://code.visualstudio.com/).
 
 - Or download and install eMacs [[download][https://www.gnu.org/software/emacs/download.html]]
 once downloaded you can install different configurations to set up the program how you would like to use it. if you choose to use eMacs i would recommend taking a look at tutorial videos as well as reading the manual. 
-emacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
+eMacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
 -- my configuration is [[here][https://github.com/zackdraws/.dotfiles/tree/main/.emacs.d]]
 
 1.1.2 Hosting your code - Make a github account -
