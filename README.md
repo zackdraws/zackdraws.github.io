@@ -1,7 +1,8 @@
 # Portfolio Site Project -
  - About: This is my portfolio site project. Made up of HTML and CSS.
  - to see the site you can view it at http://zackdraws.com 
-<img src="example_images/index.png" alt="drawing" width="250"/>
+# Homepage
+<img src="example_images/2025-homepage.gif" alt="drawing" width="250"/>
 
 # Why: Using this folder of code you can clone this repo and make your own site. Using a folder with HTML and CSS allows for more creativity and control of your site..
 
