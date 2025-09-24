@@ -1,86 +1,27 @@
 # Portfolio Site Project -
- - About: This is my portfolio site project. Made up of HTML and CSS.
- - to see the site you can view it at http://zackdraws.com 
+- This is my portfolio site project. Made up of HTML and CSS. Below are the details about the website
 # Homepage
-<img src="example_images/2025-homepage.gif" alt="drawing" width="250"/>
+<img src="./example_images/2025-homepage.gif" alt="drawing" width="800"/>
 
-# Why: Using this folder of code you can clone this repo and make your own site. Using a folder with HTML and CSS allows for more creativity and control of your site..
-
-# How:
-## 1. Git (version control of site)
-1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
-
-   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
-   
-   - git is used for version control and can be used to clone this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork.  zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
-   
-   - While this repo is installed on GitHub Git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
-
-   - Once git is installed you can use Microsoft VSCode to make changes to the site 
-   vscode is a code editor. code editors make it possible to look at text files, gives auto suggestions as well as live previews and add ons.
-   
-Download Visual Studio Code (https://code.visualstudio.com/).
- - From there download [[live preview][https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server]] which gives the ability to host a local server which makes it possible to preview the site in vscode.
-
-- Or download and install eMacs [[download][https://www.gnu.org/software/emacs/download.html]]
-once downloaded you can install different configurations to set up the program how you would like to use it. if you choose to use eMacs i would recommend taking a look at tutorial videos as well as reading the manual. 
-eMacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
--- my configuration is [[here][https://github.com/zackdraws/.dotfiles/tree/main/.emacs.d]]
-
-1.1.2 Hosting your code - Make a github account -
-    - the code need to be hosted. Github is one of the most common and also has Github Desktop which makes this easier to set up. https://github.com/signup
-    - once you make a website you can host the site on github through a public or private repository. 
-## What is Git? 
-Git is how your computer gets the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
-## Git Clone or Fork
-### 1.2.1- Clone - 
-git clone http://github.com/zackdraws/zackdraws.github.io.git
-     cloning the file directory will install the repository in the directory that you are inside your terminal.
-     when you open the terminal from your computer it usually will go to the user directory of your computer.
-1.2.2     type -> 'cd zackdraws.github.io' to change the directory to the repository you just created. Once you do this you will be in the local folder of the site on your computer.
-*      cd means change directory
-1.2.3. git commands - in order to make changes in git through the terminal you can type git <command>
-        examples ---
-       - git pull - pulls any updates that have been made 
-       - git add . - adds all file changes that have been made
-       - git commit - commits any changes made that have been added
-       - git commit -m "message " - commits and attaches a message
-       - git push - pushes changes to repository
-       but if you do not want to use git in the terminal you can also just use github desktop or vscode or emacs and magit. 
-### 1.3.1 Fork 
-- a fork is like a fork in the road. The fork is its own seperate directory that you can make changes to and make your own. 
-- Once you make a fork change all of the image files but do not change the file names. The file names need to be the same so that the website still references the site. 
-
-- > gh repo fork zackdraws/zackdraws.github.io
-
-from the terminal in your ~/ user directory or whereever you want to store it
-or you can click the fork button. 
-
-
-### 1.4 Using Git -
-When I first started using git I did not understand why or how it worked I just knew that's what you use. But basically you use git to add changes then you commit those changes with a commit message explaining what you changed. Finally you push the changes to merge the changes to the official site. If you make a mistake you can git restore from an earlier version. I've used github desktop, vscode's github plug in and git with magit and lastly git terminal, I would recommend to use git terminal the most but vscode's git is the easiest to understand and is the most visual.
-
-### 1.4 Making changes to push to Git
-- to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
-
-# 2. Design 
- - Goals for design
+# Design 
+### Goals for design
  - easy to understand
  - little waisted space
 
-2.1. Templates - as longthe references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+## 2.1. Templates - 
+as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
 
 ## 2.1.2 Horizontal view (Index.html)
 This is the version of the site that is horizontal and has a navigation bar at the top of the page.
 
-<img src="example_images/index.png" alt="drawing" width="300"/>
+<img src="example_images/index.png" alt="drawing" width="800"/>
 
-### 2.2.3 Lightbox -
-<img src="example_images/lightbox.png" alt="drawing" width="300"/>
+### 2.2.3 includes Lightbox -
+<img src="example_images/lightbox.png" alt="drawing" width="800"/>
 
 ## 2.2.4 index_2025_Vertical_w_sidebar.html
 - Template design that has the sidebar to the left side and follows with the art samples.
-![Vertical_w_Sidebar_Preview](example_images/index_2025_Vertical_w_Sidebar.png)
+<img src="example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
 
 ### -
 - all.html - a page that includes everything
@@ -158,8 +99,58 @@ files are labeled cd_01.jpg bg_01.jpg fg_01.jpg
 For the lightbox feature to work I used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
 
-<img src="example_images/lightbox.png" alt="drawing" width="300"/>
+# How:
+## 1. Git (version control of site)
+1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
 
+   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
+   
+   - git is used for version control and can be used to clone this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork.  zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
+   
+   - While this repo is installed on GitHub Git is seperate than github and the code can be ran on different sources but this repository can be downloaded through the github repository
+
+   - Once git is installed you can use Microsoft VSCode to make changes to the site 
+   vscode is a code editor. code editors make it possible to look at text files, gives auto suggestions as well as live previews and add ons.
+   
+Download Visual Studio Code (https://code.visualstudio.com/).
+ - From there download [[live preview][https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server]] which gives the ability to host a local server which makes it possible to preview the site in vscode.
+
+- Or download and install eMacs [[download][https://www.gnu.org/software/emacs/download.html]]
+once downloaded you can install different configurations to set up the program how you would like to use it. if you choose to use eMacs i would recommend taking a look at tutorial videos as well as reading the manual. 
+eMacs has its configuation settings in the user folder usually reperesented by ~/ or in emacs.d or ~/.emacs
+-- my configuration is [[here][https://github.com/zackdraws/.dotfiles/tree/main/.emacs.d]]
+
+1.1.2 Hosting your code - Make a github account -
+    - the code need to be hosted. Github is one of the most common and also has Github Desktop which makes this easier to set up. https://github.com/signup
+    - once you make a website you can host the site on github through a public or private repository. 
+## What is Git? 
+Git is how your computer gets the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
+## Git Clone or Fork
+### 1.2.1- Clone - 
+git clone http://github.com/zackdraws/zackdraws.github.io.git
+     cloning the file directory will install the repository in the directory that you are inside your terminal.
+     when you open the terminal from your computer it usually will go to the user directory of your computer.
+1.2.2     type -> 'cd zackdraws.github.io' to change the directory to the repository you just created. Once you do this you will be in the local folder of the site on your computer.
+*      cd means change directory
+1.2.3. git commands - in order to make changes in git through the terminal you can type git <command>
+        examples ---
+       - git pull - pulls any updates that have been made 
+       - git add . - adds all file changes that have been made
+       - git commit - commits any changes made that have been added
+       - git commit -m "message " - commits and attaches a message
+       - git push - pushes changes to repository
+       but if you do not want to use git in the terminal you can also just use github desktop or vscode or emacs and magit. 
+### 1.3.1 Fork 
+- a fork is like a fork in the road. The fork is its own seperate directory that you can make changes to and make your own. 
+- Once you make a fork change all of the image files but do not change the file names. The file names need to be the same so that the website still references the site. 
+- > gh repo fork zackdraws/zackdraws.github.io
+from the terminal in your ~/ user directory or whereever you want to store it
+or you can click the fork button. 
+### 1.4 Using Git -
+When I first started using git I did not understand why or how it worked I just knew that's what you use. But basically you use git to add changes then you commit those changes with a commit message explaining what you changed. Finally you push the changes to merge the changes to the official site. If you make a mistake you can git restore from an earlier version. I've used github desktop, vscode's github plug in and git with magit and lastly git terminal, I would recommend to use git terminal the most but vscode's git is the easiest to understand and is the most visual.
+
+### 1.4 Making changes to push to Git
+- to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
 # Programs used-
 ## Code Editors - 
 ### Emacs 
