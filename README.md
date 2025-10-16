@@ -189,3 +189,5 @@ text editor that's much simpler than emacs and works outside of the box
 
 # Art Principles
 - keep line quality consistent per page
+
+# updated mp4s to gifs 
