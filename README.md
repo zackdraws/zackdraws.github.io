@@ -2,27 +2,20 @@
 - This is my portfolio site project. Made up of HTML and CSS. Below are the details about the website
 # Homepage
 <img src="./example_images/2025-homepage.gif" alt="drawing" width="800"/>
-
 # Design 
 ### Goals for design
- - easy to understand
+ - easy to unde    rstand
  - little waisted space
-
 ## 2.1. Templates - 
 as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
-
 ## 2.1.2 Horizontal view (Index.html)
 This is the version of the site that is horizontal and has a navigation bar at the top of the page.
-
 <img src="example_images/index.png" alt="drawing" width="800"/>
-
 ### 2.2.3 includes Lightbox -
 <img src="example_images/lightbox.png" alt="drawing" width="800"/>
-
 ## 2.2.4 index_2025_Vertical_w_sidebar.html
 - Template design that has the sidebar to the left side and follows with the art samples.
 <img src="example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
-
 ### -
 - all.html - a page that includes everything
 - animation.html - my animation
