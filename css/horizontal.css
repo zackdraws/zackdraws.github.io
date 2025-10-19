@@ -79,20 +79,10 @@ section {
   margin: 0 auto;
 }
 #character-design .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(590px, 1fr));
-  gap: 20px; 
-  width: 100%;
-  margin: 0; 
-  padding: 0; 
 }
 #character-design .grid-item img {
-  width: 100%; /* Make images fill their grid cells */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove inline spacing */
-  border-radius: 0; /* Remove rounded corners if any */
-  
-}
+  width: 95%; /* Make images fill their grid cells */
+ }
 #animated-projects {
   text-align: center;
   margin: 40px auto;
@@ -137,8 +127,8 @@ section h2 {
 }
 .grid {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   grid-template-columns: repeat(auto-fill, minmax(590px, 1fr));
   gap: 6px;
   width: 100vw;
@@ -161,8 +151,8 @@ section h2 {
 .grid-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   text-align: center;
   overflow: hidden;
   position: relative;
