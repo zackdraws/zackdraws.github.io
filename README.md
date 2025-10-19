@@ -6,6 +6,7 @@
 ### Goals for design
  - easy to unde    rstand
  - little waisted space
+ - easy to update
 ## 2.1. Templates - 
 as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
 ## 2.1.2 Horizontal view (Index.html)
@@ -35,11 +36,8 @@ This is the version of the site that is horizontal and has a navigation bar at t
 - story_04.html - custom storyboard viewer 02
 - story_04_07.html - w/o custom storyboard viewer
 - story_styles.css - storyboard styles page
-
 ## 3. HTML Structure
-
 ### HTML
-
 1. <!DOCTYPE html> */ this is to let the browser know this is html
 2.  link rel="stylesheet" href="css.css" */ - provides the html page with a link to the css, which is the recipe for the design of the html.
 3. </head> */for header
