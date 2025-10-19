@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zack Johnson Portfolio</title>
 
-  <!-- Fonts & Icons -->
+  <!-- FONTS & ICOS -->
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
 
-  <!-- External Libraries -->
+  <!-- EXT -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
-  <!-- Local Styles -->
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/animation_index.css" />
   <link rel="stylesheet" href="css/horizontal.css" />
   <link rel="stylesheet" href="css/email.css" />
@@ -21,19 +21,14 @@
   <link rel="stylesheet" href="css/story_styles_03.css" />
 
   <style>
-    main, section, .video-container, .grid {
-      margin-left: 130px;
+    main, section, .video-container {
+      margin-left: 200px;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 10px;
-      margin-right: 20px;
-      align-items: start;
-      justify-items: start;
     }
-
     .grid-item img {
       width: 100%;
       height: auto;
@@ -42,14 +37,11 @@
     }
   </style>
 </head>
-
 <body>
-
   <!-- Sidebar -->
   <nav class="sidebar">
     <div id="sidebar"></div>
   </nav>
-
   <script>
     fetch('css/sidebar.html')
       .then(response => response.text())
@@ -68,7 +60,6 @@
           Your browser does not support the video tag.
         </video>
       </div>
-
       <div class="sample-reels">
         <div class="sample-item"><video controls><source src="anp/ANI_01.mp4" type="video/mp4"></video></div>
         <div class="sample-item"><video controls><source src="anp/ANI_02.mp4" type="video/mp4"></video></div>
@@ -103,7 +94,7 @@
   <!-- Storyboard Portfolio -->
   <section id="story">
     <h2>Storyboard Portfolio</h2>
-
+    <div class="video-container">
     <div class="storyboard-item">
       <h3>Farm Life</h3>
       <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">PDF Copy</a>
