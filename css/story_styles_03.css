@@ -45,7 +45,7 @@ body {
     height: 100vh;
 }
 .sidebar {
-    width: 143px; 
+    width: 200px; 
     background-color: #fff; 
     color: #333;
     padding: 22px;
@@ -182,7 +182,6 @@ close
 }
 video {
     max-width: 100%;
-
 }
 h1 {
     text-align: center; /* Center the heading */
@@ -262,11 +261,12 @@ img.large {
     height: 30px; /* Set the height of the social media icon image */
 }
 .video-container {
-   text-align: center;
+   /*  text-align: center; */
    margin-top:-170px;
    margin-left:60px;
-   border: 190px sold #fff;
-   box-sizing:content-box;    
+   margin-bottom:-170px
+   /* border: 190px sold #fff; */
+   /* box-sizing:content-box;  */
 }
 #floatingGif {
     position: fixed;  

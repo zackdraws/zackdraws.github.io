@@ -38,6 +38,7 @@
 }
 body {
     font-family: sans-serif;
+    margin-left: 60px;
 }
 .container {
     align-items: absolute;
@@ -45,10 +46,10 @@ body {
     height: 100vh;
 }
 .sidebar {
-    width: 143px; 
+    width: 300px; 
     background-color: #fff; 
     color: #333;
-    padding: 22px;
+    padding: 52px;
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -181,7 +182,6 @@ close
 }
 video {
     max-width: 100%;
-
 }
 h1 {
     text-align: center; /* Center the heading */
