@@ -237,7 +237,10 @@ section h2 {
   padding: 0 1rem;
 }
 .storyboard-item {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
+    width: 540px;
+    max-height: 100px;
+    display: inline-block;
 }
 .storyboard-item h3 {
   font-size: 1.5rem;
