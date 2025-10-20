@@ -1,8 +1,0 @@
-✂️ To Cut (Copy and Erase) in Emacs:
-Set the mark:
-C-SPC (Start selecting text)
-Move the cursor to highlight the text you want to cut.
-Cut (kill-region):
-C-w → This cuts the selected text (copies it to the kill ring and removes it from the buffer).
-Paste (yank):
-C-y → Paste it wherever you want.
