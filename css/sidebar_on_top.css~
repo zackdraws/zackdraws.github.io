@@ -1,0 +1,18 @@
+/* --- Mobile: shrink sidebar --- */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 120px;       /* smaller width */
+    padding: 10px;      /* less padding */
+    font-size: 0.9rem;  /* smaller text */
+  }
+  /* Optional: shrink links inside sidebar */
+  .sidebar a {
+    font-size: 0.85rem;
+    display: block;     /* keep links stacked */
+    margin-bottom: 6px; /* less spacing between links */
+  }
+  /* Optional: adjust main content margin if needed */
+  main, section, .video-container {
+    margin-left: 120px; /* match new sidebar width */
+  }
+}
