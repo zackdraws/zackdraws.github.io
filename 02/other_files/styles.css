@@ -1,26 +1,20 @@
-/* Your existing CSS styles remain the same */
-
-/* Styling for the container */
-
 body {
     font-family: 'Your Selected Font', sans-serif;
 }
 .container {
     display: flex;
-    align-items: flex-start;/* Align items to the top */
+    align-items: flex-start;/* this aligns items to the top */
     height: 100vh;
 }
-/* Styling for the sidebar */
 .sidebar {
     width: 100px;
-    background-color: #00; /* Background color for the sidebar */
+    background-color: #00; /* Background color for sidebar */
     color: #333;
     padding: 20px;
     position: fixed;
-    top: 0; /* Position from the top */
-    left: 0; /* Position from the left */
+    top: 0; /* Position to the top */
+    left: 0; /* Position to the left */
     height: 100%; /* Make the sidebar the full height of the viewport */    
-    
 }
 .sidebar h2 {
     font-size: 20px;
@@ -36,14 +30,10 @@ body {
     text-decoration: none;
     color: #000;
 }
-
-/* Styling for the content area */
 .content {
-    margin-left: 400px; /* Adjust this value to match the width of the sidebar */
+    margin-left: 400px; 
     padding: 20px;
 }
-
-/* Styling for the lightbox */
 #lightbox {
     display: none;
     position: fixed;
@@ -60,9 +50,8 @@ body {
     max-height: 80%;
     margin-top: 10%;
 }
-
 .next-button, .prev-button {
-    background-color: #333; /* Background color */
+    background-color: #333;
     color: #fff; /* Text color */
     padding: 10px 20px; /* Padding */
     border: none; /* Remove border */
@@ -74,7 +63,6 @@ body {
 .next-button:hover, .prev-button:hover {
     background-color: #555; /* Background color on hover */
 }
-
 .close-button {
     position: absolute;
     top: 10px;
@@ -83,9 +71,7 @@ body {
     cursor: pointer;
     color: #fff;
 }
-
 /* Styling for the gallery images */
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Adjust the number of columns as needed */
@@ -93,32 +79,24 @@ body {
     justify-items: left; /* Centers items horizontally in each cell */
     margin-left: 200px;
 }
-
 .gallery-item img {
-    max-width: 300px; /* Adjust the width as needed */
-    max-height: 300px; /* Adjust the height as needed */
+    max-width: 300px; /* Adjust width */
+    max-height: 300px; /* Adjust height */
     cursor: pointer;
     transition: transform 0.2s;
-
 }
-
-
-/* Style for the video container */
 .video-container {
     width: 70%;
     text-align: center;
     margin-top: 20px;
 }
-/* Style for the video */
 video {
     max-width: 800px;
 }
-
-/* Style for the heading */
 h1 {
-    text-align: center; /* Center the heading */
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-bottom: 20px; /* Add margin to separate the heading from the gallery */
+    text-align: center; 
+    font-size: 24px; 
+    margin-bottom: 20px; /* Add margin separates the heading from the gallery */
 }
    .speakerdeck-iframe{
     width: 600px;

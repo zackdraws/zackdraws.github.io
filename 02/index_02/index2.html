@@ -1,213 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portfolio</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-
     <style>
-
         /* container */
-
         /* PDF Container Styles */
-
         #pdf-container {
-
             margin: 20px auto;
-
             text-align: center;
-
         }
-
-
-
         /* PDF Viewer Styles */
-
         #pdf-viewer {
-
             width: 50%;
-
             height: 600px; /* Adjust the height as needed */
-
             border: none;
-
         }
-
-
-
         /* Gallery for small videos */
-
         .video-gallery {
-
             display: grid;
-
             grid-template-columns: repeat(4, 1fr); /* 4 columns */
-
             gap: 10px;
-
             margin-top: 20px;
-
         }
-
-
-
         .video-gallery video {
-
             width: 100%;
-
             max-width: 100%; /* Make sure videos scale well */
-
             height: auto;
-
             border: 2px solid #ddd;
-
             border-radius: 8px;
-
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
         }
-
-
-
         /* Heading styles */
-
         h1, h2 {
-
             text-align: center;
-
             margin-bottom: 20px;
-
         }
-
-
-
         /* Other styles */
-
         body {
-
             font-family: sans-serif;
-
         }
-
-
-
         /* Responsive for smaller screens */
-
         @media (max-width: 768px) {
-
             .video-gallery {
-
                 grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
-
             }
-
         }
-
-
-
         @media (max-width: 480px) {
-
             .video-gallery {
-
                 grid-template-columns: 1fr; /* One column for very small screens */
-
             }
-
         }
-
     </style>
-
 </head>
-
 <body>
-
     <nav class="sidebar">
-
-        <!-- Your sidebar content here -->
-
+        <!-- sidebar content here -->
     </nav>
-
-
-
     <div class="content">
-
         <div class="video-container">
-
             <h2>Animation Reel</h2>
-
             <video controls width="950" height="auto">
-
                 <source src="anp.mp4" type="video/mp4">
-
             </video>
-
-
-
             <h2>Additional Animation Videos</h2>
-
             <div class="video-gallery">
-
                 <video controls>
-
                     <source src="/ani/ani/ANI_01.mp4" type="video/mp4">
-
                 </video>
-
                 <video controls>
-
                     <source src="/ani/ani/ANI_02.mp4" type="video/mp4">
-
                 </video>
-
                 <video controls>
-
                     <source src="/ani/ani/ANI_03.mp4" type="video/mp4">
-
                 </video>
-
                 <video controls>
-
                     <source src="/ani/ani/ANI_04.mp4" type="video/mp4">
-
                 </video>
-
             </div>
-
         </div>
-
-
-
-        <!-- Your gallery and other content below -->
-
         <h2>Character Design</h2>
-
         <div class="gallery-frame">
-
-            <!-- Your gallery items here -->
-
+            <!--gallery items here -->
         </div>
-
-
-
         <!-- More content... -->
-
     </div>
-
-
-
     <footer>
-
         <p>&copy; 2024 Zack Johnson. All rights reserved.</p>
-
     </footer>
-
 </body>
-
 </html>
