@@ -19,19 +19,26 @@ This is the version of the site that is horizontal and has a navigation bar at t
 <img src="example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
 ### -
 - all.html - a page that includes everything
+<img src="example_images/all.html.png" alt="drawing" width="800"/>
 - animation.html - my animation
+<img src="example_images/animation.html.png" alt="drawing" width="800"/>
 - backgrounddesign.html - background designs
+<img src="example_images/backgrounddesign.html.png" alt="drawing" width="800"/>
 - characterdesign.html - character design page
+<img src="example_images/characterdesign.html.png" alt="drawing" width="800"/>
 - fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
+<img src="example_images/fundamentals.png" alt="drawing" width="800"/>
 - index03.html - test where it's a grid view of all the videos
 - index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
 - index5.html - this is a splash page test 
 - indexwoimages.html - this is another splash page test - much cleaner
 - index_with_no_images_hover.html
 - resume.html- a page that has about me and my resume.sh - this is a script to create a resume - it doesn't work well
+<img src="example_images/resume.html.png" alt="drawing" width="800"/>
 - sb.html - this is where my storyboarding page is
 - sb02.html - this is where my second storyboaring page is
 - story.html - this is another storyboarding html page
+<img src="example_images/story.html.png" alt="drawing" width="800"/>
 - story_02.html - custom storyboard viewer
 - story_04.html - custom storyboard viewer 02
 - story_04_07.html - w/o custom storyboard viewer
@@ -55,10 +62,8 @@ div elements are linked from the css so the html knows how to display the inform
 13. - about text - for text being in the center
 14. - about container - is so that the text stays in the center of the page
 15. - css pages that change the style are located in /css/
-
 ### References
 - HTML references files inside of the directory. The site uses 'zack_johnson_resume.pdf' as a source. Which lets the html file to display the referenced file. If the name of the file is changed the html won't be able to reference it. In a fork you can drag your own resume change into the folder change the name to match in the html and then it will show that resume. The same goes for all images.
-
 #### CSS - 
 - styles.css - index styles.css
 - stylesstory.css - story.css
@@ -66,30 +71,21 @@ div elements are linked from the css so the html knows how to display the inform
 #### Resume
 - zack_johnson_resume.md - my resume as a markdown file
 - zack_Johnson_Resume.pdf - my resume as a pdf
-
 ##### Animation Reel (ANP.mp4 in file directory)
-
 ##### Story Portfolio (PDFs in file directory)
-
 ##### Character Design (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
-
 ##### Background and Viz Dev (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
-
 ## Website Styling
-
 ### HTML-  Naming Files in Portfolio
-
 Portfolio images are in the folders /cd /bg and /fg 
 files are labeled cd_01.jpg bg_01.jpg fg_01.jpg 
 	- cd_01.jpg (Files for character design) 
 	- bg_01.jpg (Files for Background), 
 	- fg_01.jpg (Files for Sketchbook) 
 	- 1/fund_01.jpg
-
 ### JS - javascript
 For the lightbox feature to work I used the lightbox js and it connects through the html on the site
         - Lightbox.js = javascript for 'lightbox' effect
-
 # How:
 ## 1. Git (version control of site)
 1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>

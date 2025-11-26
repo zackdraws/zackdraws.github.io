@@ -19,7 +19,6 @@ This is the version of the site that is horizontal and has a navigation bar at t
 <img src="example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
 ### -
 - all.html - a page that includes everything
-<img src="example_images/all.html.png" alt="drawing" width="800"/>
 - animation.html - my animation
 <img src="example_images/animation.html.png" alt="drawing" width="800"/>
 - backgrounddesign.html - background designs
@@ -27,7 +26,7 @@ This is the version of the site that is horizontal and has a navigation bar at t
 - characterdesign.html - character design page
 <img src="example_images/characterdesign.html.png" alt="drawing" width="800"/>
 - fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
-<img src="example_images/fundamentals.png" alt="drawing" width="800"/>
+<img src="example_images/fundamentals.html.png" alt="drawing" width="800"/>
 - index03.html - test where it's a grid view of all the videos
 - index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
 - index5.html - this is a splash page test 
