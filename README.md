@@ -1,5 +1,5 @@
 # Portfolio Site Project -
-- This is my portfolio site project. Made up of HTML and CSS. Below are the details about the website
+- This is a Portfolio Site Project. The intent is to make a simple template and site for showing my work.
 # Homepage
 <img src="./example_images/2025-homepage.gif" alt="drawing" width="800"/>
 # Design 
