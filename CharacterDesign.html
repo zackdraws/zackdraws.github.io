@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZACKDRAWS.COM - CHARACTER DESIGN</title>
-  <link rel='icon' type='image/x-icon' href='fp/ok.ico'/>
-  <link rel="stylesheet" href="css\backgrounddesign.css" >
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
-<head>
+<!---  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> !--> 
+  <title>ZACKDRAWS.COM</title>
+  <!-- FONTS & ICOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+  <!-- EXT -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/animation_index.css" />
+  <link rel="stylesheet" href="css/horizontal.css" />
+  <link rel="stylesheet" href="css/email.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/sidebar_on_top.css" />
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <style>
+    main, section, .video-container {
+      margin-left: 200px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+      gap: 10px;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-    <nav class="sidebar">
-      <div id="sidebar"></div>
-      <script>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div id="sidebar"></div>
+  </nav>
+  <script>
     fetch('css/sidebar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('sidebar').innerHTML = data;
-        });
-</script>
-</a>
-</div>
-</ul>
-</nav>
-<style>
-</style>
-</head>
-<body>
- <video-container>      
-   <div class="video-container">
-    <h1>Character Design</h1>
-     <div class="gallery-frame">
-        <div class="gallery">
-           <div class="gallery-item"><img src="cd/cd_01.jpg" alt="Missing Image" data-src="cd/cd_01.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_02.jpg" alt="Missing Image" data-src="cd/cd_02.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_03.jpg" alt="Missing Image" data-src="cd/cd_03.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_04.jpg" alt="Missing Image" data-src="cd/cd_04.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_05.jpg" alt="Missing Image" data-src="cd/cd_05.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_06.jpg" alt="Missing Image" data-src="cd/cd_06.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_07.jpg" alt="Missing Image" data-src="cd/cd_07.jpg"></div>
-           <div class="gallery-item"><img src="cd/cd_08.jpg" alt="Missing Image" data-src="cd/cd_08.jpg"></div>
-	   <div class="gallery-item"><img src="cd/cd_09.jpg" alt="Missing Image" data-src="cd/cd_09.jpg"></div>
-	   <div class="gallery-item"><img src="cd/cd_19.jpg" alt="Missing Image" data-src="cd/cd_19.jpg"></div>
-	   <div class="gallery-item"><img src="cd/cd_18.jpg" alt="Missing Image" data-src="cd/cd_18.jpg"></div>
-   <header>
-</header>
-         </div>
-        <div id="lightbox" class="hidden">
-          <span class="close-button" onclick="closeLightbox()">&times;</span>
-          <img id="lightbox-image" src="" alt="Lightbox Image">
-          <button class="prev-button">Previous</button>
-          <button class="next-button">Next</button>
-        </div>   
-        <script src="lightbox.js"></script>
-      </div>
-      <script src="lightbox.js"></script>
-</ul>
-</script>
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+  </section>
+  <!-- Character Design -->
+  <section id="character-design">
+    <h2>CHARACTER DESIGN</h2>
+    <div class="animation-reel-container">
+      <div class="main-reel">
+    <div class="grid">
+      <div class="grid-item"><a href="cd/cd_01.jpg" data-fancybox="gallery"><img src="cd/cd_01.jpg" alt="Character Design 1"></a></div>
+      <div class="grid-item"><a href="cd/cd_02.jpg" data-fancybox="gallery"><img src="cd/cd_02.jpg" alt="Character Design 2"></a></div>
+      <div class="grid-item"><a href="cd/cd_03.jpg" data-fancybox="gallery"><img src="cd/cd_03.jpg" alt="Character Design 3"></a></div>
+      <div class="grid-item"><a href="cd/cd_04.jpg" data-fancybox="gallery"><img src="cd/cd_04.jpg" alt="Character Design 4"></a></div>
+      <div class="grid-item"><a href="cd/cd_05.jpg" data-fancybox="gallery"><img src="cd/cd_05.jpg" alt="Character Design 5"></a></div>
+      <div class="grid-item"><a href="cd/cd_06.jpg" data-fancybox="gallery"><img src="cd/cd_06.jpg" alt="Character Design 6"></a></div>
+      <div class="grid-item"><a href="cd/cd_07.jpg" data-fancybox="gallery"><img src="cd/cd_07.jpg" alt="Character Design 7"></a></div>
+      <div class="grid-item"><a href="cd/cd_08.jpg" data-fancybox="gallery"><img src="cd/cd_08.jpg" alt="Character Design 8"></a></div>
+      <div class="grid-item"><a href="cd/cd_09.jpg" data-fancybox="gallery"><img src="cd/cd_09.jpg" alt="Character Design 9"></a></div>
+
+<!--      <div class="grid-item"><a href="cd/cd_10.jpg" data-fancybox="gallery"><img src="cd/cd_10.jpg" alt="Character Design 10"></a></div>
+      <div class="grid-item"><a href="cd/cd_11.jpg" data-fancybox="gallery"><img src="cd/cd_11.jpg" alt="Character Design 11"></a></div>
+      <div class="grid-item"><a href="cd/cd_12.jpg" data-fancybox="gallery"><img src="cd/cd_12.jpg" alt="Character Design 12"></a></div>
+      <div class="grid-item"><a href="cd/cd_13.jpg" data-fancybox="gallery"><img src="cd/cd_13.jpg" alt="Character Design 13"></a></div> --> 
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Zack Johnson. All rights reserved. |
+      <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a>
+    </p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 </html>
