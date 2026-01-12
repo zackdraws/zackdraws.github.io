@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>ZACKDRAWS.COM</tItle>
+</head>
+
+  <!-- FONTS & ICOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+  <!-- EXT -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/animation_index.css" />
+  <link rel="stylesheet" href="css/horizontal.css" />
+  <link rel="stylesheet" href="css/email.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/sidebar_on_top.css" />
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <style>
+    main, section, .video-container {
+      margin-left: 200px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 10px;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div id="sidebar"></div>
+  </nav>
+  <script>
+    fetch('css/sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+  <!-- Storyboard Portfolio -->
+  <section id="story">
+    <h2>STORYBOARD PORTFOLIO</h2>
+    <div class="storyboard-item">
+      <h3>Farm Life</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/031ec078333b45ef948e9508d19ec234" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
+    <div class="storyboard-item">
+      <h3>Steve and Steven</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779439061" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
+    <div class="storyboard-item">
+      <h3>Robot and Monster</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779498962?h=5dd48ddc8f" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/c86241e435e14d06a63a7f601ee95fbd" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
+    <div class="storyboard-item">
+      <h3>Chicken in Space</h3>
+      <a href="https://player.vimeo.com/video/699849941" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/1b2d3bc65ee14eb0b7bc8cafc9dac2ee" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
+  </section>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Zack Johnson. All rights reserved. |
+      <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a>
+    </p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>
