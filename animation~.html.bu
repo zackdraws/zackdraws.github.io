@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>ZACKDRAWS.COM - ANIMATION </title>
+  <LINK rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+</head>
+<body>
+    <nav class="sidebar">
+      <div id="sidebar"></div>
+      <script>
+    fetch('css/sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('sidebar').innerHTML = data;
+        });
+      </script>
+</a>
+</div>
+</ul>
+</nav>
+<body>
+  <video-container>      
+    <header></header>
+    <div class="video-container">
+      <h2> Animation Reel </h2>
+      <video controls width="640" height="360"><source src="anp/ANI_00.mp4" type="video/mp4"></video>
+      <header></header>
+      <h1></h1>
+</video>
+<header></header>
+<h1>Individual Clips</h1>
+   <video controls width="385" height="250"> <source src="anp/ANI_02.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_03.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_04.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_05.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_06.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_07.mp4" type="video/mp4"></video>
+   <video controls width="385" height="250"> <source src="anp/ANI_08.mp4" type="video/mp4"></video>
+   <h1> Animated Projects <h1>
+   <h1> Deadline - An Opera </h1>
+   <iframe title="vimeo-player" src="https://player.vimeo.com/video/452419199?h=da30bb65d2" width="640" height="360" frameborder="0" allowfullscreen></iframe> </video>
+<h1> Duet <h1>
+   <iframe title="vimeo-player" src="https://player.vimeo.com/video/699854136?h=c93b7359ef" width="640" height="360" frameborder="0"    allowfullscreen></iframe>      
+</video>	      
+<body>
+</video>
+<header></header>
+<h1></h1>
+</video>            
+<footer>
+  <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/zackdraws/zackdraws.github.io">GitHub</a></p>
+</footer>
+</body>
+</html>
