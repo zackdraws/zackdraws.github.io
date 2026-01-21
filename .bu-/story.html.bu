@@ -1,17 +1,13 @@
-<!DOCTYPE html>
+m<!DOCTYPE html>
 <html lang="en">
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=.50">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ZACKDRAWS.COM - STORY</title>
   <link rel='icon' type='image/x-icon' href='fp/ok.ico'/>
   <link rel="stylesheet" href="css/story_styles_03.css" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
   <link rel="stylesheet" href="css/sidebar.css" />
-  <style>
-    main, section, .video-container {
-	margin-left: 200px;
-    }
 <head>
 </head>
   <body>
@@ -85,3 +81,4 @@
 </script>
 </body>
 </html>
+

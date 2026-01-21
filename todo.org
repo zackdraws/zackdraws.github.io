@@ -1,11 +1,9 @@
 ** TODO Add a drawing of myself to the front
    SCHEDULED: <2025-08-08 Fri> 
-** TODO Work on Hero Area 
-*** TODO Create call to action button
 ** TODO [#C] Make new favicon
    SCHEDULED: <2025-08-08 Fri>
 - can use current one in the meantime 
-** TODO Change the color of the font to like a light blue
+** DONE Change the color of the font to like a light blue
    SCHEDULED: <2025-08-08 Fri>
 possibly rgb(01 191, 255)
 ** DONE build a header
