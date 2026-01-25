@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=.5" />
+  <title>ZACKDRAWS.COM</title>
+  <!-- FONTS & ICOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+  <!-- EXT -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/animation_index.css" />
+  <link rel="stylesheet" href="css/horizontal.css" />
+  <link rel="stylesheet" href="css/email.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/sidebar_on_top.css" />
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <style>
+    main, section, .video-container {
+      margin-left: 200px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 10px;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div id="sidebar"></div>
+  </nav>
+  <script>
+    fetch('css/sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+</section>
+  <section id="">
+    <h2>Sketchbook</h2>
+    <div class="grid">
+      <div class="grid-item"><a href="fund/16/fund_01.jpg" data-fancybox="gallery"><img src="fund/16/fund_01.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_02.jpg" data-fancybox="gallery"><img src="fund/16/fund_02.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_03.jpg" data-fancybox="gallery"><img src="fund/16/fund_03.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_04.jpg" data-fancybox="gallery"><img src="fund/16/fund_04.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_05.jpg" data-fancybox="gallery"><img src="fund/16/fund_05.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_06.jpg" data-fancybox="gallery"><img src="fund/16/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_07.jpg" data-fancybox="gallery"><img src="fund/16/fund_07.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/16/fund_08.jpg" data-fancybox="gallery"><img src="fund/16/fund_08.jpg" alt=""></a></div>
+      </div>
+  </section>
+</section>
+  <section id="">
+    <h2>Painting</h2>
+    <div class="grid">
+      <div class="grid-item"><a href="fund/01/fund_01.jpg" data-fancybox="gallery"><img src="fund/01/fund_01.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/01/fund_02.jpg" data-fancybox="gallery"><img src="fund/01/fund_02.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/01/fund_03.jpg" data-fancybox="gallery"><img src="fund/01/fund_03.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/01/fund_04.jpg" data-fancybox="gallery"><img src="fund/01/fund_04.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/11/fund_05.jpg" data-fancybox="gallery"><img src="fund/11/fund_05.jpg" alt=" 5"></a></div>
+      <div class="grid-item"><a href="fund/11/fund_06.jpg" data-fancybox="gallery"><img src="fund/11/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/11/fund_07.jpg" data-fancybox="gallery"><img src="fund/11/fund_07.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/11/fund_08.jpg" data-fancybox="gallery"><img src="fund/11/fund_08.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/06/fund_05.jpg" data-fancybox="gallery"><img src="fund/06/fund_05.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/06/fund_06.jpg" data-fancybox="gallery"><img src="fund/06/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/06/fund_07.jpg" data-fancybox="gallery"><img src="fund/06/fund_07.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/06/fund_08.jpg" data-fancybox="gallery"><img src="fund/06/fund_08.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_01.jpg" data-fancybox="gallery"><img src="fund/05/fund_01.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_02.jpg" data-fancybox="gallery"><img src="fund/05/fund_02.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_03.jpg" data-fancybox="gallery"><img src="fund/05/fund_03.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_04.jpg" data-fancybox="gallery"><img src="fund/05/fund_04.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_05.jpg" data-fancybox="gallery"><img src="fund/05/fund_05.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_06.jpg" data-fancybox="gallery"><img src="fund/05/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/05/fund_08.jpg" data-fancybox="gallery"><img src="fund/05/fund_08.jpg" alt=""></a></div>
+      </div>
+  </section>
+  <section id="">
+    <h2>Figure Drawing</h2>
+    <div class="grid">
+      <div class="grid-item"><a href="fund/13/fund_02.jpg" data-fancybox="gallery"><img src="fund/13/fund_02.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_03.jpg" data-fancybox="gallery"><img src="fund/13/fund_03.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_04.jpg" data-fancybox="gallery"><img src="fund/13/fund_04.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_05.jpg" data-fancybox="gallery"><img src="fund/13/fund_05.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_06.jpg" data-fancybox="gallery"><img src="fund/13/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_07.jpg" data-fancybox="gallery"><img src="fund/13/fund_07.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/13/fund_08.jpg" data-fancybox="gallery"><img src="fund/13/fund_08.jpg" alt=""></a></div>
+    </div>
+  </section>
+  </section>
+  <section id="">
+    <h2>Graphite Drawing</h2>
+    <div class="grid">
+      <div class="grid-item"><a href="fund/02/fund_01.jpg" data-fancybox="gallery"><img src="fund/02/fund_01.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_02.jpg" data-fancybox="gallery"><img src="fund/02/fund_02.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_03.jpg" data-fancybox="gallery"><img src="fund/02/fund_03.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_04.jpg" data-fancybox="gallery"><img src="fund/02/fund_04.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_05.jpg" data-fancybox="gallery"><img src="fund/02/fund_05.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_06.jpg" data-fancybox="gallery"><img src="fund/02/fund_06.jpg" alt=""></a></div>
+      <div class="grid-item"><a href="fund/02/fund_07.jpg" data-fancybox="gallery"><img src="fund/02/fund_07.jpg" alt=""></a></div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>CONTACT ME</h2>
+    <div class="about-me">
+      <div class="about-text">
+        <p>Contact: <a href="mailto:zackjohnsonart@gmail.com">zackjohnsonart@gmail.com</a></p>
+        <form class="email-form" action="https://formspree.io/f/xnnzbarj" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="_replyto" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Zack Johnson. All rights reserved. |
+      <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a>
+    </p>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>
