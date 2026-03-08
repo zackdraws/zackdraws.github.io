@@ -25,7 +25,6 @@
 </ul>
 </nav>
 <body>
-
 	    <div class="slideshow-container">
     <div class="slides" id="slides">
       <div class="slide">
@@ -40,59 +39,25 @@
       <div class="slide">
         <img src="cd/cd_04.jpg" alt="Slide 4" />
       </div>
-
     </div>
-
-
-
     <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-
     <button class="arrow right" onclick="nextSlide()">&#10095;</button>
-
   </div>
-
-
-
   <script>
-
     const slides = document.getElementById("slides");
-
     const totalSlides = slides.children.length;
-
     let currentIndex = 0;
-
-
-
     function updateSlidePosition() {
-
       slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-
     }
-
-
-
     function nextSlide() {
-
       currentIndex = (currentIndex + 1) % totalSlides;
-
       updateSlidePosition();
-
     }
-
-
-
     function prevSlide() {
-
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-
       updateSlidePosition();
-
     }
-
   </script>
-
-
-
 </body>
-
 </html>
