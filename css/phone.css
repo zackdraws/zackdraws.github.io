@@ -1,0 +1,104 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+    .sidebar {
+      position: fixed;
+      top: -10px;
+      left: -10;
+      width: 20px;
+      height: auto;
+      background-color: #fff;
+      color: #000;
+      z-index: 30;
+      border-right: 0px solid #ddd;
+    }
+    .sidebar a {
+      display: block;
+      padding: 3px;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #f1f1f1;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #f0f0f0;
+      color: #00ff00;
+    }
+
+    main, section, .video-container {
+      margin-left: 250px; /* Adjusted for wider sidebar */
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 10px;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      .sidebar {
+        position: relative;
+        height: auto;
+	width: auto;
+	display: flex;
+        justify-content: space-between;
+        z-index: 999;
+      }
+
+      main, section, .video-container {
+        margin-left: 0;
+        padding-top: 60px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff; /* Changed footer to white */
+      color: #000;
+    }
+
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .email-form input, .email-form textarea, .email-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .email-form button {
+      background-color: #333;
+      color: white;
+      border: none;
+    }
+
+    .email-form button:hover {
+      background-color: #00ff00;
+      cursor: pointer;
+    }
+  </style>
