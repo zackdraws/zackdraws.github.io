@@ -1,53 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=0.67"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=.85" />
   <title>ZACKDRAWS.COM</title>
-</head>
+  
   <!-- FONTS & ICOS -->
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
   <!-- EXT -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="manifest" href="manifest.json" />
-<!-- STYLES  -->
+  
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/animation.css" /> 
   <link rel="stylesheet" href="css/animation_index.css" /> 
   <link rel="stylesheet" href="css/horizontal.css" />
   <link rel="stylesheet" href="css/email.css" />
   <link rel="stylesheet" href="css/sidebar.css" />
   <link rel="stylesheet" href="css/sidebar_on_top.css" />
-  <link rel="stylesheet" href="css/story_styles_03.css" /> 
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  
   <style>
-    main, section, .video-container {
-      margin-left: 200px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+      transition: all 0.3s ease;
     }
+
+    .sidebar {
+      position: fixed;
+      top: -10px;
+      left: -10;
+      width: 20px;
+      height: auto;
+      background-color: #fff;
+      color: #000;
+      z-index: 30;
+      border-right: 0px solid #ddd;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 3px;
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px solid #f1f1f1;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #f0f0f0;
+      color: #00ff00;
+    }
+
+    main, section, .video-container {
+      margin-left: 250px; /* Adjusted for wider sidebar */
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 10px;
     }
+
     .grid-item img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 6px;
     }
-    body {
-	transform: scale(0.77);
-	transform-origin: top left;
-	width: 50%%; 
-}
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      .sidebar {
+        position: relative;
+        height: auto;
+	width: auto;
+	display: flex;
+        justify-content: space-between;
+        z-index: 999;
+      }
+
+      main, section, .video-container {
+        margin-left: 0;
+        padding-top: 60px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff; /* Changed footer to white */
+      color: #000;
+    }
+
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .email-form input, .email-form textarea, .email-form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .email-form button {
+      background-color: #333;
+      color: white;
+      border: none;
+    }
+
+    .email-form button:hover {
+      background-color: #00ff00;
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
-  <!-- Sidebar -->
   <nav class="sidebar">
     <div id="sidebar"></div>
   </nav>
+
   <script>
     fetch('css/sidebar.html')
       .then(response => response.text())
@@ -55,6 +143,7 @@
         document.getElementById('sidebar').innerHTML = data;
       });
   </script>
+
   <!-- Storyboard Portfolio -->
   <section id="story">
     <h2>STORYBOARD PORTFOLIO</h2>
@@ -82,6 +171,7 @@
       <iframe src="https://speakerdeck.com/player/1b2d3bc65ee14eb0b7bc8cafc9dac2ee" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
     </div>
   </section>
+
   <!-- Animation Section -->
   <section id="animation">
     <h2>ANIMATION</h2>
@@ -91,20 +181,17 @@
           <source src="anp/ANI_00.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="sample-reels">
-<!--    <div class="sample-item"><video controls><source src="anp/ANI_01.mp4" type="video/mp4"></video></div>
-        <div class="sample-item"><video controls><source src="anp/ANI_02.mp4" type="video/mp4"></video></div>
-        <div class="sample-item"><video controls><source src="anp/ANI_03.mp4" type="video/mp4"></video></div>
-        <div class="sample-item"><video controls><source src="anp/ANI_04.mp4" type="video/mp4"></video></div>
-        <div class="sample-item"><video controls><source src="anp/ANI_05.mp4" type="video/mp4"></video></div>
-        <div class="sample-item"><video controls><source src="anp/ANI_06.mp4" type="video/mp4"></video></div> -->
-      </div>
     </div>
   </section>
+
   <!-- Character Design -->
   <section id="character-design">
     <h2>CHARACTER DESIGN</h2>
     <div class="grid">
+      <div class="grid-item"><a href="cd/cd_01.jpg" data-fancybox="gallery"><img src="cd/cd_01.jpg" alt="Character Design 1"></a></div>
+      <div class="grid-item"><a href="cd/cd_02.jpg" data-fancybox="gallery"><img src="cd/cd_02.jpg" alt="Character Design 2"></a></div>
+      <div class="grid-item"><a href="cd/cd_03.jpg" data-fancybox="gallery"><img src="cd/cd_03.jpg" alt="Character Design 3"></a></div>
+      <div class="grid-item"><a href="cd/cd_04.jpg" data-fancybox="gallery"><img src="cd/cd_04.jpg" alt="Character Design 4"></a></div>
       <div class="grid-item"><a href="cd/cd_01.jpg" data-fancybox="gallery"><img src="cd/cd_01.jpg" alt="Character Design 1"></a></div>
       <div class="grid-item"><a href="cd/cd_02.jpg" data-fancybox="gallery"><img src="cd/cd_02.jpg" alt="Character Design 2"></a></div>
       <div class="grid-item"><a href="cd/cd_03.jpg" data-fancybox="gallery"><img src="cd/cd_03.jpg" alt="Character Design 3"></a></div>
@@ -118,7 +205,6 @@
       <div class="grid-item"><a href="cd/cd_11.jpg" data-fancybox="gallery"><img src="cd/cd_11.jpg" alt="Character Design 11"></a></div>
       <div class="grid-item"><a href="cd/cd_12.jpg" data-fancybox="gallery"><img src="cd/cd_12.jpg" alt="Character Design 12"></a></div>
       <div class="grid-item"><a href="cd/cd_13.jpg" data-fancybox="gallery"><img src="cd/cd_13.jpg" alt="Character Design 13"></a></div> --> 
-    </div>
   </section>
   <!-- Background Design -->
   <section id="background-design">
@@ -154,7 +240,8 @@
       <div class="grid-item"><a href="fund/16/fund_12.jpg" data-fancybox="gallery"><img src="fund/16/fund_12.jpg" alt="Sketch 8"></a></div>
     </div>
   </section>
-  <!-- Contact Section -->
+
+      </div>
   <section id="contact" class="contact-section">
     <h2>CONTACT ME</h2>
     <div class="about-me">
@@ -169,16 +256,17 @@
           <textarea id="message" name="message" rows="5" required></textarea>
           <button type="submit">Send</button>
         </form>
-      </div>
-    </div>
   </section>
   <!-- Footer -->
+<div></div>
   <footer>
     <p>&copy; 2024 Zack Johnson. All rights reserved. |
       <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a>
     </p>
   </footer>
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 </html>
+
