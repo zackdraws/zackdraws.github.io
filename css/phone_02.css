@@ -7,7 +7,7 @@
   border: none;
 }
 .sidebar {
-    width: 223px; 
+    width: sticky; 
     background-color: #fff; 
     color: #333;
     top: 0; 
