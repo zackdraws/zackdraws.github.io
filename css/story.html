@@ -1,0 +1,7 @@
+<script>
+  fetch('css/story-.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('story-').innerHTML = data;
+    });
+</script>

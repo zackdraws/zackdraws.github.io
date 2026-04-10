@@ -1,0 +1,39 @@
+/* ===== CRITICAL FIXES (DO NOT REMOVE) ===== */
+
+/* Prevent broken parsing from killing styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix invalid values safely */
+.container {
+  height: 100vh;
+}
+
+/* Fix broken color values */
+.submenu {
+  border: 1px solid #fff !important;
+}
+
+/* Fix invalid rgba */
+.header-navigation .submenu {
+  box-shadow: 0 1px 0 rgba(0,0,0,0) !important;
+}
+
+/* Fix button positioning (units were missing) */
+.next-button,
+.prev-button {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+/* Fix invalid positioning rules */
+.container,
+.content {
+  position: relative;
+}
+
+/* Prevent layout collapse from bad flex/grid conflicts */
+.gallery {
+  display: grid !important;
+}
