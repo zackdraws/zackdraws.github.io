@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+main, section, .video-container {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  main, section, .video-container {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: clamp(120px, 20vw, 250px);
+  height: 100%;
+  background-color: #fff;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  padding: 6px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #f0f0f0;
+  color: #00aa00;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.video-container {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.video-container video,
+.video-container iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+.contact-section {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email-form input,
+.email-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.email-form button {
+  padding: 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background: #00aa00;
+}
+
+.about-me {
+  padding: 40px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.fancybox__container {
+  background: rgba(0,0,0,0.9);
+}
+
+.fancybox__caption {
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.left-container {
+  margin-left: 350px;
+  max-width: 600px;
+}
+
+.right-container {
+  margin-right: 350px;
+  max-width: 600px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  body::before {
+    content: "📱 Rotate device for best experience";
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  body > * {
+    display: none;
+  }
+}
