@@ -241,14 +241,9 @@
 
     let index = 0;
 
-      const slide = document.createElement("img");
-      slide.className = "slide";
-
-      
-      slide.src = images[index]; // default image
-      slide.srcset = images.map(img => img.replace(/(\.\w+)$/, '@2x$1')).join(', ');
-
-      container.appendChild(slide);
+    const slide = document.createElement("img");
+    slide.className = "slide";
+    container.appendChild(slide);
 
     const prev = document.createElement("img");
     prev.src = leftArrow;
