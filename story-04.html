@@ -1,3 +1,6 @@
+<section id="sketchbook">
+<h2>Story Portfolio</h2>
+<div class="grid">
 <div class="slideshow" data-images='[
   "sb/sb01/sb_01.jpg",
   "sb/sb01/sb_02.jpg",
@@ -205,21 +208,18 @@
   "sb/sb01/sb_204.jpg",
   "sb/sb01/sb_205.jpg"
 ]' data-left="icons/left.png" data-right="icons/right.png"></div>
-
 <style>
   .slideshow {
     position: relative;
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-  }
+    width: 800px;
 
+
+  }
   .slideshow img.slide {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
-
   .slideshow img.arrow {
     position: absolute;
     top: 50%;
@@ -228,11 +228,9 @@
     height: 40px;
     cursor: pointer;
   }
-
   .slideshow .left { left: 10px; }
   .slideshow .right { right: 10px; }
 </style>
-
 <script>
   document.querySelectorAll(".slideshow").forEach(container => {
     const images = JSON.parse(container.dataset.images);
@@ -260,10 +258,14 @@
       index = (i + images.length) % images.length;
       slide.src = images[index];
     }
-
+ 
     prev.onclick = () => show(index - 1);
     next.onclick = () => show(index + 1);
 
     show(0);
   });
+
 </script>
+</script>
+<div>
+</div>
