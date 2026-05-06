@@ -1,0 +1,6 @@
+.sidebar-border {
+    border: 30px solid transparent; /* Sets the width of the border area */
+    border-image-source: url("your-image.png");
+    border-image-slice: 30; /* Defines how to slice the source image */
+    border-image-repeat: round; /* Repeats the image to fill the side */
+}

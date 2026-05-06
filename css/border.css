@@ -1,0 +1,9 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 30px solid transparent;
+  border-image: url("fp/icons/animation.png") 40 round;
+  pointer-events: none;
+  z-index: 9999;
+}

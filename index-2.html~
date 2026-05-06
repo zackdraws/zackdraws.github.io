@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZACKDRAWS.COM</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/animation.css" /> 
+  <link rel="stylesheet" href="css/animation_index.css" /> 
+  <link rel="stylesheet" href="css/horizontal.css" />
+  <link rel="stylesheet" href="css/email.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/sidebar_on_top.css" />
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <link rel="stylesheet" href="css/phone.css" />
+  <link rel="stylesheet" href="css/phone_02.css" />
+  <link rel="stylesheet" href="css/border.css" />
+
+  <!-- External -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="sidebar">
+  <div id="sidebar"></div>
+</nav>
+
+<script>
+fetch('css/sidebar.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('sidebar').innerHTML = data;
+  });
+</script>
+
+<!-- MAIN CONTENT -->
+<section id="sketchbook">
+
+  <h2>Robot and Monster storyboard</h2>
+  <a href="sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank">PDF Copy</a>
+  <a href="https://player.vimeo.com/video/779498962" target="_blank">Animatic</a>
+
+  <div class="slideshow" data-images='[
+    "sb/sb03/sb_01.jpg",
+    "sb/sb03/sb_02.jpg"
+  ]' data-left="fp/icons/Previous.png" data-right="fp/icons/Next.png"></div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>CONTACT ME</h2>
+
+  <p>
+    Contact: 
+    <a href="mailto:zackjohnsonart@gmail.com">
+      zackjohnsonart@gmail.com
+    </a>
+  </p>
+
+  <form action="https://formspree.io/f/xnnzbarj" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2024 Zack Johnson</p>
+</footer>
+
+<!-- Slideshow script -->
+<script>
+document.querySelectorAll(".slideshow").forEach(container => {
+  const images = JSON.parse(container.dataset.images);
+  let index = 0;
+
+  const img = document.createElement("img");
+  container.appendChild(img);
+
+  function show(i) {
+    index = (i + images.length) % images.length;
+    img.src = images[index];
+  }
+
+  show(0);
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+</body>
+</html>
