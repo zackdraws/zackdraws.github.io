@@ -134,29 +134,23 @@ from the terminal in your ~/ user directory or whereever you want to store it
 or you can click the fork button. 
 ### 1.4 Using Git -
 When I first started using git I did not understand why or how it worked I just knew that's what you use. But basically you use git to add changes then you commit those changes with a commit message explaining what you changed. Finally you push the changes to merge the changes to the official site. If you make a mistake you can git restore from an earlier version. I've used github desktop, vscode's github plug in and git with magit and lastly git terminal, I would recommend to use git terminal the most but vscode's git is the easiest to understand and is the most visual.
-
 ### 1.4 Making changes to push to Git
 - to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
 # Programs used-
 ## Code Editors - 
 ### Emacs 
 <img src="example_images/emacs.png" alt="drawing" width="25"/>
-
 text editor - for editing code and also displaying previews
 ### - Visual Studio Code -
 <img src="example_images/$.png" alt="drawing" width="25"/>
-
 text editor that's much simpler than emacs and works outside of the box
 ## Art Programs
 ### Photoshop
 <img src="example_images/photoshop.png" alt="drawing" width="25"/>
-
 ### Clip Studio Paint
 <img src="example_images/CSP.png" alt="drawing" width="25"/>
-
 ### Procreate
 <img src="example_images/Procreate.png" alt="drawing" width="25"/>
-
 ## Animation Programs
 ### TVPaint
 <img src="example_images/tvp.png" alt="drawing" width="25"/>
@@ -167,17 +161,9 @@ text editor that's much simpler than emacs and works outside of the box
 <img src="example_images/sbp.png" alt="drawing" width="25"/>
 ### Adobe Photoshop
 <img src="example_images/ps.png" alt="drawing" width="25"/>
-
 # Image Previews
-
 <img src="example_images/slide.html.png" alt="drawing" width="800"/>
-
 <img src="example_images/slide_v1.html.png" alt="drawing" width="800"/>
-
 <img src="example_images/slide_v2.html.png" alt="drawing" width="800"/>
-
 <img src="example_images/index_h_vwab_v2.html.png" alt="drawing" width="800"/>
-
-
 <img src="example_images/index_2025_vwab_v2.html.png" alt="drawing" width="800"/>
-
