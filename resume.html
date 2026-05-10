@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZACKDRAWS.COM - RESUME</title>
-    <link rel="stylesheet" href="css/resume_styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
     <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
     <link rel="manifest"   href="manifest.json" />
-    <link rel="stylesheet" href="css/email.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
-    <link rel="stylesheet" href="css/story_styles_03.css" />
-  <head>
-        <nav class="sidebar">
-      <div id="sidebar"></div>
-      <script>
-	fetch('css/sidebar.html')
-    .then(response => response.text())
-    .then(data => {
+    <link rel="stylesheet" href="css/bundle.css" />
+  </head>
+<body class="resume-page">
+  <nav class="sidebar">
+    <div id="sidebar"></div>
+  </nav>
+  <script>
+    fetch('css/sidebar.html', { cache: 'no-cache' })
+      .then(response => response.text())
+      .then(data => {
         document.getElementById('sidebar').innerHTML = data;
-    });
-      </script>
-   </nav>
-</head>
-<body>
-  <video-container>
-    <div id="pdf-container">
-      <iframe id="pdf-viewer" src="/fp/Resume/Zack_Johnson_Resume.pdf"></iframe>
+      });
+  </script>
+  <main class="resume-main">
+    <h1 class="resume-title">Resume</h1>
+    <div id="pdf-container" style="height: 1152px; min-height: 1152px;">
+      <iframe id="pdf-viewer" src="fp/Resume/Zack_Johnson_Resume.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH" height="1152" style="height: 1152px; min-height: 1152px;"></iframe>
     </div>
-</div>
+    <p class="resume-contact">Contact: ZackJohnsonArt@gmail.com</p>
+  </main>
 </body>
 </html>
