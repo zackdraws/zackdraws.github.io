@@ -1954,8 +1954,8 @@ body.index-page .slideshow img.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 80px;
-  height: 160px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   align-items: center;
 }
@@ -13435,8 +13435,8 @@ body.story-page .gallery img {
 
 @media (max-width: 768px) {
     body.index-page .storyboard-card .slideshow img.arrow {
-        width: 222px !important;
-        height: 184px !important;
+        width: 120px !important;
+        height: 220px !important;
     }
 }
 
