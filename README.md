@@ -1,16 +1,10 @@
-# how to build -
+# README.md 
 <img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="460"/>
 
-|  Folder| *contains*  |
-| --- | --- |
-| PORTFOLIO | HTML pages |
-| WORK | image files |
-| JS | JavaScript |
-
 ###  PORTFOLIO ( HTML )
-    - html sites are here
+    - html for each individual page is here
 ### WORK
-    - work output files are here, only jpg, psd files are too big.  
+    - work for each individual page is here  
 ##### Animation Reel 
     - holds all of the animation files 
     - file naming structure: 
@@ -28,7 +22,7 @@
 ##### fg - figure drawing
 	- fg_01.jpg (Files for Sketchbook) 
 ##### fund - fundamentals    
-	- 1/fund_01.jpg
+	- /Work/fund/01/fund_01.jpg
 ##### Resume (fp/Resume)
     - zack_johnson_resume.md    - my resume as a markdown file
     - zack_Johnson_Resume.pdf   - my resume as a pdf    
