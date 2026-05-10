@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../../../" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZACKDRAWS.COM - ANIMATION</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="/WORK/fp/ok.ico" />
+
+  <!-- STYLES -->
+  <link rel="stylesheet" href="/CSS/animation.css" />
+  <link rel="stylesheet" href="/CSS/animation_index.css" />
+  <link rel="stylesheet" href="/CSS/horizontal.css" />
+  <link rel="stylesheet" href="/CSS/email.css" />
+  <link rel="stylesheet" href="/CSS/sidebar.css" />
+  <link rel="stylesheet" href="/CSS/sidebar_on_top.css" />
+  <link rel="stylesheet" href="/CSS/story_styles_03.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #111;
+      font-size: 1.2em;
+      transform: scale(0.77);
+      transform-origin: top left;
+      width: 50%;
+      margin-left: 200px;
+    }
+
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    /* Sidebar */
+    nav.sidebar {
+      width: 250px;
+      background-color: #fff;
+      position: fixed;
+      height: 100%;
+      color: #111;
+      padding: 20px;
+      font-size: 1.2em;
+      font-weight: 700;
+      border-right: 2px solid #ccc;
+      transition: all 0.3s ease;
+    }
+
+    #sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #sidebar a {
+      color: #111;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    #sidebar a:hover {
+      color: #f44336;
+    }
+
+    /* Sidebar Toggle */
+    .sidebar.closer {
+      width: 200px;
+    }
+
+    .content.closer {
+      margin-left: 20px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .image {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Brutalist Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    /* Brutalist Button */
+    .pdf-download {
+      color: #fff;
+      background-color: #f44336;
+      padding: 10px 15px;
+      text-decoration: none;
+      margin: 10px 0;
+      display: inline-block;
+      font-weight: 700;
+      transition: background-color 0.3s;
+    }
+
+    .pdf-download:hover {
+      background-color: #ff5722;
+    }
+
+    /* Brutalist Sections */
+    section {
+      padding: 40px 20px;
+      background-color: #fff;
+      border-bottom: 3px solid #ccc;
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #f44336;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      color: #111;
+      border-top: 3px solid #ccc;
+    }
+
+    footer a {
+      color: #f44336;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer a:hover {
+      color: #000;
+    }
+
+    /* Lightbox & Image Modal */
+    #lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      z-index: 999;
+    }
+
+    #lightbox img {
+      max-width: 80%;
+      max-height: 80vh;
+      margin: 0 auto;
+      margin-top: 10vh;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      color: #f44336;
+    }
+
+    /* Video Section */
+    .video-container {
+      text-align: center;
+      margin-top: -120px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 180px solid #fff;
+      box-sizing: content-box;
+    }
+
+    video {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    /* Speaker Deck */
+    .speakerdeck-iframe {
+      width: 600px;
+      height: 500px;
+      text-align: center;
+      margin-left: 218px;
+    }
+
+    /* PDF Viewer */
+    #pdf-container {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    #pdf-viewer {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      #pdf-viewer {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #pdf-viewer {
+        height: 300px;
+      }
+    }
+
+    /* Image Gallery */
+    .gallery {
+      display: grid;
+      flex-wrap: wrap;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      flex: 1 0 calc(33.33% - 20px);
+      max-width: calc(33.33% - 30px);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Floating GIFs */
+    #floatingGif, #floatingGif2 {
+      position: fixed;
+      z-index: 9999;
+    }
+
+    #floatingGif {
+      top: 1px;
+      left: 140px;
+      width: 100px;
+    }
+
+    #floatingGif2 {
+      top: 460px;
+      left: 40px;
+      width: 100px;
+    }
+
+    /* Social Links */
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      text-decoration: none;
+      color: #111;
+      font-size: 20px;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .social-link img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .item-caption h1 {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div id="sidebar">
+      <ul>
+        <li><a href="#animation">Animation Reel</a></li>
+        <li><a href="#individual-clips">Individual Clips</a></li>
+        <li><a href="#animated-projects">Animated Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Animation Reel Section -->
+    <section id="animation">
+      <h2>Animation Reel</h2>
+      <video controls width="640" height="360">
+        <source src="/WORK/anp/ANI_00.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- Individual Clips Section -->
+    <section id="individual-clips">
+      <h2>Individual Clips</h2>
+      <div class="video-container">
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_02.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_03.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_04.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_05.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_06.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_07.mp4" type="video/mp4">
+        </video>
+        <video controls width="385" height="250">
+          <source src="/WORK/anp/ANI_08.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- Animated Projects Section -->
+    <section id="animated-projects">
+      <h2>Animated Projects</h2>
+      <h3>Deadline - An Opera</h3>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/452419199?h=da30bb65d2" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+      <h3>Duet</h3>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/699854136?h=c93b7359ef" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Zack Johnson. All rights reserved. | <a href="https://github.com/zackdraws/zackdraws.github.io">GitHub</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>

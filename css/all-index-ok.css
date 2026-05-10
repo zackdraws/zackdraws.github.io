@@ -7,21 +7,21 @@
 
   <!-- FONTS & ICOS -->
   <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+  <link rel="icon" type="image/x-icon" href="/WORK/fp/ok.ico" />
 
   <!-- EXT -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="/CSS/manifest.json" />
 
   <!-- STYLES -->
-  <link rel="stylesheet" href="css/animation.css" /> 
-  <link rel="stylesheet" href="css/animation_index.css" /> 
-  <link rel="stylesheet" href="css/horizontal.css" />
-  <link rel="stylesheet" href="css/email.css" />
-  <link rel="stylesheet" href="css/sidebar.css" />
-  <link rel="stylesheet" href="css/sidebar_on_top.css" />
-  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <link rel="stylesheet" href="/CSS/animation.css" /> 
+  <link rel="stylesheet" href="/CSS/animation_index.css" /> 
+  <link rel="stylesheet" href="/CSS/horizontal.css" />
+  <link rel="stylesheet" href="/CSS/email.css" />
+  <link rel="stylesheet" href="/CSS/sidebar.css" />
+  <link rel="stylesheet" href="/CSS/sidebar_on_top.css" />
+  <link rel="stylesheet" href="/CSS/story_styles_03.css" />
 
   <style>
     body {
@@ -151,7 +151,7 @@
   </nav>
 
   <script>
-    fetch('css/sidebar.html')
+    fetch('/CSS/sidebar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('sidebar').innerHTML = data;
@@ -163,19 +163,19 @@
     <h2>STORYBOARD PORTFOLIO</h2>
     <div class="storyboard-item">
       <h3>Farm Life</h3>
-      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">PDF Copy</a>
-      <a href="sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">Animatic</a>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">Animatic</a>
       <iframe src="https://speakerdeck.com/player/031ec078333b45ef948e9508d19ec234" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
     </div>
     <div class="storyboard-item">
       <h3>Steve and Steven</h3>
-      <a href="sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
       <a href="https://player.vimeo.com/video/779439061" target="_blank" class="pdf-download">Animatic</a>
       <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
     </div>
     <div class="storyboard-item">
       <h3>Robot and Monster</h3>
-      <a href="sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" class="pdf-download">PDF Copy</a>
       <a href="https://player.vimeo.com/video/779498962?h=5dd48ddc8f" target="_blank" class="pdf-download">Animatic</a>
       <iframe src="https://speakerdeck.com/player/c86241e435e14d06a63a7f601ee95fbd" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
     </div>
@@ -192,7 +192,7 @@
     <div class="animation-reel-container">
       <div class="main-reel">
         <video controls>
-          <source src="anp/ANI_00.mp4" type="video/mp4">
+          <source src="/WORK/anp/ANI_00.mp4" type="video/mp4">
         </video>
       </div>
     </div>
@@ -202,10 +202,10 @@
   <section id="character-design">
     <h2>CHARACTER DESIGN</h2>
     <div class="grid">
-      <div class="grid-item"><a href="cd/cd_01.jpg" data-fancybox="gallery"><img src="cd/cd_01.jpg" alt="Character Design 1"></a></div>
-      <div class="grid-item"><a href="cd/cd_02.jpg" data-fancybox="gallery"><img src="cd/cd_02.jpg" alt="Character Design 2"></a></div>
-      <div class="grid-item"><a href="cd/cd_03.jpg" data-fancybox="gallery"><img src="cd/cd_03.jpg" alt="Character Design 3"></a></div>
-      <div class="grid-item"><a href="cd/cd_04.jpg" data-fancybox="gallery"><img src="cd/cd_04.jpg" alt="Character Design 4"></a></div>
+      <div class="grid-item"><a href="/WORK/cd/cd_01.jpg" data-fancybox="gallery"><img src="/WORK/cd/cd_01.jpg" alt="Character Design 1"></a></div>
+      <div class="grid-item"><a href="/WORK/cd/cd_02.jpg" data-fancybox="gallery"><img src="/WORK/cd/cd_02.jpg" alt="Character Design 2"></a></div>
+      <div class="grid-item"><a href="/WORK/cd/cd_03.jpg" data-fancybox="gallery"><img src="/WORK/cd/cd_03.jpg" alt="Character Design 3"></a></div>
+      <div class="grid-item"><a href="/WORK/cd/cd_04.jpg" data-fancybox="gallery"><img src="/WORK/cd/cd_04.jpg" alt="Character Design 4"></a></div>
     </div>
   </section>
 

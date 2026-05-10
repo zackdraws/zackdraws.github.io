@@ -1,0 +1,12 @@
+<section id="about">
+  <h2>Zack Johnson - Animator and Storyboard Artist</h2>
+  <p></p>
+  <div class="about-container">
+    <img src="WORK/fp/about.jpg" alt="Zack Johnson" class="avatar">
+    <div class="about-text">
+      <h1>Zack Johnson</h1>
+      <p>is a animator, storyboard artist and designer. 
+      	 In 2020 he earned his BFA in character animation from the Laguna College of Art and Design.
+	 Before that he attended the Animation Portfolio Workshop in Toronto. Since then he has worked as a freelance artist for New Vision Entertainment, Moving Colour, Deser Mayhem Overdrive as well as teaching animation and design.
+	 For job inquiries or any questions he can be reached at ZackJohnsonArt@gmail.com
+      </p>

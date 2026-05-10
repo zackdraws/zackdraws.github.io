@@ -3,7 +3,7 @@
 - Simple template 
 - Present work.
 # Homepage
-<img src="./fp/example_images/2025-homepage.gif" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="800"/>
 
 # Design 
  - easy to understand
@@ -12,7 +12,7 @@
 
 # pages -
 
-pages/
+PORTFOLIO/
 ├── animation.html 
 
 ├── backgrounddesign.html 
@@ -97,33 +97,33 @@ pages/
 
 ## 2.1.2 Horizontal view (Index.html)
 horizontal with navigation bar at the top.
-<img src="./fp/example_images/index.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/index.png" alt="drawing" width="800"/>
 ### 2.2.3 includes Lightbox -
-<img src="./fp/example_images/lightbox.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/lightbox.png" alt="drawing" width="800"/>
 ## 2.2.4 index_2025_Vertical_w_sidebar.html
 - sidebar to the left side and follows with the art samples.
-<img src="./fp/example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
+<img src="./WORK/fp/example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
 ### -
 - all.html - a page includes everything
 - animation.html - my animation
-<img src="./fp/example_images/animation.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/animation.html.png" alt="drawing" width="800"/>
 - backgrounddesign.html - background designs
-<img src="./fp/example_images/backgrounddesign.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/backgrounddesign.html.png" alt="drawing" width="800"/>
 - characterdesign.html - character design page
-<img src="./fp/example_images/characterdesign.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/characterdesign.html.png" alt="drawing" width="800"/>
 - fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
-<img src="./fp/example_images/fundamentals.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/fundamentals.html.png" alt="drawing" width="800"/>
 - index03.html - test where it's a grid view of all the videos
 - index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
 - index5.html - this is a splash page test 
 - indexwoimages.html - this is another splash page test - much cleaner
 - index_with_no_images_hover.html
 - resume.html- a page that has about me and my resume.sh - this is a script to create a resume - it doesn't work well
-<img src="./fp/example_images/resume.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/resume.html.png" alt="drawing" width="800"/>
 - sb.html - storyboarding page is
 - sb02.html - second storyboaring page is
 - story.html - this is another storyboarding html page
-<img src="./fp/example_images/story.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/story.html.png" alt="drawing" width="800"/>
 - story_02.html - custom storyboard viewer
 - story_04.html - custom storyboard viewer 02
 - story_04_07.html - w/o custom storyboard viewer
@@ -174,7 +174,7 @@ For the lightbox feature to work I used the lightbox js and it connects through 
         - Lightbox.js = javascript for 'lightbox' effect
 # How:
 ## 1. Git (version control of site)
-1. Install Git <img src="./fp/example_images/git.png" alt="drawing" width="50"/>
+1. Install Git <img src="./WORK/fp/example_images/git.png" alt="drawing" width="50"/>
 
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
    
@@ -226,31 +226,31 @@ When I first started using git I did not understand why or how it worked I just 
 # Programs used-
 ## Code Editors - 
 ### Emacs 
-<img src="./fp/example_images/emacs.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/emacs.png" alt="drawing" width="25"/>
 text editor - for editing code and also displaying previews
 ### - Visual Studio Code -
-<img src="./fp/example_images/$.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/$.png" alt="drawing" width="25"/>
 text editor that's much simpler than emacs and works outside of the box
 ## Art Programs
 ### Photoshop
-<img src="./fp/example_images/photoshop.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/photoshop.png" alt="drawing" width="25"/>
 ### Clip Studio Paint
-<img src="./fp/example_images/CSP.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/CSP.png" alt="drawing" width="25"/>
 ### Procreate
-<img src="./fp/example_images/Procreate.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/Procreate.png" alt="drawing" width="25"/>
 ## Animation Programs
 ### TVPaint
-<img src="./fp/example_images/tvp.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/tvp.png" alt="drawing" width="25"/>
 ### ToonBoom Harmony
-<img src="./fp/example_images/tbh.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/tbh.png" alt="drawing" width="25"/>
 ## Storyboard Programs
 ### ToonBoom Storyboard Pro
-<img src="./fp/example_images/sbp.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/sbp.png" alt="drawing" width="25"/>
 ### Adobe Photoshop
-<img src="./fp/example_images/ps.png" alt="drawing" width="25"/>
+<img src="./WORK/fp/example_images/ps.png" alt="drawing" width="25"/>
 # Image Previews
-<img src="./fp/example_images/slide.html.png" alt="drawing" width="800"/>
-<img src="./fp/example_images/slide_v1.html.png" alt="drawing" width="800"/>
-<img src="./fp/example_images/slide_v2.html.png" alt="drawing" width="800"/>
-<img src="./fp/example_images/index_h_vwab_v2.html.png" alt="drawing" width="800"/>
-<img src="./fp/example_images/index_2025_vwab_v2.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/slide.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/slide_v1.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/slide_v2.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/index_h_vwab_v2.html.png" alt="drawing" width="800"/>
+<img src="./WORK/fp/example_images/index_2025_vwab_v2.html.png" alt="drawing" width="800"/>

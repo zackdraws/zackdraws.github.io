@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>ZACKDRAWS.COM</title>
+<link rel="icon" type="image/x-icon" href="/WORK/fp/ok.ico" />
+<link rel="manifest"   href="/CSS/manifest.json" />
+<link rel="stylesheet" href="CSS/bundle.css?v=20260510-no-flicker" />
+
+</head>
+<body class="index-page">
+<nav class="sidebar">
+<div id="sidebar"></div>
+</nav>
+<script>
+  fetch('CSS/sidebar.html', { cache: 'no-cache' })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+    });
+</script>
+
+<section id="sketchbook">
+  <div class="storyboard-row">
+    <article class="storyboard-card">
+      <h2>Robot and Monster storyboard</h2>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_03.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779498962?h=5dd48ddc8f" target="_blank" class="pdf-download">Animatic</a>
+      <div class="slideshow" data-source="CSS/data/story-1" data-left="/WORK/fp/icons/Previous.png" data-right="/WORK/fp/icons/Next.png"></div>
+    </article>
+
+    <article class="storyboard-card">
+      <h2>Stump storyboard</h2>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_01.pdf" target="_blank" class="pdf-download">Animatic</a>
+      <div class="slideshow" data-source="CSS/data/story-2" data-left="/WORK/fp/icons/Previous.png" data-right="/WORK/fp/icons/Next.png"></div>
+    </article>
+
+    <article class="storyboard-card">
+      <h2>Steve and Steven Storyboard</h2>
+      <a href="/WORK/sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779439061" target="_blank" class="pdf-download">Animatic</a>
+      <div class="slideshow" data-source="CSS/data/story-3" data-left="/WORK/fp/icons/Previous.png" data-right="/WORK/fp/icons/Next.png"></div>
+    </article>
+
+  </div>
+
+<script>
+  const storyboardPreloadCache = new Set();
+  const storyboardImageCache = new Map();
+
+  function preloadStoryboardImage(src) {
+    if (!src || storyboardPreloadCache.has(src)) {
+      return;
+    }
+
+    storyboardPreloadCache.add(src);
+    const image = new Image();
+    image.decoding = "async";
+    image.src = src;
+    storyboardImageCache.set(src, image);
+  }
+
+  async function prepareStoryboardImage(src) {
+    let image = storyboardImageCache.get(src);
+
+    if (!image) {
+      image = new Image();
+      image.decoding = "async";
+      image.src = src;
+      storyboardImageCache.set(src, image);
+    }
+
+    if (image.decode) {
+      try {
+        await image.decode();
+      } catch (error) {
+        // Some browsers reject decode() for cached images; the loaded image is still usable.
+      }
+    } else if (!image.complete) {
+      await new Promise(resolve => {
+        image.onload = resolve;
+        image.onerror = resolve;
+      });
+    }
+
+    return image.src;
+  }
+
+  async function loadStoryboardImages(container) {
+    if (container.dataset.source) {
+      const response = await fetch(container.dataset.source, { cache: "no-cache" });
+      if (!response.ok) {
+        throw new Error(`Could not load ${container.dataset.source}`);
+      }
+      return response.json();
+    }
+
+    return JSON.parse(container.dataset.images || "[]");
+  }
+
+  document.querySelectorAll(".slideshow").forEach(async container => {
+    const images = await loadStoryboardImages(container);
+    if (!images.length) {
+      return;
+    }
+    const leftArrow = container.dataset.left;
+    const rightArrow = container.dataset.right;
+    let index = 0;
+    const slide = document.createElement("img");
+    slide.className = "slide";
+    slide.loading = "eager";
+    slide.decoding = "async";
+    slide.fetchPriority = "high";
+    container.appendChild(slide);
+
+    const prev = document.createElement("img");
+    prev.src = leftArrow;
+    prev.className = "arrow left";
+    prev.loading = "eager";
+    prev.decoding = "async";
+
+    const next = document.createElement("img");
+    next.src = rightArrow;
+    next.className = "arrow right";
+    next.loading = "eager";
+    next.decoding = "async";
+
+    container.appendChild(prev);
+    container.appendChild(next);
+
+    async function show(i) {
+      index = (i + images.length) % images.length;
+      slide.src = await prepareStoryboardImage(images[index]);
+      preloadStoryboardImage(images[(index + 1) % images.length]);
+      preloadStoryboardImage(images[(index - 1 + images.length) % images.length]);
+    }
+ 
+    prev.onclick = () => show(index - 1);
+    next.onclick = () => show(index + 1);
+
+    show(0);
+  });
+</script>
+</section>
+<div id="animation"></div>
+<div id="characterdesign-"></div>
+<div id="backgrounddesign-"></div>
+<div id="sketchbook-"></div>
+<script>
+  [
+    ["animation", "CSS/data/animation.html"],
+    ["characterdesign-", "CSS/data/characterdesign-.html"],
+    ["backgrounddesign-", "CSS/data/backgrounddesign-.html"],
+    ["sketchbook-", "CSS/data/sketchbook-.html"]
+  ].forEach(([id, source]) => {
+    fetch(source, { cache: "no-cache" })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      });
+  });
+</script>
+<div></div>
+<footer>
+<!--#  <p>&copy; 2024 Zack Johnson. All rights reserved. |
+    <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a> -->
+  </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>
