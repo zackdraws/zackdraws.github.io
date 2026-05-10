@@ -1,116 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+<base href="../../" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zack Johnson Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/animation_index.css" />
   <link rel="stylesheet" href="css/horizontal.css" />
   <link rel='icon' type='image/x-icon' href='fp/ok.ico' />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <link rel="stylesheet" href="css/email.css" />
-<title>Zack Johnson</title>
-<link rel="stylesheet" href="css/sidebar.css"/>
-<LINK rel='icon' type='image/x-icon' href='fp/ok.ico'/>
- <link rel="stylesheet" href="css/story_styles_03.css" >
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" /\>
 </head>
-<body>
-  <nav class="sidebar">
-    <div id="sidebar"></div>
-    <script>
-    fetch('css/sidebar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('sidebar').innerHTML = data;
-        });
-</script>
-</a>
-</div>
-</ul>
+<body>  
+  <nav class="navbar">
+  <ul>
+    <li><a href="#about">Zack Johnson</a></li>
+    <li><a href="#animation">Animation</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#character-design">Character Design</a></li>
+    <li><a href="#background-design">Background Design</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
 </nav>
- <style>
-main, section, .video-container, .grid {
-  margin-left: 130px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-  gap: 10px; /* spacing between items, adjust as needed */
-  margin-right: 20px;
-  align-items: left;
-  justify-items: left;
-}
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px; /* optional styling */
-}
-</style>
-
-</style>
-</head>
-<body>
-</video>
+<section id="about">
+  <h2>Zack Johnson - Animator and Storyboard Artist</h2>
+  <p></p>
+  <div class="about-container">
+<!--\*    <img src="fp/ok.ico" alt="Zack Johnson" class="avatar"> \* -->
+    <div class="about-text">
+      <h1>Zack Johnson</h1>
+      <p>
+	is a animator, storyboard artist and designer. 
+In 2020 he earned his BFA in character animation from the Laguna College of Art and Design.
+Before that he attended the Animation Portfolio Workshop in Toronto. Since then he has worked as a freelance artist for New Vision Entertainment, Moving Colour, Deser Mayhem Overdrive as well as teaching animation and design. 
+For job inquiries or any questions he can be reached at ZackJohnsonArt@gmail.com
+      </p>
 </p>
 </div>
 </div>
 </section>
 </section>
-<header></header>
-<video-container>
-  <div class="video-container">
 <section id="animation">
-  <div class="animation-reel-container">
-    <div class="main-reel">
-      <video controls>
-      <source src="anp/ANI_00.mp4" type="video/mp4"> 
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div class="sample-reels">
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_01.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_02.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_03.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_04.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_05.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="sample-item">
-        <video controls>
-          <source src="anp/ANI_06.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
+  <h2>Animation Reel</h2>
+  <div class="video-container">
+    <video controls autoplay muted loop>
+      <source src="anp/ANI_00.mp4" type="video/mp4" />
+    </video>
   </div>
-</section>
+  <section id="video-library">
+    <h2>Animation Examples</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_01.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+      </div>
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_02.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+      </div>
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_03.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+      </div>
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_04.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+      </div>
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_05.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+      </div>
+      <div class="grid-item">
+        <video controls>
+          <source src="anp/ANI_06.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p></p>
+        </div><section></section>
+        <section>
 </div>
 </section>
 <section id="character-design">
@@ -118,67 +101,67 @@ main, section, .video-container, .grid {
   <div class="grid">
     <div class="grid-item">
       <a href="cd/cd_01.jpg" data-fancybox="gallery" data-caption="">
-        <img src="cd/cd_01.jpg" alt="image failed to load (refresh page)" />
+        <img src="cd/cd_01.jpg" alt="" />
       </a>
     </div>
     <div class="grid-item">
         <a href="cd/cd_02.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_02.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_02.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_03.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_03.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_03.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_04.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_04.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_04.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_05.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_05.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_05.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_06.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_06.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_06.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_07.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_07.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_07.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_08.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_08.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_08.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_09.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_09.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_09.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_10.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_10.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_10.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_11.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_11.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_11.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_12.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_12.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_12.jpg" alt="" />
         </a>
       </div>
       <div class="grid-item">
         <a href="cd/cd_13.jpg" data-fancybox="gallery" data-caption="">
-          <img src="cd/cd_13.jpg" alt="image failed to load (refresh page)" />
+          <img src="cd/cd_13.jpg" alt="" />
         </a>
       </div>
   </div>
@@ -207,6 +190,7 @@ main, section, .video-container, .grid {
     <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
   </div>
   <!-- 3. Robot and Monster -->
+  
   <div class="video-container"
        <div class="storyboard-item">
     <h3>Robot and Monster</h3>
@@ -227,42 +211,42 @@ main, section, .video-container, .grid {
   <div class="grid">
     <div class="grid-item">
       <a href="bg/bg_01.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_01.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_01.jpg" alt="Background Design1" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_02.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_02.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_02.jpg" alt="Background Design2" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_03.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_03.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_03.jpg" alt="Background Design3" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_04.jpg" data-fancybox="gallery" data-caption="">
-              <img src="bg/bg_04.jpg" alt="image failed to load (refresh page)" />
+              <img src="bg/bg_04.jpg" alt="" />
               </a>
               </div>
       <div class="grid-item">
         <a href="bg/bg_05.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_05.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_05.jpg" alt="Background Design1" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_06.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_06.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_06.jpg" alt="Background Design2" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_07.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_07.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_07.jpg" alt="Background Design3" />
         </a>
       </div>
       <div class="grid-item">
         <a href="bg/bg_08.jpg" data-fancybox="gallery" data-caption="">
-          <img src="bg/bg_08.jpg" alt="image failed to load (refresh page)" />
+          <img src="bg/bg_08.jpg" alt="Background Design4" />
 	  </a>
       </div>
 </section>
@@ -271,12 +255,12 @@ main, section, .video-container, .grid {
   <div class="grid">
     <div class="grid-item">
       <a href="fund/13/fund_01.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/13/fund_01.jpg" alt="image failed to load (refresh page)" />
+        <img src="fund/13/fund_01.jpg" alt="Figure Drawing 1" />
       </a>
     </div>
     <div class="grid-item">
       <a href="fund/13/fund_02.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/13/fund_02.jpg" alt="image failed to load (refresh page)" />
+        <img src="fund/13/fund_02.jpg" alt="Figure Drawing 2" />
       </a>
     </div>
     <div class="grid-item">
@@ -286,7 +270,7 @@ main, section, .video-container, .grid {
     </div>
     <div class="grid-item">
       <a href="fund/13/fund_04.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/13/fund_04.jpg" alt="image failed to load (refresh page)"/>
+        <img src="fund/13/fund_04.jpg" alt="Figure Drawing 4"/>
 	</a>
     </div>
   </div>
@@ -300,42 +284,42 @@ main, section, .video-container, .grid {
   <div class="grid">
     <div class="grid-item">
       <a href="fund/14/fund_01.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_01.jpg" alt="image failed to load (refresh page)" />
+        <img src="fund/14/fund_01.jpg" alt="Figure Drawing 1" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_02.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_02.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/14/fund_02.jpg" data-fancybox="gallery" data-caption="">
+        <img src="fund/14/fund_02.jpg" alt="Figure Drawing 2" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_03.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_03.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/14/fund_03.jpg" data-fancybox="gallery" data-caption="">
+        <img src="fund/14/fund_03.jpg" alt="Figure Drawing 3" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_04.jpg" data-fancybox="gallery" data-caption="">
-	<img src="fund/16/fund_04.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/14/fund_04.jpg" data-fancybox="gallery" data-caption="">
+	<img src="fund/14/fund_04.jpg" alt ="figure Drawing 4" />
       </a>
       </div>
     <div class="grid-item">
-      <a href="fund/16/fund_05.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_05.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/06/fund_01.jpg" data-fancybox="gallery" data-caption="">
+        <img src="fund/06/fund_01.jpg" alt="Figure Drawing 1" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_06.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_06.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/06/fund_02.jpg" data-fancybox="gallery" data-caption="">
+        <img src="fund/06/fund_02.jpg" alt="Figure Drawing 2" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_07.jpg" data-fancybox="gallery" data-caption="">
-        <img src="fund/16/fund_07.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/06/fund_03.jpg" data-fancybox="gallery" data-caption="">
+        <img src="fund/06/fund_03.jpg" alt="Figure Drawing 3" />
       </a>
     </div>
     <div class="grid-item">
-      <a href="fund/16/fund_08.jpg" data-fancybox="gallery" data-caption="">
-	<img src="fund/16/fund_08.jpg" alt="image failed to load (refresh page)" />
+      <a href="fund/06/fund_04.jpg" data-fancybox="gallery" data-caption="">
+	<img src="fund/06/fund_04.jpg" alt="Figure Drawing 3" />
       </a>
     </div>
     </div>
@@ -344,28 +328,14 @@ main, section, .video-container, .grid {
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </div>
 </section>
-  <section id="contact">
+<section id="contact">
   <h2>Contact Me</h2>
-<section class="contact-section">
-<div class= "about-me">
-  <div class="left-container">
-    <div class="about-text">
-      <p> contact: zackjohnsonart@gmail.com</p>
-  <form class="email-form" action="https://formspree.io/f/xnnzbarj" method="POST">
-  <form action="https://formspree.io/f/yourFormID" method="POST" class="email-form">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Your Email</label>
-    <input type="email" id="email" name="_replyto" required>
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    <button type="submit">Send</button>
-    </div>
-<div>
-    <div class="right-container">
-  </div>
+  <div class="about-container">
+<!--    <img src="fp.ico" alt="Zack Johnson" class="avatar">  ! -->
+    <div class="about-text">   
+  <p> Hello, for any inquiries you may have you can reach me at my email ZackJohnsonArt@gmail.com</p>
 </section>
-
+<div>
   <section>
   </section>
   <div class="about-container">

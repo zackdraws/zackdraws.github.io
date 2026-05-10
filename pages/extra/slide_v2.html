@@ -1,0 +1,169 @@
+t<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../../" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 650px;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .image-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            z-index: 10; 
+        }
+        .storyboard-images {
+            display: flex;
+            position: relative;
+            height: 100%;
+        }
+        .storyboard-images img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: contain;
+            object-position: center; 
+            display: block; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .prev, .next {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+        .prev {
+            margin-right: 0;
+        }
+        .next {
+            margin-left: 0; 
+        }
+        .action-btn {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .action-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- First Carousel -->
+<div class="carousel-container" id="carousel1">
+    <div class="image-title">Steve and Steven - Carousel 1</div>
+    <div class="storyboard-images" id="storyboardImages1">
+        <img src="sb/sb01/sb_01.jpg" alt="Image 1">
+        <img src="sb/sb01/sb_02.jpg" alt="Image 2">
+        <img src="sb/sb01/sb_03.jpg" alt="Image 3">
+        <img src="sb/sb01/sb_04.jpg" alt="Image 4">
+        <img src="sb/sb01/sb_05.jpg" alt="Image 5">
+        <img src="sb/sb01/sb_06.jpg" alt="Image 6">
+    </div>
+    <div class="bottom-bar">
+        <button class="prev" onclick="moveSlide(-1, 'storyboardImages1')">&#8592;</button>
+        <button class="next" onclick="moveSlide(1, 'storyboardImages1')">&#8594;</button>
+        <a href="http://hi.com" target="_blank">
+            <button class="action-btn">PDF Copy</button>
+        </a>
+        <a href="http://hi.com" target="_blank">
+            <button class="action-btn">Animatic</button>
+        </a>
+    </div>
+</div>
+
+<!-- Second Carousel -->
+<div class="carousel-container" id="carousel2">
+    <div class="image-title">Steve and Steven - Carousel 2</div>
+    <div class="storyboard-images" id="storyboardImages2">
+        <img src="sb/sb01/sb_07.jpg" alt="Image 7">
+        <img src="sb/sb01/sb_08.jpg" alt="Image 8">
+        <img src="sb/sb01/sb_09.jpg" alt="Image 9">
+        <img src="sb/sb01/sb_10.jpg" alt="Image 10">
+        <img src="sb/sb01/sb_11.jpg" alt="Image 11">
+        <img src="sb/sb01/sb_12.jpg" alt="Image 12">
+    </div>
+    <div class="bottom-bar">
+        <button class="prev" onclick="moveSlide(-1, 'storyboardImages2')">&#8592;</button>
+        <button class="next" onclick="moveSlide(1, 'storyboardImages2')">&#8594;</button>
+        <a href="http://hi.com" target="_blank">
+            <button class="action-btn">PDF Copy</button>
+        </a>
+        <a href="http://hi.com" target="_blank">
+            <button class="action-btn">Animatic</button>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Move slide function
+    function moveSlide(step, carouselId) {
+        const images = document.getElementById(carouselId);
+        const totalImages = images.children.length;
+        let index = parseInt(images.getAttribute('data-index')) || 0;
+        index = (index + step + totalImages) % totalImages;
+        images.style.transform = `translateX(-${index * 100}%)`;
+        images.style.transition = "none";
+        setTimeout(() => {
+            images.style.transition = "transform 0.5s ease"; 
+        }, 50); 
+        images.setAttribute('data-index', index);  // Store the index in the element
+    }
+</script>
+
+</body>
+</html>
