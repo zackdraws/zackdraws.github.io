@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="../../../" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZACKDRAWS.COM</title>
+  <!-- FONTS & ICOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="fp/ok.ico" />
+  <!-- EXT -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/animation_index.css" />
+  <link rel="stylesheet" href="css/horizontal.css" />
+  <link rel="stylesheet" href="css/email.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/sidebar_on_top.css" />
+  <link rel="stylesheet" href="css/story_styles_03.css" />
+  <style>
+    main, section, .video-container {
+      margin-left: 200px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 10px;
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div id="sidebar"></div>
+  </nav>
+  <script>
+    fetch('css/sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar').innerHTML = data;
+      });
+  </script>
+  <section id="story">
+    <h2>Steve and Steven</h2>
+    <div class="storyboard-item">
+      <h3>Steve and Steven</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779439061" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
+      <h3>Character Designs</h3>
+      <a href="sb/Storyboard_Sample_Zack_Johnson_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
+      <a href="https://player.vimeo.com/video/779439061" target="_blank" class="pdf-download">Animatic</a>
+      <iframe src="https://speakerdeck.com/player/383fb4ee39b94ca78df4a56ee3e5fab1?slide=4" frameborder="0" allowfullscreen class="storyboard-pdf"></iframe>
+    </div>
