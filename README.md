@@ -1,99 +1,18 @@
 # Portfolio Site Project -
-- Portfolio Site Project. 
-- Simple template 
-- Present work.
+- JS 	    - holds javascript
+- PORTFOLIO - html sites
+- WORK 	    - links to the data
+- CSS  	    - css       
+
 # Homepage
 <img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="800"/>
 
-# Design 
+# GOALS
  - easy to understand
  - little wasted space
  - easy to update
 
-# pages -
-
-PORTFOLIO/
-├── animation.html 
-
-├── backgrounddesign.html 
-
-├── characterdesign.html 
-
-├── index.html 
-
-├── resume.html 
-
-├── sketchbook.html 
-
-├── story.html 
-
-└── extra/ 
-
-    ├── animation/
-
-    │   └── animation-daily.html
-
-    ├── design/
-
-    │   ├── backgrounddesign-v3.html
-
-    │   └── characterdesign-v4.html
-
-    ├── home-versions/
-
-    │   ├── index-project-view.html
-
-    │   ├── index2026060230.html
-
-    │   ├── indexv67.html
-
-    │   ├── indexv68.html
-
-    │   ├── indexv71.html
-
-    │   ├── indexv78.html
-
-    │   ├── indexv80.html
-
-    │   ├── index_h_vf.html
-
-    │   ├── index_h_vwab.html
-
-    │   ├── index_h_vwab_v2.html
-
-    │   └── index_vbar.html
-
-    ├── misc/
-
-    │   ├── comics.html
-
-    │   ├── fundamentals.html
-
-    │   └── teaching.html
-
-    ├── sketchbook/
-
-    │   ├── january-sketchbook.html
-
-    │   ├── sketchbook-small-thumbnails.html
-
-    │   ├── sketchbook-v5.html
-
-    │   └── sketchbook_v2.html
-
-    └── story/
-
-        ├── slide.html
-
-        ├── slide_v1.html
-
-        ├── slide_v2.html
-
-        ├── story-single-v2.html
-
-        ├── story-single.html
-
-        └── storyboards.html 
+# 
 
 ## 2.1.2 Horizontal view (Index.html)
 horizontal with navigation bar at the top.
@@ -131,7 +50,7 @@ horizontal with navigation bar at the top.
 
 ## 3. HTML Structure
 ### HTML
-1. <!DOCTYPE html> */ this is to let the browser know this is html
+1. <!DOCTYPE html> */ let the browser know this is html
 2.  link rel="stylesheet" href="css.css" */ - provides the html page with a link to the css, which is the recipe for the design of the html.
 3. </head> */for header
 4. <body> */for the body of the website
@@ -175,8 +94,7 @@ For the lightbox feature to work I used the lightbox js and it connects through 
 # How:
 ## 1. Git (version control of site)
 1. Install Git <img src="./WORK/fp/example_images/git.png" alt="drawing" width="50"/>
-
-   - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
+   - Git install http://git-scm.com
    
    - git is used for version control and can be used to clone this repository so you can easily clone this repository if you were me and wanted to just remake this exact site or you can gh repo fork.  zackdraws/zackdraws.github.io to make a fork of your own and then just easily rewrite the files to match your own website.
    
@@ -196,8 +114,8 @@ eMacs has its configuation settings in the user folder usually reperesented by ~
 1.1.2 Hosting your code - Make a github account -
     - the code need to be hosted. Github is one of the most common and also has Github Desktop which makes this easier to set up. https://github.com/signup
     - once you make a website you can host the site on github through a public or private repository. 
-## What is Git? 
-Git is how your computer gets the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
+## Git 
+Use git to get the folder directory repository from the source and it is also how your computer pulls changes, commits changes and pushes those changes to the site server.
 ## Git Clone or Fork
 ### 1.2.1- Clone - 
 git clone http://github.com/zackdraws/zackdraws.github.io.git
@@ -217,12 +135,6 @@ git clone http://github.com/zackdraws/zackdraws.github.io.git
 - a fork is like a fork in the road. The fork is its own seperate directory that you can make changes to and make your own. 
 - Once you make a fork change all of the image files but do not change the file names. The file names need to be the same so that the website still references the site. 
 - > gh repo fork zackdraws/zackdraws.github.io
-from the terminal in your ~/ user directory or whereever you want to store it
-or you can click the fork button. 
-### 1.4 Using Git -
-When I first started using git I did not understand why or how it worked I just knew that's what you use. But basically you use git to add changes then you commit those changes with a commit message explaining what you changed. Finally you push the changes to merge the changes to the official site. If you make a mistake you can git restore from an earlier version. I've used github desktop, vscode's github plug in and git with magit and lastly git terminal, I would recommend to use git terminal the most but vscode's git is the easiest to understand and is the most visual.
-### 1.4 Making changes to push to Git
-- to make changes to the site you can use any text editor to change the html or css files, you just have to push the changes through git
 # Programs used-
 ## Code Editors - 
 ### Emacs 
