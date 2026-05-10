@@ -1,47 +1,134 @@
 # Portfolio Site Project -
-- This is a Portfolio Site Project. The intent is to make a simple template and site for showing my work.
+- Portfolio Site Project. 
+- Simple template 
+- Present work.
 # Homepage
-<img src="./example_images/2025-homepage.gif" alt="drawing" width="800"/>
+<img src="./fp/example_images/2025-homepage.gif" alt="drawing" width="800"/>
+
 # Design 
-### Goals for design
  - easy to understand
  - little wasted space
  - easy to update
-## 2.1. Templates - 
-as long as the references are not moved and match the file locations they will fit into the page for the area they're labeled. Background examples are in the bg folder character designs are in the cd folder so you can change the names to what you want them to be, but you have to make them match for them to show up in the right place.
+
+# pages -
+
+pages/
+├── animation.html 
+
+├── backgrounddesign.html 
+
+├── characterdesign.html 
+
+├── index.html 
+
+├── resume.html 
+
+├── sketchbook.html 
+
+├── story.html 
+
+└── extra/ 
+
+    ├── animation/
+
+    │   └── animation-daily.html
+
+    ├── design/
+
+    │   ├── backgrounddesign-v3.html
+
+    │   └── characterdesign-v4.html
+
+    ├── home-versions/
+
+    │   ├── index-project-view.html
+
+    │   ├── index2026060230.html
+
+    │   ├── indexv67.html
+
+    │   ├── indexv68.html
+
+    │   ├── indexv71.html
+
+    │   ├── indexv78.html
+
+    │   ├── indexv80.html
+
+    │   ├── index_h_vf.html
+
+    │   ├── index_h_vwab.html
+
+    │   ├── index_h_vwab_v2.html
+
+    │   └── index_vbar.html
+
+    ├── misc/
+
+    │   ├── comics.html
+
+    │   ├── fundamentals.html
+
+    │   └── teaching.html
+
+    ├── sketchbook/
+
+    │   ├── january-sketchbook.html
+
+    │   ├── sketchbook-small-thumbnails.html
+
+    │   ├── sketchbook-v5.html
+
+    │   └── sketchbook_v2.html
+
+    └── story/
+
+        ├── slide.html
+
+        ├── slide_v1.html
+
+        ├── slide_v2.html
+
+        ├── story-single-v2.html
+
+        ├── story-single.html
+
+        └── storyboards.html 
+
 ## 2.1.2 Horizontal view (Index.html)
-This is the version of the site that is horizontal and has a navigation bar at the top of the page.
-<img src="example_images/index.png" alt="drawing" width="800"/>
+horizontal with navigation bar at the top.
+<img src="./fp/example_images/index.png" alt="drawing" width="800"/>
 ### 2.2.3 includes Lightbox -
-<img src="example_images/lightbox.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/lightbox.png" alt="drawing" width="800"/>
 ## 2.2.4 index_2025_Vertical_w_sidebar.html
-- Template design that has the sidebar to the left side and follows with the art samples.
-<img src="example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
+- sidebar to the left side and follows with the art samples.
+<img src="./fp/example_images/index_2025_Vertical_w_Sidebar.png" width="800"/>
 ### -
-- all.html - a page that includes everything
+- all.html - a page includes everything
 - animation.html - my animation
-<img src="example_images/animation.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/animation.html.png" alt="drawing" width="800"/>
 - backgrounddesign.html - background designs
-<img src="example_images/backgrounddesign.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/backgrounddesign.html.png" alt="drawing" width="800"/>
 - characterdesign.html - character design page
-<img src="example_images/characterdesign.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/characterdesign.html.png" alt="drawing" width="800"/>
 - fundamentals.html - is a page of my fundamentals ( still life drawings, figure drawing etc.)
-<img src="example_images/fundamentals.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/fundamentals.html.png" alt="drawing" width="800"/>
 - index03.html - test where it's a grid view of all the videos
 - index2.html -test without sidebar and has a big video and then the videos underneath are all much smaller
 - index5.html - this is a splash page test 
 - indexwoimages.html - this is another splash page test - much cleaner
 - index_with_no_images_hover.html
 - resume.html- a page that has about me and my resume.sh - this is a script to create a resume - it doesn't work well
-<img src="example_images/resume.html.png" alt="drawing" width="800"/>
-- sb.html - this is where my storyboarding page is
-- sb02.html - this is where my second storyboaring page is
+<img src="./fp/example_images/resume.html.png" alt="drawing" width="800"/>
+- sb.html - storyboarding page is
+- sb02.html - second storyboaring page is
 - story.html - this is another storyboarding html page
-<img src="example_images/story.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/story.html.png" alt="drawing" width="800"/>
 - story_02.html - custom storyboard viewer
 - story_04.html - custom storyboard viewer 02
 - story_04_07.html - w/o custom storyboard viewer
 - story_styles.css - storyboard styles page
+
 ## 3. HTML Structure
 ### HTML
 1. <!DOCTYPE html> */ this is to let the browser know this is html
@@ -87,7 +174,7 @@ For the lightbox feature to work I used the lightbox js and it connects through 
         - Lightbox.js = javascript for 'lightbox' effect
 # How:
 ## 1. Git (version control of site)
-1. Install Git <img src="example_images/git.png" alt="drawing" width="50"/>
+1. Install Git <img src="./fp/example_images/git.png" alt="drawing" width="50"/>
 
    - Git can be installed from http://git-scm.com and can be used in the cmd terminal, emacs or vscode. Git is free and open source and can be installed on your computer.
    
@@ -139,31 +226,31 @@ When I first started using git I did not understand why or how it worked I just 
 # Programs used-
 ## Code Editors - 
 ### Emacs 
-<img src="example_images/emacs.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/emacs.png" alt="drawing" width="25"/>
 text editor - for editing code and also displaying previews
 ### - Visual Studio Code -
-<img src="example_images/$.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/$.png" alt="drawing" width="25"/>
 text editor that's much simpler than emacs and works outside of the box
 ## Art Programs
 ### Photoshop
-<img src="example_images/photoshop.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/photoshop.png" alt="drawing" width="25"/>
 ### Clip Studio Paint
-<img src="example_images/CSP.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/CSP.png" alt="drawing" width="25"/>
 ### Procreate
-<img src="example_images/Procreate.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/Procreate.png" alt="drawing" width="25"/>
 ## Animation Programs
 ### TVPaint
-<img src="example_images/tvp.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/tvp.png" alt="drawing" width="25"/>
 ### ToonBoom Harmony
-<img src="example_images/tbh.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/tbh.png" alt="drawing" width="25"/>
 ## Storyboard Programs
 ### ToonBoom Storyboard Pro
-<img src="example_images/sbp.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/sbp.png" alt="drawing" width="25"/>
 ### Adobe Photoshop
-<img src="example_images/ps.png" alt="drawing" width="25"/>
+<img src="./fp/example_images/ps.png" alt="drawing" width="25"/>
 # Image Previews
-<img src="example_images/slide.html.png" alt="drawing" width="800"/>
-<img src="example_images/slide_v1.html.png" alt="drawing" width="800"/>
-<img src="example_images/slide_v2.html.png" alt="drawing" width="800"/>
-<img src="example_images/index_h_vwab_v2.html.png" alt="drawing" width="800"/>
-<img src="example_images/index_2025_vwab_v2.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/slide.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/slide_v1.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/slide_v2.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/index_h_vwab_v2.html.png" alt="drawing" width="800"/>
+<img src="./fp/example_images/index_2025_vwab_v2.html.png" alt="drawing" width="800"/>

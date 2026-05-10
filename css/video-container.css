@@ -1,3 +1,4 @@
-.video-container { 
-    margin-left: auto;
-    border: 180px solid #fff;
+.slideshow {
+  width: 300px;
+  height: 300px;
+}

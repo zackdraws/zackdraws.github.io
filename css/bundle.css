@@ -13435,8 +13435,8 @@ body.story-page .gallery img {
 
 @media (max-width: 768px) {
     body.index-page .storyboard-card .slideshow img.arrow {
-        width: 52px !important;
-        height: 104px !important;
+        width: 222px !important;
+        height: 184px !important;
     }
 }
 
