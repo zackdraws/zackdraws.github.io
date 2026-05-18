@@ -13719,8 +13719,9 @@ body .pdf-download {
 
 body .pdf-download:hover,
 body .pdf-download:focus {
-    color: #ffc43d !important;
-    background-color: #000 !important;
+    color: #fff !important;
+    background-color: #1e66f5 !important;
+    border-color: #1e66f5 !important;
     box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.28),
                 inset -1px -1px 0 rgba(0, 0, 0, 0.35) !important;
 }
