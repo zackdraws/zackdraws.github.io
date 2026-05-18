@@ -2701,7 +2701,7 @@ body.animation-page .icon {
     margin: 10px;
 }
 body.animation-page .icon img {
-    width: 135px;
+    width: 200px;
     height: 85px;
 }
 body.animation-page .sidebar li:hover .submenu {
@@ -13289,12 +13289,12 @@ body.index-page, body.character-design-page, body.story-page, body.background-de
 
 @media (min-width: 769px) {
     body .sidebar {
-        width: 160px !important;
+        width: 190px !important;
         padding: 10px 8px !important;
     }
 
     body .sidebar a.icon img {
-        width: 145px !important;
+        width: 174px !important;
         max-height: 92px !important;
     }
 
@@ -13304,14 +13304,14 @@ body.index-page, body.character-design-page, body.story-page, body.background-de
     body.background-design-page section,
     body.additional-examples-page section,
     body.animation-page section {
-        margin-left: 178px !important;
+        margin-left: 208px !important;
         margin-right: 0 !important;
-        max-width: calc(100% - 190px) !important;
+        max-width: calc(100% - 220px) !important;
         box-sizing: border-box !important;
     }
 
     body.resume-page .resume-main {
-        margin-left: 178px !important;
+        margin-left: 208px !important;
         padding-left: 12px !important;
     }
 }
@@ -13579,9 +13579,9 @@ body .sidebar a.icon img {
 
 /* Animation page: . */
 body.animation-page #animation {
-    margin-left: 160px !important;
+    margin-left: 190px !important;
     margin-right: 0 !important;
-    max-width: calc(100% - 160px) !important;
+    max-width: calc(100% - 190px) !important;
     padding: 12px 8px 32px !important;
     box-sizing: border-box !important;
 }
@@ -13660,4 +13660,67 @@ body .video-container h1,
 body .video-container h2,
 body .image-title {
     font-family: var(--site-font-family) !important;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body header,
+body .resume-title,
+body .storyboard-card h2,
+body .storyboard-item h3,
+body .item-caption h1,
+body .contact-section h2,
+body .email-about-me h2,
+body .email-right-panel h2,
+body #video-library h2,
+body .video-container h1,
+body .video-container h2,
+body .image-title { 
+    background-color: #FFF !important;
+    color: #1e66f5 !important;
+    display: table !important;
+    width: fit-content !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0.22em 0.42em 0.12em !important;
+    line-height: 1.12 !important;
+}
+
+body h1 a,
+body h2 a,
+body h3 a,
+body h4 a,
+body h5 a,
+body h6 a,
+body header a {
+    color: inherit !important;
+}
+
+body .pdf-download {
+    display: inline-block !important;
+    font-family: var(--site-font-family) !important;
+    font-size: 0.82rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    color: #000 !important;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+    padding: 0.18em 0.46em !important;
+    line-height: 1.1 !important;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.85),
+                inset -1px -1px 0 rgba(0, 0, 0, 0.18) !important;
+}
+
+body .pdf-download:hover,
+body .pdf-download:focus {
+    color: #ffc43d !important;
+    background-color: #000 !important;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.28),
+                inset -1px -1px 0 rgba(0, 0, 0, 0.35) !important;
 }
