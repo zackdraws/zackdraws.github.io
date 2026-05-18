@@ -1,8 +1,20 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Arial&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css");
+
+:root {
+  --site-font-family: "Host Grotesk", Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--site-font-family);
+}
 
 
 
@@ -46,7 +58,7 @@ body.index-page .image img:hover {
     transform: scale(1.1);
 }
 body.index-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.index-page .container {
     align-items: absolute;
@@ -416,7 +428,7 @@ body.index-page .fancybox__caption {
   text-align: center;
 }
 body.index-page {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--site-font-family);
   margin-left: 60px;
   margin: 0;
   padding: 0;
@@ -788,7 +800,7 @@ body.index-page .contact-section {
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--site-font-family);
 }
 body.index-page .contact-section h2 {
     font-size: 2rem;
@@ -1298,7 +1310,7 @@ body.index-page .image img:hover {
     transform: scale(1.1);
 }
 body.index-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.index-page .container {
     align-items: absolute;
@@ -1575,7 +1587,7 @@ body.index-page .header-navigation .submenu {
 
 /* Source: css/phone.css */
     body.index-page {
-      font-family: Arial, sans-serif;
+      font-family: var(--site-font-family);
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -1739,7 +1751,7 @@ body.index-page .image img:hover {
     transform: scale(1.1);
 }
 body.index-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.index-page .container {
     align-items: absolute;
@@ -2347,7 +2359,7 @@ body.animation-page .image img:hover {
     transform: scale(1.1);
 }
 body.animation-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.animation-page .container {
     align-items: absolute;
@@ -2793,7 +2805,7 @@ body.animation-page .image img:hover {
     transform: scale(1.1);
 }
 body.animation-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.animation-page .container {
     align-items: absolute;
@@ -3281,7 +3293,7 @@ body.character-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.character-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.character-design-page .container {
     align-items: absolute;
@@ -3651,7 +3663,7 @@ body.character-design-page .fancybox__caption {
   text-align: center;
 }
 body.character-design-page {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--site-font-family);
   margin-left: 60px;
   margin: 0;
   padding: 0;
@@ -4023,7 +4035,7 @@ body.character-design-page .contact-section {
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--site-font-family);
 }
 body.character-design-page .contact-section h2 {
     font-size: 2rem;
@@ -4533,7 +4545,7 @@ body.character-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.character-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.character-design-page .container {
     align-items: absolute;
@@ -4810,7 +4822,7 @@ body.character-design-page .header-navigation .submenu {
 
 /* Source: css/phone.css */
     body.character-design-page {
-      font-family: Arial, sans-serif;
+      font-family: var(--site-font-family);
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -4974,7 +4986,7 @@ body.character-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.character-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.character-design-page .container {
     align-items: absolute;
@@ -5560,7 +5572,7 @@ body.story-page .image img:hover {
     transform: scale(1.1);
 }
 body.story-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.story-page .container {
     align-items: absolute;
@@ -5930,7 +5942,7 @@ body.story-page .fancybox__caption {
   text-align: center;
 }
 body.story-page {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--site-font-family);
   margin-left: 60px;
   margin: 0;
   padding: 0;
@@ -6302,7 +6314,7 @@ body.story-page .contact-section {
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--site-font-family);
 }
 body.story-page .contact-section h2 {
     font-size: 2rem;
@@ -6812,7 +6824,7 @@ body.story-page .image img:hover {
     transform: scale(1.1);
 }
 body.story-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.story-page .container {
     align-items: absolute;
@@ -7089,7 +7101,7 @@ body.story-page .header-navigation .submenu {
 
 /* Source: css/phone.css */
     body.story-page {
-      font-family: Arial, sans-serif;
+      font-family: var(--site-font-family);
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -7253,7 +7265,7 @@ body.story-page .image img:hover {
     transform: scale(1.1);
 }
 body.story-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.story-page .container {
     align-items: absolute;
@@ -7839,7 +7851,7 @@ body.background-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.background-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.background-design-page .container {
     align-items: absolute;
@@ -8209,7 +8221,7 @@ body.background-design-page .fancybox__caption {
   text-align: center;
 }
 body.background-design-page {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--site-font-family);
   margin-left: 60px;
   margin: 0;
   padding: 0;
@@ -8581,7 +8593,7 @@ body.background-design-page .contact-section {
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--site-font-family);
 }
 body.background-design-page .contact-section h2 {
     font-size: 2rem;
@@ -9091,7 +9103,7 @@ body.background-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.background-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.background-design-page .container {
     align-items: absolute;
@@ -9368,7 +9380,7 @@ body.background-design-page .header-navigation .submenu {
 
 /* Source: css/phone.css */
     body.background-design-page {
-      font-family: Arial, sans-serif;
+      font-family: var(--site-font-family);
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -9512,7 +9524,7 @@ body.background-design-page .image img:hover {
     transform: scale(1.1);
 }
 body.background-design-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.background-design-page .container {
     align-items: absolute;
@@ -10118,7 +10130,7 @@ body.additional-examples-page .image img:hover {
     transform: scale(1.1);
 }
 body.additional-examples-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.additional-examples-page .container {
     align-items: absolute;
@@ -10488,7 +10500,7 @@ body.additional-examples-page .fancybox__caption {
   text-align: center;
 }
 body.additional-examples-page {
-  font-family: 'Figtree', sans-serif;
+  font-family: var(--site-font-family);
   margin-left: 60px;
   margin: 0;
   padding: 0;
@@ -10860,7 +10872,7 @@ body.additional-examples-page .contact-section {
     background: #fefefe;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Figtree', sans-serif;
+    font-family: var(--site-font-family);
 }
 body.additional-examples-page .contact-section h2 {
     font-size: 2rem;
@@ -11370,7 +11382,7 @@ body.additional-examples-page .image img:hover {
     transform: scale(1.1);
 }
 body.additional-examples-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.additional-examples-page .container {
     align-items: absolute;
@@ -11647,7 +11659,7 @@ body.additional-examples-page .header-navigation .submenu {
 
 /* Source: css/phone.css */
     body.additional-examples-page {
-      font-family: Arial, sans-serif;
+      font-family: var(--site-font-family);
       margin: 0;
       padding: 0;
       background-color: #fff;
@@ -11791,7 +11803,7 @@ body.additional-examples-page .image img:hover {
     transform: scale(1.1);
 }
 body.additional-examples-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.additional-examples-page .container {
     align-items: absolute;
@@ -12362,7 +12374,7 @@ body.additional-examples-page .sidebar {
 body.resume-page {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
     background: #fff;
     color: #000;
 }
@@ -12895,7 +12907,7 @@ body.resume-page .image img:hover {
     transform: scale(1.1);
 }
 body.resume-page {
-    font-family: sans-serif;
+    font-family: var(--site-font-family);
 }
 body.resume-page .container {
     align-items: absolute;
@@ -13626,4 +13638,26 @@ body.animation-page .video-container > h2 + video {
         max-width: 640px !important;
         margin: 0 auto 16px !important;
     }
+}
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body header,
+body .resume-title,
+body .storyboard-card h2,
+body .storyboard-item h3,
+body .item-caption h1,
+body .contact-section h2,
+body .email-about-me h2,
+body .email-right-panel h2,
+body #video-library h2,
+body .video-container h1,
+body .video-container h2,
+body .image-title {
+    font-family: var(--site-font-family) !important;
 }
