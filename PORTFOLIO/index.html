@@ -107,16 +107,16 @@
     container.appendChild(slide);
 
     const prev = document.createElement("img");
-    prev.src = leftArrow;
     prev.className = "arrow left";
     prev.loading = "lazy";
     prev.decoding = "async";
+    prev.src = leftArrow;
 
     const next = document.createElement("img");
-    next.src = rightArrow;
     next.className = "arrow right";
     next.loading = "lazy";
     next.decoding = "async";
+    next.src = rightArrow;
 
     container.appendChild(prev);
     container.appendChild(next);
@@ -125,9 +125,13 @@
       index = (i + images.length) % images.length;
 
       slide.src = images[index];
+    }
+
+    slide.addEventListener("load", () => {
+
       preloadStoryboardImage(images[(index + 1) % images.length]);
       preloadStoryboardImage(images[(index - 1 + images.length) % images.length]);
-    }
+    });
  
     prev.onclick = () => show(index - 1);
     next.onclick = () => show(index + 1);
@@ -152,10 +156,17 @@
     ["sketchbook-", "CSS/data/sketchbook-.html"]
   ];
 
-  portfolioFragments.forEach(([id, source]) => {
+  const loadPortfolioFragments = () => portfolioFragments.forEach(([id, source]) => {
     const target = document.getElementById(id);
     loadFragment(target, source).catch(error => console.error(error));
   });
+
+
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(loadPortfolioFragments, { timeout: 1200 });
+  } else {
+    setTimeout(loadPortfolioFragments, 0);
+  }
 </script>
 <div></div>
 <footer>
