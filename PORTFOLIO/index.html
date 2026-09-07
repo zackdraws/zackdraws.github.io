@@ -67,7 +67,6 @@
 
 <script>
   const storyboardPreloadCache = new Set();
-  const storyboardImageCache = new Map();
 
   function preloadStoryboardImage(src) {
     if (!src || storyboardPreloadCache.has(src)) {
@@ -78,33 +77,6 @@
     const image = new Image();
     image.decoding = "async";
     image.src = src;
-    storyboardImageCache.set(src, image);
-  }
-
-  async function prepareStoryboardImage(src) {
-    let image = storyboardImageCache.get(src);
-
-    if (!image) {
-      image = new Image();
-      image.decoding = "async";
-      image.src = src;
-      storyboardImageCache.set(src, image);
-    }
-
-    if (image.decode) {
-      try {
-        await image.decode();
-      } catch (error) {
-
-      }
-    } else if (!image.complete) {
-      await new Promise(resolve => {
-        image.onload = resolve;
-        image.onerror = resolve;
-      });
-    }
-
-    return image.src;
   }
 
   async function loadStoryboardImages(container) {
@@ -149,9 +121,10 @@
     container.appendChild(prev);
     container.appendChild(next);
 
-    async function show(i) {
+    function show(i) {
       index = (i + images.length) % images.length;
-      slide.src = await prepareStoryboardImage(images[index]);
+
+      slide.src = images[index];
       preloadStoryboardImage(images[(index + 1) % images.length]);
       preloadStoryboardImage(images[(index - 1 + images.length) % images.length]);
     }
@@ -162,22 +135,8 @@
     show(0);
   }
 
-  const slideshowObserver = 'IntersectionObserver' in window
-    ? new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          observer.unobserve(entry.target);
-          initialiseSlideshow(entry.target).catch(error => console.error(error));
-        });
-      }, { rootMargin: '400px 0px' })
-    : null;
-
   document.querySelectorAll('.slideshow').forEach(container => {
-    if (slideshowObserver) {
-      slideshowObserver.observe(container);
-    } else {
-      initialiseSlideshow(container).catch(error => console.error(error));
-    }
+    initialiseSlideshow(container).catch(error => console.error(error));
   });
 </script>
 </section>
@@ -193,25 +152,9 @@
     ["sketchbook-", "CSS/data/sketchbook-.html"]
   ];
 
-  const fragmentObserver = 'IntersectionObserver' in window
-    ? new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          observer.unobserve(entry.target);
-          loadFragment(entry.target, entry.target.dataset.source)
-            .catch(error => console.error(error));
-        });
-      }, { rootMargin: '600px 0px' })
-    : null;
-
   portfolioFragments.forEach(([id, source]) => {
     const target = document.getElementById(id);
-    target.dataset.source = source;
-    if (fragmentObserver) {
-      fragmentObserver.observe(target);
-    } else {
-      loadFragment(target, source).catch(error => console.error(error));
-    }
+    loadFragment(target, source).catch(error => console.error(error));
   });
 </script>
 <div></div>
