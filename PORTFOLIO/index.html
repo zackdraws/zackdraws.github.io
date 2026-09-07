@@ -15,11 +15,29 @@
 <div id="sidebar"></div>
 </nav>
 <script>
-  fetch('CSS/sidebar.html', { cache: 'no-cache' })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('sidebar').innerHTML = data;
+  async function loadFragment(target, source) {
+    const response = await fetch(source);
+    if (!response.ok) throw new Error(`Could not load ${source}`);
+
+    const template = document.createElement('template');
+    template.innerHTML = await response.text();
+
+    template.content.querySelectorAll('img').forEach(image => {
+      image.loading = 'lazy';
+      image.decoding = 'async';
     });
+    template.content.querySelectorAll('video').forEach(video => {
+      video.preload = 'none';
+    });
+    template.content.querySelectorAll('iframe').forEach(frame => {
+      frame.loading = 'lazy';
+    });
+
+    target.replaceChildren(template.content);
+  }
+
+  loadFragment(document.getElementById('sidebar'), 'CSS/sidebar.html')
+    .catch(error => console.error(error));
 </script>
 
 <section id="sketchbook">
@@ -77,7 +95,7 @@
       try {
         await image.decode();
       } catch (error) {
-        // Some browsers reject decode() for cached images; the loaded image is still usable.
+
       }
     } else if (!image.complete) {
       await new Promise(resolve => {
@@ -91,7 +109,7 @@
 
   async function loadStoryboardImages(container) {
     if (container.dataset.source) {
-      const response = await fetch(container.dataset.source, { cache: "no-cache" });
+      const response = await fetch(container.dataset.source);
       if (!response.ok) {
         throw new Error(`Could not load ${container.dataset.source}`);
       }
@@ -101,7 +119,7 @@
     return JSON.parse(container.dataset.images || "[]");
   }
 
-  document.querySelectorAll(".slideshow").forEach(async container => {
+  async function initialiseSlideshow(container) {
     const images = await loadStoryboardImages(container);
     if (!images.length) {
       return;
@@ -119,13 +137,13 @@
     const prev = document.createElement("img");
     prev.src = leftArrow;
     prev.className = "arrow left";
-    prev.loading = "eager";
+    prev.loading = "lazy";
     prev.decoding = "async";
 
     const next = document.createElement("img");
     next.src = rightArrow;
     next.className = "arrow right";
-    next.loading = "eager";
+    next.loading = "lazy";
     next.decoding = "async";
 
     container.appendChild(prev);
@@ -142,6 +160,24 @@
     next.onclick = () => show(index + 1);
 
     show(0);
+  }
+
+  const slideshowObserver = 'IntersectionObserver' in window
+    ? new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          initialiseSlideshow(entry.target).catch(error => console.error(error));
+        });
+      }, { rootMargin: '400px 0px' })
+    : null;
+
+  document.querySelectorAll('.slideshow').forEach(container => {
+    if (slideshowObserver) {
+      slideshowObserver.observe(container);
+    } else {
+      initialiseSlideshow(container).catch(error => console.error(error));
+    }
   });
 </script>
 </section>
@@ -150,17 +186,32 @@
 <div id="backgrounddesign-"></div>
 <div id="sketchbook-"></div>
 <script>
-  [
+  const portfolioFragments = [
     ["animation", "CSS/data/animation.html"],
     ["characterdesign-", "CSS/data/characterdesign-.html"],
     ["backgrounddesign-", "CSS/data/backgrounddesign-.html"],
     ["sketchbook-", "CSS/data/sketchbook-.html"]
-  ].forEach(([id, source]) => {
-    fetch(source, { cache: "no-cache" })
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById(id).innerHTML = data;
-      });
+  ];
+
+  const fragmentObserver = 'IntersectionObserver' in window
+    ? new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          loadFragment(entry.target, entry.target.dataset.source)
+            .catch(error => console.error(error));
+        });
+      }, { rootMargin: '600px 0px' })
+    : null;
+
+  portfolioFragments.forEach(([id, source]) => {
+    const target = document.getElementById(id);
+    target.dataset.source = source;
+    if (fragmentObserver) {
+      fragmentObserver.observe(target);
+    } else {
+      loadFragment(target, source).catch(error => console.error(error));
+    }
   });
 </script>
 <div></div>
@@ -169,6 +220,6 @@
     <a href="https://github.com/zackdraws/zackdraws.github.io/">Website</a> -->
   </p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 </body>
 </html>
