@@ -8,6 +8,31 @@
 <link rel="icon" type="image/x-icon" href="/WORK/fp/ok.ico" />
 <link rel="manifest"   href="/CSS/manifest.json" />
 <link rel="stylesheet" href="/CSS/bundle.css?v=20260518-blue-buttons" />
+<style>
+  .slideshow { position: relative; }
+  .storyboard-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    margin: -16px;
+    border: 4px solid rgba(0, 0, 0, 0.18);
+    border-top-color: #222;
+    border-radius: 50%;
+    animation: storyboard-spin 0.7s linear infinite;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+  }
+
+  .slideshow.is-loading .storyboard-spinner { opacity: 1; }
+
+  @keyframes storyboard-spin {
+    to { transform: rotate(360deg); }
+  }
+</style>
 
 </head>
 <body class="index-page">
@@ -67,6 +92,10 @@
     image.src = src;
   }
 
+  function storyboardWebpSource(src) {
+    return src.replace(/\/([^/]+)\.jpg$/i, '/webp/$1.webp');
+  }
+
   async function loadStoryboardImages(container) {
     if (container.dataset.source) {
       const response = await fetch(container.dataset.source);
@@ -94,6 +123,12 @@
     slide.fetchPriority = "high";
     container.appendChild(slide);
 
+    const spinner = document.createElement('div');
+    spinner.className = 'storyboard-spinner';
+    spinner.setAttribute('role', 'status');
+    spinner.setAttribute('aria-label', 'Loading next storyboard frame');
+    container.appendChild(spinner);
+
     const prev = document.createElement("img");
     prev.src = leftArrow;
     prev.className = "arrow left";
@@ -111,11 +146,29 @@
 
     function show(i) {
       index = (i + images.length) % images.length;
-
-      slide.src = images[index];
-      preloadStoryboardImage(images[(index + 1) % images.length]);
-      preloadStoryboardImage(images[(index - 1 + images.length) % images.length]);
+      // Avoid a distracting flash for frames that are already in cache.
+      clearTimeout(show.loadingTimer);
+      show.loadingTimer = setTimeout(() => container.classList.add('is-loading'), 150);
+      slide.dataset.jpegFallback = images[index];
+      slide.src = storyboardWebpSource(images[index]);
+      preloadStoryboardImage(storyboardWebpSource(images[(index + 1) % images.length]));
+      preloadStoryboardImage(storyboardWebpSource(images[(index - 1 + images.length) % images.length]));
     }
+
+    slide.addEventListener('load', () => {
+      clearTimeout(show.loadingTimer);
+      container.classList.remove('is-loading');
+    });
+
+    slide.addEventListener('error', () => {
+      // Keep the original JPEGs as a compatibility fallback.
+      if (slide.src.toLowerCase().endsWith('.webp') && slide.dataset.jpegFallback) {
+        slide.src = slide.dataset.jpegFallback;
+        return;
+      }
+      clearTimeout(show.loadingTimer);
+      container.classList.remove('is-loading');
+    });
  
     prev.onclick = () => show(index - 1);
     next.onclick = () => show(index + 1);
@@ -143,19 +196,6 @@
   });
 </script>
 
-<script>
-  const portfolioFragments = [
-    ["animation", "CSS/data/animation.html"],
-    ["characterdesign-", "CSS/data/characterdesign-.html"],
-    ["backgrounddesign-", "CSS/data/backgrounddesign-.html"],
-    ["sketchbook-", "CSS/data/sketchbook-.html"]
-  ];
-
-  portfolioFragments.forEach(([id, source]) => {
-    const target = document.getElementById(id);
-    loadFragment(target, source).catch(error => console.error(error));
-  });
-</script>
 <div></div>
 <footer>
 <!--#  <p>&copy; 2024 Zack Johnson. All rights reserved. |
