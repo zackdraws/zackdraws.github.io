@@ -73,7 +73,7 @@
     .catch(error => console.error(error));
 </script>
 
-<section id="sketchbook">
+<!-- <section id="sketchbook">
   <div class="storyboard-row">
     <article class="storyboard-card">
       <h2>Robot and Monster storyboard</h2>
@@ -86,7 +86,8 @@
       <h2>Stump storyboard</h2>
       <a href="/WORK/sb/SB_02.pdf" target="_blank" class="pdf-download">PDF Copy</a>
  <!--     <a href="/WORK/sb/SB_02.pdf" target="_blank" class="pdf-download">Animatic</a> -->
-      <div class="slideshow" style="--story-aspect: 1530 / 835" data-source="CSS/data/story-2" data-left="/WORK/fp/icons/prev.png" data-right="/WORK/fp/icons/next.png"></div>
+<!-- 
+ <div class="slideshow" style="--story-aspect: 1530 / 835" data-source="CSS/data/story-2" data-left="/WORK/fp/icons/prev.png" data-right="/WORK/fp/icons/next.png"></div>
     </article>
 
     <article class="storyboard-card">
@@ -97,7 +98,7 @@
     </article>
 
   </div>
-
+--> 
 <script>
   const storyboardPreloadCache = new Set();
 
@@ -206,14 +207,14 @@
 </script>
 
 </section>
-<div id="story-self-host"></div>
-<div id="animation"></div>
 <div id="story-"></div>
+<div id="animation"></div>
 <div id="characterdesign-"></div>
 <div id="backgrounddesign-"></div>
 <div id="sketchbook-"></div>
 <script>
   const portfolioFragments = [
+    ["story-", "CSS/data/story-.html"],
     ["animation", "CSS/data/animation.html"],
     ["story-", "CSS/data/story-.html"],
     ["story-self-host", "PORTFOLIO/story-self-host.html"],
