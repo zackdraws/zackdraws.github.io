@@ -13681,7 +13681,7 @@ body .video-container h1,
 body .video-container h2,
 body .image-title { 
     background-color: #FFF !important;
-    color: #1e66f5 !important;
+    color: #000 !important;
     display: table !important;
     width: fit-content !important;
     max-width: calc(100% - 24px) !important;
@@ -13720,8 +13720,8 @@ body .pdf-download {
 body .pdf-download:hover,
 body .pdf-download:focus {
     color: #fff !important;
-    background-color: #1e66f5 !important;
-    border-color: #1e66f5 !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
     box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.28),
                 inset -1px -1px 0 rgba(0, 0, 0, 0.35) !important;
 }
