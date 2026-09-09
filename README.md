@@ -1,8 +1,16 @@
 # README.md 
 <img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="460"/>
-
 ###  PORTFOLIO ( HTML )
     - html for each individual page is here
+#### story.html
+#### story-self-host.html
+     - Different from index.html where the storyboards are pulled from speakerdeck story-self-host.html pulls them from a manifest in CSS/data/story-3 
+     - the rest of the files are stored in /WORK/sb/sb03/sb_##.jpg 
+     - for each new storyboard I make a new file in CSS/data/ marked story-# which points to files in WORK/sb/sb0# marked as sb_##.jpg 
+     - and then also a corresponding file that is marked as webp 
+####
+####
+####
 ### WORK
     - work for each individual page is here  
 ##### Animation Reel 
@@ -14,7 +22,6 @@
     file folders: sb01 sb02 sb03
     file contents: sb_01.jpg sb_02.jpg 
     file pdf: ZJ01.pdf ZJ02.pdf
-
 ##### Character Design 
     (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
 ##### Background and Viz Dev                
@@ -28,7 +35,7 @@
     - zack_Johnson_Resume.pdf   - my resume as a pdf    
 #### CSS - 
      - bundles.css - bundled all css into one
-### JS - javascript
+###  JS - javascript
       - lightbox.js
       - closer.js
 # How:
