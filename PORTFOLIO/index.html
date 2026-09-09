@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/CSS/bundle.css?v=20260518-blue-buttons" />
 <style>
 
-  body.index-page .storyboard-card .slideshow {
+<!--  body.index-page .storyboard-card .slideshow {
     aspect-ratio: var(--story-aspect, 16 / 9);
     min-height: 0;
     overflow: hidden;
@@ -204,14 +204,19 @@
     initialiseSlideshow(container).catch(error => showStoryboardError(container, error));
   });
 </script>
+
 </section>
+<div id="story-self-host"></div>
 <div id="animation"></div>
+<div id="story-"></div>
 <div id="characterdesign-"></div>
 <div id="backgrounddesign-"></div>
 <div id="sketchbook-"></div>
 <script>
   const portfolioFragments = [
     ["animation", "CSS/data/animation.html"],
+    ["story-", "CSS/data/story-.html"],
+    ["story-self-host", "PORTFOLIO/story-self-host.html"],
     ["characterdesign-", "CSS/data/characterdesign-.html"],
     ["backgrounddesign-", "CSS/data/backgrounddesign-.html"],
     ["sketchbook-", "CSS/data/sketchbook-.html"]
