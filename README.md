@@ -1,5 +1,6 @@
 # README.md 
 <img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="460"/>
+
 ###  PORTFOLIO ( HTML )
     - html for each individual page is here
 #### story.html
