@@ -3,8 +3,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css");
 @import url("https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css");
 
+@font-face {
+  font-family: "Zack Custom";
+  src: url("/WORK/font/zack-font.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
-  --site-font-family: "Host Grotesk", Arial, Helvetica, sans-serif;
+  --site-font-family: "Zack Custom", "Host Grotesk", Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -150,14 +158,9 @@ body.index-page .next-button {
 body.index-page .prev-button {
         left: 400px; 
     }
-body.index-page .next-button:hover, body.index-page .prev-button:hover {
-        background-color: #FFF; 
-    }
-body.index-page .next-button:hover, body.index-page .prev-button:hover {
-    background-color: #FFF; 
-}
-body.index-page .next-button:hover, body.index-page .prev-button:hover {
-    background-color: #FFF; 
+body.index-page .next-button:hover,
+body.index-page .prev-button:hover {
+    background-color: #FFF;
 }
 body.index-page .gallery-frame {
     width: 100%;
@@ -169,20 +172,18 @@ body.index-page .gallery-frame {
 }
 body.index-page .gallery {
     display: grid;
-    flex-wrap: wrap;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
     justify-content: center;
 }
-body.index-page .gallery-item{
-    flex; 1 0 calc(33.33% - 20px); /
+body.index-page .gallery-item {
+    flex: 1 0 calc(33.33% - 20px);
     max-width: calc(33.33% - 30px);
     overflow: hidden;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s;
-} 
+}
 body.index-page .gallery-item img {
     width: 100%;
     height: 100%;
@@ -558,7 +559,7 @@ body.index-page .grid-item-2 {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  overflow:auto;
+  overflow: auto;
   object-fit: contain;
   text-align: center;
   width: 640px;
@@ -733,7 +734,6 @@ body.index-page #video-library .grid {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(550px, 4fr));
-  gap: 3px;
   max-width: 1900px;
   margin: 0 auto;
 }
@@ -3756,56 +3756,56 @@ body.character-design-page .video-container iframe {
   justify-content: center;
 }
 body.character-design-page .grid {
-  display: grid;
-  justify-content: left;
-  align-items: left;
-  grid-template-columns: repeat(auto-fill, minmax(590px, 1fr));
-  gap: 6px;
-  width: 100vw;
-  margin: 0 auto;
-  padding: 0;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  column-count: 3 !important;
+  column-gap: 2px !important;
+  break-inside: avoid;
 }
 body.character-design-page .grid-item.video-item {
-  grid-column: span 2;
-  grid-row: span 2;
-  overflow: hidden;
-  border-radius: 12px;
+  display: inline-block;
+  width: 100%;
+  overflow: visible !important;
+  border-radius: 0;
+  margin: 0 0 2px;
 }
 body.character-design-page .grid-item.video-item video {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  object-fit: contain !important;
   border-radius: 12px;
   display: block;
 }
 body.character-design-page .grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  text-align: center;
-  overflow: hidden;
+  display: inline-block !important;
+  width: 100% !important;
+  margin: 0 0 2px !important;
+  overflow: visible !important;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0;
+  text-align: center;
+  break-inside: avoid;
 }
 body.character-design-page .grid-item-2 {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  overflow:auto;
-  object-fit: contain;
+  display: block;
+  width: 100%;
+  overflow: visible !important;
+  object-fit: contain !important;
   text-align: center;
-  width: 640px;
   position: relative;
   border-radius: 8px;
 }
 body.character-design-page .grid-item img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
-  object-fit: contain;
-  border-radius: 8px;
+  margin: 0 auto;
+  object-fit: contain !important;
+  object-position: center;
+  border-radius: 0;
   max-height: none;
   transition: transform 0.3s ease;
 }
@@ -3814,8 +3814,7 @@ body.character-design-page .grid-item:hover img {
 }
 @media (max-width: 1024px) {
   body.character-design-page .grid {
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      justif-content: center;
+      column-count: 2 !important;
   }
 }
 @media (max-width: 768px) {
@@ -3826,17 +3825,15 @@ body.character-design-page .grid-item:hover img {
     font-size: 2rem;
   }
   body.character-design-page .grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-count: 2 !important;
   }
 }
 @media (max-width: 600px) {
   body.character-design-page .grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-count: 1 !important;
   }
   body.character-design-page .grid-item.video-item {
-    grid-column: span 1;
-    grid-row: auto;
-    max-height: 250px;
+    max-height: none;
   }
   body.character-design-page .grid-item video,
   body.character-design-page .grid-item iframe {
@@ -4859,9 +4856,12 @@ body.character-design-page .header-navigation .submenu {
     }
 
     body.character-design-page .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 10px;
+      display: block !important;
+      column-count: 3 !important;
+      column-gap: 18px !important;
+      grid-template-columns: none !important;
+      gap: 0 !important;
+      width: min(100%, 1400px) !important;
     }
 
     body.character-design-page .grid-item img {
@@ -4869,6 +4869,7 @@ body.character-design-page .header-navigation .submenu {
       height: auto;
       display: block;
       border-radius: 6px;
+      object-fit: contain !important;
     }
 
     @media (max-width: 768px) {
@@ -4891,7 +4892,14 @@ body.character-design-page .header-navigation .submenu {
       }
 
       body.character-design-page .grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        column-count: 2 !important;
+        grid-template-columns: none !important;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body.character-design-page .grid {
+        column-count: 1 !important;
       }
     }
 
@@ -13725,3 +13733,4 @@ body .pdf-download:focus {
     box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.28),
                 inset -1px -1px 0 rgba(0, 0, 0, 0.35) !important;
 }
+
