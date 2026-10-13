@@ -488,8 +488,8 @@ body.index-page #animated-projects {
   margin: 40px auto;
 }
 body.index-page .project-container {
-  display: flex;
-  flex-direction: column;
+  width: 64px;
+  height: 128px;
   align-items: center; 
   gap: 20px; 
 }
@@ -13757,8 +13757,8 @@ body.index-page .animation-carousel__controls button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 108px;
+  width: 64px;
+  height: 128px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -13802,6 +13802,60 @@ body.index-page .animation-carousel__controls [data-clip-title] {
   text-align: center;
 }
 
+  body.animation-page #animation > .animation-reel-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+
+  body.animation-page #animation > .animation-reel-container > .main-reel,
+  body.animation-page #animation > .animation-reel-container > .animation-carousel {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body.animation-page .animation-main-reel .animation-carousel__heading h2 {
+    display: block !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  body.animation-page #animation > .animation-projects {
+    margin: 48px 0 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  body.animation-page .animation-projects > h2 {
+    margin: 0 0 16px !important;
+    text-align: left !important;
+  }
+
+  body.animation-page .animation-projects__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+
+  body.animation-page .animation-projects__grid iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+
+  body.animation-page .animation-projects__grid h3 {
+    margin: 0 0 10px;
+    text-align: left;
+  }
+
 @media (max-width: 768px) {
     body.animation-page #animation {
         margin-left: 0 !important;
@@ -13841,6 +13895,26 @@ body.index-page .animation-carousel__controls [data-clip-title] {
       body.index-page .animation-carousel__controls [data-clip-title] {
         grid-column: 1 / -1;
         grid-row: 1;
+      }
+
+      body.animation-page #animation > .animation-reel-container {
+        flex-direction: column;
+        gap: 28px;
+      }
+
+      body.animation-page #animation > .animation-reel-container > .main-reel,
+      body.animation-page #animation > .animation-reel-container > .animation-carousel {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      body.animation-page #animation > .animation-projects {
+        margin-top: 32px !important;
+      }
+
+      body.animation-page .animation-projects__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
 }
 
