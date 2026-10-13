@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-quality=80
+quality=48
 force=false
 dry_run=false
 
@@ -13,7 +13,7 @@ usage() {
 Usage: ./convert-jpg-to-webp.sh [options]
 
 Options:
-  -q, --quality NUMBER  WebP quality from 0 to 100 (default: 80)
+  -q, --quality NUMBER  WebP quality from 0 to 100 (default: 48)
   -f, --force           Re-create WebPs that already exist
   -n, --dry-run         Show what would be converted without writing files
   -h, --help            Show this help text
