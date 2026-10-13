@@ -207,17 +207,15 @@
 </script>
 
 </section>
-<div id="story-"></div>
+<div id="story-self-host"></div>
 <div id="animation"></div>
 <div id="characterdesign-"></div>
 <div id="backgrounddesign-"></div>
 <div id="sketchbook-"></div>
 <script>
   const portfolioFragments = [
-    ["story-", "CSS/data/story-.html"],
+    ["story-self-host", "CSS/data/story-self-host.html"],
     ["animation", "CSS/data/animation.html"],
-    ["story-", "CSS/data/story-.html"],
-    ["story-self-host", "PORTFOLIO/story-self-host.html"],
     ["characterdesign-", "CSS/data/characterdesign-.html"],
     ["backgrounddesign-", "CSS/data/backgrounddesign-.html"],
     ["sketchbook-", "CSS/data/sketchbook-.html"]
@@ -225,7 +223,16 @@
 
   const loadPortfolioFragments = () => portfolioFragments.forEach(([id, source]) => {
     const target = document.getElementById(id);
-    loadFragment(target, source).catch(error => console.error(error));
+    loadFragment(target, source)
+      .then(() => {
+        if (id === 'story-self-host') {
+          target.querySelectorAll('.slideshow').forEach(container => {
+            initialiseSlideshow(container)
+              .catch(error => showStoryboardError(container, error));
+          });
+        }
+      })
+      .catch(error => console.error(error));
   });
 
 
