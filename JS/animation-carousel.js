@@ -1,7 +1,7 @@
 (() => {
   const clips = [
     { title: "Deadline - An Opera (thesis film)", type: "vimeo", src: "https://player.vimeo.com/video/452419199?h=da30bb65d2" }, 
-    { title: "Chicken Getting a Midnight Snack", src: "/WORK/anp/ANI_01.mp4" },
+    { title: "Chicken Getting a Midnight Snack", src: "/WORK/anp/ANI_01-faststart.mp4" },
     { title: "Hand Accepting Applause", src: "/WORK/anp/ANI_02.mp4" },
     { title: "Dog Scene", src: "/WORK/anp/ani03.mp4" },
     { title: "Desert Mayhem Overdrive Scene", src: "/WORK/anp/ANI_04.mp4" },
