@@ -3,12 +3,33 @@
 </div>
 
 <section id="animation">
-  <h2>animation</h2>
   <div class="animation-reel-container">
     <div class="main-reel">
+      <div class="animation-carousel__heading">
+        <h2>animation</h2>
+      </div>
       <video id="preview-video" controls muted poster="/WORK/anp/mpv-shot0002.jpg" width="360">
 	<source src="/WORK/anp/ANI_00.mp4" type="video/mp4">
       </video>
     </div>
+    <section class="animation-carousel" id="individual-clips" data-animation-carousel aria-labelledby="individual-clips-heading">
+      <div class="animation-carousel__heading">
+        <h2 id="individual-clips-heading">Individual Clips</h2>
+        <p class="animation-carousel__count" data-clip-count aria-live="polite">1 / 10</p>
+      </div>
+      <video class="animation-carousel__video" controls preload="metadata" playsinline>
+        <source src="/WORK/anp/ANI_01.mp4" type="video/mp4">
+      </video>
+      <iframe class="animation-carousel__embed" data-clip-embed title="Vimeo animation clip" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" hidden></iframe>
+      <div class="animation-carousel__controls">
+        <button type="button" data-clip-previous aria-label="Previous animation clip">
+          <img src="/WORK/fp/icons/prev.png" alt="">
+        </button>
+        <p data-clip-title aria-live="polite">Steven and Steven</p>
+        <button type="button" data-clip-next aria-label="Next animation clip">
+          <img src="/WORK/fp/icons/next.png" alt="">
+        </button>
+      </div>
+    </section>
   </div>
 </section>

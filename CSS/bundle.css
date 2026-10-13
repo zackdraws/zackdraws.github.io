@@ -346,16 +346,16 @@ body.index-page #animation-reel {
 }
 body.index-page .animation-reel-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  gap: 30px;
+  gap: 16px;
   box-sizing: border-box;
 }
 body.index-page .main-reel {
-  flex: 1.5;
+  flex: 1 1 0;
   max-width: 750px;
-  width: 85%;
+  width: auto;
 }
 body.index-page .main-reel video {
   width: 100%;
@@ -390,6 +390,10 @@ body.index-page .sample-item video {
   }
   body.index-page .sample-reels {
     grid-template-columns: 1fr;
+  }
+  body.index-page .animation-carousel {
+    width: 100%;
+    max-width: 640px;
   }
 }
 
@@ -13671,6 +13675,133 @@ body.animation-page .video-container > h2 + video {
     width: min(640px, 100%) !important;
 }
 
+body.animation-page .animation-carousel,
+body.index-page .animation-carousel {
+  width: 100%;
+  max-width: 960px;
+  margin: 32px 0 48px;
+}
+
+body.animation-page .animation-carousel__heading,
+body.index-page .animation-carousel__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+body.animation-page .animation-carousel__heading h2,
+body.index-page .animation-carousel__heading h2 {
+  margin: 0;
+  text-align: left;
+}
+
+body.animation-page .animation-carousel__count,
+body.index-page .animation-carousel__count {
+  margin: 0;
+  white-space: nowrap;
+}
+
+body.animation-page .animation-carousel__video,
+body.index-page .animation-carousel__video {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #111;
+}
+
+body.animation-page .animation-carousel__video[hidden],
+body.index-page .animation-carousel__video[hidden] {
+  display: none !important;
+}
+
+body.animation-page .animation-carousel__embed,
+body.index-page .animation-carousel__embed {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #111;
+}
+
+body.animation-page .animation-carousel__embed[hidden],
+body.index-page .animation-carousel__embed[hidden] {
+  display: none;
+}
+
+body .fancybox__container .fancybox__toolbar .carousel__button,
+body .fancybox__container .fancybox__toolbar .carousel__button svg {
+  color: #000 !important;
+}
+
+body .fancybox__container .fancybox__toolbar .carousel__button svg path,
+body .fancybox__container .fancybox__toolbar .carousel__button svg circle {
+  stroke: #000 !important;
+}
+
+body.animation-page .animation-carousel__controls,
+body.index-page .animation-carousel__controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+body.animation-page .animation-carousel__controls button,
+body.index-page .animation-carousel__controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 108px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+body.animation-page .animation-carousel__controls button:hover,
+body.animation-page .animation-carousel__controls button:focus-visible,
+body.index-page .animation-carousel__controls button:hover,
+body.index-page .animation-carousel__controls button:focus-visible {
+  opacity: 0.8;
+}
+
+body.animation-page .animation-carousel__controls button:focus-visible,
+body.index-page .animation-carousel__controls button:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 2px;
+}
+
+body.animation-page .animation-carousel__controls button img,
+body.index-page .animation-carousel__controls button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+body.animation-page .animation-carousel__controls [data-clip-previous],
+body.index-page .animation-carousel__controls [data-clip-previous] {
+  justify-self: start;
+}
+
+body.animation-page .animation-carousel__controls [data-clip-next],
+body.index-page .animation-carousel__controls [data-clip-next] {
+  justify-self: end;
+}
+
+body.animation-page .animation-carousel__controls [data-clip-title],
+body.index-page .animation-carousel__controls [data-clip-title] {
+  margin: 0;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
     body.animation-page #animation {
         margin-left: 0 !important;
@@ -13693,6 +13824,48 @@ body.animation-page .video-container > h2 + video {
         width: 100% !important;
         max-width: 640px !important;
         margin: 0 auto 16px !important;
+    }
+
+      body.animation-page .animation-carousel,
+      body.index-page .animation-carousel {
+        margin: 28px auto 40px;
+      }
+
+      body.animation-page .animation-carousel__controls,
+      body.index-page .animation-carousel__controls {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+      }
+
+      body.animation-page .animation-carousel__controls [data-clip-title],
+      body.index-page .animation-carousel__controls [data-clip-title] {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+}
+
+body.index-page .animation-carousel {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    max-width: 960px;
+    margin: 0;
+}
+
+@media (min-width: 769px) {
+  body.index-page #animation .animation-carousel {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+    body.index-page .animation-carousel {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 640px;
+        margin: 28px auto 40px;
     }
 }
 

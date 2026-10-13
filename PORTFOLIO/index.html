@@ -8,6 +8,7 @@
 <link rel="icon" type="image/x-icon" href="/WORK/fp/ok.ico" />
 <link rel="manifest"   href="/CSS/manifest.json" />
 <link rel="stylesheet" href="/CSS/bundle.css?v=20260518-blue-buttons" />
+<script defer src="/JS/animation-carousel.js"></script>
 <style>
 
 <!--  body.index-page .storyboard-card .slideshow {
@@ -230,6 +231,9 @@
             initialiseSlideshow(container)
               .catch(error => showStoryboardError(container, error));
           });
+        }
+        if (id === 'animation') {
+          window.initializeAnimationCarousels(target);
         }
       })
       .catch(error => console.error(error));
