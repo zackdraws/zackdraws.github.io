@@ -1,9 +1,15 @@
 # README.md 
 <img src="./WORK/fp/example_images/2025-homepage.gif" alt="drawing" width="460"/>
 this needs to be updated
+
 ###  PORTFOLIO ( HTML )
     - html for each individual page 
+#### EXTRA
+     - animation/
+		-/animation-daily.html
+			- animation everyday
 #### story.html
+
 ##### story-self-host.html
      - Different from index.html 
      - in index.html the storyboards are pulled from speakerdeck 
@@ -12,33 +18,44 @@ this needs to be updated
      - for each new storyboard I make a new file in CSS/data/ marked story-# which points to files in WORK/sb/sb0# marked as sb_##.jpg 
      - and then also a corresponding file that is marked as webp 
 #### characterdesign.html -
+
 ##### characterdesign_in-progress.html - in progress character designs
+
 #### figure-drawing
 
 ### WORK
     - work for each individual page is here  
+
 ##### Animation Reel 
     - holds all of the animation files 
     - file naming structure: 
         Animation Reel: ANI_00.mp4 
         Animation MP4 files: ANI_01.mp4 ANI_02.mp4       
+
 ##### Story Portfolio (PDFs in file directory)
     file folders: sb01 sb02 sb03
     file contents: sb_01.jpg sb_02.jpg 
     file pdf: ZJ01.pdf ZJ02.pdf
+
 ##### Character Design 
     (cd01.jpg, cd02.jpg, cd03.jpg ... etc.)
+
 ##### Background and Viz Dev                
     (bg01.jpg, bg02.jpg, bg03.jpg ... etc)
+
 ##### fg - figure drawing
 	- fg_01.jpg (Files for Sketchbook) 
+
 ##### fund - fundamentals    
 	- /Work/fund/01/fund_01.jpg
+
 ##### Resume (fp/Resume)
     - zack_johnson_resume.md    - my resume as a markdown file
     - zack_Johnson_Resume.pdf   - my resume as a pdf    
+
 #### CSS - 
      - bundles.css - bundled all css into one
+
 ###  JS - javascript
       - lightbox.js
       - closer.js
