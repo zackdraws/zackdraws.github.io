@@ -1,0 +1,8 @@
+<section id="character-design">
+  <h2>Digital Painting</h2>
+  <div class="grid">
+    <div class="grid-item"><a href="/WORK/fund/07/fund_03.jpg" data-fancybox="gallery"><img src="/WORK/fund/07/fund_03.jpg" alt="Character Design 1"></a></div>
+    <div class="grid-item"><a href="/WORK/fund/07/fund_04.jpg" data-fancybox="gallery"><img src="/WORK/fund/07/fund_04.jpg" alt="Character Design 1"></a></div>
+    <div class="grid-item"><a href="/WORK/fund/07/fund_05.jpg" data-fancybox="gallery"><img src="/WORK/fund/07/fund_05.jpg" alt="Character Design 1"></a></div>
+
+</section>
